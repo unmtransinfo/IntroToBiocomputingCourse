@@ -1,0 +1,863 @@
+>QUERY
+>Q9ES76
+>Q9Y5S1
+>Q7T2Z4
+>Q8NET8
+>Q8NDW5
+>Q9N3Y9
+>
+>
+>
+>jnet
+>jpssm
+>jfreq
+>jhmm
+>jalign
+>jpred
+ * iteration 1
+ T               
+ E               
+ D               
+ P               
+ A               
+ R               
+ M               
+ K               
+ K               
+ W               
+ S          H    
+ S          H    
+ T         HH    
+ D         HHH  H
+ L         HHH  H
+ G         HHH  H
+ A         HHH  H
+ A               
+ A               
+ D               
+ P               
+ L               
+ Q               
+ K               
+ D               
+ T               
+ C               
+ P               
+ D               
+ P               
+ L               
+ D               
+ G               
+ D T             
+ P S             
+ N P             
+ S S             
+ R S             
+ P S             
+ P P             
+ P V             
+ A F             
+ K R             
+ P L             
+ Q E             
+ L T             
+ S L             
+ T D             
+ AEG             
+ KSG             
+ STQ             
+ RRE             
+ TYD          E  
+ REG          E  
+ LSS         EE  
+ FSE             
+ GVA             
+ KVD             
+ GPR             
+ DGG             
+ SPK             
+ EKL        E    
+ EKD        E    
+ A L             
+ FAP             
+ PPP             
+ VMM             
+ DDE             
+ CSS             
+ PLQ             
+ HFF             
+ EDQ             
+ EYG             
+ GGE             
+ ETD             
+ LYR             
+ DRK             
+ SHF             
+ CHA             
+ PPP             
+ TSQ             
+ IDI             
+ TNR             
+ V V             
+ S N             
+ P               
+ V         E EE E
+ I         E EE E
+ T         E EE E
+ I         E EE E
+ QK   K    E EE E
+ RR   A          
+ PW   E          
+ GR   G     E    
+ DR   P     E    
+ GK   G     E    
+ SV   S     E    
+ TV   Q          
+ GE   L          
+ AK   Q          
+ RQ R K          
+ LPLL L          
+ LQNQ L          
+ SSYN P          
+ QPRK E          
+ DKKK Q          
+ SAGG D          
+ VPTW W          
+ AAGN D          
+ APAE Q          
+ SQSM H          
+ TPQL L          
+ EPPD D          
+ KPDE K          
+ TIPT L          
+ LLNF H      H   
+ RKRL M      H   
+ LV L L      H   
+ YFFY Q          
+ DNDT Q          
+ RRRK K          
+ RPDH R          
+ SIRP P          
+ ILLL L    H HH H
+ FFFF L    H HH H
+ EDNY R    H HH H
+ AIAA A    H HH H
+ VVVA S    H HH H
+ ASSQ K    HHHH H
+ QRRK E    HH    
+ NGGN N    HH    
+ NSVN D    HH    
+ CTPA L    HH    
+ QAEG S    HHHH H
+ DDDC V    HHHH H
+ LLLI L    HHHH H
+ EDAM R    H HH H
+ SGGK Q    H HH H
+ LLLL L    HHHHHH
+ LLPL L    HHHHHH
+ LSE  L    HHHHHH
+ FFY       HHHHHH
+ LLL       HHHHHH
+ QLS       HHHHHH
+ KTK       HH H H
+ SHT        H    
+ KKS        H    
+ KKKG       H    
+ HRYC D     H    
+ LLLS C     H    
+ TTTS T     H    
+ DDDT C     H    
+ NESN D          
+ EEEI V          
+ FFYF R        E 
+ KRTE Q          
+ DEER RR         
+ PPGG GG         
+ ESSADAA         
+ TTTLTLV      H  
+ GGGGGGG   H  H  
+ KKKEKEE   H HH H
+ TTTTTTT   H HHEH
+ CCCACAL   H HHEH
+ LLLLLLL   H HHHH
+ LPMHMHH   H HHHH
+ KKKVKIT   H HHHH
+ AAAAAAC   H HHHH
+ MLVVLAF   HHHHHH
+ LLLMLLL   HHHHHH
+ NNN N A   HHHHHH
+ LLL I G   HH    
+ HSKSNYL    H    
+ DNDDPDP    H    
+ GGGNNNN   HH    
+ QRVLTLH   HH H H
+ NNNDKE    HHHH H
+ TDAAEA    HHHH H
+ TTCAIA    H HH H
+ IIIVVLM   H HHEH
+ PPLVRVK   H HHEH
+ LVPLILL   H HHEH
+ LLLMLML   HHHHEH
+ LLL L A   HHHHEH
+ EDQ A E   HHHH H
+ III F     HHHH H
+ AAD A     HHHH H
+ RER E R   HHHH H
+ QRD E L   HHHH H
+ TTS N I   HH    
+ DGGEDEA    H    
+ SNNGIAI    H    
+ LMPALAF    H    
+ KRQPGPP         
+ EEPEREK       E 
+ LFLLFLI     E E 
+ VIVIIVI    H  E 
+ NNNNNFN    H    
+ ASAEAED    H    
+ SPQPEPF    H  E 
+ YFCMYTY   HH  E 
+ TRTTTTL   HH  E 
+ DDDSECS   H   E 
+ SIDEEED   H HH  
+ YYYLAAE   H H   
+ YYYFYFY   H H   
+ KRRQEAY     H   
+ GGGGGGG         
+ QQHVQQE         
+ TTSTTTT       E 
+ ASAPAAV   H H EH
+ LLLLLLL   H H EH
+ HHHHNHH   H H EH
+ IIIIIIM   H HEEH
+ AAAAAAG   H HEEH
+ IIIVIVI   HHHEEH
+ EEEVEVV   HHHH H
+ RRKNRNS   HHHH H
+ RRRQRQE   HHHH H
+ NCSNQNN   HHHH H
+ MKLIGVA   HHHHHH
+ AHQNDNE   HHHHHH
+ LYCLILF   HHHHHH
+ VVVVAVV   H HHHH
+ TEKQARR   H HHHH
+ LLLHLAY   H HHHH
+ LLLLLLL   HHHHHH
+ VVVIILL   HHHHHH
+ EAESATK   HHHHHH
+ NQNRARS   HH H H
+ GGGGGRG   HH    
+ AAAGAAA   HH    
+ DDNDDSD   HH    
+ VVVAVVV   HHH   
+ QHHANSH   HHH   
+ AAATAAA   H H   
+ AQRPHRR   H H   
+ AAARAAC     H   
+ HRCVKTS         
+ GGGTGGG         
+ DRRGATN         
+ FFFLFAF     H   
+ FFFYFFF         
+ KQQFNRT      E  
+ KPKRPHC         
+ TK KKSD         
+ KDGRYPD         
+ GEQIQRQ         
+ RGGGHNK         
+ PGTGELG         
+ GYCLG S      E  
+ FFFIFII   E EE E
+ YYYYYYY   E EE E
+ FFFYFFW   E  E  
+ GGGGGGG         
+ EEEEEEE         
+ LLLHTHY       H 
+ PPPIPPP   H  HHH
+ LLLLLLL   H HHHH
+ SSSSASS   H HHHH
+ LLLFLFF   H HHHH
+ AAAAAAA   HHHHHH
+ AAAAAAA   HHHHHH
+ CCCCCCC   HHHHHH
+ TTTATVL   HH  HH
+ NNKGNNS    H    
+ QQQNQSQ    H    
+ LPWEPEP   HH    
+ GHDDEEE   HH H  
+ IIVIIIC   HHEH  
+ VVVIVVI   H EHEE
+ KNSSQRR   H EHEE
+ FYYLLLM   H EEEE
+ LLLILLL   HHEEEE
+ LTLIMIV   HHEE E
+ QEED EA   HH    
+ NNNA HH   HH    
+ SPPGGGG    H    
+ WHH H      H    
+ QKQ E      H    
+ TKP Q      H    
+ AAAATAA    H    
+ DDSSDDD       E 
+ IMLTIIV       E 
+ SRQRTRN     EEEE
+ ARAVSAA     EEEE
+ RQTQRQA      E  
+ DDDDDDD         
+ SSSYSST         
+ VRQRRLN         
+ GGGGGGG         
+ NNNNNNN         
+ TTTTNTT       E 
+ VVVVIVI   E EEEE
+ LLLLLLL   E EEEE
+ HHHHHHH   E EEEE
+ AAAVAII   E EEEE
+ LLLLLLC   E EEEE
+ VVVVVIT   EHEEEE
+ EAM T I   HHEEEE
+ VII V H   HHEE  
+ AAS A E   HHH   
+ DDD E N   HH    
+ NNN D     HH    
+ TTSLFL     H    
+ ARAQKQ     H    
+ DEEPTP     H    
+ NNNNQN          
+ TTIKNK    H HH H
+ KKATDT    H HH H
+ FFLIFF    H HH H
+ VVVAVA    H HH H
+ TTTCKCY   HHHHHH
+ SKSQRQE   HHHHHH
+ MMMAMMM   HHHHHH
+ YYYMYYF   HHHHHH
+ NDDDDNK   HHHHHH
+ ELGLMLM   HHHHHH
+ ILLIILA   HHHHHH
+ LLLMLLL   HHHHHH
+ ILQALSS   HHHHHH
+ LKARRYL   HHHHHH
+ GCGDSDG   HH    
+ ASAAGGA    H    
+ KRRENHD    H    
+ LLLL GL    H    
+ HFCD DH    H    
+ PPPQ H     H    
+ TDTS L     H    
+ LSVVWQ          
+ KNQPEP        E 
+ LLLLLL        E 
+ EEEDED          
+ ETDMTL          
+ LVIVTVI         
+ TLRPRPQ         
+ NNNNNNN         
+ KNLSNHR         
+ KDQRDQQ         
+ GGDGGGN         
+ MLLLLLL         
+ TSTTTTT         
+ PPPPPPP   H HH H
+ LLLFLFL   H HH H
+ AMKKQKT   H HHHH
+ LMLLLLL   H HHHH
+ AAAAAAA   H HHHH
+ AAAAAGA   H HHHH
+ GKKKKVF   HHHHHH
+ TTEEMEL   HHHHHH
+ GGGGGGA   HH H H
+ KKKNKNK   HH H H
+ IIIRATK   HH HHH
+ GGEVEVE   HHHHHH
+ VVIAIMM   HHHHHH
+ LFFFLFM   HHHHHH
+ AQRQKQQ   H HHHH
+ YHHHYHR   H HHHH
+ IIILILI   HHHHHH
+ LILVLMV   HHHHHH
+ QRQNSQE   HHHHHH
+ RRRKRKE   HHHHHH
+ EEE E E   HHHHHH
+ IVF I     HH  HH
+ QTS K     HH    
+ ED  E     HH    
+ PE  K      H    
+ EDG R           
+ CTL L           
+ RRS R           
+ HHH S           
+ LLL L      H    
+ SSS S      H    
+ RRRRRR    HH EEE
+ KKKRKRR   HHEEEE
+ FFFVFHT   HHEEEE
+ TKTVTIV   E EEEE
+ EDEQDQN   E EEEE
+ WWWWWWW     EE  
+ AACSATT     E E 
+ YYYLYYY         
+ GGGGGGG         
+ PPPPPPR    H    
+ VVVLVLT         
+ HYRTSTQ   E EE E
+ SSVSSSS   E EEEE
+ SSSYSIA   E EEEE
+ LLLLLLA   E E EE
+ YYYYYYY     E E 
+ DDDDDDP       E 
+ LLLLLLL    E  E 
+ SSATTTE    E  E 
+ CSSENEH   EE  EE
+ ILVIVIV         
+ DDDDDDD         
+ TTSSTSS         
+ CCCWTWI         
+ EEEDTEE         
+ KEEGDEP         
+ NVNMNLK         
+ SSSSSSS      EE 
+ VVVVVFV   E EEEE
+ LLLLLLL   E EEEE
+ EEEEEET   E EEEE
+ VIILILI   E EEEE
+ ILIITVA   E EEEE
+ AVAVVVV   E EE E
+ YYFGY Y   EHEE E
+ SN SN G   EH    
+ S HQTSE   EH    
+ SSCQNSK    H    
+ EKKK DV    H    
+ TIS IK     H    
+ PEP DR     H    
+ NNHENE     H    
+ RRRARAE         
+ HHHRHRH         
+ DERGEQL     H   
+ MMMIMIS     HE  
+ LLVLLLL     HE  
+ LAVETEL   H HEHH
+ VVLLLQP   H  HHH
+ EEETETH   H  HHH
+ PPPPPPL   H HHHH
+ LILVLVL   H HHHH
+ NNNMHKE   H HHHH
+ REKRTEQ   H HHHH
+ LLLLLLL   H HHHH
+ LLLVLVV   H HHHH
+ QRQSHSH   HHHHHH
+ DDALMFH   HHHHHH
+ KKKKKKK   HHHHHH
+ WWWWWWW   HHHHHH
+ DRDNKNI   HHHHHH
+ RKLLKKA   HHHHHH
+ FFLYFYY   HHHHHH
+ VGIGAGG   HH    
+ KA KKRR   HH    
+ RVPHHPK   HHH  H
+ ISKYMYT   HHHHHH
+ FFFFFFL   HHHHHH
+ YYFRFCF   HHHHHH
+ FILLLIA   H HHHH
+ NNNLSLQ   H HHHH
+ FVFLFAL   H HHHH
+ LVLLCAS   HHHHHH
+ VSCLFLM   HHHHHH
+ YYNYYYF   HHHHHH
+ CLLLFLC   HHHHHH
+ LCILFLI   HHHHHH
+ YAYYYYY   HHHHHH
+ MMMINMF   H HHHH
+ IVFGIII   H HH E
+ IIITTCC   HEHHHE
+ FFFFLFV   EEEH E
+ TTTTTTT   EEHH E
+ MLALLTS   EEHHEE
+ ATVCVCC   EEHHEE
+ AAACSCF   EEHH E
+ YYYTYVL   EEHH E
+ YYHYYYL   EE H E
+ RQQRRRR    E    
+ PPPPPPP    E    
+ VLTLEL     E    
+ DEQKEK     E    
+ GGADAR     E    
+ LTAIIT     E    
+ PPPSPHS         
+ PPHEPSP         
+ FYLNLRF         
+ KPKYADE         
+ MYAYLYR     H   
+ EREVTEQ         
+ KT THTQ         
+ ITVRKRV         
+ GVGEMES      H  
+ DDNDGDT   H  H  
+ YYSSWII   H HH H
+ FLMLLII   H HHHH
+ RRLRQRY   H HHHH
+ VLLLLLH   H HH H
+ TATVLVL      H  
+ GGGGGGL      H  
+ EEHEREH     EH  
+ IVIVMLL   EEEHHE
+ LILIFVI   EEEHHE
+ STISVSC   EEEHHE
+ VLLVLIV   EEEHHE
+ LFLLIVT   E HHHH
+ GTGGWGG   EEHHHH
+ GGGAAAA   EEHHHH
+ VVILMVT   EEHHHH
+ YLYVCIL   EEHHHH
+ FFLIIIY   EEHHHH
+ FFLLSLL   EEHHHH
+ FFVLVLV   HEHHHH
+ RTGLKLQ   HEHHHH
+ GSQEEEA   HEHHHH
+ IILIIIL   HEHHHH
+ QKWPAPL   HEHHHH
+ YDYDIDH   HEHHHH
+ FLFIFII   HEHHHH
+ LFWILFK   HHHHHH
+ QKRRLRN   HHHHHH
+ RKRVRVV    H    
+ RCHKPGG    H    
+ PPVRSRY    H    
+ SGFYDYH    H    
+ MVIFLFL    H    
+ KNWGQGY     EE  
+ TSIQSKV   EHEE E
+ LLSTITL   E EE E
+ FFFALIL   E EE E
+ VVILSLS   E  E  
+ DDDGDGG         
+ SGSGAGF         
+ YSYPWPP   HHH  H
+ SFFFFFA   H HH H
+ EQEHHHK   H HH H
+ MLIVFVA   HHHHHH
+ LLLIVII   HHHHHH
+ FYFLFIF   HHHHHH
+ FFLIFIL   HHHHHH
+ LIFSITF   HHHHHH
+ QYQYQYS   HHHHHH
+ SSAAAAC   HHHHHH
+ LVLSVSI   HHHHHH
+ FLLLLLL   HHHHHH
+ MVTVVVM   HHHHHH
+ LVVVILV   HHHHHH
+ AVVLLVI   HHHHHH
+ TSSLSTT   HHHHHH
+ VAQCVMF   H HHHH
+ VAVVFVF   H HHHH
+ LLLFLML   H HHHH
+ YYCRYRR   H HHHH
+ FLFALLI   H HHHH
+ SALCFTF   H HHHH
+ HGAEANC   HEHHHH
+ LIIVYTL   HEHHHH
+ KEEQKND   HEH HH
+ EAWGEGE   H H HH
+ YYYEYEA   H H HH
+ VLLALVE   H HHHH
+ AAPVAVD   H HHHH
+ SVLVCPI   H HHHH
+ MMLMLMV   H HHHH
+ VVVAVSW   H HHHH
+ FFSLLFI   H HHHH
+ SAASAAV   HEHHHH
+ LLLLMLI   HEHHHH
+ AVVVAVV   HEHHHH
+ LLLLLLL   HEHHHH
+ GGGGGGL   HEHHHH
+ WWWWWWT   HEHHHH
+ TMLSACS   HEHHHH
+ NNNNNSK   HEHHHH
+ MALVMVF   HEHHHH
+ LLLMLML   H HHHH
+ YYYFYYF   H HHHH
+ YFYFYFF   HHHHEH
+ TTTATTC   H HH H
+ RRRRRRR   HHHH H
+ GGGGGGG   HH H H
+ FLFFFFF   HH H H
+ QKQEQQK   HH H H
+ QLHMSMS   HH    
+ MTTLMLV   HH    
+ GGGGGGG   HH    
+ ITIPMPP   HHHH H
+ YYYYYFF   H HHHH
+ ASSVSTV   H HHHH
+ VIVIVIL   H HHHH
+ MMMMMMM   H HHHH
+ IIIIIIL   H HHHH
+ EQQQQQY   H HHHH
+ KKKKKKK   HEHHHH
+ MIVIVMI   HEHHHH
+ ILIIIII   HEHHHH
+ LFLFLFI   HEHH H
+ RKRGHGR   HHHH H
+ DDDDDDD   HHHH H
+ LLLLVLL   HHHH H
+ CFLTLMM   HHHHHH
+ RRRKKRR   HHHHHH
+ FFFFFFF   HHHHHH
+ MLLMLCF   HHHHHH
+ FLLWFWL   HHHHHH
+ VVIFVLI   HHHHHH
+ YYYSYMY   HHEHHH
+ ILLFIAL   HHEEHH
+ VLVIVVV   HHEEHE
+ FFFVFVI   HHEEHE
+ LMLLLIV   EHEE E
+ FIFILLV   EHEE E
+ GGGGGGG   EEHE E
+ FYFYFFF   EEH  E
+ SAASGAS   EEH HE
+ TTVTVSQ   EEHEHE
+ ANAAAAA   EEEEHE
+ VMLLLFF   EEEEHE
+ VKVWAYY   E EEHE
+ TVSVSIV   E EEHE
+ LCLVLII   E EEHE
+ IDSYIFF   E EE E
+ EEQMEQL      E  
+ DDETKTG         
+ GQAQCEY    H    
+ KSWDPDK    H    
+ NNRPKPR         
+ DCPDDT          
+ STESNS          
+ LVAM L          
+ PPPP G          
+ STT             
+ EYG             
+ S P             
+ T N             
+ S A             
+ H T             
+ R E             
+ W S             
+ R V             
+ G Q             
+ PPP             
+ AAM             
+ CCE             
+ RRG   S         
+ PDQ K D         
+ P E D S         
+ DSD C G         
+ SEE S N         
+ STQSSQR    E    
+ YFYFYFE    E    
+ NSRRGYP         
+ SAGSSDS         
+ LFIFFYI     HH  
+ Y LPSPM   H HH H
+ S EIDMS   H HH H
+ T ATAAN   H HHHH
+ CLSLVLV   H HHHH
+ LLLFLFA   H HHHH
+ EDESETE   H HHHH
+ LLLELTS   H HHHH
+ FFFFFFY   H H HH
+ KKKEKEV   HHH HH
+ FLFLLLR   HHHEHH
+ TTTSTFM   HHHEHH
+ IIIVILF   HHHEHH
+ GGGGGTI   HHEEHH
+ MMMLLVM   HH E H
+ GGGIGIS   HH    
+ DDEDDDL   HH    
+ LLLLLAT   HH    
+ EEAPNPE   HHH   
+ FMFVIAF   H HH  
+ TLQDQNT     H   
+ ESEHQYV         
+ NSQRNDF         
+ YALISVF         
+ DKHMKDE         
+ FYFTYLQ         
+ KPRPPPL    E    
+ AVGPIFV   EEHE E
+ VVMILMI   EEHEHE
+ FFVVFFG   EEHEHE
+ IILHLSK   E HEHE
+ ILLVFII   E HEHE
+ LLLLLVT   E HEHE
+ LLLHLNF   H HEHH
+ LVLCIFV   H HHHH
+ ATATTAV   HEHHHH
+ YYYFYFY   HEHHHH
+ VIVSVAM   HEHHHH
+ IILLIIL   HEHHHH
+ LLLVLIL   HEHHHH
+ TTTSTAV   HEHHHH
+ YFYYFTT   HEHHHH
+ IVIIVLL   HEHHHH
+ LLLLLLL   HEHHHH
+ LLLLLML   HEHHHH
+ LLLLLLI   HEHHHH
+ NNNNNNN   HEHHHH
+ MMMLMLM   HEHHHH
+ LLLLLFL   HEHHHH
+ IIIIIII   HEHHHH
+ AAAAAAA   H HHHH
+ LLLMLMM   H HHHH
+ MMMMMMM       H 
+ GGSSGGT         
+ EEEDEDN    H    
+ TTTTTTT   HH H H
+ VVVHVHY   HH H H
+ NGNWEWT   HH H H
+ KQSRNRE   H EHHH
+ IVVVVVV   H EH H
+ ASAASAS   H HH H
+ QKTQKQG   HHHH H
+ EEDEEEN   HHHH H
+ SSSRSRS   HHHH H
+ KKWDEDL   HHHH H
+ NHSERE    HHHHHH
+ IIILILE   HHHH H
+ WWWWWWW   HHHHHH
+ KKKRRRL   HHHHHH
+ LLLLLAR   HHHHHH
+ QQQQQQQ   HHH HH
+ RWKVRVW   HHHHHH
+ AAAVAVS   HHHHHH
+ ITIARAA   HHHHHH
+ TTSTTTI   HHHHHH
+ IIVTITI   HHHHHH
+ LLLLLVL   HHHHHH
+ DDEMEMM   H HHHH
+ TIMLFLM   H HHHH
+ EEEEEEE   HEHHHH
+ KRNRKRQ    E    
+ SSGRMKS    E    
+ FFYLLLF    E    
+ LPWPPPD    EHH  
+ KVWRERP     HHH 
+ CFCCWCA     HHH 
+ ML LLLT      H  
+ RRRWRWR      H  
+ KKKPSPL     HH  
+ AAKRRRR      H  
+ FFQLFSY    H    
+ RRRGRG     H    
+ SSACMC     H    
+ GGGGGG     H    
+ KEVLEC     HEE  
+ LMMELE    E EE E
+ LVLYCF    E EE E
+ QTTGKG    E EE E
+ VVVLVL    E EE E
+ GGG  G     E    
+ YKT        E    
+ TSK        E    
+ PSP        E    
+ DDD        E    
+ GGG A           
+ KTS E           
+ DPP D           
+ DDDKD           
+ YREEFD          
+ RRRRRR      EE  
+ WWWWLW    E EE E
+ CCCYCF    E EE E
+ FFFLLL    E EE E
+ RRRRRR    E EE E
+ VVVVIV    E EE E
+ DDEENE    EEE  E
+ EEEDEN    EE    
+ VVVRVH    EE    
+ NNNNKN    EEE  E
+ WWW W     EEE  E
+ TSA T     EEE  E
+ THS E     E E   
+ WWW W       E   
+ NNE K       E   
+ TQQ T           
+ NNT H           
+ VLL V        E  
+ GGP S     E EE E
+ IIT F     E EE E
+ IIL L     E EE E
+ NNC N        E  
+ EEE E        E  
+ DDD D           
+ PPP P           
+ GGS G      E    
+ NKG P      E    
+ CSA             
+ EE              
+ G G             
+ VIV V       E   
+ KYP R       E   
+ RQR R       E   
+ TYT T       EE  
+ LYL A       E   
+ SG  D           
+ FF  F       E   
+ SS  N       E   
+ LH        E  E  
+ RT        E  E  
+ SV              
+ SG              
+ RR        E EE E
+ VL        E EE E
+ SR        E E   
+ GR              
+ RD              
+ HR              
+ WW              
+ KS         E    
+ N               
+ F            E  
+ AS          EE  
+ LV        E EE E
+ VV        E  E  
+ PP        E  E  
+ LR        EEHE E
+ LV        EEHH E
+ RV        EEHH E
+ EE        EEHH E
+ AL        EEH  E
+ SN         EH   
+ A          E    
+ R          E    
+ D          E    
+ R               
+ QK              
+ SN              
+ AS              
+ QS              
+ PA              
+ ED              
+ EE          E   
+ VV          HE  
+ Y         E EE E
+ L         E EE E
+ R         E HE E
+ Q         E HE E
+ F          E    
+ S          E    
+ G          E    
+ S          E    
+ L               
+ K               
+ P               
+ E               
+ D               
+ A               
+ E               
+ V           E   
+ F               
+ K               
+ S               
+ P               
+ A               
+ A               
+ S               
+ G               
+ E               
+ K               
+ *

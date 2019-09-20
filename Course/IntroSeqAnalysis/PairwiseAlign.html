@@ -1,0 +1,528 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Comparison - Pairwise Alignment</title>
+  <link rel=stylesheet href="css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<div class="headln">Sequence Comparison - Pairwise Alignment</div>
+<br>
+<div class="text">
+<strong>Abstract:</strong> In this section of the course, we will begin to look at various methods and approaches to sequence comparison.  Sequence comparison is ubiquitous in modern molecular biology and bioinformatics.  Sequences - genes and proteins - are compared in order to infer structural, functional and evolutionary relationships among the sequences being compared.  The most common type of sequence comparison is sequence alignment which involves making an explicit mapping between the residues of two or more sequences.
+      <p>This section will introduce you to pairwise alignments and various EMBOSS programs than can be used to do perform pairwise alignments.  As the name suggests, pairwise alignment involves the alignment of two sequences of interest.  The next section of the course will explore database similarity searches, which allow you to determine which sequence(s) are appropriate to use in such comparisons.
+<br><br>
+The standard way of using EMBOSS is via command line interaction on a UNIX computer system.  You will be using EMBOSS on the system hatch.health.unm.edu and you should have received login information for xxx when you signed up for Biomed505.  In addition to the command line interface, there are also several graphical interfaces to EMBOSS.  One of these is <a href="http://hatch.health.unm.edu/EMBOSS/">EMBOSS-GUI</a>, a web-based front end to EMBOSS.  The exercises for the "Introduction to Sequence Analysis" section of Biomed505 are written for users of the command line interface.  You may use EMBOSS-GUI if you prefer, however there are no detailed instructions to help you.  A brief <a href="http://poblano.health.unm.edu/EMBOSS-GUI.html">introduction to EMBOSS-GUI</a> is available.  For the most part, the input to the command line programs is exactly mirrored by EMBOSS-GUI's web browser forms and the use of EMBOSS-GUI should be fairly straight forward.
+<br>
+<br>
+Questions you should answer as you work through the exercises are indicated by <span class="class2"><a href="PairwiseAlign.html">Question:</a></span> tags, which also serve as hyperlinks to the corresponding answers (where available).
+<br>
+<br>
+<strong>Typographical conventions:</strong> <br>
+ &nbsp; &nbsp; Regular web links look <a href="PairwiseAlign.html">like this</a><br>
+ &nbsp; &nbsp; Input that you should enter verbatim in web page forms, or links/buttons you should click on web pages look <span class="input">like this</span><br>
+ &nbsp; &nbsp; Sections representing command-line interaction are represented as in the following example:<br><span class="system">
+       <span class="prompt">[unix]# </span><span class="command">ls <span class="arg">foo</span> [Enter]<br></span>ls: foo: No such file or directory</span><br>
+ &nbsp; &nbsp; where...<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; the unix propmt is represented as: <span class="system"><span class="prompt">[unix]# </span></span>,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="command">this font</span></span> are commands to be typed into the computer verbatim,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="arg">this font</span></span> are names or identifiers (Eg. file/directory names or sequence accession numbers),<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; words in square brackets: <span class="system"><span class="command">[Ctrl]</span></span> indicate a key to be pressed, and <br>
+ &nbsp; &nbsp; &nbsp; &nbsp; program output is represented in <span class="system">this font</span><br>
+ &nbsp; &nbsp; The above example means "at the UNIX prompt, type ls followed by foo (a directory name, <strong>which may be different in your case</strong>), then press Enter".  The ouput of the command is supposed to be "ls: foo: No such file or directory".  Output will often be truncated and this will be indicated using three horizontal or vertical dots.
+</div>
+<br>
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex">Background Questions</td>
+  </tr>
+  <tr>
+    <td>Before proceeding with the exercises, make sure you can answer the following questions related to the background reading.</td>
+  </tr>
+  <tr>
+    <td><span class="class2"><a href="PairwiseAlignAnswers.html#bkgd1" target="_answers">Question:</a></span> What is the difference between the local and global alignment strategies?
+      <p><span class="class2"><a href="PairwiseAlignAnswers.html#bkgd2" target="_answers">Question:</a></span> Calculate the score of the DNA alignment given below using the following scoring rules" +1 for a match, -2 for a mismatch, -5 for opening a gap, and -0.5 for extending a gap.
+      <pre>
+      GATCGGAGATGATTACCAGTA--GCGATG
+      ||||||||||| |||||||||  ||||||
+      GATCGGAGATGCTTACCAGTACAGCGATG
+      </pre>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Sequences</td>
+  </tr>
+  <tr>
+    <td>In the following exercises, you will be doing both DNA and protein alignments.  Most of the command lines in the sections below pull the sequences directly from EMBOSS databases.  If, however, you prefer to retrieve the sequences as files (or you are using EMBOSS-GUI), here are the accession numbers for the sequences we will be using.  Note that you will need to retrieve the two genomic sequences using ENTREZ, as there is no genomic sequence database .
+      <table border=3 cellpadding=5>
+        <tr><th>Accession</th><th>EMBOSS USA</th><th>Description</th></tr>
+        <tr><td>AF129756</td><td>N/A</td><td>Homo sapiens MSH55 gene, partial cds; and CLIC1, DDAH, G6b, G6c, G5b, G6d, G6e, G6f, BAT5, G5b, CSK2B, BAT4, G4, Apo M, BAT3, BAT2, AIF-1, 1C7, LST-1, LTB, TNF, and LTA genes, complete cds</td></tr>
+        <tr><td>AP000504</td><td>nt:AP000504</td><td>Homo sapiens genomic DNA, chromosome 6p21.3, HLA Class I region, section 3/20</td></tr>
+        <tr><td>P00748</td><td>sp:P00748</td><td>Human coagulation factor XII precursor protein</td></tr>
+        <tr><td>P00750</td><td>sp:P00750</td><td>Human tissue-type plasminogen activator precursor protein</td></tr>
+        <tr><td>NM_003140</td><td>rrefseq:NM_003140</td><td>Human sex-determining region of Chr Y (Sry), mRNA</td></tr>
+        <tr><td>NM_011564</td><td>rrefseq:NM_011564</td><td>Mouse sex-determining region of Chr Y (Sry), mRNA</td></tr>
+        <tr><td>NP_003131</td><td>nr:NP_003131</td><td>Human sex-determining region Y protein</td></tr>
+        <tr><td>Q05738</td><td>nr:Q05738</td><td>Mouse sex-determining region Y protein</td></tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Dot-Matrix Representations of Pairwise Alignments</td>
+  </tr>
+  <tr>
+    <td>A dot-matrix representation, or dotplot, is a graphical representation of the regions of similarity between two sequences.  Dotplots can be particularly useful in revealing complex relationships involving multiple regions of local similarity.  The basic idea is to represent the sequences as the axes of a two-dimensional graph and then plot points of correspondence within the interior.  A dot within the interior indicates that, in some small window, the similarity between the sequences is above some cutoff.  Where extended stretches of similarity exist, the dots will merge to form diagonal lines.  Examining the relative positions of the diagonals can highlight the modular structure of proteins.  We will see an example of this in this section.  While more sophisticated tools exist for finding regions of local alignment (see below), dot-matrix representations and the tools that produce them remain popular and useful.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/dotpath.html" target="emboss-apps"><strong>dotpath</strong></a> program to generate a dotplot of large DNA sequences.</td>
+  </tr>
+  <tr>
+    <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/dotpath.html" target="emboss-apps"><strong>dotpath</strong></a> finds all matches of size <strong>-wordsize</strong> or greater between two sequences.  It then reduces the matches found to the minimal set of long matches that do not overlap.  This is a way of finding the (nearly) optimal path aligning two sequences.  It is not the true optimal path as produced by the algorithms used in <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/water.html" target="emboss-apps"><strong>water</strong></a> or <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/needle.html" target="emboss-apps"><strong>needle</strong></a> (which we will be using in the next section), but for very closely related sequences it will produce the same result and will work well with very long sequences.  If you wish to compare the path found by <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/dotpath.html" target="emboss-apps"><strong>dotpath</strong></a> to the set of all matches found, then the <strong>-overlaps</strong> command-line option will show all matches in red except for the matches in the minimal path which are shown in black, as normal.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">dotpath -asequence <span class="arg">AF129756.gb</span> -bsequence <span class="arg">AP000504.gb</span> -wordsize 20 -overlaps -graph x11 [Enter]</span></span>
+      <p>This command will open an X Window containing a dotplot of the two sequences.  The image should look like this:<br><img src="images/dotpath.jpg">
+      <p>This shows that the two sequences have a long stretch of similarity, plus many short repeats throughout.
+      <p><span class="class2"><a href="PairwiseAlignAnswers.html#dot1" target="_answers">Question:</a></span> What happens if you decrease the wordsize to 10?
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/dotmatcher.html" target="emboss-apps"><strong>dotmatcher</strong></a> program to generate a dotplot of protein sequences.</td>
+  </tr>
+  <tr>
+    <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/dotmatcher.html" target="emboss-apps"><strong>dotmatcher</strong></a> uses a threshold to define whether a match is plotted (calculated from the substitution matrix).  A window of specified length is moved up all possible diagonals and a score is calculated within each window for each position along the diagonals.  The score is the sum of the comparisons of the two sequences using the given similarity matrix along the window. If the score is above the threshold, then a line is plotted on the image over the position of the window.  We will compare the human tissue plasminogen activator and coagulation factor XII proteins.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">dotmatcher -asequence sp:P00748 -bsequence sp:P00750 -graph x11 [Enter]</span></span>
+      <p>This command will open an X Window containing a dotplot of the two sequences.  The image should look like this:<br><img src="images/dotmatcher.jpg">
+      <p>Examine the dotplot carefully.
+      <p><span class="class2"><a href="PairwiseAlignAnswers.html#dot2" target="_answers">Question:</a></span> How many domains are shared between the two proteins?
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="ex">Optimal Alignments of DNA Sequences</td>
+  </tr>
+  <tr>
+    <td>We are going to perform both global and local pairwise alignments of the human and mouse SRY mRNA sequences.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/needle.html" target="emboss-apps"><strong>needle</strong></a> program to perform a global alignment.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">needle -asequence rrefseq:NM_003140 -bsequence rrefseq:NM_011564 -gapopen 10 -gapextend 0.5 -outfile <span class="arg">SRYrna.needle</span> [Enter]</span></span>
+      <p> Examine the contents of the output file:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">SRYrna.needle</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">########################################
+# Program:  needle
+# Rundate:  Fri Sep 03 10:03:30 2004
+# Align_format: srspair
+# Report_file: SRYrna.needle
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NM_003140
+# 2: NM_011564
+# Matrix: EDNAFULL
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 1581
+# Identity:     390/1581 (24.7%)
+# Similarity:   390/1581 (24.7%)
+# Gaps:        1077/1581 (68.1%)
+# Score: 1071.0
+# 
+#
+#=======================================
+
+NM_003140          1 gttgagggggtgttgagggcggagaaatgcaagtttcattacaaaagtta     50
+                                                                       
+NM_011564          1                                                         0
+
+NM_003140         51 acgtaacaaagaatctggtagaagtgagttttggatagtaaaataagttt    100
+                                                                       
+NM_011564          1                                                         0
+
+NM_003140        101 cgaactctggcacctttcaattttgtcgcactctccttgtttttgacaat    150
+                                                                       
+NM_011564          1                                                         0
+
+NM_003140        151 gcaatcatatgcttctgctatgttaagcgtattcaacagcgatgattaca    200
+                                                                       
+NM_011564          1                                                         0
+
+NM_003140        201 gtccagctgtgcaagagaatattcccgctctccggagaagctcttccttc    250
+                                                                       
+NM_011564          1                                                         0
+
+NM_003140        251 ctttgcactgaaagctgtaactctaagtatcagtgtgaaacgggagaaaa    300
+                                                 ||            ||||    
+NM_011564          1                             at------------ggag----      6
+
+NM_003140        301 cagtaaaggcaacgtccaggatagagtgaagcgacccatgaacgcattca    350
+                            |||.|.|||            |||||.||||||||.|||||.|
+NM_011564          7 -------ggccatgtc------------aagcgccccatgaatgcattta     37
+
+NM_003140        351 tcgtgtggtctcgcgatcagaggcgcaagatggctctag-agaatcccag    399
+                     |.||||||||.||.|.|.||||||.||||.|||| |.|| ||||||||||
+NM_011564         38 tggtgtggtcccgtggtgagaggcacaagttggc-ccagcagaatcccag     86
+
+NM_003140        400 aatgcgaaactcagagatcagcaagcagctgggataccagtggaaaatgc    449
+                     .||||.|||..||||||||||||||||||||||||.|..||||||||..|
+NM_011564         87 catgcaaaatacagagatcagcaagcagctgggatgcaggtggaaaagcc    136
+
+NM_003140        450 ttactgaagccgaaaaatggccattcttccaggaggcacagaaattacag    499
+                     ||||.||||||||||||.||||.||.||||||||||||||||.|||..||
+NM_011564        137 ttacagaagccgaaaaaaggccctttttccaggaggcacagagattgaag    186
+
+NM_003140        500 gccatgcacagagagaaatacccgaattataagtatcgacctcgtcggaa    549
+                     ..|.|.|||||||||||||||||.||.|||||.||||..||||.|||||.
+NM_011564        187 atcctacacagagagaaatacccaaactataaatatcagcctcatcggag    236
+
+NM_003140        550 ggcgaagatgctgccgaagaattgcagtttgcttcccgcagatcccgc--    597
+                     |||.||..||...|.||.||.|.|||.|||.|..||.||||.|.||.|  
+NM_011564        237 ggctaaagtgtcacagaggagtggcattttacagcctgcagttgcctcaa    286
+
+NM_003140        598 ---ttcggtac-----tctgcagcgaagtgcaactgga--caacaggttg    637
+                        ..|.||||     |||||     ||||..||.|||  |.|||   ||
+NM_011564        287 caaaactgtacaaccttctgc-----agtgggacaggaacccaca---tg    328
+
+NM_003140        638 --------tacagggatgactgtacgaaagc--cacac----actcaaga    673
+                             ||||||.|.|||||.|..|.|||  |||||    ||||.|.|
+NM_011564        329 ccatcacatacaggcaagactggagtagagctgcacacctgtactccaaa    378
+
+NM_003140        674 atggagcaccagcta---------------------------------gg    690
+                     |      ||||||.|                                 ||
+NM_011564        379 a------accagcaaagcttttattggcagcctgttgatatccccactgg    422
+
+NM_003140        691 ccacttaccgc-------ccatcaac-gcagc--cagc------------    718
+                     .|||.|.|.||       .||.||.| |||||  ||||            
+NM_011564        423 gcacctgcagcagcagcagcagcagcagcagcagcagcagttccataacc    472
+
+NM_003140        719 -tcacc-gcagcaacgg---------gaccgcta-cagccactggacaaa    756
+                      .|||| ||||||||.|         ||||.|.| ||||          |
+NM_011564        473 accaccagcagcaacagcagttctatgaccaccaccagc----------a    512
+
+NM_003140        757 gctgtaggacaatcgg--gtaacattggc--tacaaagacctacc-----    797
+                     ||.|.||.|..|.|.|  |.|.||...||  |.|.|.|||| |||     
+NM_011564        513 gcagcagcagcagcagcagcagcagcagcagttccatgacc-accaccag    561
+
+NM_003140        798 tagatgc-tcctttttacgataacttacagccctcactttcttatgttta    846
+                     .|||.|| .|..|||.|.||..||...||||                  |
+NM_011564        562 cagaagcagcagtttcatgaccaccaccagc------------------a    593
+
+NM_003140        847 gtttcaatattgttttcttttctctggctaataaaggccttattcatttc    896
+                     |   |||.|                 ||      ||          ||.|
+NM_011564        594 g---caaca-----------------gc------ag----------ttcc    607
+
+NM_003140        897 a                                                     897
+                     |                                                 
+NM_011564        608 atgaccaccaccaccaccaccaggagcagcagttccatgaccaccaccag    657
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564        658 cagcaacagcagttccatgaccaccagcagcagcagcagcagcagcagca    707
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564        708 gcagcagttccatgaccaccaccagcagaagcagcagttccatgaccacc    757
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564        758 accaccaccaacagcagcagcagttccatgaccaccagcagcagcagcag    807
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564        808 cagttccatgaccaccagcagcagcagcatcagttccatgaccaccccca    857
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564        858 gcagaagcagcagttccatgaccacccccagcagcaacagcagttccatg    907
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564        908 accaccaccaccagcagcagcagaagcagcagttccatgaccaccaccag    957
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564        958 cagaagcagcagttccatgaccaccaccagcagaagcagcagttccatga   1007
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564       1008 ccaccaccagcagcaacagcagttccatgaccaccaccagcagcagcagc   1057
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564       1058 agcagcagcagcagcagcagcagcagttccacgaccagcagcttacctac   1107
+
+NM_003140        898                                                       897
+                                                                       
+NM_011564       1108 ttactaacagctgacatcactggtgagcatacaccataccaggagcacct   1157
+
+NM_003140        898                                    897
+                                                    
+NM_011564       1158 cagcacagccctgtggttggcagtctcatga   1188
+
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+      <span class="class2"><a href="PairwiseAlignAnswers.html#dna1" target="_answers">Question:</a></span> What is the effect of increasing the gap penalty parameters to "-gapopen 20 -gapextend 2"?
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/water.html" target="emboss-apps"><strong>water</strong></a> program to perform a local alignment.</td>
+  </tr>
+  <tr>
+    <td>
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">water -asequence rrefseq:NM_003140 -bsequence rrefseq:NM_011564 -gapopen 10 -gapextend 0.5 -outfile <span class="arg">SRYrna.water</span> [Enter]</span></span>
+      <p> Examine the contents of the output file:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">SRYrna.water</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">########################################
+# Program:  water
+# Rundate:  Fri Sep 03 10:03:47 2004
+# Align_format: srspair
+# Report_file: SRYrna.water
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NM_003140
+# 2: NM_011564
+# Matrix: EDNAFULL
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 659
+# Identity:     383/659 (58.1%)
+# Similarity:   383/659 (58.1%)
+# Gaps:         160/659 (24.3%)
+# Score: 1095.5
+# 
+#
+#=======================================
+
+NM_003140        293 ggagaaaacagtaaaggcaacgtccaggatagagtgaagcgacccatgaa    342
+                     ||||           |||.|.|||            |||||.||||||||
+NM_011564          3 ggag-----------ggccatgtc------------aagcgccccatgaa     29
+
+NM_003140        343 cgcattcatcgtgtggtctcgcgatcagaggcgcaagatggctctag-ag    391
+                     .|||||.||.||||||||.||.|.|.||||||.||||.|||| |.|| ||
+NM_011564         30 tgcatttatggtgtggtcccgtggtgagaggcacaagttggc-ccagcag     78
+
+NM_003140        392 aatcccagaatgcgaaactcagagatcagcaagcagctgggataccagtg    441
+                     ||||||||.||||.|||..||||||||||||||||||||||||.|..|||
+NM_011564         79 aatcccagcatgcaaaatacagagatcagcaagcagctgggatgcaggtg    128
+
+NM_003140        442 gaaaatgcttactgaagccgaaaaatggccattcttccaggaggcacaga    491
+                     |||||..|||||.||||||||||||.||||.||.||||||||||||||||
+NM_011564        129 gaaaagccttacagaagccgaaaaaaggccctttttccaggaggcacaga    178
+
+NM_003140        492 aattacaggccatgcacagagagaaatacccgaattataagtatcgacct    541
+                     .|||..||..|.|.|||||||||||||||||.||.|||||.||||..|||
+NM_011564        179 gattgaagatcctacacagagagaaatacccaaactataaatatcagcct    228
+
+NM_003140        542 cgtcggaaggcgaagatgctgccgaagaattgcagtttgcttcccgcaga    591
+                     |.|||||.|||.||..||...|.||.||.|.|||.|||.|..||.||||.
+NM_011564        229 catcggagggctaaagtgtcacagaggagtggcattttacagcctgcagt    278
+
+NM_003140        592 tcccgc-----ttcggtac-----tctgcagcgaagtgcaactgga--ca    629
+                     |.||.|     ..|.||||     |||||     ||||..||.|||  |.
+NM_011564        279 tgcctcaacaaaactgtacaaccttctgc-----agtgggacaggaaccc    323
+
+NM_003140        630 acaggttg--------tacagggatgactgtacgaaagc--cacac----    665
+                     |||   ||        ||||||.|.|||||.|..|.|||  |||||    
+NM_011564        324 aca---tgccatcacatacaggcaagactggagtagagctgcacacctgt    370
+
+NM_003140        666 actcaagaatggagcaccagcta---------------------------    688
+                     ||||.|.||      ||||||.|                           
+NM_011564        371 actccaaaa------accagcaaagcttttattggcagcctgttgatatc    414
+
+NM_003140        689 ------ggccacttaccgc-------ccatcaac-gcagc--cagc----    718
+                           ||.|||.|.|.||       .||.||.| |||||  ||||    
+NM_011564        415 cccactgggcacctgcagcagcagcagcagcagcagcagcagcagcagtt    464
+
+NM_003140        719 ---------tcacc-gcagcaacgg---------gaccgcta-cagccac    748
+                              .|||| ||||||||.|         ||||.|.| ||||   
+NM_011564        465 ccataaccaccaccagcagcaacagcagttctatgaccaccaccagc---    511
+
+NM_003140        749 tggacaaagctgtaggacaatcgg--gtaacattggc--tacaaagacct    794
+                            |||.|.||.|..|.|.|  |.|.||...||  |.|.|.|||| 
+NM_011564        512 -------agcagcagcagcagcagcagcagcagcagcagttccatgacc-    553
+
+NM_003140        795 acc-----tagatgctccttttt----acgataacttacagc--cctcac    833
+                     |||     .|||.||..|..|||    ||.|..||...||||  |..||.
+NM_011564        554 accaccagcagaagcagcagtttcatgaccaccaccagcagcaacagcag    603
+
+NM_003140        834 tttcttatg    842
+                     ||.|  |||
+NM_011564        604 ttcc--atg    610
+
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+     <span class="class2"><a href="PairwiseAlignAnswers.html#dna2" target="_answers">Question:</a></span> What happens to the alignment statistics (%Identity, %Similarity, and Score) when you increase water's gap extension score to "1.0"? 
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="ex">Optimal Alignments of Protein Sequences</td>
+  </tr>
+  <tr>
+    <td>We are going to perform both global and local pairwise alignments of the human and mouse SRY protein sequence.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/needle.html" target="emboss-apps"><strong>needle</strong></a> program to perform a global alignment.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">needle -asequence nr:NP_003131 -bsequence nr:Q05738 -gapopen 10 -gapextend 0.5 -outfile <span class="arg">SRYprot.needle</span> [Enter]</span></span>
+      <p> Examine the contents of the output file:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">SRYprot.needle</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">########################################
+# Program:  needle
+# Rundate:  Fri Sep 03 10:06:38 2004
+# Align_format: srspair
+# Report_file: SRYprot.needle
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NP_003131.1
+# 2: SRY_MOUSE
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 452
+# Identity:      74/452 (16.4%)
+# Similarity:   103/452 (22.8%)
+# Gaps:         305/452 (67.5%)
+# Score: 353.0
+# 
+#
+#=======================================
+
+NP_003131.1        1 MQSYASAMLSVFNSDDYSPAVQENIPALRRSSSFLCTESCNSKYQCETGE     50
+                                                                       
+SRY_MOUSE          1                                                         0
+
+NP_003131.1       51 NSKGNVQDRVKRPMNAFIVWSRDQRRKMALENPRMRNSEISKQLGYQWKM    100
+                          ::..||||||||:||||.:|.|:|.:||.|:|:|||||||.:||.
+SRY_MOUSE          1      MEGHVKRPMNAFMVWSRGERHKLAQQNPSMQNTEISKQLGCRWKS     45
+
+NP_003131.1      101 LTEAEKWPFFQEAQKLQAMHREKYPNYKYRPRRKAKMLPKNCSLLPADPA    150
+                     ||||||.|||||||:|:.:||||||||||:|.|:||:..::..|.||..:
+SRY_MOUSE         46 LTEAEKRPFFQEAQRLKILHREKYPNYKYQPHRRAKVSQRSGILQPAVAS     95
+
+NP_003131.1      151 SVLCSEVQLDNR----LYRDDCTKATHSRMEHQ-----------LGHLPP    185
+                     :.|.:.:|.|..    .||.|.::|.|...::|           .|||. 
+SRY_MOUSE         96 TKLYNLLQWDRNPHAITYRQDWSRAAHLYSKNQQSFYWQPVDIPTGHLQ-    144
+
+NP_003131.1      186 INAASSPQQRDRYSHWTKL                                   204
+                      ......||:..::|..:.                               
+SRY_MOUSE        145 -QQQQQQQQQQFHNHHQQQQQFYDHHQQQQQQQQQQQQFHDHHQQKQQFH    193
+
+NP_003131.1      205                                                       204
+                                                                       
+SRY_MOUSE        194 DHHQQQQQFHDHHHHHQEQQFHDHHQQQQQFHDHQQQQQQQQQQQFHDHH    243
+
+NP_003131.1      205                                                       204
+                                                                       
+SRY_MOUSE        244 QQKQQFHDHHHHQQQQQFHDHQQQQQQFHDHQQQQHQFHDHPQQKQQFHD    293
+
+NP_003131.1      205                                                       204
+                                                                       
+SRY_MOUSE        294 HPQQQQQFHDHHHQQQQKQQFHDHHQQKQQFHDHHQQKQQFHDHHQQQQQ    343
+
+NP_003131.1      205                                                       204
+                                                                       
+SRY_MOUSE        344 FHDHHQQQQQQQQQQQQQFHDQQLTYLLTADITGEHTPYQEHLSTALWLA    393
+
+NP_003131.1      205       204
+                       
+SRY_MOUSE        394 VS    395
+
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+     <span class="class2"><a href="PairwiseAlignAnswers.html#prot1" target="_answers">Question:</a></span> What is the default substitution matrix used by needle when aligning protein sequences?
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/water.html" target="emboss-apps"><strong>water</strong></a> program to perform a local alignment.</td>
+  </tr>
+  <tr>
+    <td>
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">water -asequence nr:NP_003131 -bsequence nr:Q05738 -gapopen 10 -gapextend 0.5 -outfile <span class="arg">SRYprot.water</span> [Enter]</span></span>
+      <p> Examine the contents of the output file:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">SRYprot.water</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">########################################
+# Program:  water
+# Rundate:  Fri Sep 03 10:06:45 2004
+# Align_format: srspair
+# Report_file: SRYprot.water
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NP_003131.1
+# 2: SRY_MOUSE
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 160
+# Identity:      74/160 (46.2%)
+# Similarity:   102/160 (63.8%)
+# Gaps:          17/160 (10.6%)
+# Score: 357.0
+# 
+#
+#=======================================
+
+NP_003131.1       56 VQDRVKRPMNAFIVWSRDQRRKMALENPRMRNSEISKQLGYQWKMLTEAE    105
+                     ::..||||||||:||||.:|.|:|.:||.|:|:|||||||.:||.|||||
+SRY_MOUSE          1 MEGHVKRPMNAFMVWSRGERHKLAQQNPSMQNTEISKQLGCRWKSLTEAE     50
+
+NP_003131.1      106 KWPFFQEAQKLQAMHREKYPNYKYRPRRKAKMLPKNCSLLPADPASVLCS    155
+                     |.|||||||:|:.:||||||||||:|.|:||:..::..|.||..::.|.:
+SRY_MOUSE         51 KRPFFQEAQRLKILHREKYPNYKYQPHRRAKVSQRSGILQPAVASTKLYN    100
+
+NP_003131.1      156 EVQLDNR----LYRDDCTKATHSRMEHQ-----------LGHLPPINAAS    190
+                     .:|.|..    .||.|.::|.|...::|           .|||.  ....
+SRY_MOUSE        101 LLQWDRNPHAITYRQDWSRAAHLYSKNQQSFYWQPVDIPTGHLQ--QQQQ    148
+
+NP_003131.1      191 SPQQRDRYSH    200
+                     ..||:..::|
+SRY_MOUSE        149 QQQQQQFHNH    158
+
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+      <span class="class2"><a href="PairwiseAlignAnswers.html#prot2a" target="_answers">Question:</a></span> What is the effect of changing the substitution matrix used by water to EBLOSUM85?
+      <p><span class="class2"><a href="PairwiseAlignAnswers.html#prot2b" target="_answers">Question:</a></span> What is the effect of changing the substitution matrix used by water to EBLOSUM40?
+    </td>
+  </tr>
+</table>
+
+<hr>
+<div class="tinytext">Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>(smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu)</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 16:28:02 MST 2004 <!-- hhmts end -->
+<!-- $Id: PairwiseAlign.html,v 1.3 2004/11/11 23:46:25 smathias Exp $ -->
+</span>
+
+</body>
+</html>

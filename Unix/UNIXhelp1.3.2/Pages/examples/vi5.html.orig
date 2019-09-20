@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- examples/vi5.html -->
+
+<HEAD>
+<TITLE>Examples of setting vi options temporarily</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of setting vi options temporarily</H1>
+
+<P>To set the wrapmargin:</P>
+
+<PRE WIDTH=80>   <STRONG>:set wm=5</STRONG>
+</PRE>
+
+<P>This sets the wrapmargin to five characters. In insert
+mode, text will automatically wrap to a new line when the
+cursor is five characters from the right edge of the
+screen.</P>
+
+<HR>
+
+<P>To display line numbers:</P>
+
+<PRE WIDTH=80>   <STRONG>:set number</STRONG>
+</PRE>
+
+<P>This causes <STRONG>vi</STRONG> to display a line number (starting at 1)
+at the start of every 
+<A HREF="../didyou/vi.1.html">line of text</A>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- scrpt/scrpt2.4.1.2.html -->
+
+<HEAD>
+<TITLE>Example of using an if construct</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Example of using an if construct</H1>
+
+<P>To carry out a conditional action:</P>
+
+<PRE WIDTH=80>   if who | grep -s keith &gt; /dev/null
+   then
+   echo keith is logged in
+   else
+   echo keith not available
+   fi
+</PRE>
+
+<P>This lists <A HREF="../basics/basic1.3.4.html">who</A>
+is currently logged on to the sytem and
+<A HREF="../commanz/cmd4.html">pipes</A> the output through 
+<STRONG><A HREF="../utilities2/grep.html">grep</A></STRONG>
+to search for the username <SAMP>keith</SAMP>.</P>
+
+<P>The <SAMP>-s</SAMP> option causes grep to work silently and any error
+messages are directed to the file <SAMP>/dev/null</SAMP> instead of
+the <A HREF="../commanz/cmd3.html">standard output</A>.</P>
+
+<P>If the command is succesful i.e.  the username keith is
+found in the list of users currently logged in then the
+message</P>
+
+<PRE WIDTH=80>   keith is logged on
+</PRE>
+
+<P>is displayed, otherwise the second message is displayed.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

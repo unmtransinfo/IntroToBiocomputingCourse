@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- emacs/ue_def_region.html -->
+
+<HEAD>
+<TITLE>To define the 'region'</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>To define the 'region'</H1>
+
+<P><STRONG>1.</STRONG> Move the cursor to the start of the text
+block you want to define.</P>
+
+<P><STRONG>2.</STRONG> Type M-space (the META character followed by
+a space).</P>
+
+<P>This sets a 'mark' at the start of the 'region'.</P>
+
+<P><STRONG>3.</STRONG> Move the cursor to the end of the text block
+you want to define as the 'region'.</P>
+
+<P>This sets the 'point' at the end of the 'region'.
+You do not have to type anything to set this
+'point', the 'point' is the location of the cursor.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

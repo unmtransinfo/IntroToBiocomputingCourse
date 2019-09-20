@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/3.6.2.1a.html -->
+
+<HEAD>
+<TITLE>Examples of copying files between remote hosts</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of copying files between remote hosts</H1>
+
+<P>To copy a file from one remote host to another:</P>
+
+<PRE WIDTH=80>   <STRONG>rcp goya:tmp/vi.ref pollux:editors/vi.ref</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>vi.ref</SAMP> from your home directory
+on the host "goya" to the subdirectory <SAMP>editors</SAMP> in your
+home directory on the other remote host "pollux".</P>
+
+<HR>
+
+<P>To copy a file between one remote host on which
+you have a different username, and another remote host on
+which you have the same username as on the local host
+(the one you are giving the command from):</P>
+
+<PRE WIDTH=80>   <STRONG>rcp festival:README jamie@scorpio:README</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>README</SAMP> from the home directory
+of your account on the remote host "festival" to the home
+directory of  your account on the remote host "scorpio".
+On this host you have the username "jamie".</P>
+
+<HR>
+
+<P>To copy a file between remote hosts, on each of
+which you have a different username to that on the local
+host (the host you are giving the command from):</P>
+
+<PRE WIDTH=80>   <STRONG>rcp joe@ubik:News/funnies helper@pollux:new_jokes</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>funnies</SAMP> from the subdirectory
+<SAMP>News</SAMP> in your home directory on the host "ubik".
+On this host you have the username of "joe".</P>
+
+<P>The copy is placed in the file <SAMP>new_jokes</SAMP> in your
+home directory on the host "pollux". On this system
+you have the username of "helper".</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

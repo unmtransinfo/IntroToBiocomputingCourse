@@ -1,0 +1,911 @@
+<HTML>
+<HEAD>
+<TITLE>Docking</TITLE>
+<link href="http://hsc.unm.edu/_includes/hsc_font_style.css"
+  rel="stylesheet" type="text/css" media="screen" title="HSC" />
+</HEAD>
+
+<BODY lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section2>
+
+<CENTER><I>BIOMED 505 - Introduction to Biocomputing</I></CENTER>
+<HR>
+
+<P><b><i>Section II</i></b></p>
+
+<P><b>&nbsp;</b></p>
+
+<P><b>The Structure of Macromolecules: <I>Protein-Ligand
+Interactions and Molecular Docking</I> - Tutorial</B></p>
+
+<P>&nbsp;</p>
+
+<P><i>Andrei Leit&atilde;o, Dan C. Fara, Jeremy J. Yang and Tudor
+I. Oprea</i></p>
+
+<P>&nbsp;</p>
+
+<P><u>Objective</u></p>
+
+<P>To learn how to
+use FRED and Autodock software for structure-based virtual screening (docking).<b
+></b></p>
+
+<P><b
+>1. Background -</b><b style='mso-bidi-font-weight:
+normal'> Nuclear
+receptors, hormones, cancer and inhibitors: the biological context of diseases</b></p>
+
+<P><b
+>&nbsp;</b></p>
+
+<P>Nuclear receptor
+is a family of proteins that, upon activation, stimulates transcription of DNA
+in the nucleus. It can be done in two main ways - see Figure 1:</p>
+
+<UL>
+<LI>directly
+(named genomic pathway): the hormone binds to the receptor (left part of the
+Figure 1) and this complex goes to the nucleus, binds to DNA and promotes the
+transcription;
+
+<LI>indirectly
+(also known as rapid response): the compound binds to a receptor at the
+membrane (right part), then second messengers are released and also influence
+the transcription, among other effects.
+</UL>
+
+<P>
+
+<IMG width=338 height=497 src="Docking_files/image002.gif"></p>
+
+<P><b
+>Figure 1</b>. Mechanisms of activation of
+nuclear receptor and promotion of transcription into the nucleus (taken from
+reference <a  href="Docking.htm#_edn1" name="_ednref1" title="">[1]</a>)</p>
+
+<P>&nbsp;</p>
+
+<P>Estradiol
+is a hormone that regulates many physiological functions by binding to some
+proteins called nuclear receptors. More specifically, it interacts with
+estrogen receptors subtypes alpha (ER&#945; or ERa, K<sub>i</sub> = 0.2 nM)<a
+ href="Docking.htm#_edn2" name="_ednref2" title="">[2]</a>
+and beta (ER&#946; or ERb, K<sub>i</sub> = 0.5 nM) and, as recently described, with
+GPR30 (a transmembrane receptor)<a  href="Docking.htm#_edn3"
+name="_ednref3" title="">[3]</a>.</p>
+
+<P>It
+is well-known the importance of ERa to the development of breast cancer. The
+growth of the cancer is related to the stimulus of the ERa by the estradiol or
+other agonists. It is estimated that 40,460 women and 450 men died of breast
+cancer in the USA in 2007.<a  href="Docking.htm#_edn4"
+name="_ednref4" title="">[4]</a> Among men, it is estimated that the prostate cancer had been the cause of death for 27,050 individuals in 2007 in the USA. This cancer is related to the androgen receptor (AR)<a  href="Docking.htm#_edn5" name="_ednref5" title="">[5]</a>, in
+which testosterone and dihydrotestosterone bind and stimulate the receptor (the
+second hormone is much more effective) - see Figure 2.</p>
+
+<P>&nbsp;</p> 
+<P>
+<!-- IMG width=552 height=240 src="Docking_files/image004.jpg" -->
+<IMG width=552 src="Docking_files/image003.jpg">
+</P>
+
+<P>&nbsp;</p> 
+<P><b
+>Figure 2</b>. Part of the biochemical
+cascade of metabolism of testosterone (taken from reference <a
+ href="Docking.htm#_edn6" name="_ednref6" title="">[6]</a>)</p>
+
+<P>&nbsp;</p>
+
+<P>Estrogen
+receptor is composed by two subunities (dimmer) in which the hormone estradiol
+binds and activates the co-complex, with the binding of a polypeptide sequence
+- see Figure 3. This polypeptide sequence that binds to the active form of the
+receptor is important for the next step of the DNA transcription. Estradiol
+binds to the ERa in a pocket composed by hydrophobic residues, which interact
+in the center of the scaffold (not shown in Figure 3 to help visualization),
+and also forms hydrogen bonds with glutamate 353 (Glu353), arginine 394
+(Arg394) and histidine 524 (His524), besides one water molecule (red sphere in
+Figure 3). Inhibitors, such as 4-hydroxytamoxifen and raloxifene, bind into
+this cavity, but also interact with aspartate 351 and displace the polypeptide
+sequence as shown in Figure 3 for estradiol-ERa.</p>
+
+<br clear=all> 
+
+<P>&nbsp;</p>
+
+<P>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0>
+ <tr>
+  <td width=561 colspan=2 valign=top style='width:420.7pt;border:none;
+  border-top:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <P>Estradiol - ERa</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=267 valign=top>
+  <P>whole
+  structure</p>
+  </td>
+  <td width=294 valign=top>
+  <P>close up of
+  the pocket &amp; interactions</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=267 valign=top style='width:200.15pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <P>
+   
+  <!-- IMG width=200 height=181 src="Docking_files/image006.jpg" -->
+  <IMG width=200 height=181 src="Docking_files/image005.png">
+</P>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <P>
+<!-- IMG width=265 height=157 src="Docking_files/image008.jpg" -->
+<IMG width=265 height=157 src="Docking_files/image007.jpg">
+</P>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=2 valign=top style='width:420.7pt;border:none;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <P>4OHtamoxifen -
+  ERRg</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=267 valign=top>
+  <P>structure of
+  the target with ligand</p>
+  </td>
+  <td width=294 valign=top>
+  <P>hydrophilic
+  interactions</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=267 valign=top style='width:200.15pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <P>
+  <!-- IMG width=192 height=180 src="Docking_files/image010.jpg" -->
+  <IMG width=192 height=180 src="Docking_files/image009.png">
+</P>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <P>
+  <!-- IMG width=207 height=188 src="Docking_files/image012.jpg" -->
+  <IMG width=207 height=188 src="Docking_files/image011.jpg">
+</P>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=2 valign=top style='width:420.7pt;border:none;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <P>Dihydrotestosterone
+  - AR</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=267 valign=top>
+  <P>structure of
+  the target with ligand</p>
+  </td>
+  <td width=294 valign=top>
+  <P>hydrophilic
+  interactions</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=267 valign=top style='width:200.15pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <P>
+  <!-- IMG width=194 height=143 src="Docking_files/image014.jpg" -->
+  <IMG width=194 height=143 src="Docking_files/image013.png">
+</P>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <P>
+  <!-- IMG width=264 height=137 src="Docking_files/image016.jpg" -->
+  <IMG width=264 height=137 src="Docking_files/image015.png">
+</P>
+  </td>
+ </tr>
+</table>
+
+<P>&nbsp;</p>
+
+<P><b
+>Figure 3</b>. Interaction patterns of
+nuclear receptors and ligands</p>
+
+<P>Dashed lines represent proposed hydrogen bond interactions with the amino acids. Ligands and important amino acids in the pocket are shown as sticks, colored by atom type. Cartoon representations of the protein were colored based on the structure: helices (pink), loops (light green), &#946;-sheets (yellow). Polypeptide sequence is shown as lines.</p>
+
+<P>&nbsp;</p>
+
+<P>Other compounds
+can also interact with these targets, and they can be agonists, partial
+agonists, inverse agonists and antagonists. These molecules modulate the
+outcome of the nuclear receptor response.</p>
+
+<P>New
+selective inhibitors are needed to interfere with this unbalanced biological
+system and, consequently, to stop the cancer growth. Finding active compounds
+is not a difficult task, but the problem arises when it is necessary to
+identify selective compounds<a  href="Docking.htm#_edn7"
+name="_ednref7" title="">[7]</a>,
+because some of these nuclear receptors have similar structure, i.e. when the
+compound has high affinity to one receptor, it can also bind to others (the
+lack of selectivity can be related to the some of the side effects of these
+compounds). For example, the drug 4-hydroxytamoxifen (also written as
+4-OHtamoxifen, OH-tamoxifen) is used to treat breast cancer, but administered
+as a pro-drug, tamoxifen, binds to three other different nuclear receptors: ERa
+and ERb (K<sub>i</sub> around 0.5 nM) and also estrogen-related receptor gamma
+(ERRg) with high affinity (EC<sub>50</sub> = 15 nM). The physiological function
+of ERRg is not well established, but it is surprisingly that this receptor does
+not bind estradiol with high affinity, although it is very similar to ERa, with
+the same pattern of binding to 4-hydroxytamoxifen - see Figure 3.</p>
+
+<P>The
+newly potentially active and selective molecules are studied based on the way
+they interact with the biological target<a 
+href="Docking.htm#_edn8" name="_ednref8" title="">[8]</a>.
+For example, estradiol establishes hydrogen bonds with histidine, glutamate and
+arginine, but there are also lypophilic interactions with many residues in the
+middle of the core. 4-hydroxytamoxifen also establishes hydrogen bonds to
+histidine and glutamate for both ERa and ERRg, but instead of interacting with
+histidine at the bottom of the pocket, it forms hydrogen bond with aspartate at
+the top - see Figure 3. Dihydrotestosterone is not an excellent binder to ERa
+(K<sub>i</sub> = 69.9 nM) because it lacks a hydroxy group in one end
+- see Figure 2. In contrast, it is the hormone that binds with high affinity to the androgen
+receptor (K<sub>i</sub> = 0.3 nM), even better than testosterone (K<sub>i</sub>
+= 1.4 nM). Non-steroidal compounds also bind to this receptor, like metribolone
+(also known as R1881), which is a potent agonist molecule.<a style='mso-endnote-id:
+edn9' href="Docking.htm#_edn9" name="_ednref9" title="">[9]</a></p>
+
+<P>Those
+studies are primarily done by using many different kinds of computer
+simulations that comprise, for example, the representation of the target-ligand,
+the three-dimensional simulation of the receptor and its interactions with the
+ligands (Figure 3) and also the study and selection of new compounds based on
+similarities with known binders (this field of work is known as
+cheminformatics). All these topics will be further discussed.</p>
+
+<P>&nbsp;</p>
+
+<P><b
+>2. Molecular docking using FRED and
+Autodock -
+tutorial</b></p>
+
+<P>&nbsp;</p>
+
+<P>Docking is a
+tool commonly used to discover new chemicals based on the interaction between
+the ligand and the biological target in the three-dimensional (3D) space. It
+comes from the knowledge that there are somewhat complementary interactions
+between the ligand and the biological target. Better ligands have lower
+(negative) interaction energy and it can be captured by what is known as
+scoring function. However, the scoring functions give only a rough idea about
+the ligand target system.</p>
+
+<P>For
+instance, two molecules are similar to each other (A and B) but A interacts
+with the protein (C) way better than B - see Figure 4. A good docking program
+can capture this information accurately. To accomplish that, the program must
+change the position of the ligand to fit it into the pocket of the
+protein - see Figure 4, part 1 - and to detect the correct ligand-protein interactions, while
+it discards bad solutions - see Figure 4, part 2.</p>
+
+<P>&nbsp;</p>
+
+<P>
+<IMG width=585 height=322 src="Docking_files/image018.gif">
+</P>
+
+<P>&nbsp;</p>
+
+<P><b
+>Figure 4</b>. Interaction profiles for
+molecules A and B and the docking protocol</p>
+
+<P>&nbsp;</p>
+
+<P>The
+main idea of ligand-protein interaction comes from the lock-and-key model,
+where both ligand and protein are rigid bodies, as shown in Figure 4. In
+reality, the ligand and protein are not rigid, one or even both of them being flexible
+during the process of recognition. There are many different docking programs that
+try to solve this apparent simple question (in fact, none of them can be used
+to all systems). </p>
+
+<P>Here
+you will use two different programs, FRED and Autodock, to dock small molecules
+from a 3D database (199 compounds) into three biological targets: estrogen
+receptor alpha (ERa), estrogen-related receptor gamma (ERRg) and androgen
+receptor (AR). The outcome of each ligand-receptor interaction will be
+automatically analyzed by a scoring function which, in turn, ranks the
+compounds.</p>
+
+<P>&nbsp;</p>
+
+<P><b
+>2.1 FRED</b></p>
+
+<P>&nbsp;</p>
+
+<P>This program
+uses the lock-and-key idea presented above. A bunch of conformations from each
+ligand interacts with the receptor and the best solution is stored to be ranked
+at the end of the process. Programs like this one give results much faster than
+others that deal with the flexibility of the compound.</p>
+
+<ul  type=disc>
+ <li class=MsoNormal>Connect
+     to hatch.health.unm.edu, your account</li>
+ <li class=MsoNormal>Type
+     <TT><B>cp -r /home/app/tutorial-docking ~</B></TT>
+     </li>
+ <li class=MsoNormal>Go
+     to the tutorial directory (type <TT><B>cd ~/tutorial_docking</B></TT> on the
+shell) and see what is in there (use the list command: <TT><B
+>ls</B></TT>). The following three directories are listed: (i) <i>compounds</i>, (ii) <i>Autodock</i>, and (iii) <i>fred</i>. The first one contains the compound database, with the 3D structures generated and a set of conformations for each one. Open <i>fred</i>
+     directory (<TT><B>cd fred</B></TT>) and note that each one of the three
+directories (ERa, ERRg and AR) contains the files needed to run the
+program. Go to ERa (type <TT><B>cd ERa</B></TT>) and list the files again
+(<TT><B>ls</B></TT>): 3ERT.oeb is the receptor already prepared;
+OHtamoxifen.mol2 is the ligand; setup.txt has all the information
+necessary to run the program; and the directory result is empty (if you
+want, you can check it before running FRED). Now let us run the program:
+<TT><B>fred -param setup.txt </B></TT>It takes time to dock the entire database (around 15 minutes) because this
+     kind of calculation is much more complex - see Figure 4 with the
+     procedure. </li>
+ <li class=MsoNormal>Go
+     to the directory result (<TT><B>cd results</B></TT>) to check it
+(<TT><B>ls</B></TT>). Many files were created, but you will analyze the consensus_docked.mol2 (with the conformations of the compounds
+     docked into the site) and consensus_scores.txt (the ranking of the
+     compounds).</li>
+ <li class=MsoNormal>Open
+     the file to check the results: <TT><B>gedit consensus_scores.txt
+&amp;</B></TT>.  Try to find the position of the compounds that were added to the set (ohtamoxifen is the best ranked, estradiol - the 69<sup>th</sup>, while dihydrotestoterone
+     is the worst of them, as expected). The top 5 compounds will be analyzed
+     more deeply, but it can also be done to other compounds. </li>
+ <li class=MsoNormal>Close
+     the gedit window. </li>
+ <li class=MsoNormal>Open
+     a visualization program named VIDA to see how good the compounds fit the
+     pocket of the receptor: type <TT><B>vida</B></TT> on the shell. An
+     interface like the one shown in Figure 5a will open. The program has the
+     following layout (if the layout is different, Click on the button showed
+     by the red circle, Figure 5a):</li>
+
+<UL>
+<LI>the top part contains the main menu and many options to change the display (Figure 5a.)
+
+<LI>the left part harbors the ligand list and other information (two white windows)
+
+<LI>the main windows (middle black one) is where you visualize the compounds
+
+<LI>the right window has some visualization buttons
+</UL>
+
+ <li class=MsoNormal>Click
+     on 'Tools' and 'FRED view' on the menu (Figure 5a). The box
+     shows the options to fill in:</li>
+<UL>
+
+<LI>Protein: 3ERT.oeb (click in 'browse' and go one directory up.)
+
+<LI>Reference ligand: OHtamoxifen.mol2 (click in 'browse')
+
+<LI>Docking results: consensus_docked.mol2 (click in 'browse' and click on 'result'). The result will appear on the main window, loading the list of compounds docked (Figure 5b). Now it is time to see how good the results are.
+
+</UL>
+ <li class=MsoNormal>Hide
+     the hydrogens by clicking on the H symbol, highlighting the icon (skip
+     this step if hydrogens are not shown) - see Figure 5b. Look at
+     the main window with the structures. You are seeing two structures (green
+     is the tamoxifen from the X-ray, the template, and gray the docked one).
+     They are inside the ERa pocket, shown by the surface, and there are some
+     hydrogen bonds with amino acids, highlighted by the green dashed lines
+     .</li>
+ <li class=MsoNormal>Hide
+     the standard compound by clicking on the green balls in the left panel
+     . Now, only the docked compound (gray carbons) is shown. As can
+     be seen only a weaker hydrogen bond interaction is shown, because the
+     dashed yellow line is finer than the standard compound-ERa interactions. These
+     hydrogen bonds with arginine and glutamate are important for those
+     compounds, because it helps the stabilization of the co-complex. To rotate
+     the co-complex, drag the mouse with the left button pressed. There is no
+     hydrogen bond with histidine because of the lack of complementarities. Another
+     hydrogen bond, with aspartate 351, is not shown on the standard X-ray
+     structure (green) because of the distance between the amino group and the
+     side chain of the amino acid. In other X-rays this hydrogen bond is better
+     defined for antagonist compounds.</li>
+</ul>
+
+<P>&nbsp;</p>
+
+<P>You can also
+check other structures by clicking on the codes or in the green ball column -
+see Figure 5b. Remember to hide the latest compound opened before
+looking at the next one in order to facilitate the visualization (do not do
+that if you want to compare the structures).</p>
+
+<P>&nbsp;</p>
+
+<br clear=all>
+
+
+<P>(a)</p>
+
+<P>
+
+<!-- red arrows for Vida...
+<img width=295 height=173 src="Docking_files/image019.gif">
+-->
+
+<!-- IMG width=575 height=335 src="Docking_files/image021.jpg" -->
+<IMG width=800 src="Docking_files/image020.jpg">
+</P>
+
+<P>(b)</p>
+
+<P>
+
+<!-- red arrows for Vida...
+<img width=525 height=177 src="Docking_files/image022.gif">
+-->
+
+<!-- IMG width=575 height=349 src="Docking_files/image024.jpg" -->
+<IMG width=800 src="Docking_files/image023.jpg">
+</P>
+
+<P><b
+>Figure 5</b>. VIDA interface and docking
+results for ERa</p>
+
+<P>Figure 5b: Note that when you select a compound the structure of the ligand appears at the bottom left corner</p>
+
+
+<ul  type=disc>
+ <li class=MsoNormal>Go to the ERRg (<TT><B>cd ../../ERRg</B></TT>) and also AR directories and repeat the previous given steps.</li>
+ <li class=MsoNormal>Open
+     the results. </li>
+</ul>
+
+<P>Table 1 shows
+the top 5 compounds for those three results.</p>
+
+
+<P>Table 1. Ranking
+of the best 5 compounds for each target</p>
+
+<table MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=523
+ style='width:392.1pt;margin-left:4.8pt;border-collapse:collapse;border:none;
+ mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P><B>Name</B></P> </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext 2.25pt;mso-border-bottom-alt:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P><B>Consensus Score AR</B></P>
+  </td>
+  <td width=87 valign=bottom style='width:65.3pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P><B>Name</B></P>
+  </td>
+  <td width=86 valign=bottom style='width:64.75pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext 2.25pt;mso-border-bottom-alt:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P><B>Consensus Score ERa</B></P>
+  </td>
+  <td width=87 valign=bottom style='width:65.3pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P><B>Name</B></P>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P><B>Consensus Score ERRg</B></P>
+  </td>
+ </tr>
+ <tr>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;mso-border-top-alt:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>10314457</p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>7</p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-top-alt:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P>ohtamoxifen</p>
+  </td>
+  <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P>0</p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-top-alt:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P>10405011</p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;mso-border-top-alt:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>5</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;padding:
+  0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>10041071</p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>7</p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>11597178</p>
+  </td>
+  <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P>6</p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>10689508</p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P>14</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;padding:
+  0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>11722940</p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>7</p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>10500501</p>
+  </td>
+  <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P>7</p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>11597178</p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P>15</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;padding:
+  0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>10470789</p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>16</p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>11634313</p>
+  </td>
+  <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P>10</p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>ohtamoxifen</p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <P>18</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;border-bottom:
+  solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>10402442</p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-bottom:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt;height:
+  12.75pt'>
+  <P>21</p>
+  </td>
+  <td valign=bottom style='border:none;border-bottom:solid windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>11725333</p>
+  </td>
+  <td valign=bottom style='border:none;border-bottom:solid windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>16</p>
+  </td>
+  <td valign=bottom style='border:none;border-bottom:solid windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>10449190</p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;border-bottom:
+  solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <P>22</p>
+  </td>
+ </tr>
+</table>
+
+<P>&nbsp;</p>
+
+<P>Try to compare
+the best five ranked compounds with the standard ones in the study (Figure 6). Note
+that they interact similarly with the target because they share some similar
+features with the scaffold.</p>
+
+<P>&nbsp;</p>
+
+<table border=0 cellspacing=5 cellpadding=0>
+ <tr>
+  <td valign=top>
+  <P>4-hydroxytamoxifen</p>
+  </td>
+  <td valign=top>
+  <P>11597178</p>
+  </td>
+  <td valign=top>
+  <P>10500501</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top>
+  <P>
+  <!-- IMG width=169 height=179 src="Docking_files/image026.jpg" -->
+  <IMG width=200 src="Docking_files/image025.png">
+</P>
+  </td>
+  <td valign=top>
+  <P>
+  <!-- IMG width=172 height=179 src="Docking_files/image028.jpg" -->
+  <IMG width=200 src="Docking_files/image027.png">
+</P>
+  </td>
+  <td valign=top>
+  <P>
+  <!-- IMG width=185 height=180 src="Docking_files/image030.jpg" -->
+  <IMG width=200 src="Docking_files/image029.png">
+</P>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top>
+  <P>11634313</p>
+  </td>
+  <td valign=top>
+  <P>11725333</p>
+  </td>
+  <td valign=top>
+  <P>estradiol</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top>
+  <P>
+  <!-- IMG width=170 height=180 src="Docking_files/image032.jpg" -->
+  <IMG width=200 src="Docking_files/image031.png">
+</P>
+  </td>
+  <td valign=top>
+  <P>
+  <!-- IMG width=187 height=179 src="Docking_files/image034.jpg" -->
+  <IMG width=200 src="Docking_files/image033.png">
+</P>
+  </td>
+  <td valign=top>
+  <P>
+  <!-- IMG width=189 height=179 src="Docking_files/image036.jpg" -->
+  <IMG width=200 src="Docking_files/image035.png">
+</P>
+  </td>
+ </tr>
+</table>
+
+<P>&nbsp;</p>
+
+<P><b
+>Figure 6</b>. Comparison of the top 5 docked
+compounds and estradiol in ERa</p>
+
+<P>&nbsp;</p>
+
+<P>Parameters to use in VIDA after running the docking program for ERRg target:</p>
+
+<UL>
+<LI>Protein: 3ERT.oeb (click in 'browse' and go one directory up, Figure 5a)
+
+<LI>Reference ligand: ohtamoxifen.mol2 (click in 'browse')
+
+<LI>Docking results: consensus_docked.mol2 (click in 'browse' and click on 'result')
+
+</UL>
+<P>Note that the OHtamoxifen
+appears on the top 10 list. Find estradiol and dihydrotestosterone in
+consensus_scores.txt and observe that these compounds had bad results (at the
+end of the list).
+</P>
+
+
+<P>Parameters to use in VIDA after running the docking program for AR target:</p>
+
+<UL>
+<LI>Protein: *.oeb (click in 'browse' and go one directory up, Figure 2a.)
+
+<LI>Reference ligand: dihydrotestosterone.mol2 (click in 'browse')
+
+<LI>Docking results: consensus_docked.mol2 (click in 'browse' and click on 'result')
+</UL>
+
+<P>Check if the
+results are good or not. OHtamoxifen was at the end of the list. It is
+expected, once that it not AR binder. Now compare estradiol and
+dihydrotestosterone. Are they ranked well according to what you already now
+about these ligands? Try to figure out what is happening with estradiol and
+dihydrotestosterone in relation to AR binding.</p>
+
+<P>&nbsp;</p>
+
+<P><B>2.2 Autodock</b></p>
+
+<P>&nbsp;</p>
+
+<P>
+Autodock searches for ligand conformations while docking and hence is
+a flexible docking program.  While docking, Autodock allows flexibility
+at selected ligand and receptor rotatable bonds.  In general, therefore,
+Autodock is slower than FRED, which uses pre-computed ligand conformers.
+</P>
+
+<p>
+Autodock can be run via command line or a GUI Autodock Tools, part of
+MGL Tools (all free open source software from Scripps Research
+Institute).
+
+</P>
+
+<UL>
+<LI><A HREF="http://autodock.scripps.edu/">Autodock home page</A>
+<LI><A HREF="http://mgltools.scripps.edu/">MGL Tools home page</A>
+
+</UL>
+
+
+<P>
+Autodock and Autodock Tools (command "adt") are installed on hatch.
+To run adt remotely, the user must be logged in via "ssh -Y" and
+be running an X-server (on Windows, Cygwin should be installed).
+Otherwise, adt can be run by appointment in the Biocomputing lab.
+</P>
+
+<P>
+Students should begin by working through the 
+<A HREF="http://autodock.scripps.edu/faqs-help/tutorial">Autodock
+tutorials</A>.
+</P>
+
+</div>
+
+<br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<div  id=edn1>
+
+<P><a 
+href="Docking.htm#_ednref1" name="_edn1" title="">[1]</a> Norman, A. W.; Mizwicki, M. T.; Norman, D. P. G.; Steroid-Hormone Rapid Actions, Membrane Receptors and a Conformational Ensemble Model, <i>Nature Reviews Drug Discovery </i>, 2004, <i>3</i>, 27-41</p>
+
+</div>
+
+<div  id=edn2>
+
+<P><a  href="Docking.htm#_ednref2"
+name="_edn2" title="">[2]</a> K<sub>i</sub> and EC<sub>50</sub> data extracted from WOMBAT2006.2, Sunset Molecular Discovery LLC.</p>
+
+</div>
+
+<div  id=edn3>
+
+<P><a  href="Docking.htm#_ednref3"
+name="_edn3" title="">[3]</a> Bologa, C. G.; Revankar, C. M.; Young, S. M.; Edwards, B. S.; Arterburn, J. B.; Kiselyov, A. S.; Parker, M. A.; Tkachenko, S. E.; Savchuck, N. P.; Sklar, L.  A.; Oprea, T. I.; Prossnitz, E. R.; Virtual and Biomolecular Screening converge on a Selective Agonist for GPR30, <i>Nature
+Chemical Biology</i>, 2006, <i>2</i>, 207-212</p>
+
+</div>
+
+<div  id=edn4>
+
+<P><a  href="Docking.htm#_ednref4"
+name="_edn4" title="">[4]</a> http://www.cancer.org/downloads/STT/CAFF2007PWSecured.pdf</p> 
+</div>
+
+<div  id=edn5>
+
+<P><a  href="Docking.htm#_ednref5"
+name="_edn5" title="">[5]</a> Taplin, M.-E.; Drug Insight: Role of the Androgen Receptor in the Development and Progression of Prostate Cancer, <i>Nature Clinical Practice Oncology </i>, 2007, <i>4</i>, 236-244</p>
+
+</div>
+
+<div  id=edn6>
+
+<P><a  href="Docking.htm#_ednref6"
+name="_edn6" title="">[6]</a> Gao, W.; Bohl, C. E.; <st1:City w:st="on"><st1:place w:st="on">Dalton</st1:place></st1:City>, J. T.; Chemistry and Structural Biology of Androgen Receptor, <i>Chemical Reviews</i>, 2005, <i> 105</i>, 3352-3370</p>
+
+</div>
+
+<div  id=edn7>
+
+<P><a  href="Docking.htm#_ednref7"
+name="_edn7" title="">[7]</a> Blizzard, T. A.; Gude, C.; Chan, W.; Birzin, E. T.; Mojena, M.; Tudela, C.; Chen, F.; Knecht, K.; Su, Q.; Kraker, B.; Holmes, M. A.; Rohrera, S. P.; Hammond, M. L.; Bridged androstenediol analogs as ER-b selective SERMs, <i>Bioorganic &amp; Medicinal Chemistry Letters </i>, 2007, <i>17</i>, 2944-2948</p> 
+</div>
+
+<div  id=edn8>
+
+<P><a  href="Docking.htm#_ednref8"
+name="_edn8" title="">[8]</a> Menezes, <st1:place
+w:st="on">I.</st1:place> R. A; Leit&atilde;o, A.; Montanari, C. A.; Three-Dimensional Models of Non-Steroidal Ligands: A Comparative Molecular Field Analysis,<i> Steroids</i>, 2006, <i>71</i>, 417-428</p>
+
+</div>
+
+<div  id=edn9>
+<P><a  href="Docking.htm#_ednref9"
+name="_edn9" title="">[9]</a> Ariazi, E. A.; et al. Exemestane's 17-hydroxylated Metabolite Exerts Biological Effects as an Androgen, <i>Mol. Cancer Ther.</i> 2008 <i>in press</i></p> 
+</div>
+
+</div>
+
+</BODY>
+
+</HTML>

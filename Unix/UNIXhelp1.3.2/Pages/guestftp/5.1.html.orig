@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- guestftp/5.1.html -->
+
+<HEAD>
+<TITLE>Initiating Transfers on Your Local Machine</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Initiating Transfers on Your Local Machine</H1>
+
+<P>This is the preferred method of transferring  files  to  and
+from  uk.ac.nsf.sun.   We  strongly encourage you adopt this
+method, since it is almost certain to be the fastest.</P>
+
+<P>Since there are a variety of  machines  on  JANET,  you  are
+advised  to check with your Computing Services as to how the
+file transfer software on the machine you are  using  works.</P>
+
+<P>In  general,  on  Unix machines the transfer command will be
+<STRONG><A HREF="../tasks/ftp3.html">hhcp</A></STRONG> or <STRONG>cpf</STRONG>.
+On VAX/VMS systems,  the  command  is  usually called <STRONG>transfer</STRONG>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

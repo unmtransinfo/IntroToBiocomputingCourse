@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/tcsh_hist2.html -->
+
+<HEAD>
+<TITLE>Saving command history between logins</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Saving command history between logins</H1>
+
+<P>To save your command history between one login session
+and another set the variable <SAMP>savehist</SAMP> in your 
+<SAMP>.login</SAMP> file. For example:</P>
+
+<PRE WIDTH=80>   <STRONG>set savehist=25</STRONG>
+</PRE>
+
+<P>This saves the previous twenty-five (25) commands you
+have used to the file <SAMP>.history</SAMP> in your home directory
+whenever you logout.</P>
+
+<P>When you next login the contents of the file <SAMP>.history</SAMP>
+are placed in the history list. You can then re-use
+commands from your previous login session.</P>
+
+<P>Too high a value for the <SAMP>savehist</SAMP> variable will slow
+down the login procedure.  Do not set the value of the
+<SAMP>savehist</SAMP> variable higher than that of the 
+<SAMP>history</SAMP> variable.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

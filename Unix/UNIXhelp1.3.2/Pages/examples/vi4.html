@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- examples/vi4.html -->
+
+<HEAD>
+<TITLE>Examples of inserting the contents of another file</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of inserting the contents of another file</H1>
+
+<P>To insert a file immediately after the line
+containing the cursor:</P>
+
+<PRE WIDTH=80>   <STRONG>:r examples.txt</STRONG>
+</PRE>
+
+<P>This inserts the contents of the file <SAMP>examples.txt</SAMP>
+immediately after the current line.</P>
+
+<HR>
+
+<P>To insert the contents of another file after
+a specific line in the current file:</P>
+
+<PRE WIDTH=80>   <STRONG>23:r toc.txt</STRONG>
+</PRE>
+
+<P>This inserts the contents of the file <SAMP>toc.txt</SAMP> after
+line 23 of the current file. Line 24 is empty; the
+contents of the inserted file begin at line 25.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

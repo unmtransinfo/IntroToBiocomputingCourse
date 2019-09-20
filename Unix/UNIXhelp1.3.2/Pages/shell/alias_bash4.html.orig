@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/alias_bash4.html -->
+
+<HEAD>
+<TITLE>Displaying value of current aliases</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Displaying value of current aliases</H1>
+
+<P>To display the value of each alias known to the shell
+enter the command:</P>
+
+<PRE WIDTH=80>   <STRONG>alias</STRONG>
+</PRE>
+
+<P>To display the current value for a particular alias use
+the command:</P>
+
+<PRE WIDTH=80>   <STRONG>alias <EM>name_of_alias</EM></STRONG>
+</PRE>
+
+<P>For example to display the current value of the alias
+named <STRONG>print</STRONG>:</P>
+
+<PRE WIDTH=80>   <STRONG>alias print</STRONG>
+   lpr \!* -Pps5
+</PRE>
+
+<P>This informs you that <SAMP>print</SAMP> is an alias for the command
+ <SAMP>lpr \!* -Pps5</SAMP></P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

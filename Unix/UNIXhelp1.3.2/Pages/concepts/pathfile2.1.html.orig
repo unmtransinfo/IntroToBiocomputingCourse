@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- concepts/pathfile2.1.html -->
+
+<HEAD>
+<TITLE>Examples of using relative pathnames</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+
+<H1>Examples of using relative pathnames</H1>
+
+<P>To give a relative path to a file below your current
+directory:
+
+<PRE WIDTH=80>   <STRONG>pwd </STRONG><EM>(prints the current directory)</EM>
+   /home/eucs/jane <EM>(the full pathname to the current directory)</EM>
+   <STRONG>ls -l presentation/docs/oview.html </STRONG><EM>(lists information
+                                       on the file)</EM>
+</PRE>
+
+<P>This defines the file <SAMP>oview.html</SAMP> in the directory 
+ <SAMP>docs</SAMP> which is in the directory <SAMP>presentation</SAMP>
+ which itself is a directory in the current directory.</P>
+
+<HR>
+
+<P>To define a file that is in another directory:</P>
+
+<PRE WIDTH=80>   <STRONG>pwd</STRONG> <EM>(prints the current directory)</EM>
+   /home/eucs/jane/presentation/docs <EM>(the full pathname)</EM>
+   <STRONG>cd ../illustrations </STRONG><EM>(use relative pathname)</EM>
+   <STRONG>pwd </STRONG><EM>(check the current directory)</EM>
+   /home/eucs/jane/presentation/illustrations
+</PRE>
+
+<P>The user <SAMP>jane</SAMP> uses the relative pathname 
+ <SAMP>../illustrations</SAMP> to move up to the directory 
+ <SAMP>presentation</SAMP> and then down into the directory 
+ <SAMP>illustrations</SAMP>.</P>
+
+<HR>
+
+<P>To give a pathname using the <SAMP>~</SAMP> character:</P>
+
+<PRE WIDTH=80>   <STRONG>cp ~fran/tmp/for_mike.txt</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>for_mike.txt</SAMP> from the directory
+ <SAMP>~fran/tmp</SAMP>.  The <SAMP>~</SAMP> (tilde) character is used
+to save giving the full pathname to <SAMP>fran</SAMP>'s home directory.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

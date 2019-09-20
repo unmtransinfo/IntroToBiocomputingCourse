@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- scrpt/scrpt2.6.2.1.html -->
+
+<HEAD>
+<TITLE>Examples of using the for statement</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of using the for statement</H1>
+
+<P>To take each argument in turn and see if that person
+is logged onto the system.</P>
+
+<PRE WIDTH=80>   <STRONG>cat snooper</STRONG>
+   #!/bin/sh
+   # see if a number of people are logged in
+   for i in $*
+   do
+     if who | grep -s $i &gt; /dev/null
+     then
+       echo $i is logged in
+     else
+       echo $i not available
+     fi
+   done
+</PRE>
+
+<P>For each username given as an argument an
+<A HREF="scrpt2.4.1.html">if statement</A> is
+used to test if that person is logged on and an
+appropriate message is then displayed.</P>
+
+<HR>
+
+<P>To go through each file in the current directory and
+compare it with the same filename in another directory:</P>
+
+<PRE WIDTH=80>   #!/bin/sh
+   # compare files to same file in directory "old"
+   for i in *
+   do
+     echo $i:
+     cmp $i old/$i
+     echo
+   done
+</PRE>
+
+<HR>
+
+<P>If the list-of-words is omitted, then the loop is
+executed once for each positional argument (i.e. assumes <SAMP>$*</SAMP>
+in the for statement).  In this case the loop will
+create the empty files whose names are given as arguments.</P>
+
+<PRE WIDTH=80>   #!/bin/sh
+   # create all named files
+   for i
+   do
+     &gt; $i
+   done
+</PRE>
+
+<HR>
+
+<P>Some examples of command substitution in <SAMP>for</SAMP> loops:</P>
+
+<PRE WIDTH=80>   #!/bin/sh
+   # do something for all files in current
+   # directory according to time modified
+   for i in `ls -t`
+   do
+     ...
+   done
+   # do something for all non-fred files.
+   for i in `cat filelist | grep -v fred`
+   do
+     ...
+   done
+   # do something to each sub-directory found
+   for i in `for i in *
+     do
+       if test -d $i
+       then
+         echo $i
+       fi
+     done`
+   do
+     ...
+   done
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- environment/env3d.html -->
+
+<HEAD>
+<TITLE>Setting environment variables: BASH shell</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Setting environment variables: BASH shell</H1>
+
+<P>To change an environment variable use the command:</P>
+
+<PRE WIDTH=80>   <STRONG>VARNAME=<EM>value of variable</EM></STRONG>
+</PRE>
+
+<P>By convention, the variable name is given in upper case.</P>
+
+<UL>
+<LI><A HREF="env3da.html">Making a temporary change</A></LI>
+<LI><A HREF="env3db.html">Making a lasting change</A></LI>
+<LI><A HREF="../tips/bash.html">Tip ...</A></LI>
+<LI><A HREF="exmp_bash.html">Examples</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

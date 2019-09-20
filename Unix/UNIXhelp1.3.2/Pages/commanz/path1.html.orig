@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- commanz/path1.html -->
+
+<HEAD>
+<TITLE>Where are commands located?</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+
+<H1>Where are commands located?</H1>
+
+<P>Unix commands are executable binary files located in
+directories with the name <SAMP>bin</SAMP> (for binary). Many of the
+commands that you use are located in the directory
+ <SAMP>/usr/bin</SAMP>.</P>
+
+<P>When you enter the name of a command the
+ <A HREF="../shell/index.html">shell</A> checks to see if it is a 
+ <A HREF="../shell/fork.html">built-in</A> command.  If it is not,
+it looks for the the binary file that the command name
+refers to in each of the directories that are defined in
+the <SAMP>PATH</SAMP> <A HREF="../glossary/ge.html#envirovar">environment
+variable</A>.
+
+<UL>
+<LI><A HREF="path1.1.html">more ...</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,41 @@
+Start   1
+End     5305
+
+group
+
+label
+Block    1       742    8
+Promoter
+endlabel
+
+label
+Block     857   989 8
+intron
+endlabel
+
+label
+Block     2410   2631   8
+polyA
+endlabel
+
+label
+Block   3613    4473    7
+ampR
+endlabel
+
+label
+Block    1178    2329    1
+NPY1R
+endlabel
+
+label
+Tick     1081   9
+XbaI
+endlabel
+
+label
+Tick    2386    9
+SalI
+endlabel
+
+endgroup

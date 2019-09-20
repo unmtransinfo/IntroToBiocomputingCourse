@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- guestftp/4.1.html -->
+
+<HEAD>
+<TITLE>Retrieving a File from an InterNet Host</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Retrieving a File from an InterNet Host</H1>
+
+<P>The next piece of dialogue illustrates  how  to  transfer  a
+file   from   an   InterNet  host  into  your  directory  on
+uk.ac.nsf.sun.  This uses the ftp command <STRONG>get</STRONG>.</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>get mailbox</STRONG>
+   200 PORT command okay.
+   150 Opening data connection for profile (128.41.9.3,1551) (118 bytes).
+   226 Transfer complete.
+   126 bytes received in 0.34 seconds (0.36 Kbytes/s)
+   ftp&gt;
+</PRE>
+
+<P>This will retrieve the remote file <SAMP>mailbox</SAMP> into a local file
+also  called  <SAMP>mailbox</SAMP>.   It is also possible to transfer the
+remote file into a local file with a different name :</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>get</STRONG>
+   (remote-file) <STRONG>aliases</STRONG>
+   (local-file) <STRONG>alias</STRONG>
+   200 PORT command okay.
+   150 Opening data connection for aliases (128.41.9.3,1553) (118 bytes).
+   226 Transfer complete.
+   126 bytes received in 11.66 seconds (0.011 Kbytes/s)
+   ftp&gt;
+</PRE>
+
+<P>This will transfer the file <SAMP>aliases</SAMP> on the remote machine to
+the file <SAMP>alias</SAMP> in your directory on uk.ac.nsf.sun.</P>
+
+<P>Once you have finished transferring files, you should  close
+the connection and quit ftp:</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>close</STRONG>
+   221 Goodbye
+   ftp&gt; <STRONG>quit</STRONG>
+   guest_ftp&gt;
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

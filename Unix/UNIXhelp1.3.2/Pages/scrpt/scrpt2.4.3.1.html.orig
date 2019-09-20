@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- scrpt/scrpt2.4.3.1.html -->
+
+<HEAD>
+<TITLE>Example of using the || operator</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Example of using the || operator</H1>
+
+<P>To send a message to a user using the appropriate utility:</P>
+
+<PRE WIDTH=80>   <STRONG>cat writemail</STRONG>
+   #!/bin/sh
+   # usage: writemail user message
+   echo "$2" |{ write "$1" || mail "$1" ;} 
+</PRE>
+
+<P>The user types a command such as:</P>
+
+<PRE WIDTH=80>   <STRONG>writemail sarah 'call me'</STRONG>
+</PRE>
+
+<P>The message entered by the user is <A HREF="../commanz/cmd4.html">piped</A>
+through the command <SAMP>{ write "$1" || mail "$1" ; }</SAMP>.</P>
+
+<P>If the the message cannot be sent to the user's terminal
+(they are not logged on) with the command <SAMP>write "$1"</SAMP> then
+the message is sent to the user by <A HREF="../mail/index.html">mail</A>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

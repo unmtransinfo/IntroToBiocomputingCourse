@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- guestftp/5.4.html -->
+
+<HEAD>
+<TITLE>Initiating Transfers on uk.ac.nsf.sun</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Initiating Transfers on uk.ac.nsf.sun</H1>
+
+<P>(If at all possible, you should avoid using this method,  as
+it is likely to be very slow.)</P>
+
+<P>The guestftp commands <STRONG>push</STRONG> and <STRONG>pull</STRONG> are used  to  manipulate
+JANET file transfers on uk.ac.nsf.sun.  Each will prompt you
+for the relevant information, the following piece of  dialogue
+illustrates the <STRONG>push</STRONG> command for sending a file from the
+relay machine to your own  JANET  host.   The  <STRONG>pull</STRONG>  command
+works in a similar way.</P>
+
+<PRE WIDTH=80>   guest_ftp&gt; <STRONG>push</STRONG>
+</PRE>
+
+<P>Okay lets push a file using NIFTP:</P>
+
+<PRE WIDTH=80>   Give local filename: <STRONG>foo.c</STRONG>
+   Give remote filename: <STRONG>foo.c</STRONG>
+   Give NRS name of remote host: <STRONG>uk.ac.ulcc</STRONG>
+   Do you want binary or &lt;default&gt; ascii (input b or a): <STRONG>b</STRONG>
+   Ok binary it is - input word size &lt;default 8&gt;: <STRONG>32</STRONG>
+   Give user name on remote host: <STRONG>tony</STRONG>
+   Give user password on remote host: <STRONG><EM>password</EM></STRONG>
+   Re-type password to make sure: <STRONG><EM>password</EM></STRONG>
+   Push status-&gt; OK - Request sent to the Spooler - use "q" to check
+   guest_ftp&gt;
+</PRE>
+
+<P>Note that when you enter passwords, they will  not  echo  on
+the screen.</P>
+
+<P>To check the status of files you have queued for transfer on
+uk.ac.nsf.sun,  use  the  q  command.  Note that this is the
+only way to check the status -  you  will  not  receive  any
+error  message  should the transfer fail.  The STATUS column
+will indicate how the transfer is proceeding - `done'  indi-
+cates the transfer is complete.</P>
+
+<PRE WIDTH=80>   guest_ftp&gt; <STRONG>q</STRONG>
+   ID TIME  QUEUED L-FILE         STATE USER   R-FILE
+   7018 Jun 19 17:20 estftp/tb/foo.c pend guestftp foo.c
+   guest_ftp&gt; <STRONG>q</STRONG>
+   ID TIME  QUEUED L-FILE         STATE USER   R-FILE
+   7018 Jun 19 17:20 estftp/tb/foo.c done guestftp foo.c
+   guest_ftp&gt;
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

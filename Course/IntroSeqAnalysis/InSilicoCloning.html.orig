@@ -1,0 +1,615 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Analysis - In Silico Molecular Cloning</title>
+  <link rel=stylesheet href="/biomed505/Course/IntroSeqAnalysis/css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<div class="headln">Sequence Analysis - <em>In Silico</em> Molecular Cloning</div>
+<br>
+<div class="text">
+<strong>Abstract:</strong> In this section, you will learn to use several more EMBOSS programs.  The exercises in this section demonstrate the use of EMBOSS programs to perform <i>in silico</i> molecular cloning experiments.  You will design PCR primers, produce restriction maps, edit sequence files, and splice restriction fragments together <em>in silico</em>.  These are some of the activities for which the EMBOSS programs are most commonly used by laboratory molecular biologists.
+<br><br>
+The standard way of using EMBOSS is via command line interaction on a UNIX computer system.  You will be using EMBOSS on the system hatch.health.unm.edu and you should have received login information for xxx when you signed up for Biomed505.  In addition to the command line interface, there are also several graphical interfaces to EMBOSS.  One of these is <a href="http://hatch.health.unm.edu/EMBOSS/">EMBOSS-GUI</a>, a web-based front end to EMBOSS.  The exercises for the "Introduction to Sequence Analysis" section of Biomed505 are written for users of the command line interface.  You may use EMBOSS-GUI if you prefer, however there are no detailed instructions to help you.  A brief <a href="http://poblano.health.unm.edu/EMBOSS-GUI.html">introduction to EMBOSS-GUI</a> is available.  For the most part, the input to the command line programs is exactly mirrored by EMBOSS-GUI's web browser forms and the use of EMBOSS-GUI should be fairly straight forward.
+<br>
+<br>
+Questions you should answer as you work through the exercises are indicated by <span class="class2"><a href="">Question:</a></span> tags, which also serve as hyperlinks to the corresponding answers (where available).
+<br>
+<br>
+<strong>Typographical conventions:</strong> <br>
+ &nbsp; &nbsp; Regular web links look <a href="">like this</a><br>
+ &nbsp; &nbsp; Input that you should enter verbatim in web page forms, or links/buttons you should click on web pages look <span class="input">like this</span><br>
+ &nbsp; &nbsp; Sections representing command-line interaction are represented as in the following example:<br><span class="system">
+       <span class="prompt">[unix]# </span><span class="command">ls <span class="arg">foo</span> [Enter]<br></span>ls: foo: No such file or directory</span><br>
+ &nbsp; &nbsp; where...<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; the unix propmt is represented as: <span class="system"><span class="prompt">[unix]# </span></span>,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="command">this font</span></span> are commands to be typed into the computer verbatim,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="arg">this font</span></span> are names or identifiers (Eg. file/directory names or sequence accession numbers),<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; words in square brackets: <span class="system"><span class="command">[Ctrl]</span></span> indicate a key to be pressed, and <br>
+ &nbsp; &nbsp; &nbsp; &nbsp; program output is represented in <span class="system">this font</span><br>
+ &nbsp; &nbsp; The above example means "at the UNIX prompt, type ls followed by foo (a directory name, <strong>which may be different in your case</strong>), then press Enter".  The ouput of the command is supposed to be "ls: foo: No such file or directory".  Output will often be truncated and this will be indicated using three horizontal or vertical dots.
+</div>
+<br>
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex">Retrieve the Sequences</td>
+  </tr>
+  <tr>
+    <td>The first thing you will need to do is obtain the cloning vector and gene sequences we are going to be using.  Using the method of your choice, retrieve the nucleic acid sequences U47119 and NM_000909 and save them to files.  For convenience, I suggest you name these files <strong>pCI.gb</strong> and <strong>HsNPY1R.gb</strong>, respectively.</td>
+  </tr>
+
+  <tr>
+    <td class="ex">Restriction Mapping</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/restrict.html" target="emboss-apps"><strong>restrict</strong></a> program to make a restriction map of the cloning vector sequence.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">restrict -sequence <span class="arg">pCI.gb</span> -sitelen 6 -enzyme '@/home/emboss/data/enz505.list' -outfile <span class="arg">pCI.restrict</span> [Enter]</span></span>
+      <p>There are several hundred restriction enzymes available.  This command produces a restriction map using a subset of enzymes (defined in the file <a href="/biomed505/Course/IntroSeqAnalysis/enz505.list">/home/emboss/data/enz505.list</a>).  Examine the contents of the output file:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">pCI.restrict</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">########################################
+# Program: restrict
+# Rundate: Fri Aug 27 11:43:07 2004
+# Report_format: table
+# Report_file: pCI.restrict
+########################################
+
+#=======================================
+#
+# Sequence: CVU47119     from: 1   to: 4006
+# HitCount: 59
+#
+# Minimum cuts per enzyme: 1
+# Maximum cuts per enzyme: 2000000000
+# Minimum length of recognition site: 6
+# Blunt ends allowed
+# Sticky ends allowed
+# DNA is linear
+# Ambiguities allowed
+#
+#=======================================
+
+  Start     End Enzyme_name Restriction_site 5prime 3prime 5primerev 3primerev
+      3       8 SspI        AATATT                5      5         .         .
+     50      55 SspI        AATATT               52     52         .         .
+    152     157 SpeI        ACTAGT              152    156         .         .
+    274     279 AatII       GACGTC              278    274         .         .
+    327     332 AatII       GACGTC              331    327         .         .
+    340     335 TaqII       CACCCA              325    323         .         .
+    386     391 NdeI        CATATG              387    389         .         .
+    410     415 AatII       GACGTC              414    410         .         .
+    596     601 AatII       GACGTC              600    596         .         .
+    717     722 SacI        GAGCTC              721    717         .         .
+    748     753 HindIII     AAGCTT              748    752         .         .
+    826     831 PstI        CTGCAG              830    826         .         .
+   1028    1033 ScaI        AGTACT             1030   1030         .         .
+   1058    1063 XhoI        CTCGAG             1058   1062         .         .
+   1058    1063 AvaI        CYCGRG             1058   1062         .         .
+   1063    1068 EcoRI       GAATTC             1063   1067         .         .
+   1063    1068 ApoI        RAATTY             1063   1067         .         .
+   1081    1086 XbaI        TCTAGA             1081   1085         .         .
+   1087    1092 SalI        GTCGAC             1087   1091         .         .
+   1087    1092 AccI        GTMKAC             1088   1090         .         .
+   1092    1097 SmaI        CCCGGG             1094   1094         .         .
+   1092    1097 AvaI        CYCGRG             1092   1096         .         .
+   1156    1161 BsmI        GAATGC             1162   1160         .         .
+   1186    1191 ApoI        RAATTY             1186   1190         .         .
+   1239    1244 HpaI        GTTAAC             1241   1241         .         .
+   1260    1255 BsmI        GAATGC             1255   1253         .         .
+   1300    1305 AhaIII      TTTAAA             1302   1302         .         .
+   1343    1348 XhoII       RGATCY             1343   1347         .         .
+   1343    1348 BamHI       GGATCC             1343   1347         .         .
+   1399    1404 MstI        TGCGCA             1401   1401         .         .
+   1765    1760 TaqII       GACCGA             1750   1748         .         .
+   1835    1840 ApoI        RAATTY             1835   1839         .         .
+   1846    1851 ApoI        RAATTY             1846   1850         .         .
+   1858    1863 SspI        AATATT             1860   1860         .         .
+   1926    1931 NdeI        CATATG             1927   1929         .         .
+   2156    2161 BspHI       TCATGA             2156   2160         .         .
+   2178    2183 AatII       GACGTC             2182   2178         .         .
+   2261    2266 BspHI       TCATGA             2261   2265         .         .
+   2294    2299 SspI        AATATT             2296   2296         .         .
+   2383    2388 TaqII       CACCCA             2399   2397         .         .
+   2431    2426 TaqII       CACCCA             2416   2414         .         .
+   2454    2459 XhoII       RGATCY             2454   2458         .         .
+   2471    2476 XhoII       RGATCY             2471   2475         .         .
+   2498    2503 AclI        AACGTT             2499   2501         .         .
+   2521    2526 AhaIII      TTTAAA             2523   2523         .         .
+   2584    2579 TaqII       GACCGA             2569   2567         .         .
+   2618    2623 ScaI        AGTACT             2620   2620         .         .
+   2738    2743 TaqII       GACCGA             2754   2752         .         .
+   2871    2876 AclI        AACGTT             2872   2874         .         .
+   2876    2881 MstI        TGCGCA             2878   2878         .         .
+   3213    3218 AhaIII      TTTAAA             3215   3215         .         .
+   3232    3237 AhaIII      TTTAAA             3234   3234         .         .
+   3239    3244 XhoII       RGATCY             3239   3243         .         .
+   3251    3256 XhoII       RGATCY             3251   3255         .         .
+   3269    3274 BspHI       TCATGA             3269   3273         .         .
+   3337    3342 XhoII       RGATCY             3337   3341         .         .
+   3348    3353 XhoII       RGATCY             3348   3352         .         .
+   4001    4006 XhoII       RGATCY             4001   4005         .         .
+   4001    4006 BglII       AGATCT             4001   4005         .         .
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+     If you look carefully at this output, you may notice that there is a concentration of restriction enzyme cut sites clustered in the region 1050-1100.  This region is referred to as a "multiple cloning site".  It is into this region that we will splice our cDNA.  What you really want to find are the enzymes that cut the plasmid once and only once in this region, and that do not have ambiguous recognition sites.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Rerun the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/restrict.html" target="emboss-apps"><strong>restrict</strong></a> program to find single unambiguous cutters.</td>
+  </tr>
+  <tr>
+    <td>
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">restrict -sequence <span class="arg">pCI.gb</span> -sitelen 6 -enzyme '@/home/emboss/data/enz505.list' -single -noambiguity -outfile <span class="arg">pCI.restrict</span> [Enter]</span></span>
+      <p>Again, examine the output.
+      <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/InSilicoCloningAnswers.html#restr2" target="_answers">Question:</a></span> What are the candidate cloning sites?
+      <p>Now that we know the cloning sites that will work for the cloning vector, you need to find which ones will work for the insert.  Remember that the plan is to amplify the insert by PCR, introducing restriction sites at the ends of the amplified fragment.  This means that, from you list of candidate cloning enzymes, you need to find ones that do <em>not</em> cut the cDNA.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">3. Find the translated region of the NPY1R cDNA sequence.</td>
+  </tr>
+  <tr>
+    <td>First, you need to locate the open reading frame.  You learned how to do this in the previous set of exercises.
+      <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/InSilicoCloningAnswers.html#restr3a" target="_answers">Question:</a></span> What are the start and end positions and the frame of the ORF?
+      <p>A detail that we did not touch upon in the last set of exercises is that the ORF is not necessarily the same as the translated region.  This is because translation always starts with a Methionine (M) and the reading frame will, by chance, usually be open for some distance upstream of the first methionine.  You can use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prettyseq.html" target="emboss-apps"><strong>prettyseq</strong></a> program to help sort this out:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">prettyseq -sequence <span class="arg">HsNPy1R.gb</span> -range 243-1418 -width 120 -outfile <span class="arg">HsNPy1R.prettyseq</span> [Enter]</span></span>
+      <p>Examine the contents of the output file:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">HsNPy1R.prettyseq</span> [Enter]</span>
+      <pre width="100%"><div class="system">PRETTYSEQ of NM_000909 from 1 to 2775
+
+           ---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+         1 AATCTTTAGGATCTGAGCAGGAGAAATACCAGCGGATCTTCCCCACTCTGCTCCCTTCCATTCCCACCCTTCCTTCTTTAATAAGCAGGAGCGAAAAAGACAAATTCCAAAGAGGATTGT 120
+                                                                                                                                    
+
+           ---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+       121 TCAGTTCAAGGGAATGAAGAATTCAGAATAATTTTGGTAAATGGATTCCAATATGGGGAATAAGAATAAGCTGAACAGTTGACCTGCTTTGAAGAAACATACTGTCCATTTGTCTAAAAT 240
+                                                                                                                                    
+
+           ---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+       241 AAtctataacaaccaaaccaatcaaaatgaattcaacattattttcccaggttgaaaatcattcagtccactctaatttctcagagaagaatgcccagcttctggcttttgaaaatgatg 360
+         1   S  I  T  T  K  P  I  K  M  N  S  T  L  F  S  Q  V  E  N  H  S  V  H  S  N  F  S  E  K  N  A  Q  L  L  A  F  E  N  D  D 40
+
+.
+.
+.
+
+           ---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+      2641 AGAAACTATATTTTAAAGAACAAGACATACTTCAATGTATTATACAGATAAAGTATTACATGTGTTTGATTTTAAAAGGGCGGACATTTTATTAAAATCAATATTGTTTTTGCTTTTTCA 2760
+                                                                                                                                    
+
+           ---------|-----
+      2761 AAAAAAAAAAAAAAA 2775</div></pre></div>
+       <span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/InSilicoCloningAnswers.html#restr3b" target="_answers">Question:</a></span> What is the translated region of the NPY1 receptor mRNA?
+    </td>
+  </tr>
+  <tr>
+    <td class="step">4. Run the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/remap.html" target="emboss-apps"><strong>remap</strong></a> program to generate a restriction map of the cDNA sequence.</td>
+  </tr>
+  <tr>
+    <td>
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">remap -sequence <span class="arg">HsNPy1R.gb</span> -sbeg 181 -send 1600 -enzyme '@/home/emboss/data/enz505.list' -sitelen 6 -noreverse -outfile <span class="arg">HsNPY1R.remap</span> [Enter]</span></span>
+      <p>Examine the contents of the output file:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">HsNPY1R.remap</span> [Enter]</span>
+      <pre width="100%"><div class="system" width="100%">NM_000909
+Homo sapiens neuropeptide Y receptor Y1 (NPY1R), mRNA.
+
+                                                                                                  ApoI
+                                                                                                  EcoRI
+                                                                                                  \
+          taagaataagctgaacagttgacctgctttgaagaaacatactgtccatttgtctaaaataatctataacaaccaaaccaatcaaaatgaattcaacattattttcccaggttgaaaatc
+                   190       200       210       220       230       240       250       260       270       280       290       300       
+          ----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|
+          *  E  *  A  E  Q  L  T  C  F  E  E  T  Y  C  P  F  V  *  N  N  L  *  Q  P  N  Q  S  K  *  I  Q  H  Y  F  P  R  L  K  I  
+           K  N  K  L  N  S  *  P  A  L  K  K  H  T  V  H  L  S  K  I  I  Y  N  N  Q  T  N  Q  N  E  F  N  I  I  F  P  G  *  K  S 
+            R  I  S  *  T  V  D  L  L  *  R  N  I  L  S  I  C  L  K  *  S  I  T  T  K  P  I  K  M  N  S  T  L  F  S  Q  V  E  N  H
+
+.
+.
+.
+           AhaIII                                                                       AhaIII
+           \                                                                            \
+          ttaaaaaaatcaacaacaatgatgataatgaaaaaatctgaaactacttatagcctatggtcccggatgacatctgtttaaaaacaagcacaacctgcaacatactttgattacctgttc
+                   1390      1400      1410      1420      1430      1440      1450      1460      1470      1480      1490      1500      
+          ----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|
+          L  K  K  S  T  T  M  M  I  M  K  K  S  E  T  T  Y  S  L  W  S  R  M  T  S  V  *  K  Q  A  Q  P  A  T  Y  F  D  Y  L  F  
+           *  K  N  Q  Q  Q  *  *  *  *  K  N  L  K  L  L  I  A  Y  G  P  G  *  H  L  F  K  N  K  H  N  L  Q  H  T  L  I  T  C  S 
+            K  K  I  N  N  N  D  D  N  E  K  I  *  N  Y  L  *  P  M  V  P  D  D  I  C  L  K  T  S  T  T  C  N  I  L  *  L  P  V  L
+
+          
+          tcccaaggaatggggttgaaatcatttgaaaatgactaagattttcttgtcttgctttttactgcttttgttgtagttgtcataattacatttggaacaaaaggtgtgggctttggggtc
+                   1510      1520      1530      1540      1550      1560      1570      1580      1590      1600      1610      1620      
+          ----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|
+          S  Q  G  M  G  L  K  S  F  E  N  D  *  D  F  L  V  L  L  F  T  A  F  V  V  V  V  I  I  T  F  G  T  K  G  V  G  F  G  V  
+           P  K  E  W  G  *  N  H  L  K  M  T  K  I  F  L  S  C  F  L  L  L  L  L  *  L  S  *  L  H  L  E  Q  K  V  W  A  L  G  S 
+            P  R  N  G  V  E  I  I  *  K  *  L  R  F  S  C  L  A  F  Y  C  F  C  C  S  C  H  N  Y  I  W  N  K  R  C  G  L  W  G  L
+
+
+# Enzymes that cut  Frequency	Isoschizomers
+      AccI	    1	
+    AhaIII	    2	
+      ApoI	    1	
+      AvaI	    2	
+      BsmI	    1	
+     EcoRI	    1	
+     EcoRV	    1	
+      PstI	    1	
+     PvuII	    1	
+      XhoI	    1	
+
+
+
+# Enzymes which cut less frequently than the MINCUTS criterion
+# Enzymes < MINCUTS Frequency	Isoschizomers
+
+
+
+# Enzymes which cut more frequently than the MAXCUTS criterion
+# Enzymes > MAXCUTS Frequency	Isoschizomers
+
+
+
+# Enzymes that do not cut
+
+AatII     AclI      BamHI     BglII     BspHI     HindIII   HpaI      MstI      
+NdeI      SacI      SalI      ScaI      SmaI      SpeI      SspI      TaqII     
+XbaI      XhoII     
+
+
+# No. of cutting enzymes which do not match the
+# SITELEN, BLUNT, STICKY, COMMERCIAL, AMBIGUOUS citeria
+
+1</div></pre></div>
+    Note the section "Enzymes that do not cut" near the end of the output.  The set usable cloning enzymes is intersection of these enzymes with the candidates you found in step 2.
+    <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/InSilicoCloningAnswers.html#restr4" target="_answers">Question:</a></span> What are the restriction enzymes that we can use to make our expression vector?
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">The Cloning Strategy</td>
+  </tr>
+  <tr>
+    <td>We now have all the information necessary to plan our cloning strategy.  We are going to PCR amplify the NPY1 receptor open reading frame using PCR primers that introduce a XbaI site at the 5' end of the ORF and a SalI site at the 3' end.  The PCR product will be cut with XbaI and SalI and the XbaI-SalI restriction fragment will be cloned into the XbaI/SalI-digested pCI vector.  This will result in the NPY1 receptor open reading frame being correctly oriented between the promoter and polyadenylation signals in the cloning vector.</td>
+  </tr>
+  
+  <tr>
+    <td class="ex">PCR Primer Design</td>
+  </tr>
+  <tr>
+    <td align="left">PCR primer design is a complicated subject.  Some would place it in the realm of black magic.  However, there are computer programs to aid you in the endeavor and one of them is the EMBOSS program <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/eprimer3.html" target="emboss-apps"><strong>eprimer3</strong></a>.  <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/eprimer3.html" target="emboss-apps"><strong>eprimer3</strong></a> is actually just an interface to the 'primer3' program from the Whitehead Institute.  Primer3 picks primers for PCR reactions, considering as criteria:
+      <ul>
+        <li>oligonucleotide melting temperature, size, GC content, and primer-dimer possibilities</li>
+        <li>PCR product size</li>
+        <li>positional constraints within the source sequence</li>
+        <li>miscellaneous other constraints</li>
+      </ul>
+      All of these criteria are user-configurable.
+     </td>
+  </tr>
+  <tr>
+    <td class="step">1. Run <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/eprimer3.html" target="emboss-apps"><strong>eprimer3</strong></a> using its default configuration.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">eprimer3 -sequence HsNPY1R.gb -outfile <span class="arg">HsNPY1R.eprimer3</span> [Enter]</span></span>
+      <p>Examine the contents of the output file:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">HsNPY1R.eprimer3</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%"># EPRIMER3 RESULTS FOR NM_000909
+
+# FORWARD PRIMER STATISTICS:
+# considered 24489
+# GC content failed 1436
+# low tm 11577
+# high tm 4664
+# high any compl 1
+# high end compl 61
+# long poly-x seq 112
+#high 3' stability 226
+# ok 6412
+
+# REVERSE PRIMER STATISTICS:
+# considered 24739
+# GC content failed 1739
+# low tm 11689
+# high tm 4544
+# high any compl 1
+# high end compl 11
+# long poly-x seq 112
+#high 3' stability 217
+# ok 6426
+
+# PRIMER PAIR STATISTICS:
+# considered 3115
+# unacceptable product size 2865
+# high any compl 13
+# high end compl 37
+# ok 200
+
+#                      Start  Len   Tm     GC%   Sequence
+
+   1 PRODUCT SIZE: 196
+     FORWARD PRIMER     588   20  60.11  45.00  TTTGGTGAGGCGATGTGTAA
+
+     REVERSE PRIMER     764   20  59.99  45.00  AAGGCAAAGAAGAAGCCACA
+
+
+   2 PRODUCT SIZE: 207
+     FORWARD PRIMER     577   20  60.00  55.00  ACCACTGGGTCTTTGGTGAG
+
+     REVERSE PRIMER     764   20  59.99  45.00  AAGGCAAAGAAGAAGCCACA
+
+
+   3 PRODUCT SIZE: 197
+     FORWARD PRIMER     587   20  59.72  50.00  CTTTGGTGAGGCGATGTGTA
+
+     REVERSE PRIMER     764   20  59.99  45.00  AAGGCAAAGAAGAAGCCACA
+
+
+   4 PRODUCT SIZE: 202
+     FORWARD PRIMER    1145   20  59.72  50.00  TGCTACCTGCAACCACAATC
+
+     REVERSE PRIMER    1327   20  60.12  50.00  GGAAACATCTGTGTGCATCG
+
+
+   5 PRODUCT SIZE: 195
+     FORWARD PRIMER     589   20  59.72  50.00  TTGGTGAGGCGATGTGTAAG
+
+     REVERSE PRIMER     764   20  59.99  45.00  AAGGCAAAGAAGAAGCCACA
+      </div></pre></div>
+      When the '-explain' flag is used, as in the example, then statistics are output describing the number of primers that were considered and rejected for various reasons.  The best 5 primer pairs are displayed with their respective locations and product sizes.
+    <p>Note that the reverse primer sequence is displayed as the reverse complement to the input forward sense sequence.  The convention in EMBOSS is to report both forward and reverse features as counted from the 5' end.  This means the reverse primer positions are given counted from the 5' start of the sequence.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Now run <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/eprimer3.html" target="emboss-apps"><strong>eprimer3</strong></a> with the desired target in mind</td>
+  </tr>
+  <tr>
+    <td>
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">eprimer3 -sequence HsNPY1R.gb -outfile <span class="arg">HsNPY1R.eprimer3</span> -target 267,1418 -productosize 0 -productsizerange 1150-1400 -numreturn 20 [Enter]</span></span>
+      <p>This tells primer3 to only consider primer pairs flanking the specified region (267-1418).  We also need to relax the default constraints on product size.  The final change is to ask for primer3 to report a larger number of primer pairs.
+      <p>Examine the contents of the output file.
+      <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/InSilicoCloningAnswers.html#prim2" target="_answers">Question:</a></span> Which primer pair most closely flanks our desired target?
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Add Restriction Sites to the Primers</td>
+  </tr>
+  <tr>
+    <td>We now need to add sequences for our desired restriction enzyme recognition sites to the primers.  Unfortunately, this will change the properties of our primers and somewhat negate our careful use of primer3.  Luckily, this is an informatics exercise, and we do not have to worry about the laboratory experiments actually working!</td>
+  </tr>
+  <tr>
+    <td class="step">1. Add XbaI site to 5' primer.</td>
+  </tr>
+  <tr>
+    <td>The XbaI recognition/cut site is:
+      <pre>5' - T^C T A G A - 3'
+3' - A G A T C^T - 5'
+      </pre>
+      The sequence of our 5' PCR primer will therefore be: <strong>5'-GG<font color="darkred">TCTAGA</font><font color="indigo">GTTGACCTGCTTTGAAGAAACA-3'</font></strong>
+      <p>The XbaI site is shown in <font color="darkred">darkred</font> and the original primer sequence as suggested by primer3 is shown in <font color="indigo">indigo</font>.  It is usually a good idea to include a couple of extra nucleotides on the end of the primer as most restriction enzymes do not cut well at the extreme end of the DNA molecule.  This is why the two G's are included on the 5' end. 
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Add SalI site to 3' primer.</td>
+  </tr>
+  <tr>
+    <td>The SalI recognition/cut site is: 
+      <pre>5' - G^T C G A C - 3'
+3' - C A G C T^G - 5'
+      </pre>
+      <span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/InSilicoCloningAnswers.html#addsite2" target="_answers">Question:</a></span> What should be the sequence of our 3' PCR primer? Remember, the sequence needs to be the <em>reverse compliment</em> of the sequence in the HsNPY1R,gb file.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Construct a Sequence Representing the Final Cloned Product</td>
+  </tr>
+  <tr>
+    <td>At last, this is the real <em>in silico</em> cloning step that is equivalent to the ligation of the restriction-digested PCR product into the restriction-digested cloning vector.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the EMBOSS program <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/cutseq.html" target="emboss-apps"><strong>cutseq</strong></a> to create a sequence file representing the empty, restriction-digested cloning vector.</td>
+  </tr>
+  <tr>
+    <td>
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">cutseq -sequence pCI.gb -from=1081 -to=1092 -out <span class="arg">pCI-XbaI-SalI.fa</span> [Enter]</span></span>
+      <p>Use <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/restrict.html" target="emboss-apps"><strong>restrict</strong></a> to verify:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">restrict <span class="arg">pCI-XbaI-SalI.fa</span> -sitelen 6 -enzyme '@/home/emboss/data/enz505.list' -single -noambiguity -stdout [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Finds restriction enzyme cleavage sites
+Output report [stdout]: <span class="command">[Enter]</span>
+########################################
+# Program: restrict
+# Rundate: Fri Aug 27 17:43:37 2004
+# Report_format: table
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Sequence: CVU47119     from: 1   to: 3994
+# HitCount: 10
+#
+# Minimum cuts per enzyme: 1
+# Maximum cuts per enzyme: 1
+# Minimum length of recognition site: 6
+# Blunt ends allowed
+# Sticky ends allowed
+# DNA is linear
+# No ambiguities allowed
+#
+#=======================================
+
+  Start     End Enzyme_name Restriction_site 5prime 3prime 5primerev 3primerev
+    152     157 SpeI        ACTAGT              152    156         .         .
+    717     722 SacI        GAGCTC              721    717         .         .
+    748     753 HindIII     AAGCTT              748    752         .         .
+    826     831 PstI        CTGCAG              830    826         .         .
+   1058    1063 XhoI        CTCGAG             1058   1062         .         .
+   1063    1068 EcoRI       GAATTC             1063   1067         .         .
+   1080    1085 SmaI        CCCGGG             1082   1082         .         .
+   1227    1232 HpaI        GTTAAC             1229   1229         .         .
+   1331    1336 BamHI       GGATCC             1331   1335         .         .
+   3989    3994 BglII       AGATCT             3989   3993         .         .
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+      Compare this to the map you got from the original sequence pCI.gb.
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="step">2. Create a sequence file representing the restriction-digested PCR product.</td>
+  </tr>
+  <tr>
+    <td>To accomplish this, we will first use <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/cutseq.html" target="emboss-apps"><strong>cutseq</strong></a> to remove the regions of HsNPY1R that do not correspond to the PCR-amplified section.  It will be easier to keep track of the numbering if we remove the downstream sequence first and save it as a temporary file:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">cutseq -sequence HsNPY1R.gb -from=1455 -to=2775 -out <span class="arg">HsNPY1R-tmp.fa</span> [Enter]</span></span>
+      <p>Next, remove the upstream sequence:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">cutseq -sequence HsNPY1R-tmp.fa -from=1 -to=197 -out <span class="arg">HsNPY1R-frag.fa</span> [Enter]</span></span>
+      <p>Finally, you will need to manually edit the file to add the PCR primer sequences.  In principle, you can use any text editor to do this.  Here we will use <a href="http://poblano.health.unm.edu/Software/EMBOSS/EMBASSY/MSE/mse.html" target="emboss-apps"><strong>mse</strong></a>.  <a href="http://poblano.health.unm.edu/Software/EMBOSS/EMBASSY/MSE/mse.html" target="emboss-apps"><strong>mse</strong></a> is a multiple sequence screen editor for biological sequences, however it works equally well for editing single sequence files.  It will definitely be of benefit to read through the <a href="http://poblano.health.unm.edu/Software/EMBOSS/EMBASSY/MSE/mse.html" target="emboss-apps">mse documentation</a> before proceeding.
+      <p>Open the HsNPY1R-XbaI-SalI.fa file in <a href="http://poblano.health.unm.edu/Software/EMBOSS/EMBASSY/MSE/mse.html" target="emboss-apps"><strong>mse</strong></a>:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">mse <span class="arg">HsNPY1R-frag.fa</span> [Enter]</span></span>
+      <p><a href="http://poblano.health.unm.edu/Software/EMBOSS/EMBASSY/MSE/mse.html" target="emboss-apps"><strong>mse</strong></a> starts up in editing mode, with the cursor positioned at the beginning of the sequence.  This is convenient, as this is where we will be adding our first bit of sequence.  Type <span class="system"><span class="command">TCTAGAGTTGACCTGCTTTGAAGAAACA</span></span> to insert the upstream primer sequence.  Now type <span class="system"><span class="command">[Ctrl]-Z</span></span> to enter command mode.  Then type <span class="system"><span class="command">1250 [Enter]</span></span>.  This will move the cursor to position 1250 in the sequence.  Use the cursor keys (left, right, up and down arrow keys) to move to the very end of the sequence.  Type <span class="system"><span class="command">CTATGGTCCCGGATGACATCGTCGAC</span></span> to insert the downstream primer sequence (this is the reverse compliment of the primer sequence from step 2 in the previous section, "Add restriction sites to primers").  Now type <span class="system"><span class="command">[Ctrl]-Z write HsNPY1R-XbaI-SalI</span></span> to save your edits to a new file.  Type <span class="system"><span class="command">[Ctrl]-Z exit</span></span> to quit <a href="http://poblano.health.unm.edu/Software/EMBOSS/EMBASSY/MSE/mse.html" target="emboss-apps"><strong>mse</strong></a>.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">3. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/pasteseq.html" target="emboss-apps"><strong>pasteseq</strong></a> program to create a sequence file containing the final product.</td>
+  </tr>
+  <tr>
+    <td>
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">pasteseq pCI-XbaI-SalI.fa HsNPY1R-XbaI-SalI -pos 1080 -outseq <span class="arg">pCI-NPY1R.fa</span> [Enter]</span></span>
+      <p>Use <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/pasteseq.html" target="emboss-apps"><strong>restrict</strong></a> to verify:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">restrict <span class="arg">pCI-NPY1R.fa</span> -sitelen 6 -enzyme '@/home/emboss/data/enz505.list' -single -noambiguity -stdout [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Finds restriction enzyme cleavage sites
+Output report [stdout]: <span class="command">[Enter]</span>
+########################################
+# Program: restrict
+# Rundate: Mon Aug 30 10:07:36 2004
+# Report_format: table
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Sequence: CVU47119     from: 1   to: 5305
+# HitCount: 11
+#
+# Minimum cuts per enzyme: 1
+# Maximum cuts per enzyme: 1
+# Minimum length of recognition site: 6
+# Blunt ends allowed
+# Sticky ends allowed
+# DNA is linear
+# No ambiguities allowed
+#
+#=======================================
+
+  Start     End Enzyme_name Restriction_site 5prime 3prime 5primerev 3primerev
+    152     157 SpeI        ACTAGT              152    156         .         .
+    717     722 SacI        GAGCTC              721    717         .         .
+    748     753 HindIII     AAGCTT              748    752         .         .
+   1081    1086 XbaI        TCTAGA             1081   1085         .         .
+   1595    1600 PvuII       CAGCTG             1597   1597         .         .
+   2107    2112 EcoRV       GATATC             2109   2109         .         .
+   2386    2391 SalI        GTCGAC             2386   2390         .         .
+   2391    2396 SmaI        CCCGGG             2393   2393         .         .
+   2538    2543 HpaI        GTTAAC             2540   2540         .         .
+   2642    2647 BamHI       GGATCC             2642   2646         .         .
+   5300    5305 BglII       AGATCT             5300   5304         .         .
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+    Compare this to the map you got from the original pCI sequence and the map you obtained in step 1.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Verification of the Final Cloned Product</td>
+  </tr>
+  <tr>
+    <td class="step">1. Run the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/remap.html" target="emboss-apps"><strong>remap</strong></a> program to generate a restriction map of the final cloned product.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">remap -sequence <span class="arg">pCI-NPY1R.fa</span> -enzyme '@/home/emboss/data/enz505.list' -sitelen 6 -noreverse -width 120 -outfile <span class="arg">pCI-NPY1R.remap</span> [Enter]</span></span>
+      <p>Examine the contents of the output file:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">pCI-NPY1R.remap</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Display a sequence with restriction cut sites, translation etc..
+CVU47119
+Cloning vector pCI, mammalian expression vector, complete sequence.
+
+              SspI                                           SspI
+              \                                              \
+          tcaatattggccattagccatattattcattggttatatagcataaatcaatattggctattggccattgcatacgttgtatctatatcataatatgtacatttatattggctcatgtcc
+                   10        20        30        40        50        60        70        80        90        100       110       120       
+          ----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|
+          S  I  L  A  I  S  H  I  I  H  W  L  Y  S  I  N  Q  Y  W  L  L  A  I  A  Y  V  V  S  I  S  *  Y  V  H  L  Y  W  L  M  S  
+           Q  Y  W  P  L  A  I  L  F  I  G  Y  I  A  *  I  N  I  G  Y  W  P  L  H  T  L  Y  L  Y  H  N  M  Y  I  Y  I  G  S  C  P 
+            N  I  G  H  *  P  Y  Y  S  L  V  I  *  H  K  S  I  L  A  I  G  H  C  I  R  C  I  Y  I  I  I  C  T  F  I  L  A  H  V  Q
+
+.
+.
+.
+                                                                                                             ApoI
+          XbaI                                                                                               EcoRI
+          \                                                                                                  \
+          TCTAGAGTTGACCTGCTTTGAAGAAACAgttgacctgctttgaagaaacatactgtccatttgtctaaaataatctataacaaccaaaccaatcaaaatgaattcaacattattttccca
+                   1090      1100      1110      1120      1130      1140      1150      1160      1170      1180      1190      1200      
+          ----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|
+          S  R  V  D  L  L  *  R  N  S  *  P  A  L  K  K  H  T  V  H  L  S  K  I  I  Y  N  N  Q  T  N  Q  N  E  F  N  I  I  F  P  
+           L  E  L  T  C  F  E  E  T  V  D  L  L  *  R  N  I  L  S  I  C  L  K  *  S  I  T  T  K  P  I  K  M  N  S  T  L  F  S  Q 
+            *  S  *  P  A  L  K  K  Q  L  T  C  F  E  E  T  Y  C  P  F  V  *  N  N  L  *  Q  P  N  Q  S  K  *  I  Q  H  Y  F  P  R
+
+.
+.
+.
+                                                                                                                   SalI
+                                                                                                                   |AccI
+                                                                                                                   ||   AvaI
+                      AhaIII                                                                                       ||   | SmaI
+                      \                                                                                            \\   \ \
+          cccagtcgcatttaaaaaaatcaacaacaatgatgataatgaaaaaatctgaaactacttatagcctatggtcccggatgacatcCTATGGTCCCGGATGACATCGTCGACccgggcggc
+                   2290      2300      2310      2320      2330      2340      2350      2360      2370      2380      2390      2400      
+          ----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|----:----|
+          P  S  R  I  *  K  N  Q  Q  Q  *  *  *  *  K  N  L  K  L  L  I  A  Y  G  P  G  *  H  P  M  V  P  D  D  I  V  D  P  G  G  
+           P  V  A  F  K  K  I  N  N  N  D  D  N  E  K  I  *  N  Y  L  *  P  M  V  P  D  D  I  L  W  S  R  M  T  S  S  T  R  A  A 
+            Q  S  H  L  K  K  S  T  T  M  M  I  M  K  K  S  E  T  T  Y  S  L  W  S  R  M  T  S  Y  G  P  G  *  H  R  R  P  G  R  P
+.
+.
+.</div></pre></div>
+     </td>
+  </tr>
+  <tr>
+    <td class="step">2. Verify that the NPY1R open reading frame is intact.</td>
+  </tr>
+  <tr>
+    <td><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/InSilicoCloningAnswers.html#veri2" target="_answers">Question:</a></span> What are the start and end positions of the translated region of the NPY1 receptor in the final cloned product?
+    </td>
+  </tr>
+  <tr>
+    <td class="step">3. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/cirdna.html" target="emboss-apps"><strong>cirdna</strong></a> program to draw a graphical map of the final cloned product.</td>
+  </tr>
+  <tr>
+    <td>You will need to save <a href="/biomed505/Course/IntroSeqAnalysis/pCI-NPY1R.cirp.txt">this file</a> to use as input.  It contains mapping data that define the elements to show on the output graph.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">cirdna <span class="arg">pCI-NPY1R.cirp.txt</span> -graph x11 -noruler -blocktype filled -posticks Out -posblocks Out -textlength 3 [Enter]</span></span>
+      <p>This will open an X Window with a graphical representation of the final plasmid.  Examine the input file to see how the various elements are graphed.  also see <strong>cirdna -help</strong>
+    </td>
+  </tr>
+</table>
+
+<hr>
+<div class="tinytext">Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>(smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu)</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 16:20:27 MST 2004 <!-- hhmts end -->
+<!-- $Id: InSilicoCloning.html,v 1.4 2004/11/11 23:46:25 smathias Exp $ -->
+</span>
+
+</body>
+</html>

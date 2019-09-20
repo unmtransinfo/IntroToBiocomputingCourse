@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/display1.3.2.1.html -->
+
+<HEAD>
+<TITLE>Example of customising the less command</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Example of customising the <SAMP>less</SAMP> command</H1>
+
+<P>These examples show how the environment variable 
+<SAMP>LESS</SAMP> is
+set; first by users of the C and TC shells and then by
+users of the Bourne and BASH shells.</P>
+
+<HR>
+
+<H3>C shell / TC shell</H3>
+
+<P>To display the size of the file in the prompt:
+
+<PRE WIDTH=80>   <STRONG>setenv LESS -P%B</STRONG>
+</PRE>
+
+<P>or:</P>
+
+<PRE WIDTH=80>   <STRONG>LESS=-P;export LESS</STRONG>
+</PRE>
+
+<P>This displays the size (in bytes) of the file being
+displayed.</P>
+
+<HR>
+
+<H3>Bourne shell / BASH</H3>
+
+<P>To change the prompt and the way that text is
+displayed:</P>
+
+<PRE WIDTH=80>   <STRONG>setenv LESS '-N -S -P%f'</STRONG>
+</PRE>
+
+<P>or:</P>
+
+<PRE WIDTH=80>   <STRONG>LESS='-N -S -P%f';export LESS</STRONG>
+</PRE>
+
+<P>This puts the filename in the prompt (<SAMP>-P%f</SAMP>), displays the number
+of each line in the file (<SAMP>-N</SAMP>) and truncates lines that are too
+long to be displayed on the screen so that they do not wrap
+onto the next line (<SAMP>-S</SAMP>).</P>
+
+<P>Check the manual page for a full list of all the options
+that are available.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

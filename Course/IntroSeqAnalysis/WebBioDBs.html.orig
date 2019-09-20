@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Searching Web-based Biological Databases</title>
+  <link rel=stylesheet href="/biomed505/Course/IntroSeqAnalysis/css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<div class="headln">Searching Web-based Biological Databases</div>
+<br>
+<div class="text">
+<strong>Abstract:</strong> These exercises are designed to familiarize you with some of the issues and concepts involved with retrieving biological data from online databases.  We will focus on ENTREZ, a data retrieval system developed by the National Center for Biotechnology Information (NCBI), which is probably the most widely used system for such purposes.  ENTREZ provides integrated access to a wide range of data domains including biomedical literature, chromosomes, genetic loci, nucleotide and protein sequences, three-dimensional structures, and more.  In doing so, ENTREZ leverages the many logical relationships that exist between individual entries in the various NCBI databases.  The best way to grasp these relationships is by using the system.  As you work through this section, you may find it helpful to consult the <a href="http://www.ncbi.nlm.nih.gov/entrez/query/static/help/helpdoc.html">ENTREZ help document</a>.
+<br>
+<br>
+Questions you should answer as you work through the exercises are indicated by <span class="class2"><a href="">Question:</a></span> tags, which also serve as hyperlinks to the corresponding answers (where available).
+<br>
+<br>
+<strong>Typographical conventions:</strong> <br>
+ &nbsp; &nbsp; Regular web links look <a href="">like this</a><br>
+ &nbsp; &nbsp; Input that you should enter verbatim in web page forms, or links/buttons you should click on web pages look <span class="input">like this</span><br>
+</div>
+<br>
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex">Basic Use of the ENTREZ Data Retrieval System</td>
+  </tr>
+  <tr>
+    <td class="step">1. Load the main <a href="http://www.ncbi.nlm.nih.gov/Entrez/">ENTREZ search page</a>.</td>
+  </tr>
+  <tr>
+    <td>This page shows a representation of the complete range of databases that may be searched using the ENTREZ interface.</td>
+  </tr>
+  <tr>
+    <td class="step">2. Perform a cross-database search.</td>
+  </tr>
+  <tr>
+    <td>The cross-database search form is at the top of the page and looks like this:
+      <p><img src="/biomed505/Course/IntroSeqAnalysis/images/entrez1.jpg">
+      <p>Enter the word <span class="input">capsaicin</span> in the "Search across databases" box and click the <span class="input">GO</span> button.  What you will then see are result counts listed next to the various databases, representing the number of hits found for 'capsaicin' in each of the corresponding domains.</td>
+  </tr>
+  <tr>
+    <td class="step">3. Browse the results of your search</td>
+  </tr>
+  <tr>
+    <td>Click on a link for one of the domains in which hits were found.  You will be taken to a summary of those hits.  From these summary pages you can then view the detailed entries which generally have further links to other databases.  Spend a few minutes looking at the different summaries, following the links, and investigating the web of interconnections that exist between entries in the various NCBI databases.  Also, try to get a feel for what types of information exist in the various different databases, especially the nucleotide (GenBank) and protein databases.  </td>
+  </tr>
+  <tr>
+    <td class="step">4. What is capsaicin?</td>
+  </tr>
+  <tr>
+    <td><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/WebBioDBsAnswers.html#bas4" target="_answers">Question:</a></span> If you do not already know, try to figure out what capsaicin is, and learn something about what it does.</td>
+  </tr>
+  <tr>
+    <td class="step">5. Searching ENTREZ databases individually</td>
+  </tr>
+  <tr>
+    <td>Find the entry for the human capsaicin receptor in the ENTREZ Gene database.  To do this, it will be faster to query the ENTREZ Gene database directly.  The link to this database on the main ENTREZ page looks like this:
+      <p><img src="/biomed505/Course/IntroSeqAnalysis/images/entrez2.jpg">
+      <p>Click this link, or go directly to <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene">ENTREZ Gene</a> search page.  This page has some useful information and searching tips.  At the top is the search form, which looks like this:
+      <p><img src="/biomed505/Course/IntroSeqAnalysis/images/entrez3.jpg">
+      <p>Enter <span class="input">capsaicin receptor</span> in the search box and then click the <span class="input">Go</span> button.  The first result on the summary page should be the human capsaicin receptor gene.  Examine the information in the details view of this entry.
+      <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/WebBioDBsAnswers.html#bas5a" target="_answers">Question:</a></span> What is the official name of this gene? 
+      <br><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/WebBioDBsAnswers.html#bas5b" target="_answers">Question:</a></span> On which human chromosome does this gene reside?
+      <p><a href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq</a> is a curated NCBI database which aims to provide a comprehensive and non-redundant set of genomic DNA, transcript  (mRNA), and protein sequences for major research organisms.  Links to RefSeq entries are one of the many things you should find on the ENTREZ Gene report.
+      <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/WebBioDBsAnswers.html#bas5c" target="_answers">Question:</a></span> What is the RefSeq identifier for the human capsaicin receptor protein? </td>
+  </tr>
+  <tr>
+    <td class="step">6. Find information about the capsaicin receptor.</td>
+  </tr>
+  <tr>
+    <td>The capsaicin receptor is a very interesting gene product.  Use the links from the ENTREZ Gene report, or perform new ENTREZ queries to answer the following questions.
+      <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/WebBioDBsAnswers.html#bas6a" target="_answers">Question:</a></span> What biological activities are associated with the capsaicin receptor and in which ENTREZ source database did you find this information?
+      <br><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/WebBioDBsAnswers.html#bas6b" target="_answers">Question:</a></span> To what stimuli (other than capsaicin) does the receptor respond? </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Advanced Features of the ENTREZ Data Retrieval System</td>
+  </tr>
+  <tr>
+    <td class="step">1. Phrase searching</td>
+  </tr>
+  <tr>
+    <td>The ENTREZ search engine allows you to group search terms using double quotes.  Go back to the <a href="http://www.ncbi.nlm.nih.gov/Entrez/">ENTREZ search page</a> and compare the results obtained by searching with the following different expressions:
+      <ul>
+        <li><span class="input">16S RNA</span></li>
+        <li><span class="input">"16S RNA"</span></li>
+      </ul>
+      Which search retrieves fewer documents?  One thing to note is that using quotes causes ENTREZ to check the search phrase (the text within the quotes) against a phrase list.  If the search phrase is not in the phrase list, the ENTREZ treats the terms as though they are not in quotes.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Using wildcards</td>
+  </tr>
+  <tr>
+    <td >The ENTREZ search engine allows you to truncate search terms using an asterisk (*) in order to find all the records that contain terms that begin with a given text string.  Go back to the <a href="http://www.ncbi.nlm.nih.gov/Entrez/">ENTREZ search page</a> and compare the results obtained by searching with the following different expressions:
+      <ul>
+        <li><span class="input">1chromosome</span></li>
+        <li><span class="input">chromo*</span></li>
+      </ul>
+    </td>
+  </tr>
+  <tr bgcolor=#E4E4E4>
+    <td class="step">3. Searching for authors</td>
+  </tr>
+  <tr>
+    <td>Enter author names in the following format: lastname initial(s) (e.g., jefferson t). Do not use punctuation. This format instructs ENTREZ to search only the Author field.  Entrez automatically truncates on the author's name to account for various initials and designations, such as Jr. or 2nd. If only a last name is used in the query box (e.g., jefferson), ENTREZ will search All Fields for that term.  Go back to the <a href="http://www.ncbi.nlm.nih.gov/Entrez/">ENTREZ search page</a> and compare the results obtained by searching with the following different expressions:
+      <ul>
+        <li><span class="input">baltimore</span></li>
+        <li><span class="input">baltimore d</span></li>
+      </ul>
+      <p>You can also limit searches to the author field using the [AUTH] qualifier as described in Step 5, below.
+    </td>
+  </tr>
+  <tr
+    <td class="step">4. Boolean operators</td>
+  </tr>
+  <tr>
+    <td>The ENTREZ search engine allows search terms to be combined using any of the following boolean operators:<br>
+       &nbsp; <strong>AND:</strong> Combining two search terms with AND instructs ENTREZ to find all documents that contain BOTH terms.<br>
+       &nbsp; <strong>OR:</strong> Combining two search terms with OR instructs ENTREZ to find all documents that contain EITHER term.<br>
+       &nbsp; <strong>NOT:</strong> Combining two search terms with NOT instructs ENTREZ to find all documents that contain search term 1 BUT NOT search term 2.
+      <p>The ENTREZ search rules and syntax for using Boolean operators are:<br>
+       &nbsp; 1. Boolean operators AND, OR, NOT must be entered in UPPERCASE (e.g., promoters OR response elements).<br>
+       &nbsp; 2. ENTREZ processes all Boolean operators in a left-to-right sequence. The order in which ENTREZ processes a search statement can be changed by enclosing individual concepts in parentheses. The terms inside the parentheses are processed first as a unit and then incorporated into the overall strategy. For example, the search statement: g1p3 AND (response element OR promoter) is processed by Entrez by ORing the terms response element OR promoter first and then ANDing the resulting set of documents with g1p3.<br>
+       &nbsp; 3. Click on the Details button to see how ENTREZ translated and executed your search strategy.
+      <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/WebBioDBsAnswers.html#adv4" target="_answers">Question:</a></span> Based on the results of the queries you performed in step 1 above, what do you conclude is the default boolean operator with which ENTREZ connects search terms?
+  <tr>
+    <td class="step">5. Writing advanced queries</td>
+  </tr>
+  <tr>
+    <td>Complex search statements can be written and executed directly from the the query box of the cross database search page, or on any of the individual ENTREZ database pages (e.g. Nucleotides, Proteins, PubMed. etc), as long as you obey some simple rules and use the correct syntax.  One of the most powerful techniques you can utilize in writing queries is to restrict searches to particular database fields.  Searches can also be refined by using the Limit, Preview/Index, and History options on the ENTREZ search pages.  The key to using these options, especially the Limit and Preview/Index options, is to have a good understanding of the <a href="http://www.ncbi.nlm.nih.gov/entrez/query/static/help/Summary_Matrices.html" >search fields</a> of the ENTREZ databases.
+      <p>Limits can be applied to restrict ENTREZ searches to particular database fields.  This can be very helpful in refining searches to retrieve only the most relevant documents.  In order to apply limits, a field qualifier is used after the search term.  The format is as follows:
+      <br> &nbsp; <strong>term[qualifier] operator term[qualifier] ...</strong>
+      <br>where operator is any of the boolean operators covered in step 4 and [qualifier] is one of the field qualifier summarized in the table below.  <a href="http://www.ncbi.nlm.nih.gov/entrez/query/static/help/Summary_Matrices.html">Click here for a full list of ENTREZ search field qualifiers.</a>
+      <table border cellspacing="0" cellpadding="5">
+        <caption align=top> <h4></a>Selected Search Field Descriptions and Qualifiers</h4></caption>
+        <tr>
+          <th colspan=1>Search Field</th>
+          <th colspan=1>Definition</th>
+          <th colspan=1>Qualifier</th>
+        </tr>
+        <tr>
+          <td>Accession</td>
+          <td>Contains the unique accession number of the sequence or record, assigned to the nucleotide, protein, structure, genome record, or PopSet by a sequence database builder.  The Structure database accession index contains the PDB IDs but not the MMDB IDs.</td>
+          <td>[ACCN]</td>
+        </tr>
+        <tr>
+          <td>Author Name</td>
+          <td>Contains all authors from all references in the database records. The format is last name space first initial(s), without punctuation (e.g., marley jf).</td>
+          <td>[AUTH]</td>
+        </tr>
+        <tr>
+          <td>Feature Key</td>
+          <td>Contains the biological features assigned or annotated to the nucleotide sequences and defined in the <a href="http://www.ncbi.nlm.nih.gov/projects/collab/FT/index.html">DDBJ/EMBL/GenBank Feature Table</a>.  Not available for the Protein or Structure databases.</td>
+          <td>[FKEY]</td>
+        </tr>
+        <tr>
+          <td>Gene Name</td>
+          <td>Contains the standard and common names of genes found in the database records.  This field is not available in Structure database.</td>
+          <td>[GENE]</td>
+        </tr>
+        <tr>
+          <td>Journal Name</td>
+          <td>Contains the name of the journal in which the data were published. Journal names are indexed in the database in abbreviated form (e.g., J Biol Chem).  Journals are also indexed by their by ISSNs.  Browse the index if you do not know the ISSN or are not sure how a particular journal name is abbreviated.</td>
+          <td>[JOUR]</td>
+        </tr>
+        <tr>
+          <td>Keyword</td>
+          <td>Contains special index terms from the controlled vocabularies associated with the GenBank, EMBL, DDBJ, SWISS-Prot, PIR, PRF, or PDB databases.  Browse the Keyword indexes of the individual databases to become familiar with these vocabularies.  A Keyword index is not available in the Structure database.</td>
+          <td>[KYWD]</td>
+        </tr>
+        <tr>
+          <td>Organism</td>
+          <td>Contains the scientific and common names for the organisms
+            associated with protein and nucleotide sequences. </td>
+            <td>[ORGN]</td>
+          </tr>
+        </table>
+        <p>For example, go to the <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Nucleotide">Nucleotide</a> database and use the following expression to find all human nucleotide sequences with D-loop annotations: <span class="input">D-loop[FKEY] AND human[ORGN]</span>
+        <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/WebBioDBsAnswers.html#adv5a" target="_answers">Question:</a></span> How many results does this query return?
+        <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/WebBioDBsAnswers.html#adv5b" target="_answers">Question:</a></span> How would write a search statement to find all human G protein-coupled receptors? 
+        <p>Here are some more exercises to give you practice with the advanced features of ENTREZ:<br>
+        <ul>
+          <li><span class="question">Question:</span> Find all mouse nucleotide sequences that are involved in apoptosis and cancer.  See if you can figure out how to display all the retrieved records on a single page.</li>
+          <li><span class="question">Question:</span> Find protein sequences related to AIDS that are associated with publications in <i>Nature</i>.  See if you can figure out how to save this search so that it can be run again in the future.</li>
+          <li><span class="question">Question:</span> Find all human or mouse nucleotide sequences submitted in the year 1997.  How many 3D structures are associated with the records in your result set?</li>
+        </ul>
+      </td>
+  </tr>
+</table>
+
+<hr>
+<div class="tinytext">Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>(smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu)</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 16:03:51 MST 2004 <!-- hhmts end -->
+<!-- $Id: WebBioDBs.html,v 1.2 2004/11/11 23:46:25 smathias Exp $ -->
+</span>
+
+</body>
+</html>

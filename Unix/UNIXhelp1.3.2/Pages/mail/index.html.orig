@@ -1,0 +1,43 @@
+ <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- mail/index.html -->
+
+<HEAD>
+<TITLE>Using Electronic Mail</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Using Electronic Mail</H1>
+
+<P>Every UNIX system allows you to exchange electronic mail with 
+<A HREF="../tips/finger.html">other users on your local system</A>.  Most systems also
+allow you to exchange mail with users on 
+<A HREF="../glossary/gr.html#remotehost">remote systems</A>.</P>
+
+<P>Electronic mail is very quick. Messages will reach users
+on the same system almost immediately; users on systems
+elsewhere in this country, or other countries, in a few
+minutes, or hours at most.</P>
+
+<UL>
+<LI><A HREF="two.html">About the Mail program</A></LI>
+<LI><A HREF="three.html">Addressing mail</A></LI>
+<LI><A HREF="four.html">Sending mail</A></LI>
+<LI><A HREF="five.html">Receiving mail</A></LI>
+<LI><A HREF="six.html">Managing mail</A></LI>
+<LI><A HREF="custom.html">Customising mail</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

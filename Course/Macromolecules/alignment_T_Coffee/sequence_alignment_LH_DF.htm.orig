@@ -1,0 +1,2816 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="sequence_alignment_LH_DF_files/filelist.xml">
+<link rel=Preview href="sequence_alignment_LH_DF_files/preview.wmf">
+<link rel=Edit-Time-Data href="sequence_alignment_LH_DF_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Human muscarinic M3 and bovine rhodopsin sequences alignment</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>lili</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Dan Fara</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>131</o:TotalTime>
+  <o:Created>2008-01-03T04:33:00Z</o:Created>
+  <o:LastSaved>2008-01-03T04:33:00Z</o:LastSaved>
+  <o:Pages>8</o:Pages>
+  <o:Words>1649</o:Words>
+  <o:Characters>9404</o:Characters>
+  <o:Company>home</o:Company>
+  <o:Lines>78</o:Lines>
+  <o:Paragraphs>22</o:Paragraphs>
+  <o:CharactersWithSpaces>11031</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="sequence_alignment_LH_DF_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="sequence_alignment_LH_DF_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:UnderlineTabInNumList/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="0" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-134238209 -371195905 63 0 4129279 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:TimesNewRoman;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:StarSymbol;
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;
+	mso-font-charset:2;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-134238209 -371195905 63 0 4129279 0;}
+@font-face
+	{font-family:"\@StarSymbol";
+	mso-font-charset:128;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:.5in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:left;
+	text-indent:0in;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l7 level3 lfo8;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Arial Unicode MS";
+	mso-bidi-font-family:Tahoma;
+	mso-fareast-language:AR-SA;
+	font-weight:bold;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:"Body Text";
+	margin-top:14.0pt;
+	margin-right:0in;
+	margin-bottom:14.0pt;
+	margin-left:0in;
+	text-align:left;
+	text-indent:0in;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	mso-list:l7 level5 lfo8;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-language:AR-SA;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:center 3.25in right 6.5in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:center 3.25in right 6.5in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	tab-stops:.5in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Tahoma;
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;
+	font-style:italic;}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	vertical-align:super;}
+span.MsoEndnoteReference
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:.5in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:.5in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Tahoma;
+	letter-spacing:-.25pt;
+	mso-ansi-language:EN-GB;
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:.5in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	letter-spacing:-.25pt;
+	mso-ansi-language:EN-GB;
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"Default Paragraph Font";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"Default Paragraph Font";
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:bold;}
+pre
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:.5in;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+span.WW8Num1z0
+	{mso-style-name:WW8Num1z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+span.WW8Num1z1
+	{mso-style-name:WW8Num1z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num1z2
+	{mso-style-name:WW8Num1z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.WW8Num2z0
+	{mso-style-name:WW8Num2z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+span.WW8Num2z1
+	{mso-style-name:WW8Num2z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";}
+span.WW8Num2z2
+	{mso-style-name:WW8Num2z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.WW8Num3z0
+	{mso-style-name:WW8Num3z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num3z1
+	{mso-style-name:WW8Num3z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Wingdings 2";
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num3z2
+	{mso-style-name:WW8Num3z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:StarSymbol;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num4z0
+	{mso-style-name:WW8Num4z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num4z1
+	{mso-style-name:WW8Num4z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Wingdings 2";
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num4z2
+	{mso-style-name:WW8Num4z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:StarSymbol;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num5z0
+	{mso-style-name:WW8Num5z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num5z1
+	{mso-style-name:WW8Num5z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Wingdings 2";
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num5z2
+	{mso-style-name:WW8Num5z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:StarSymbol;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num6z0
+	{mso-style-name:WW8Num6z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num6z1
+	{mso-style-name:WW8Num6z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Wingdings 2";
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num6z2
+	{mso-style-name:WW8Num6z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:StarSymbol;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num7z0
+	{mso-style-name:WW8Num7z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num7z1
+	{mso-style-name:WW8Num7z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Wingdings 2";
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+span.WW8Num7z2
+	{mso-style-name:WW8Num7z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:StarSymbol;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+span.Absatz-Standardschriftart
+	{mso-style-name:Absatz-Standardschriftart;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.EndnoteCharacters
+	{mso-style-name:"Endnote Characters";
+	mso-style-unhide:no;
+	mso-style-parent:"Default Paragraph Font";
+	vertical-align:super;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-unhide:no;
+	mso-style-parent:"Default Paragraph Font";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-unhide:no;
+	mso-style-parent:"Default Paragraph Font";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-unhide:no;
+	mso-style-parent:"Default Paragraph Font";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.FootnoteCharacters
+	{mso-style-name:"Footnote Characters";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	vertical-align:super;}
+span.WW-FootnoteCharacters
+	{mso-style-name:"WW-Footnote Characters";
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.Bullets
+	{mso-style-name:Bullets;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:StarSymbol;
+	mso-ascii-font-family:StarSymbol;
+	mso-fareast-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+span.NumberingSymbols
+	{mso-style-name:"Numbering Symbols";
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-unhide:no;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	tab-stops:.5in;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Arial Unicode MS";
+	mso-bidi-font-family:Tahoma;
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	tab-stops:.5in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Tahoma;
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("sequence_alignment_LH_DF_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("sequence_alignment_LH_DF_files/header.htm") fcs;
+	mso-endnote-separator:url("sequence_alignment_LH_DF_files/header.htm") es;
+	mso-endnote-continuation-separator:url("sequence_alignment_LH_DF_files/header.htm") ecs;
+	mso-footnote-position:beneath-text;
+	mso-endnote-position:end-of-section;
+	mso-endnote-numbering-style:arabic;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-header:url("sequence_alignment_LH_DF_files/header.htm") h1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;
+	mso-footnote-position:beneath-text;
+	mso-endnote-numbering-style:arabic;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1;
+	mso-list-template-ids:1;
+	mso-list-name:WW8Num1;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+@list l1
+	{mso-list-id:2;
+	mso-list-template-ids:2;
+	mso-list-name:WW8Num2;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+@list l2
+	{mso-list-id:3;
+	mso-list-template-ids:3;
+	mso-list-name:WW8Num3;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l3
+	{mso-list-id:4;
+	mso-list-template-ids:4;
+	mso-list-name:WW8Num4;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l4
+	{mso-list-id:5;
+	mso-list-template-ids:5;
+	mso-list-name:WW8Num5;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l5
+	{mso-list-id:6;
+	mso-list-template-ids:6;
+	mso-list-name:WW8Num6;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l5:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l5:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l5:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l5:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l5:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l5:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l5:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l6
+	{mso-list-id:7;
+	mso-list-template-ids:7;
+	mso-list-name:WW8Num7;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l6:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l6:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l6:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l6:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l6:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l6:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:StarSymbol;}
+@list l6:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:StarSymbol;}
+@list l6:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;
+	mso-bidi-font-family:StarSymbol;}
+@list l7
+	{mso-list-id:8;
+	mso-list-template-ids:8;}
+@list l7:level1
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7:level2
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7:level3
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7:level4
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7:level5
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7:level6
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7:level7
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7:level8
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7:level9
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l8
+	{mso-list-id:12726642;
+	mso-list-template-ids:1426624516;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0D8;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l8:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:"Courier New";}
+@list l8:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+@list l8:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l8:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:"Courier New";}
+@list l8:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+@list l8:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l8:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F081;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Wingdings 2";
+	mso-hansi-font-family:"Wingdings 2";
+	mso-bidi-font-family:"Courier New";}
+@list l8:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;
+	mso-ascii-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+@list l9
+	{mso-list-id:152987958;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-837916806 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:299070970;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1657360486 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l11
+	{mso-list-id:612976061;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1707139524 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:625626908;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-488610194 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l13
+	{mso-list-id:1020815083;
+	mso-list-type:hybrid;
+	mso-list-template-ids:472572166 67698699 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l14
+	{mso-list-id:1870213691;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1575966214 67698699 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l15
+	{mso-list-id:1875463244;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1741394678 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal style='line-height:115%'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='font-size:16.0pt;
+line-height:115%'>Section II</span></i></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:16.0pt;line-height:115%'><span style='mso-tab-count:1'>  </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:115%'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:115%'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;line-height:115%'>The Structure of
+Macromolecules: </span></b><i style='mso-bidi-font-style:normal'><span
+style='font-size:14.0pt;line-height:115%;mso-bidi-font-weight:bold'>Human
+muscarinic M3 and bovine rhodopsin sequences alignment - tutorial<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p><i style='mso-bidi-font-style:normal'>Liliana Halip, Dan C. Fara and Tudor
+I. Oprea<o:p></o:p></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><u>Objective<o:p></o:p></u></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>To learn how to
+use T-Coffee for sequences alignment.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><u>Brief info<o:p></o:p></u></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>A sequence alignment
+consists in the primary sequences arrangement of proteins, DNA or RNA, in order
+to identify regions of similarity that may be a result of functional,
+structural, or evolutionary relationships between those sequences. Aligned
+sequences are typically represented as rows within a matrix, and identical or
+similar characters must be aligned in successive columns. Gaps may be inserted
+between the residues if it is necessary. There are several web-based programs
+that can be used for sequences alignment. The main ones are <a
+href="http://www.ncbi.nlm.nih.gov/BLAST">BLAST</a><a style='mso-endnote-id:
+edn1' href="#_edn1" name="_ednref1" title=""><span class=EndnoteCharacters><b><span
+lang=RO style='mso-bidi-font-size:9.0pt;line-height:115%;mso-ansi-language:
+RO'><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=EndnoteCharacters><b style='mso-bidi-font-weight:normal'><span lang=RO
+style='font-size:12.0pt;mso-bidi-font-size:9.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:RO;mso-fareast-language:
+AR-SA;mso-bidi-language:AR-SA'>[1]</span></b></span><![endif]></span></span></b></span></a><b
+style='mso-bidi-font-weight:normal'><sup><span lang=RO style='mso-bidi-font-size:
+9.0pt;line-height:115%;mso-ansi-language:RO'>,<a style='mso-endnote-id:edn2'
+href="#_edn2" name="_ednref2" title=""><span class=EndnoteCharacters><span
+style='mso-bidi-font-weight:bold'><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=EndnoteCharacters><b style='mso-bidi-font-weight:normal'><span lang=RO
+style='font-size:12.0pt;mso-bidi-font-size:9.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:RO;mso-fareast-language:
+AR-SA;mso-bidi-language:AR-SA'>[2]</span></b></span><![endif]></span></span></span></a></span></sup></b>,
+<a href="http://www.ebi.ac.uk/Tools/clustalw/index.html">ClustalW</a>, and <a
+href="http://tcoffee.vital-it.ch/cgi-bin/Tcoffee/tcoffee_cgi/index.cgi">T-Coffee</a><a
+style='mso-endnote-id:edn3' href="#_edn3" name="_ednref3" title=""><span
+class=EndnoteCharacters><b><span lang=RO style='mso-bidi-font-size:9.0pt;
+line-height:115%;mso-ansi-language:RO'><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=EndnoteCharacters><b style='mso-bidi-font-weight:normal'><span lang=RO
+style='font-size:12.0pt;mso-bidi-font-size:9.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:RO;mso-fareast-language:
+AR-SA;mso-bidi-language:AR-SA'>[3]</span></b></span><![endif]></span></span></b></span></a>.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='mso-tab-count:1'>            </span>T-Coffee runs by assembling a
+library - a list of potential pairs of residues and then turns this library
+into an alignment. Each library line is a constraint and the purpose is to
+assemble the alignment that accommodates the more all the constraints.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='mso-tab-count:1'>            </span>For this tutorial, the human
+muscarinic M3 (hM3) and bovine rhodopsin (RHO) sequences were chosen to be
+aligned using T-Coffee. The bovine rhodopsin is the only protein belonging to
+the same family with hM3 receptor (G-protein coupled receptors, GPCR) having
+the 3D structure available from experimental studies (X-RAY or RMN studies).</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><u>How to<o:p></o:p></u></p>
+
+<p><i><span style='mso-bidi-font-weight:normal'>1. Obtain the proteins
+sequences<o:p></o:p></span></i></p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l10 level1 lfo11;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='mso-bidi-font-weight:normal'>go to </span><a
+href="http://expasy.org/sprot/">Swiss-PROT</a><a style='mso-endnote-id:edn4'
+href="#_edn4" name="_ednref4" title=""><span class=EndnoteCharacters><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=EndnoteCharacters><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+AR-SA;mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>[4]</span></span><![endif]></span></span></a><sup>,<a
+style='mso-endnote-id:edn5' href="#_edn5" name="_ednref5" title=""><span
+class=EndnoteCharacters><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=EndnoteCharacters><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+AR-SA;mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'>[5]</span></span><![endif]></span></span></a></sup>
+(the protein sequence database).</p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l10 level1 lfo11;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>enter the protein name (e.g. muscarinic M3
+receptor) in the query field - see Figure 1; you will be directed to a new page
+where you can find the results of your query.<span style='mso-spacerun:yes'> 
+</span></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:481.5pt;
+ height:404.25pt' filled="t">
+ <v:fill color2="black"/>
+ <v:imagedata src="sequence_alignment_LH_DF_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=642 height=539
+src="sequence_alignment_LH_DF_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]><b><o:p></o:p></b></p>
+
+<p><b>Figure 1<o:p></o:p></b></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l9 level1 lfo12;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>select/open the record for the human M3 sequence
+(SWISS PROT ID: P20309) – see Figure 2. At the end of this page, in the sequence
+section, you have the option to view the protein sequence as FASTA format – see
+Figure 3. </p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:483.75pt;
+ height:409.5pt' filled="t">
+ <v:fill color2="black"/>
+ <v:imagedata src="sequence_alignment_LH_DF_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=645 height=546
+src="sequence_alignment_LH_DF_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]><b><o:p></o:p></b></p>
+
+<p><b>Figure 2<o:p></o:p></b></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75" style='width:517.5pt;
+ height:351.75pt' filled="t">
+ <v:fill color2="black"/>
+ <v:imagedata src="sequence_alignment_LH_DF_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=690 height=469
+src="sequence_alignment_LH_DF_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]><b><o:p></o:p></b></p>
+
+<p><b>Figure 3<o:p></o:p></b></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l9 level1 lfo12;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>save the sequence (in FASTA format) as a text
+file.</p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l9 level1 lfo12;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>repeat the above-given steps for bovine
+rhodopsin and save the sequence OPSD_BOVIN (SWISS PROT ID: P02699)</p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l9 level1 lfo12;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>merge the two text files into a single one and
+save it as “sequences.txt”</p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p><i>2. Align the proteins sequences<o:p></o:p></i></p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l12 level1 lfo13;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>access the <a
+href="http://tcoffee.vital-it.ch/cgi-bin/Tcoffee/tcoffee_cgi/index.cgi">T-Coffee
+server</a><span style='mso-spacerun:yes'>  </span></p>
+
+<p>Note that the following five modules are available for proteins sequences
+alignment: (i) T-Coffee, (ii) Expresso (it replaces 3DCoffee), (iii) M-Coffee,
+(iv) Rcoffee (beta version), and (v) Combine. <i>T-Coffee</i> c<span
+style='color:black'>omputes a </span><span style='color:black;mso-bidi-font-weight:
+normal'>multiple sequence alignment and the associated phylogenetic tree. <i>Expresso</i>
+computes </span><b><span style='color:black'>structure</span></b><span
+style='color:black;mso-bidi-font-weight:normal'> based multiple sequence
+alignments by running a BLAST alignment between every sequence in the query
+against the PDB database. If it finds one structure similar enough to a
+sequence in your dataset (&gt;60% identity), it will use it as a template for
+your sequence. <i>M-Coffee</i> computes a multiple sequence alignment and the
+associated phylogenetic tree by combining the output of se</span><span
+style='color:black'>veral multiple sequence alignment packages (PCMA, Poa,
+Mafft, Muscle, T-Coffee, ClustalW, ProbCons, DialignT). <i>Rcoffee</i> computes
+m</span><span style='color:black;mso-bidi-font-weight:normal'>ultiple sequence
+alignment of </span><b><span style='color:black'>non coding </span></b><span
+style='color:black;mso-bidi-font-weight:normal'>RNA sequences using </span><a
+href="http://www.tbi.univie.ac.at/~ivo/RNA/RNAplfold.html">RNAplfold</a><span
+style='color:black;mso-bidi-font-weight:normal'> predicted secondary
+structures. <i>Combine</i> combines two (or more) multiple sequence alignments
+into a single one. Details about each of these modules can be found by
+following the link “</span><a
+href="http://tcoffee.vital-it.ch/cgi-bin/Tcoffee/tcoffee_cgi/index.cgi">cite</a><span
+style='color:black;mso-bidi-font-weight:normal'>” to the original papers.<o:p></o:p></span></p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l12 level1 lfo13;
+tab-stops:.5in'><![if !supportLists]><span lang=EN-GB style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-GB'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-GB style='mso-ansi-language:EN-GB'>go
+to T-Coffee &gt; Advanced and input the sequences in Fasta format. This can be
+done in two ways: (i) either upload the text file containing both sequences in
+Fasta format (sequences.txt), or (ii) paste both proteins sequences in Fasta
+format (no empty line between the sequences). Keep the default options for the
+“Alignment computation” and the “Output”, as can be seen in Figure 4:<o:p></o:p></span></p>
+
+<p style='margin-left:.25in;tab-stops:.5in'><span lang=EN-GB style='mso-ansi-language:
+EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:446.25pt;height:486.75pt'>
+ <v:imagedata src="sequence_alignment_LH_DF_files/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=595 height=649
+src="sequence_alignment_LH_DF_files/image008.jpg" v:shapes="_x0000_i1028"><![endif]><o:p></o:p></span></b></p>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Figure 4<o:p></o:p></span></b></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l12 level1 lfo13;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>press the submit button and wait until the
+sequence alignment will be computed.<span style='mso-spacerun:yes'>  </span>The
+results are given in different formats – see Figure 5. The high-similarity
+regions in the alignment are marked yellow/red in the HTML or PDF format.</p>
+
+<p><b><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75" style='width:447.75pt;
+ height:333pt'>
+ <v:imagedata src="sequence_alignment_LH_DF_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=597 height=444
+src="sequence_alignment_LH_DF_files/image010.jpg" v:shapes="_x0000_i1029"><![endif]><o:p></o:p></b></p>
+
+<p><b>Figure 5<o:p></o:p></b></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p>The sequence alignment is the most critical step in developing a homology
+model, for example a misalignment by just one residue will cause an error
+around 4Å in the model. For an accurate alignment the <b>structurally-conserved
+regions</b> (SCRs) have to be identified in both sequences.
+Structurally-conserved regions within a family proteins refer to the fragments
+for which an average structure or framework can be constructed for these
+regions of the proteins. </p>
+
+<p>In rhodopsin-like family the highly conserved amino acids are<a
+style='mso-endnote-id:edn6' href="#_edn6" name="_ednref6" title=""><span
+class=EndnoteCharacters><span style='font-family:TimesNewRoman'><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=EndnoteCharacters><span style='font-size:12.0pt;font-family:TimesNewRoman;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:AR-SA;mso-bidi-language:AR-SA;
+mso-bidi-font-weight:bold'>[6]</span></span><![endif]></span></span></span></a>:
+</p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l14 level1 lfo14;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]>Gly17,
+Asn 18 and Val21 on helix I, </p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l14 level1 lfo14;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]>Asn
+or Ser9, Leu10, Ala11, Ala or Ser13, and Asp14 on helix II, </p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l14 level1 lfo14;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]>Ser
+14, Leu 18, Ile 21, Ser or Ala22, Asp or Glu24, Arg 25, Tyr 26, Ile or Val29,
+on helix III, </p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l14 level1 lfo14;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]>Trp11,
+Ser or Ala14 and Pro20 on helix IV, </p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l14 level1 lfo14;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]>Phe11,
+Pro14, Ile or Met18, Tyr22 and Ile or Val25 on helix V, </p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l14 level1 lfo14;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]>Lys
+or Arg0, Phe12, Cys15, Trp16 and Pro18 on helix VI, </p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l14 level1 lfo14;
+tab-stops:.5in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]>Asn
+or Ser13, Ser or Cys14, Asn or Asp17, Pro18, Tyr21, Phe or Tyr28 and Arg or
+Lys29 on helix VII.</p>
+
+<p>After highly conserved residues identification in the alignment (yellow
+background in figure 6) one can observe that T-coffee fails to find the common
+motif in the helices 5 (green background in figure 6). This is due to the fact
+that the third intracellular loops have obviously different lengths (218
+residues in M3 receptor versus 25 residues in rhodopsin). To avoid this
+inconvenient, a new alignment is necessary, this time using a short sequence for
+hM3 receptor (the short sequence does not contain all the amino acid residues
+from the third loop). This deletion will not have a bad influence on following
+studies (e.g. docking) because the binding site is located in the
+transmembranar region. In Figure 6 bold letters indicate the transmembranar
+domains; the fifth transmembrane is pointed out with bold and italic letters.</p>
+
+<p><span style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>CLUSTAL FORMAT for T-COFFEE
+Version_5.13 [http://www.tcoffee.org], CPU=0.09 sec, SCORE=63, Nseq=2, Len=595 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN ----MNGTEGPNF------YVPFSNKTGV---------------VRSPFEAPQYYLAEP-
+34<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN
+MTLHNNSTTSPLFPNISSSWIHSPSDAGLPPGTVTHFGSYNVSRAAGNFSSPDGTTDDPL 60<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                       </span>*.* .* *<span
+style='mso-spacerun:yes'>      </span>::<span style='mso-spacerun:yes'> 
+</span>...:*:<span style='mso-spacerun:yes'>               </span>. . *.:*:<span
+style='mso-spacerun:yes'>    </span>:* <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span style='mso-tab-count:4'>                           </span><span
+style='mso-spacerun:yes'>    </span><b style='mso-bidi-font-weight:normal'><span
+style='color:red'>TM I</span></b><span style='color:red'><span
+style='mso-tab-count:3'>                   </span><span
+style='mso-spacerun:yes'>       </span><b style='mso-bidi-font-weight:normal'>TM
+II<o:p></o:p></b></span></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN -----WQ<b
+style='mso-bidi-font-weight:normal'>FSMLAAYMFLLIMLGFP<span style='background:
+yellow'>IN</span>FL<span style='background:yellow'>T</span>LYVTV</b>QHKKLRTPLN<b
+style='mso-bidi-font-weight:normal'>YILL<span style='background:yellow'>NLA</span>V<span
+style='background:yellow'>AD</span>LFMVFG</b> 89<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN GGHTVWQ<b
+style='mso-bidi-font-weight:normal'>VVFIAFLTGILALVTII<span style='background:
+yellow'>GN</span>IL<span style='background:yellow'>V</span>IV</b>SFKVNKQLKTVNN<b
+style='mso-bidi-font-weight:normal'>YFLL<span style='background:yellow'>SLA</span>C<span
+style='background:yellow'>AD</span>L</b>--<b style='mso-bidi-font-weight:normal'>IIG</b>
+118<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                       </span>**. ::*<span
+style='mso-spacerun:yes'>    </span>:* :: :<span style='mso-spacerun:yes'> 
+</span>*:*.:<span style='mso-spacerun:yes'>     </span>:*:*:*<span
+style='mso-spacerun:yes'>  </span>**:**.** ***<span style='mso-spacerun:yes'> 
+</span>::*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span style='mso-tab-count:6'>                                         </span><span
+style='mso-spacerun:yes'>         </span><b style='mso-bidi-font-weight:normal'><span
+style='color:red'>TM III<o:p></o:p></span></b></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN <b
+style='mso-bidi-font-weight:normal'>GFTTTLY</b>TS--LHGYFVFGPTGC<b
+style='mso-bidi-font-weight:normal'>NLEGFFATLGGEI<span style='background:yellow'>A</span>LWS<span
+style='background:yellow'>L</span>VV<span style='background:yellow'>LA</span>I</b><span
+style='background:yellow'>ERY</span>VV<span style='background:yellow'>V</span>CKPMS-NF
+146<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN <b
+style='mso-bidi-font-weight:normal'>VISMNL</b>FTTYIIMNRWALGNLACD<b
+style='mso-bidi-font-weight:normal'>LWLAIDYVASNA<span style='background:yellow'>S</span>VMN<span
+style='background:yellow'>L</span>LV<span style='background:yellow'>IS</span>F</b><span
+style='background:yellow'>DRY</span>FS<span style='background:yellow'>I</span>TRPLTYRA
+178<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                   </span>:: .*:*:<span
+style='mso-spacerun:yes'>  </span>: . :.:*<span style='mso-spacerun:yes'> 
+</span>.*:*<span style='mso-spacerun:yes'>   </span>:<span
+style='mso-spacerun:yes'>  </span>:..: :: .*:*::::**. : :*:: . <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span style='mso-tab-count:4'>                           </span><span
+style='mso-spacerun:yes'>  </span><b style='mso-bidi-font-weight:normal'><span
+style='color:red'>TM IV<o:p></o:p></span></b></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN RFGENH<b
+style='mso-bidi-font-weight:normal'>AIMGVAFT<span style='background:yellow'>W</span>VM<span
+style='background:yellow'>A</span>LACAA<span style='background:yellow'>P</span>PLV</b>GWSRYI---------------------------
+179<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN KRTTKR<b
+style='mso-bidi-font-weight:normal'>AGVMIGLA<span style='background:yellow'>W</span>VI<span
+style='background:yellow'>S</span>FVLWA<span style='background:yellow'>P</span>AILFW</b>QYFVGKRTVPPGECFIQFLSEP<b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>TITFGTAIA</i></b>
+238<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                  </span>:<span
+style='mso-spacerun:yes'>   </span>::* : :.::**:::.<span
+style='mso-spacerun:yes'>  </span>**.:: *. ::<span
+style='mso-spacerun:yes'>                           </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN
+--------------------------------------------PEGMQCSCGI------ 189<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>A<span
+style='background:lime'>F</span>YM<span style='background:lime'>P</span>VTI<span
+style='background:lime'>M</span>TIL<span style='background:lime'>Y</span>W</i></b>R<span
+style='background:lime'>I</span>YKETEKRTKELAGLQASGTEAETENFVHPTGSSRSCSSYELQQQ
+298<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                                                              
+</span>* * . **.<span style='mso-spacerun:yes'>       </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN
+--------------------------------------------------DYYTPHEETN 199<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN
+SMKRSNRRKYGRCHFWFTTKSWKPSSEQMDQDHSSSDSWNNNDAAASLENSASSDEEDIG 358<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                                                                   
+</span>.<span style='mso-spacerun:yes'>  </span>: .*: .<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN NES<b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>FVIYMFVVH<span
+style='background:lime'>F</span></i></b>-----------------------------------------------
+212<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN
+SETRAIYSIVLKLPGHSTILNSTKLPSSDNLQVPEEELGMVDLERKADKLQAQKSVDDGG 418<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                  </span>.*: .** :*:::<span
+style='mso-spacerun:yes'>                                               </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span style='mso-tab-count:5'>                                  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN -------<b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>II<span
+style='background:lime'>P</span>LIV</i></b>---------------<b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='background:lime'>I</span>FFC<span
+style='background:lime'>Y</span>G</i></b>QLVFTVKEAA-----------AQQQE 239<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN
+SFPKSFSKLPIQLESAVDTAKTSDVNSSVGKSTATLPLSFKEATLAKRFALKTRSQITKR 478<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                          </span>:*: :<span
+style='mso-spacerun:yes'>               </span>:<span
+style='mso-spacerun:yes'>  </span>. . * ::.***:<span
+style='mso-spacerun:yes'>              </span>:.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span style='mso-tab-count:5'>                                  </span><b
+style='mso-bidi-font-weight:normal'><span style='color:red'>TM VI<o:p></o:p></span></b></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN SATTQKAEK<span
+style='background:yellow'>E</span><b style='mso-bidi-font-weight:normal'>VTRMVIIMVIA<span
+style='background:yellow'>F</span>LI<span style='background:yellow'>CW</span>L<span
+style='background:yellow'>P</span>YAGVAFY</b>IFTHQGSDFGPI<b style='mso-bidi-font-weight:
+normal'>FMTIPAFFAKT<span style='background:yellow'>SA</span> </b>299<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN KRMSLVKEK<span
+style='background:yellow'>K</span>AAQT<b style='mso-bidi-font-weight:normal'>LSAILLA<span
+style='background:yellow'>F</span>II<span style='background:yellow'>TW</span>T<span
+style='background:yellow'>P</span>Y</b>-<b style='mso-bidi-font-weight:normal'>NIMVLVN</b>TFCDSCIPKTFWNLGYW<b
+style='mso-bidi-font-weight:normal'>LCYI<span style='background:yellow'>NS</span></b>
+537<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                  </span>.<span
+style='mso-spacerun:yes'>  </span>:<span style='mso-spacerun:yes'>  
+</span>**:.:: :<span style='mso-spacerun:yes'>  </span>:::**:* * ** .: . : *.
+.* :<span style='mso-spacerun:yes'>   </span>* .:<span
+style='mso-spacerun:yes'>  </span>::.<span style='mso-spacerun:yes'>  </span>.:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span style='mso-tab-count:2'>              </span><span
+style='color:red'>TM VII<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN <b
+style='mso-bidi-font-weight:normal'>VY<span style='background:yellow'>NP</span>VI<span
+style='background:yellow'>Y</span>IM</b>MNKQ<span style='background:yellow'>FR</span>NCMVTTLCC------GKNPLGDDEASTTVSKTETSQVAPA
+348<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN <b
+style='mso-bidi-font-weight:normal'>TV<span style='background:yellow'>NP</span>VC<span
+style='background:yellow'>Y</span>ALC</b>NKT<span style='background:yellow'>FR</span>TTFKMLLLCQCDKKKRRKQQYQQRQSVIFHKRAPEQA--L
+590<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>                  </span>. *** * : ** **. :<span
+style='mso-spacerun:yes'>   </span>* *<span style='mso-spacerun:yes'>      
+</span>::<span style='mso-spacerun:yes'>   </span>::. *. . *<span
+style='mso-spacerun:yes'>  </span>..*.<span style='mso-spacerun:yes'>   </span><o:p></o:p></span></p>
+
+<p><b>Figure 6<o:p></o:p></b></p>
+
+<p><span style='mso-tab-count:1'>            </span></p>
+
+<p>Therefore the improved alignment must be accomplished so that the SCRs from
+the two sequences are perfectly aligned. In the same time, each transmembrane
+alignment must not contain insertion or deletion at their level. If that
+happens, they have to be moved in loop regions for the sake of the accuracy of
+the alignment. As one can see from Figure 6 such operations have to be
+performed at helix 2 and 6 levels.<span style='mso-spacerun:yes'>  </span>In
+order to avoid the induction of perturbations it is better to eliminate the
+insertions before helix 1 and after helix 8. Also helices 5 must be manually
+realigned. Based on these modifications and by removing a part of CIII loop a
+new alignment is obtained – see Figure 7.</p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<pre style='text-align:justify;line-height:115%'><span style='font-size:8.0pt;
+line-height:115%'>CLUSTAL FORMAT for T-COFFEE Version_5.13 [http://www.tcoffee.org], CPU=0.07 sec, SCORE=64, Nseq=2, Len=390<o:p></o:p></span></pre><pre
+style='text-align:justify;line-height:115%'><span style='font-size:8.0pt;
+line-height:115%'><span style='mso-tab-count:8'>                                                                      </span><b
+style='mso-bidi-font-weight:normal'><span style='color:red'>TM I<o:p></o:p></span></b></span></pre>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN<span
+style='mso-spacerun:yes'>  </span>MNGTEGPNFYVPFSNKTGVVRSPFEAPQYYLAEPWQ<b
+style='mso-bidi-font-weight:normal'>FSMLAAYMFLLIMLGFP<span style='background:
+yellow'>IN</span>FL<span style='background:yellow'>T</span>LYVTV<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN<span
+style='mso-spacerun:yes'>  </span>NNSTTSPLFWIHSPSDAGLAAGNFSSPDGTTDDPWQ<b
+style='mso-bidi-font-weight:normal'>VVFIAFLTGILALVTII<span style='background:
+yellow'>GN</span>IL<span style='background:yellow'>V</span>I</b><i
+style='mso-bidi-font-style:normal'>V</i>SFK <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in;line-height:115%'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt;line-height:
+115%;font-family:"Courier New";color:red'><span style='mso-spacerun:yes'>    
+</span>TM II<span style='mso-tab-count:6'>                                      </span>TM
+III<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN
+QHKKLRTPLN<b style='mso-bidi-font-weight:normal'>YILL<span style='background:
+yellow'>NLA</span>V<span style='background:yellow'>AD</span>LFMVFGGFTTTLY</b>TSLHGYFVFGPTGC<b
+style='mso-bidi-font-weight:normal'>NLEGFFATLGGEI<span style='background:yellow'>A</span>LWS</b>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN
+VNKQLKTVNN<b style='mso-bidi-font-weight:normal'>YFLL<span style='background:
+yellow'>SLA</span>C<span style='background:yellow'>AD</span>LIIGVISMNL</b>FTTYIIMNRWALGNLACD<b
+style='mso-bidi-font-weight:normal'>LWLAIDYVASNA<span style='background:yellow'>S</span>VMN</b>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span style='mso-tab-count:8'>                                                       </span><b
+style='mso-bidi-font-weight:normal'><span style='color:red'>TM IV<o:p></o:p></span></b></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN
+<b style='mso-bidi-font-weight:normal'><span style='background:yellow'>L</span>VV<span
+style='background:yellow'>LA</span>I</b><span style='background:yellow'>ERY</span>VV<span
+style='background:yellow'>V</span>CKPMS-NFRFGENH<b style='mso-bidi-font-weight:
+normal'>AIMGVAFT<span style='background:yellow'>W</span>VM<span
+style='background:yellow'>A</span>LACAA<span style='background:yellow'>P</span>PL</b>VGWSRYIPEGMQCSCGID
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN
+<b style='mso-bidi-font-weight:normal'><span style='background:yellow'>L</span>LV<span
+style='background:yellow'>IS</span>F</b><span style='background:yellow'>DRY</span>FS<span
+style='background:yellow'>I</span><i style='mso-bidi-font-style:normal'>T</i>RPLTYRAKRTTKR<b
+style='mso-bidi-font-weight:normal'>AGVMIGLA<span style='background:yellow'>W</span>VI<span
+style='background:yellow'>S</span>FVLWA<span style='background:yellow'>P</span>AILFW</b>QYFVGKRTVPPG---
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span style='mso-tab-count:6'>                                         </span><b
+style='mso-bidi-font-weight:normal'><span style='color:red'>TM V<o:p></o:p></span></b></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN
+YYTPHEETNNES<b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>FVIYMFVVH<span style='background:lime'>F</span>II<span
+style='background:lime'>P</span>LIV<span style='background:lime'>I</span>FFC<span
+style='background:lime'>Y</span>G</i></b>QLVF-TVKEAAAQQQESATTQKAEK<b
+style='mso-bidi-font-weight:normal'><span style='background:yellow'>E</span>VTRM<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN
+-ECFIQFLSEP<b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>TITFGTAIAA<span style='background:lime'>F</span>YM<span
+style='background:lime'>P</span>VTI<span style='background:lime'>M</span>TIL<span
+style='background:lime'>Y</span>W</i></b><i style='mso-bidi-font-style:normal'>R</i><span
+style='background:lime'>I</span>YKETEKRTKLQQQ-KRMSLVKEK<b style='mso-bidi-font-weight:
+normal'><span style='background:yellow'>K</span></b>AAQT <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><span style='mso-tab-count:4'>                           </span><b
+style='mso-bidi-font-weight:normal'><span style='color:red'>TM VI<span
+style='mso-tab-count:6'>                                    </span>TM VII<o:p></o:p></span></b></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN
+<b style='mso-bidi-font-weight:normal'>VIIMVIA<span style='background:yellow'>F</span>LI<span
+style='background:yellow'>CW</span>L<span style='background:yellow'>P</span>YAGVAFY</b>IFTHQGSDFGPI<b
+style='mso-bidi-font-weight:normal'>FMTIPAFFAKT<span style='background:yellow'>SA</span>VY<span
+style='background:yellow'>NP</span>VI<span style='background:yellow'>Y</span>IM</b>MNKQ<b
+style='mso-bidi-font-weight:normal'><span style='background:yellow'>FR</span></b>NCM
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN
+<b style='mso-bidi-font-weight:normal'>LSAILLA<span style='background:yellow'>F</span>II<span
+style='background:yellow'>TW</span>T<span style='background:yellow'>P</span>YNIMVLV</b>NTFCDSCIP-KTFWNLGYW<b
+style='mso-bidi-font-weight:normal'>LCYI<span style='background:yellow'>NS</span>TV<span
+style='background:yellow'>NP</span>VC<span style='background:yellow'>Y</span>AL</b>CNKT<b
+style='mso-bidi-font-weight:normal'><span style='background:yellow'>FR</span></b>TTF
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:6'>                                        </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P02699|OPSD_BOVIN
+VTTLCCGKNPLGDDEASTTVSKTETSQV <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%;font-family:"Courier New"'>P20309|ACM3_HUMAN
+KMLLLCRRKQQYQQRQSVIFHKRAPEQA <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><span style='font-size:8.0pt;
+line-height:115%;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p><b>Figure 7<o:p></o:p></b></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l11 level1 lfo16'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>compare your newly obtained short sequence of
+amino acids for hM3 receptor with this <a href="h3M_short_seq_correct.txt">one</a></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l11 level1 lfo16'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>correct the errors</p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l11 level1 lfo16'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>save the corrected sequence as text file, i.e.
+h3M_short_seq.txt (!keep the first line from the initial text file!), because
+you will need it in the next section of the course.</p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<div style='mso-element:endnote-list'><![if !supportEndnotes]><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<![endif]>
+
+<div style='mso-element:endnote' id=edn1>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn1' href="#_ednref1"
+name="_edn1" title=""><span class=EndnoteCharacters><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=EndnoteCharacters><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:AR-SA;
+mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></a><span
+lang=DE style='mso-ansi-language:DE'><span style='mso-tab-count:1'>               </span>
+A</span><span lang=RO style='mso-bidi-font-size:11.0pt;mso-ansi-language:RO'>ltschul
+S.F., Madden T.L., Schaffer A.A., Zhang J., Zhang Z., Miller W., Lipman D.J., <b><i>Nucleic
+Acids Res </i></b><i>25 </i>(<b>1997<i>) </i></b>3389-3402<o:p></o:p></span></p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn2>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn2' href="#_ednref2"
+name="_edn2" title=""><span class=EndnoteCharacters><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=EndnoteCharacters><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:AR-SA;
+mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></a><span
+style='mso-tab-count:1'>               </span> <span lang=RO style='mso-bidi-font-size:
+11.0pt;mso-ansi-language:RO'>Jaroszewski L., Rychlewski L., Zhang B., Godzik
+A., <b><i>Protein Sci</i></b><i> </i>7 (<b>1998</b>) 1431-1440<o:p></o:p></span></p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn3>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn3' href="#_ednref3"
+name="_edn3" title=""><span class=EndnoteCharacters><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=EndnoteCharacters><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:AR-SA;
+mso-bidi-language:AR-SA'>[3]</span></span><![endif]></span></span></a><span
+style='mso-tab-count:1'>               </span> C. Notredame, D. Higgins, J.
+HeringaJournal of Molecular Biology, 302, 205-217, (2000)</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn4>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn4' href="#_ednref4"
+name="_edn4" title=""><span class=EndnoteCharacters><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=EndnoteCharacters><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:AR-SA;
+mso-bidi-language:AR-SA'>[4]</span></span><![endif]></span></span></a><span
+style='mso-tab-count:1'>               </span> B<span lang=RO style='mso-ansi-language:
+RO'>airoch A., Apweiler R., <b><i>Nucleic Acids Res</i></b>., 28 (<b>2000</b>)
+45-48<o:p></o:p></span></p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn5>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn5' href="#_ednref5"
+name="_edn5" title=""><span class=EndnoteCharacters><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=EndnoteCharacters><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:AR-SA;
+mso-bidi-language:AR-SA'>[5]</span></span><![endif]></span></span></a><span
+style='mso-tab-count:1'>               </span> h<span lang=RO style='mso-ansi-language:
+RO;mso-bidi-font-weight:bold'>ttp://www.expasy.org/sprot/sprot-top.html<o:p></o:p></span></p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn6>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn6' href="#_ednref6"
+name="_edn6" title=""><span class=EndnoteCharacters><span style='font-family:
+TimesNewRoman'><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=EndnoteCharacters><span style='font-size:10.0pt;font-family:TimesNewRoman;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:AR-SA;mso-bidi-language:AR-SA'>[6]</span></span><![endif]></span></span></span></a><span
+lang=DE style='mso-ansi-language:DE'><span style='mso-tab-count:1'>               </span>
+</span><span lang=DE style='font-family:TimesNewRoman;mso-ansi-language:DE'>Baldwin,
+J.M.; Schertler, G.F.X.; Unger, V.M. J Mol Biol 1997<b>, </b>272, 144–164<o:p></o:p></span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

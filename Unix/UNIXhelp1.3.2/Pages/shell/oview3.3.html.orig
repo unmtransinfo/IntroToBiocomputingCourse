@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/oview3.3.html -->
+
+<HEAD>
+<TITLE>Example of changing the login shell with the chsh command</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Example of changing the login shell with the <SAMP>chsh</SAMP>
+command</H1>
+
+<P>To change your login shell to the Korn shell (ksh):</P>
+
+<PRE WIDTH=80>   <STRONG>chsh</STRONG>
+   Changing login shell for sarah.
+   Old shell name: /bin/csh
+   New shell: <STRONG>ksh</STRONG>
+</PRE>
+
+<P>This changes the user's login shell from the C shell
+(csh) to the Korn shell (ksh).</P>
+
+<P>If you mistype the name of the shell or specify a
+shell that is not available on your system:</P>
+
+<UL>
+<LI>you will be given a list of all the shells that are available on your system.</LI>
+</UL>
+
+<P>or</P>
+
+<UL>
+<LI>a message similar to the following will be displayed.</LI>
+</UL>
+
+<PRE>   <EM>name</EM> is unacceptable as a new shell
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

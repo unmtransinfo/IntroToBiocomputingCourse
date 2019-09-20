@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- mail/six.3.html -->
+
+<HEAD>
+<TITLE>Replying to mail messages</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Replying to mail messages</H1>
+
+<P>There are two ways in which you can reply to a mail
+message: use whichever is most appropriate.</P>
+
+<UL>
+<LI><A HREF="six.3.1.html">Reply to sender only</A></LI>
+<LI><A HREF="six.3.2.html">Reply to all recipients</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

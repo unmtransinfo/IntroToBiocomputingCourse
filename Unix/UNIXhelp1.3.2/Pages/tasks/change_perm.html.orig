@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/change_perm.html -->
+
+<HEAD>
+<TITLE>Changing access permissions</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Changing access permissions</H1>
+
+<P>To change the access permissions for a file or
+directory use the command</P>
+
+<PRE WIDTH=80>   <STRONG>chmod <EM>mode filename</EM>
+   chmod <EM>mode directory_name</EM></STRONG>
+</PRE>
+
+<P>The "mode" consists of three parts: <A HREF="change_perm1.html">who</A>
+the permissions apply to, <A HREF="change_perm2.html">how</A>
+the permissions are set and <A HREF="change_perm3.html">which</A>
+permissions to set.</P>
+
+<UL>
+<LI><A HREF="../warnings/permissions.html">**Caution**</A></LI>
+<LI><A HREF="../examples/index.html">Examples</A></LI>
+<LI><A HREF="permissions_num.html">Setting access permissions numerically</A></LI>
+<LI><A HREF="permissions_default.html">Changing default access permissions</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

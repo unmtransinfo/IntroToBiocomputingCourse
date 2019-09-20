@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- examples/mail14.html -->
+
+<HEAD>
+<TITLE>Examples of reading other mail files</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of reading other mail files</H1>
+
+<P>To read the messages in the the <SAMP>mbox</SAMP> file:</P>
+
+<PRE WIDTH=80>   <STRONG>mail -f</STRONG>
+</PRE>
+
+<HR>
+
+<P>To read the messages stored in another file:</P>
+
+<PRE WIDTH=80>   <STRONG>mail -f usability</STRONG>
+</PRE>
+
+<P>This starts the mail program, which displays the mail
+messages you have stored in the file <SAMP>usability</SAMP>.</P>
+
+<HR>
+
+<P>To read the messages stored in a folder:</P>
+
+<PRE WIDTH=80>   <STRONG>mail -f +frombob</STRONG>
+</PRE>
+
+<P>This starts the mail program, which displays the mail
+messages that are stored in the folder <SAMP>frombob</SAMP>.</P>
+
+<P>The user has <A HREF="../mail/6.1.1.html">defined a mail environment variable</A>
+so that folders are automatically created in a particular directory,
+whenever they save a mail message.</P>
+
+<P>The + (plus sign) tells the mail program to look for
+the file <SAMP>frombob</SAMP> in the directory defined by this variable.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

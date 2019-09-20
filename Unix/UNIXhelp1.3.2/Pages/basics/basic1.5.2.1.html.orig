@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- basics/basic1.5.2.1.html -->
+
+<HEAD>
+<TITLE>Example of switching to another account</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+
+<H1>Example of switching to another account</H1>
+
+<P>To switch to another account from your current
+account:</P>
+
+<PRE WIDTH=80>
+   <STRONG>pwd</STRONG>
+   /home/helper
+   <STRONG>su projX</STRONG>
+   Password: <EM><STRONG>(password for account projX)</STRONG></EM>
+   <STRONG>whoami</STRONG>
+   projX
+   <STRONG>cd</STRONG>
+   <STRONG>pwd</STRONG>
+   /home/projX
+</PRE>
+
+<P>The user <SAMP>helper</SAMP> switches to the account they have under
+the username <SAMP>projX</SAMP> and confirms this with the 
+ <STRONG>whoami</STRONG> command.</P>
+
+<P>They then use the <STRONG>cd</STRONG> command to place themselves in the
+home directory for the account they have switched to.
+They can now work with the files and directories in this
+account in the usual way.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

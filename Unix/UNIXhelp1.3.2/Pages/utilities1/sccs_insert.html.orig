@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- utilities1/sccs_insert.html -->
+
+<HEAD>
+<TITLE>Inserting SCCS ID keywords in a file</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Inserting SCCS ID keywords in a file</H1>
+
+<P>You can put one or more ID keywords in each file. These
+keywords are used to display information about the file
+whenever a read only version is checked out.</P>
+
+<P>SCCS ID keywords include:</P>
+
+<PRE WIDTH=80>   <STRONG>%G%</STRONG>  the date of the delta
+   <STRONG>%I%</STRONG>  sid of the retrieved text
+   <STRONG>%M%</STRONG>  the current module name
+   <STRONG>%R%</STRONG>  the current release number
+   <STRONG>%W%</STRONG>  a shorter form for %Z%%M%&lt;tab&gt;%I%
+   <STRONG>%Z%</STRONG>  string used by the <A HREF="sccs_info2.html">what</A> command
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

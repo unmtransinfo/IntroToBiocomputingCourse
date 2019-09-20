@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/def_perm.html -->
+
+<HEAD>
+<TITLE>Default access permissions</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Default access permissions</H1>
+
+<P>When you create a file or directory its access
+permissions are set to a <A HREF="../glossary/gd.html#default">default</A>
+value. These are usually:</P>
+
+<DL>
+<DT><SAMP>rw-------</SAMP></DT>
+<DD>gives you read and write permission for your files; no
+access permissions for the group or others.</DD>
+
+<DT><SAMP>rwx------</SAMP></DT>
+<DD>gives you read write and execute permission for your
+directories; no access permissions for the group or others.</DD>
+</DL>
+
+<P>Access permissions for your home directory are usually
+set to 
+<SAMP><A HREF="def_perm1.html">rwx--x--x</A></SAMP>
+or 
+<SAMP><A HREF="def_perm2.html">rwxr-xr-x</A></SAMP>.</P>
+
+<UL>
+<LI><A HREF="permissions_default.html">Changing default access permissions</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,134 @@
+<!-- #include file="../../includes/header.inc" -->
+<HTML>
+<HEAD>
+<TITLE>Introduction to Biocomputing (BIOMED 505)</TITLE>
+</HEAD>
+<BODY>
+<H1>Introduction to Biocomputing</H1>
+Self directed on-line tutorials covering basic <EM>Unix/Linux</EM>,
+<EM>Bioinformatics</EM> and <EM>Cheminformatics</EM> related to drug discovery.
+<P>
+Graduate course BIOMED 505<BR>
+1-3 credit hours
+<H3>*** Announcements ***</H3>
+The first section and various portions of the other sections of the course are
+now online.  You will need to get a user id/password to access them.  To do so,
+please send me an
+<a href="mailto:dfara_AT_salud_DOT_unm_DOT_edu">email</a>
+and we can arrange a time to meet (I would like to meet all the students).  At
+the same time, you can pick up a printed copy of the course notes.
+<P>
+I am located in the RIB (Research Incubator Building) on north campus.  This
+building is on Frontier (two blocks north of Lomas) just west of Vassar (which
+is one block west of Girard).  Enter the main door on the south, turn right and
+go through a door labeled "Suite 190 / Office of Biostatistics / Dvision of
+Biocomputing / Office of Biocomputing" (to the east).  Turn left at the first
+corridor and head north through this first set of offices.  Pass through the
+door on the north side.  Turn right and go through another door into the
+Biocomputing area.  I am at the very north end of this complex in the northwest
+corner.
+<P>
+Watch this site for further news.
+<P>
+Also see <A HREF="index.html#talks">suggested external talks</A> at the bottom of this
+page.
+<H3><A HREF="Course/index.html">Course</A></H3>
+Access will be provided to registered students.  Please contact the course
+coordinator.
+<H3>Requirements</H3>
+Two out of three of the following:
+<UL>
+<LI>undergraduate course in biology</LI>
+<LI>undergraduate course in chemistry</LI>
+<LI>undergraduate course in computer science</LI>
+</UL>
+<H3>Synopsis</H3>
+There will be a sequence analysis section followed by macromolecular modeling
+and cheminformatics, prefaced by a Linux/Unix introduction.
+<!--
+If there will be lectures pertinent to this course, we're looking at a 1-week
+block of 5 lectures possibly in early December), depending on how many people
+register.
+-->
+More details can be found in the course <A HREF="syllabus.html">syllabus</A>.
+<H3>Credit</H3>
+Students will receive one hour of credit for each numbered section they
+complete successfully.  The reading and exercises are self-paced.  When the
+student is ready, he or she should ask the course director for the exam
+covering the section that was studied.  The student will then have a week to
+complete the exam.
+<P>
+The numbered sections are self-contained, so the student can take them in any
+order, however, we have arranged them in a natural progression that we would
+recommend the student follow if he or she has no strong feelings otherwise.
+<H3>Facilities</H3>
+Some of the exercises are web-based, so can be run from anywhere.  Others will
+require the use of Biocomputing facilities for which accounts will be provided.
+The Office of Biocomputing has a lab in BRF 223 (Biomedical Research Facility
+in the Health Sciences Center on UNM north campus) which is open 8 am-5 pm.
+<H3><A NAME="talks">Suggested External Talks</A></H3>
+<UL>
+<!--
+<LI><STRONG><A HREF="Talks/Pfizer/Internship.pdf">Pfizer Summer Research
+    Internships</A></STRONG></LI>
+<LI><STRONG><A HREF="Talks/Pfizer/Pfizer_Days.pdf">Pfizer Days</A></STRONG><BR>
+    (Wednesday-Thursday, November 3-4, 2004)</LI>
+<LI><STRONG><A HREF="Talks/Pfizer/Molecules_to_Medicine.pdf">Molecules to
+    Medicine workshop</A></STRONG><BR>
+    (Thursday, November 4, 2004)</LI>
+<LI><STRONG><A HREF="Talks/AlexandruBalaban/pyridinium.pdf">New pyridinium
+    cationic lipids for gene delivery synthesized via pyrylium
+    salts</A></STRONG><BR>
+    by Alexandru Balaba (Monday, November 1, 2004 @ 9:30 am in BMSB 203)</LI>
+<LI><STRONG><A HREF="Talks/AlexandruBalaban/partitioning.pdf">Partitioning of
+    pi-electrons in rings of polycyclic conjugated
+    hydrocarbons</A></STRONG><BR>
+    by Alexandru Balaban (Friday, October 29, 2004 @ 10 am in BMSB 303)
+<P>
+Professor A. T. Balaban is one of the most accomplished organic and theoretical
+chemists in the world.  In organic chemistry, his work in pyrylium salt
+synthesis (the Balaban-Nenitzescu-Praill reaction), and novel synthetic
+pathways to oxazole and thiazole are well known.  As a theoretical chemist, he
+pioneered the use of topological indices in QSAR; the Balaban (J) index has
+been utilized for over two decades.  He authored or co-authored 9 books, 50
+book chapters, and over 600 peer-reviewed papers to date, and has 26 patents.
+He is featured in D. A. Pendlebury's "List of Most Cited Chemists 1981-1997"
+and has received the Romanian Academy Prize in 1962 and the Herman Skolnik
+Award of the Division of Chemical Information of the American Chemical Society,
+1994.  He is Dr. Honoris Causa from the University of West in Timisoara,
+Romania (1997).  Prof Balaban is a former vice-president of the Romanian
+Academy and is currently a tenured  Professor at the Department of Marine
+Sciences, Texas A&M University at Galveston.  His website is
+<A HREF="http://www.tamug.tamu.edu/mars/faculty/balaban.htm">
+http://www.tamug.tamu.edu/mars/faculty/balaban.htm</A>
+    </LI>
+<LI><STRONG><A HREF="Talks/Sept_24_2004.jpg">New Functions for Histone
+    Modifying Enzymes</A></STRONG><BR>
+    by Sharon R. Dent (Friday, September 24, 2004 @ noon in BMSB 203)</LI>
+<LI><STRONG><A HREF="Talks/Sept_14_2004">Bioreason, Computational Chemistry,
+    and Drug Discovery</A></STRONG><BR>
+    by Andrew DePristo (Tuesday, September 14, 2004 @ 11:30 am)</LI>
+<LI><STRONG>The challenges of systems biology: Using engineering tools to
+    further understand biological systems</STRONG><BR>
+    by Jeremy S. Edwards (Tuesday, August 31, 2004 @ 2:30 pm in CRTC 240)</LI>
+<LI><STRONG>Moving Beyond the Genome: Genomics tools for the parallel analysis
+    of protein function using polymerase colonies</STRONG><BR>
+    by Jeremy S. Edwards (Monday, August 30, 2004 @ 3:00 pm in CRTC 240)</LI>
+-->
+</UL>
+<HR>
+For more information, please contact
+<P>
+<TABLE>
+<TR><TD>Course director:   </TD>
+    <TD>
+	<a href="mailto:cbologa_AT_salud_DOT_unm_DOT_edu?subject=Remove _AT_ and _DOT_ and replace with @ and . respectively">
+	Cristian Bologa</a></TD></TR>
+<TR><TD>Course coordinator:</TD>
+    <TD>
+	<a href="mailto:jjyang_AT_salud_DOT_unm_DOT_edu?subject=Remove _AT_ and _DOT_ and replace with @ and . respectively">
+	Jeremy Yang</a></TD></TR>
+</TABLE>
+</BODY>
+</HTML>
+<!-- #include file="../../includes/footer.inc" -->

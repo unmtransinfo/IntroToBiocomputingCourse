@@ -1,0 +1,549 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Analysis - Patterns, Motifs and Profiles</title>
+  <link rel=stylesheet href="css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<div class="headln">Sequence Analysis - Patterns, Motifs and Profiles</div>
+<br>
+<div class="text">
+<strong>Abstract:</strong> In this section, we will explore the problems of protein classification the identification of protein families.  It is possible to classify proteins on the basis of either sequence or structural similarity.  Here, we will be focusing on sequence-based classification.  In one way or another, all sequence-based classification methods involve the production of protein sequence alignments (discussed in the preceding "Sequence Comparison" sections of the course).  Historically, the earliest attempts at sequence-based classification used alignments of entire sequences with one another (global alignments).  Later, proteins were classified based on the presence of conserved patterns or motifs of amino acids.  Still another approach is to classify proteins based on domain profiles.  Many databases exist which classify proteins using one or more of these approaches.  A couple of the more well-known of these are: <a href="http://www.sanger.ac.uk/Software/Pfam/">Pfam</a> and <a href="http://us.expasy.org/prosite">PROSITE</a>.
+<p>The underlying assumptions that motivate sequence-based protein classification are that proteins with similar sequences are evolutionarily related, and therefore share common structure and/or function.  While there are certainly exceptions, these assumptions hold up fairly well.  Thus, when faced with a new protein sequence of unknown structure and function, one of the first questions one is likely to try to answer is: Does my unknown protein have sufficient sequence similarity to any protein(s) of known structure/function to suggest an evolutionary relationship?  If the answer is yes, you may be able to infer something about the structure or function of the unknown protein sequence.  It cannot be emphasized enough, however, that such inferences <strong>must</strong> be verified through laboratory experiments. 
+<p>This section will introduce you to some of the programs and databases that can help you address the question of protein sequence similarity, and help you predict the function of your sequence.  We will look at both EMBOSS and web-based applications.
+<br><br>
+The standard way of using EMBOSS is via command line interaction on a UNIX computer system.  You will be using EMBOSS on the system hatch.health.unm.edu and you should have received login information for xxx when you signed up for Biomed505.  In addition to the command line interface, there are also several graphical interfaces to EMBOSS.  One of these is <a href="http://hatch.health.unm.edu/EMBOSS/">EMBOSS-GUI</a>, a web-based front end to EMBOSS.  The exercises for the "Introduction to Sequence Analysis" section of Biomed505 are written for users of the command line interface.  You may use EMBOSS-GUI if you prefer, however there are no detailed instructions to help you.  A brief <a href="http://poblano.health.unm.edu/EMBOSS-GUI.html">introduction to EMBOSS-GUI</a> is available.  For the most part, the input to the command line programs is exactly mirrored by EMBOSS-GUI's web browser forms and the use of EMBOSS-GUI should be fairly straight forward.
+<br>
+<br>
+Questions you should answer as you work through the exercises are indicated by <span class="class2"><a href="PatMotifProfile.html">Question:</a></span> tags, which also serve as hyperlinks to the corresponding answers (where available).
+<br>
+<br>
+<strong>Typographical conventions:</strong> <br>
+ &nbsp; &nbsp; Regular web links look <a href="PatMotifProfile.html">like this</a><br>
+ &nbsp; &nbsp; Input that you should enter verbatim in web page forms, or links/buttons you should click on web pages look <span class="input">like this</span><br>
+ &nbsp; &nbsp; Sections representing command-line interaction are represented as in the following example:<br><span class="system">
+       <span class="prompt">[unix]# </span><span class="command">ls <span class="arg">foo</span> [Enter]<br></span>ls: foo: No such file or directory</span><br>
+ &nbsp; &nbsp; where...<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; the unix propmt is represented as: <span class="system"><span class="prompt">[unix]# </span></span>,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="command">this font</span></span> are commands to be typed into the computer verbatim,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="arg">this font</span></span> are names or identifiers (Eg. file/directory names or sequence accession numbers),<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; words in square brackets: <span class="system"><span class="command">[Ctrl]</span></span> indicate a key to be pressed, and <br>
+ &nbsp; &nbsp; &nbsp; &nbsp; program output is represented in <span class="system">this font</span><br>
+ &nbsp; &nbsp; The above example means "at the UNIX prompt, type ls followed by foo (a directory name, <strong>which may be different in your case</strong>), then press Enter".  The ouput of the command is supposed to be "ls: foo: No such file or directory".  Output will often be truncated and this will be indicated using three horizontal or vertical dots.
+</div>
+<br>
+<table border=0 cellpadding=5 cellspacing=1>  
+  <tr>
+    <td class="ex">Pattern Matching</td>
+  </tr>
+  <tr>
+    <td>In many cases, a fairly small set of amino acid residues confer particular functional properties to a family of proteins.  In such cases, a "fingerprint" can usually be defined which allows one to recognize proteins of the same family.  For example, the sequence GXGXXG (where G=glycine and X=any amino acid) is such a fingerprint that defines a GTP binding site.  Searching for a predefined string of characters in a sequence is called Pattern Matching.  Sequence patterns are also referred to as motifs.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/patmatmotifs.html" target="emboss-apps"><b>patmatmotifs</b></a> program to search the PROSITE motif database with a protein sequence.</td>
+  </tr>
+  <tr>
+    <td><a href="http://us.expasy.org/prosite">PROSITE</a> is a database of protein families and domains, and patterns/motifs that identify them.  For a description of PROSITE, we can do no better than to quote the PROSITE user's documentation:
+      <em>
+      <p>PROSITE is a method of determining what is the function of uncharacterized proteins translated from genomic or cDNA sequences. It consists of a database of biologically significant sites and patterns formulated in such a way that with appropriate computational tools it can rapidly and reliably identify to which known family of protein (if any) the new sequence belongs.
+      <p>In some cases the sequence of an unknown protein is too distantly related to any protein of known structure to detect its resemblance by overall sequence alignment, but it can be identified by the occurrence in its sequence of a particular cluster of residue types which is variously known as a pattern, motif, signature, or fingerprint. These motifs arise because of particular requirements on the structure of specific region(s) of a protein which may be important, for example, for their binding properties or for their enzymatic activity. These requirements impose very tight constraints on the evolution of those limited (in size) but important portion(s) of a protein sequence. To paraphrase Orwell, in Animal Farm, we can say that "some regions of a protein sequence are more equal than others" !</em></td>
+  </tr>
+  <tr>
+    <td>We will search the protein sequence of the human NPY1 receptor with which we were working in the last set of exercises.  However, to do so, we will retrieve the sequence from the SwissProt database.
+      <p><div class="system"><span class="prompt">[unix]# </span><span class="command">patmatmotifs sp:NY1R_HUMAN -outfile stdout [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Search a PROSITE motif database with a protein sequence
+########################################
+# Program: patmatmotifs
+# Rundate: Mon Aug 30 13:12:37 2004
+# Report_format: dbmotif
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Sequence: NY1R_HUMAN     from: 1   to: 384
+# HitCount: 1
+#
+# Full: No
+# Prune: Yes
+# Data_file: /usr/local/emboss/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+Length = 17
+Start = position 126 of sequence
+End = position 142 of sequence
+
+Motif = G_PROTEIN_RECEP_F1_1
+
+CVSITVSIFSLVLIAVERHQLIINPRG
+     |               |
+   126               142
+
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+      This tells us that NY1R has a match to the PROSITE motif <strong>G_PROTEIN_RECEP_F1_1</strong>.  <a href="http://us.expasy.org/cgi-bin/prosite-search-ac?PDOC00210">Click here to visit the PROSITE website and learn more about this motif.</a>  You can also use the <strong>-full</strong> command-line option to get a full description of matching patterns included in the output.
+      <p>It is common to find that a search of the PROSITE database against a protein sequence will report many matches to motifs that identify sites of post-translational modification, such as glycolsylation, myristylation and phosphorylation sites.  Reports of these are often unwanted and are not reported by default.  You can turn reporting of these short motifs on by giving the '-noprune' option on the command-line:
+      <p><div class="system"><span class="prompt">[unix]# </span><span class="command">patmatmotifs sp:NY1R_HUMAN -noprune -outfile stdout [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Search a PROSITE motif database with a protein sequence
+########################################
+# Program: patmatmotifs
+# Rundate: Mon Aug 30 13:22:53 2004
+# Report_format: dbmotif
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Sequence: NY1R_HUMAN     from: 1   to: 384
+# HitCount: 19
+#
+# Full: No
+# Prune: No
+# Data_file: /usr/local/emboss/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+Length = 4
+Start = position 2 of sequence
+End = position 5 of sequence
+
+Motif = ASN_GLYCOSYLATION
+
+MNSTLFSQVE
+ |  |
+ 2  5
+
+Length = 4
+Start = position 11 of sequence
+End = position 14 of sequence
+
+Motif = ASN_GLYCOSYLATION
+
+FSQVENHSVHSNFS
+     |  |
+    11  14
+
+Length = 4
+Start = position 17 of sequence
+End = position 20 of sequence
+
+Motif = ASN_GLYCOSYLATION
+
+HSVHSNFSEKNAQL
+     |  |
+    17  20
+.
+.
+.
+Length = 7
+Start = position 341 of sequence
+End = position 347 of sequence
+
+Motif = TYR_PHOSPHO_SITE
+
+NFCDFRSRDDDYETIAM
+     |     |
+   341     347
+
+Length = 6
+Start = position 54 of sequence
+End = position 59 of sequence
+
+Motif = MYRISTYL
+
+AVIILGVSGNLALIII
+     |    |
+    54    59
+
+Length = 17
+Start = position 126 of sequence
+End = position 142 of sequence
+
+Motif = G_PROTEIN_RECEP_F1_1
+
+CVSITVSIFSLVLIAVERHQLIINPRG
+     |               |
+   126               142
+
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/pscan.html" target="emboss-apps"><strong>pscan</strong></a> program to find matches between a query protein sequence and the motifs or elements in the PRINTS database.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.bioinf.man.ac.uk/dbbrowser/PRINTS/">PRINTS</a> is a database of diagnostic protein signatures, or fingerprints.  Fingerprints are groups of conserved motifs or elements that together form a diagnostic signature for particular protein families.  Usually the motifs or elements do not overlap, but are separated along a sequence.   They may, however, be contiguous in 3D-space.  Fingerprints can encode protein folds and functionalities more flexibly and powerfully than can single motifs.  It is diagnostically more powerful if an uncharacterized sequence matches all motifs or elements of a particular family than it is if it matches a single motif.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">pscan sp:NY1R_HUMAN -emin 1 -emax 10 -outfile stdout [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Scans proteins using PRINTS
+
+
+CLASS 1
+Fingerprints with all elements in order
+
+Fingerprint NRPEPTIDEY1R Elements 7
+    Accession number PR01013
+    Neuropeptide Y1 receptor signature 
+  Element 1 Threshold 92% Score 100%
+             Start position 32 Length 16
+  Element 2 Threshold 82% Score 94%
+             Start position 176 Length 16
+  Element 3 Threshold 67% Score 95%
+             Start position 192 Length 17
+  Element 4 Threshold 98% Score 98%
+             Start position 242 Length 19
+  Element 5 Threshold 84% Score 100%
+             Start position 288 Length 12
+  Element 6 Threshold 100% Score 100%
+             Start position 325 Length 14
+  Element 7 Threshold 96% Score 100%
+             Start position 338 Length 18
+
+
+CLASS 2
+All elements match but not all in the correct order
+
+Fingerprint GPCRRHODOPSN Elements 7
+    Accession number PR00237
+    Rhodopsin-like GPCR superfamily signature
+  Element 1 Threshold 54% Score 66%
+             Start position 42 Length 25
+  Element 2 Threshold 49% Score 73%
+             Start position 75 Length 22
+  Element 3 Threshold 48% Score 63%
+             Start position 120 Length 23
+  Element 4 Threshold 50% Score 80%
+             Start position 154 Length 22
+  Element 5 Threshold 51% Score 64%
+             Start position 212 Length 24
+  Element 6 Threshold 42% Score 73%
+             Start position 261 Length 25
+  Element 7 Threshold 46% Score 65%
+             Start position 302 Length 27
+
+
+CLASS 3
+Not all elements match but those that do are in order
+
+
+
+CLASS 4
+Remaining partial matches</div></pre></div>
+      As should be obvious from this output, <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/pscan.html" target="emboss-apps"><strong>pscan</strong></a> reports various classes of matches:
+      <ul>
+        <li>Matches where all elements of a motif exist in the correct order</li>
+        <li>Matches where all elements exist but some are in the incorrect order</li>
+        <li>Matches where some elements match and are in the correct order</li>
+        <li>Miscellaneous matches</li>
+      </ul>
+      <span class="class2"><a href="PatMotifProfileAnswers.html#pat2" target="_answers">Question:</a></span> What new information has pscan given us that we did not get from patmatmotifs? 
+    </td>
+  </tr>
+  <tr>
+    <td class="step">3. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/patmatdb.html" target="emboss-apps"><strong>patmatdb</strong></a> program to search protein sequences with a motif.</td>
+  </tr>
+  <tr>
+    <td>The two programs we have just looked at search a sequence against an entire database of patterns.  It is sometimes useful to be able to flip this around and search a number of sequences with just a single motif.  This is what <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/patmatdb.html" target="emboss-apps"><strong>patmatdb</strong></a> does.
+      <p>Patterns for <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/patmatdb.html" target="emboss-apps"><strong>patmatdb</strong></a> are based on the format used by the PROSITE database (with the exceptions noted below).  The PROSITE pattern definition from the PROSITE documentation follows:
+      <ul>
+        <li>The standard IUPAC one-letter codes for the amino acids are used</li>
+        <li>The symbol `x' is used for a position where any amino acid is accepted</li>
+        <li>Ambiguities are indicated by listing the acceptable amino acids for a given position, between square parentheses `[ ]'. For example: [ALT] stands for Ala or Leu or Thr</li>
+        <li>Ambiguities are also indicated by listing between a pair of curly brackets `{ }' the amino acids that are not accepted at a given position. For example: {AM} stands for any amino acid except Ala and Met</li>
+        <li>Each element in a pattern is separated from its neighbor by a `-'. (Optional in patmatdb).</li>
+        <li>Repetition of an element of the pattern can be indicated by following that element with a numerical value or a numerical range between parenthesis. Examples: x(3) corresponds to x-x-x, x(2,4) corresponds to x-x or x-x-x or x-x-x-x</li>
+        <li>When a pattern is restricted to either the N- or C-terminal of a sequence, that pattern either starts with a `<' symbol or respectively ends with a `>' symbol</li>
+        <li>A period ends the pattern. (Optional in patmatdb)</li>
+      </ul>
+      <p>For example, the pattern <strong>[DE](2)HS{P}X(2)PX(2,4)C</strong> means: Two Aspartates or Glutamates in any order followed by Histidine, Serine, any residue other then Proline, then two of any residue followed by Proline followed by two to four of any residue followed by Cysteine.</td>
+  </tr>
+  <tr>
+    <td>Here we will search all the Swissprot database entries beginning with 'PAX' with a motif:
+      <p><div class="system"><span class="prompt">[unix]# </span><span class="command">patmatdb sp:PAX* -motif 'ST[TY]S' -outfile stdout [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Search a protein sequence with a simple motif
+########################################
+# Program: patmatdb
+# Rundate: Mon Aug 30 17:22:27 2004
+# Report_format: dbmotif
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Sequence: PAX8_CANFA     from: 1   to: 459
+# HitCount: 1
+#
+# Motif: ST[TY]S
+#
+#=======================================
+
+Length = 4
+Start = position 178 of sequence
+End = position 181 of sequence
+
+
+SDSLGSTYSINGLL
+     |  |
+   178  181
+
+
+#---------------------------------------
+#---------------------------------------
+#=======================================
+#
+# Sequence: PAX8_HUMAN     from: 1   to: 450
+# HitCount: 1
+#
+# Motif: ST[TY]S
+#
+#=======================================
+
+Length = 4
+Start = position 178 of sequence
+End = position 181 of sequence
+
+
+SDSLGSTYSINGLL
+     |  |
+   178  181
+.
+.
+.
+#---------------------------------------
+#---------------------------------------
+#=======================================
+#
+# Sequence: PAXI_HUMAN     from: 1   to: 591
+# HitCount: 1
+#
+# Motif: ST[TY]S
+#
+#=======================================
+
+Length = 4
+Start = position 13 of sequence
+End = position 16 of sequence
+
+
+LADLESTTSHISKR
+     |  |
+    13  16
+
+
+#---------------------------------------
+#---------------------------------------</div></pre></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Profile Analysis</td>
+  </tr>
+  <tr>
+    <td>Profile analysis is a very powerful technique for characterizing the putative structure and function of a protein sequence.  Profile analysis is a sequence comparison method for finding or aligning distantly related sequences in which a new sequence is optimally aligned to a family of similar sequences.  The comparison uses a scoring matrix produced from an existing optimal alignment of a group of similar protein sequences.  The group, or "family", of similar sequences are first aligned together to create a multiple sequence alignment.  The information in the multiple sequence alignment is then represented as a table of position-specific symbol comparison values and gap penalties.  This table is called a profile.  Basically, a profile is a numerical representation of a multiple sequence alignment.  The similarity of new sequences to an existing profile can be tested by comparing each new sequence to the profile using a modification of the Smith/Waterman algorithm.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prophecy.html" target="emboss-apps"><strong>prophecy</strong></a> program to create a profile from a multiple sequence alignment.</td>
+  </tr>
+  <tr>
+    <td>First, we must produce the multiple alignment from which the profile will be built.  As you should now be familiar with these steps, we will go through them fairly quickly.  Obtain the sequences:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">seqret 'sp:ops2_*' -outseq <span class="arg">ops2s.fasta</span> [Enter]</span></span>
+      <p>Create the multiple alignment:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">emma -sequence <span class="arg">ops2s.fasta</span> -outseq <span class="arg">ops2s.aln</span> -dendoutfile <span class="arg">ops2s.dnd</span> [Enter]</span></span>
+      <p>Now, run <strong>prophecy</strong> to create the profile:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">prophecy -sequence <span class="arg">ops2s.aln</span>-type G -datafile Epprofile -open 3.0 -extension 0.3 -name "ops2 profile" -outfile  <span class="arg">ops2.prophecy</span> [Enter]</span></span>
+      <p><strong>prophecy</strong> can build three different types of profiles: Frequency, Gribskov and Henikoff.  In this example, we are building a Gribskov profile, and for this we need to provide a datafile which is similar to a substitution matrix.  The other input parameters are the scores to be used for opening and extending gaps.  The resulting profile is saved to the file <strong>ops2.prophecy</strong>.  
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prophet.html" target="emboss-apps"><strong>prophet</strong></a> program to compare a sequence to a profile.</td>
+  </tr>
+  <tr>
+    <td>We'll compare the <em>Xenopus</em> sequence to the profile we just created.
+     <p><div class="system"><span class="prompt">[unix]# </span><span class="command">prophet -sequence sp:OPSD_XENLA -infile <span class="arg">ops2.prophecy</span> -gapopen 1.0 -gapextend 0.1 -outfile stdout [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Gapped alignment for profiles
+Local: Consensus vs OPSD_XENLA
+Score: 2242.20
+
+Consensus       1        M.ERS.HLPETP.DAAAL.SAARF.DAQSGGNASVLDNVL.P.EM 38      
+                         | : : :  |:| ::: : :   : : :: |:: |   |: | ::
+OPSD_XENLA      1        MNG.GTE..EGPNFYV.VPM.M.MSNKTG.GVV.V...VRSPFDY 34      
+
+Consensus       39       APLVHPHWSRF.APMNPMWHKILGLFTLILGIISCLG...NGLVI 79      
+                         ::   :::  : :  :|: :::|: ::::|:::  ||   | :::
+OPSD_XENLA      35       PQ.Q.QYYL.LAE..EPWQYSALAAYMFLLILL..LGLPINFMTL 72      
+
+Consensus       80       Y.IFAGT...KSLRTPANLLVLNLAFSD..FCMMASMSPV.M.AI 116     
+                         : :   |   |:|||| |:::|||:|::  : |:: :::| | ::
+OPSD_XENLA      73       FVT...TIQHKKLRTPLNYILLNLVFANHFM.MVLCGFTVTMYTS 113     
+
+Consensus       117      ..NCFYGETWVLGPLGC..D.IYAAL.GSLFGCVSIWSMCMIAFD 155     
+                           ::|    :::|| ||  : ::|:| |   | |::||::::|::
+OPSD_XENLA      114      MHGYF....FIFGPTGCYIEGFFATLGG...GEVALWSLVVLAVE 151     
+
+Consensus       156      RYNVIVKGINGTPLTIKTAIMKILFIWMMAVFWTLMPLF.GIWSR 199     
+                         || |::|:::: ::::::||| ::|:|:||:: : :|||   |||
+OPSD_XENLA      152      RYIVVCKPMANFRFGENHAIMGVAFTWIMALSCAAPPLFGW.WSR 195     
+
+Consensus       200      YVPEGNLTSCSIDYLT.R.DWNPRSYL.ITYFLFV.YFFPLFIIC 240     
+                         |:|||: :||::||:| : : |: |::   |:::| : :||::|:
+OPSD_XENLA      196      YIPEGMQCSCGVDYYTLKPEVNNESFVIY.YMFIVHFTIPLIVIF 239     
+
+Consensus       241      YSY.WFIIAAVAAHEKAMRDQAKKMNVKSLRSNEDQCAQSA.EIR 283     
+                         ::| :::::::  :|:| ::|:: : :     ::   :|:| : :
+OPSD_XENLA      240      FCYGRLLCTVK..KEAAAQQQESLT.T..T..TT...TQKAEK.K 273     
+
+Consensus       284      .LAKVALTTISLWFMAWTPYAIIAY.FGLFGIDGA.LTP.LTT.I 323     
+                          :::::::::::::::|:|||::|: : :|: :|: ::| ::|  
+OPSD_XENLA      274      EVTRMVVIMVVFFLICWVPYAYVAFYI.IFTHQGSNFGPVFMTVP 317     
+
+Consensus       324      WGALFAKASSCYNPIVYAISHPKYRA.ALKEKCPMCVCG.ETDEP 366     
+                          :|:|||:|::|||::| : ::::|  ::   :: ::|| ::  |
+OPSD_XENLA      318      .PAFFAKSSAIYNPVIYIVLNKQFRNCLI...ITTLCCGKNP..P 356     
+
+Consensus       367      .SPDAPQSDATTTSEAAS.KAP.AAIEFPDDNIFIVNSSVNGPTV 408     
+                          ::::::|:||:::||:| ::: :          :  |:      
+OPSD_XENLA      357      FGDEDGSSAATSKTEASSVSSSQV..........VS.SP...... 384     
+
+Consensus       409      KREKIVQRNPINVRLGIKIEPRDSRAA                   435     
+                                        :       : :|
+OPSD_XENLA      385      ...............P.......P.PA                   388</div></pre></div>
+    In the output from <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prophet.html" target="emboss-apps"><strong>prophet</strong></a>, vertical bars (|) represent residues that are identical between the input sequence and the profile consensus, while colons (:) represent conservative substitutions.  Hopefully, it is apparent that aligning members of a family can reveal conserved regions that may be important for structure and/or function.
+    <p><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prophet.html" target="emboss-apps"><strong>prophet</strong></a> compares a sequence to a GRIBSKOV or a HENIKOFF profile produced by <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prophecy.html" target="emboss-apps"><strong>prophecy</strong></a>, it will <strong>not</strong> use the simple FREQUENCY matrices produced by <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prophecy.html" target="emboss-apps"><strong>prophecy</strong></a>.  If you have a FREQUENCY matrix, you should use the program <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prophit.html" target="emboss-apps"><strong>prophit</strong></a> to compare sequences to it.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Position-Specific Iterated (PSI)-BLAST</td>
+  </tr>
+  <tr>
+    <td>In the "Sequence Comparison - Database Similarity Searches" section of the course, you were introduced to the BLAST family of programs.  In this and the following section, we will look at two additional BLAST programs.
+      <p>Position-Specific Iterated (PSI)-BLAST is the most sensitive BLAST program, making it useful for finding very distantly related proteins.  PSI-BLAST is useful when a standard protein-protein BLAST search fails to find significant hits, or returns hits with descriptions such as "hypothetical protein" or "similar to...".  PSI-BLAST can also be used to create a custom position-specific scoring matrix (PSSM), or profile, for identification of a protein family.
+      <p>The first round of PSI-BLAST is a standard protein-protein BLAST search.  The program builds a PSSM from an alignment of the sequences returned with Expect values better (lower) than the inclusion threshold (default=0.005).  In the second iteration the PSSM becomes the query in the search.  Any new database hits below the inclusion threshold are included in the construction of the new PSSM.  A PSI-BLAST search is said to have converged when no more new database sequences are added in subsequent iterations.  You can add database hits that fall outside the inclusion threshold to your PSSM for the next round by checking the box next to the hit.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Perform PSI-BLAST searches.</td>
+  </tr>
+  <tr>
+    <td>We are going to focus on the aspects of PSI-BLAST useful for protein classification and family identification.  We will build a profile for Eukaryotic Rhodopsin sequences, starting with human Rhodopsin (Opsin 2).  The SwissProt accession number for this sequence is <strong>P08100</strong>.</td>
+  </tr>
+  <tr>
+    <td align="left">Load NCBI's <a href="http://www.ncbi.nlm.nih.gov/BLAST/Blast.cgi?CMD=Web&LAYOUT=TwoWindows&AUTO_FORMAT=Semiauto&ALIGNMENTS=250&ALIGNMENT_VIEW=Pairwise&CLIENT=web&COMPOSITION_BASED_STATISTICS=on&DATABASE=nr&CDD_SEARCH=on&DESCRIPTIONS=500&ENTREZ_QUERY=%28none%29&EXPECT=10&FORMAT_OBJECT=Alignment&FORMAT_TYPE=HTML&I_THRESH=0.005&MATRIX_NAME=BLOSUM62&NCBI_GI=on&PAGE=Proteins&PROGRAM=blastp&RUN_PSIBLAST=on&SERVICE=plain&SET_DEFAULTS.x=36&SET_DEFAULTS.y=5&SHOW_OVERVIEW=on&END_OF_HTTPGET=Yes&SHOW_LINKOUT=yes&GET_SEQUENCE=yes">PSI-BLAST Search Page</a>.  This form is nearly identical to the protein-protein BLAST form you have already seen.  Paste the <strong>P08100</strong> sequence in the "Search" field.  In the "Options" section of the form, select <span class="input">Eukaryota [ORGN]</span> and <span class="input">BLOSOM80</span>:<br><img src="images/psiblast1.jpg"><br>Click the <span class="input">BLAST!</span> button to initiate the search.
+      <p>When you get the results, there will be some new PSI-BLAST-associated features.  Below the graphical overview, you will see something like this:<br><img src="images/psiblast2.jpg"><br>As this was the first run, all the hits will have a <img src="images/new.gif"> marker next to them.  Leave all the sequences checked and click the <span class="input">Run PSI-Blast iteration 2</span> button.  You will again have to wait for the results.  When you get them, you should notice that only a few of the hits have a <img src="images/new.gif"> marker next to them.  Again, leave all the sequences checked and click the <span class="input">Run PSI-Blast iteration 3</span> button.  This process should be repeated until no new sequences are added.  The PSI-BLAST result pages have a convenient "Skip to the first new sequence" link at the top.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Save the PSI-BLAST Profile.</td>
+  </tr>
+  <tr>
+    <td>You can save a PSI-BLAST PSSM so that it can be used again in the future, or to search a different database.  From a "Formatting BLAST" page at any iteration after the first, change <span class="input>Alignment</span> to <span class="input">PSSM</span> in thr pull-down menu in first row of the "Format" section:<br><img src="images/psiblast3.jpg">
+      <p>Click the <span class="input">Format!</span> button and the PSSM will be displayed in the results window.  Copy this text (the PSSM) and save it to a file and/or paste it into the PSSM window of a new PSI-BLAST search page:<br><img src="images/psiblast4.jpg">
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="ex">Pattern-Hit Initiated (PHI)-BLAST</td>
+  </tr>
+  <tr>
+    <td>In this section we will look at one final BLAST variant, Pattern-Hit Initiated (PHI)-BLAST.  PHI-BLAST is designed to search for proteins that contain a user-specified pattern, AND are similar to the query sequence in the vicinity of the pattern.  This dual requirement is intended to reduce the number of database hits that contain the pattern, but are likely to have no true homology to the query.</td>
+  </tr>
+  <tr>
+    <td class="step">1.  Perform a PHI-BLAST search.</td>
+  </tr>
+  <tr>
+    <td>To run PHI-BLAST, you need a pattern and a query sequence that contains one or more instances of the pattern.  Patterns must follow the syntax conventions of PROSITE.  Documentation on pattern syntax is available <a href="http://www.ncbi.nlm.nih.gov/blast/html/PHIsyntax.html">here.</a>
+      <p>We will run a PHI-BLAST query using human cAMP-dependent protein kinase as the query.  The SwissProt accession number for this sequence is <strong>P13861</strong>.
+      <p>Here is the pattern:
+<pre>[LIVMF]-G-E-x-[GAS]-[LIVM]-x(5,11)-R-[STAQ]-A-x-[LIVMA]-x-[STACV]</pre>
+      Here is the query sequence with the pattern occurrence highlighted:
+<pre>>P13861 cAMP-dependent protein kinase 
+MSHIQIPPGLTELLQGYTVEVLRQQPPDLVEFAVEYFTRLREARAPASVLPAATPRQSLGHPPPEPGPDR
+VADAKGDSESEEDEDLEVPVPSRFNRRVSVCAETYNPDEEEEDTDPRVIHPKTDEQRCRLQEACKDILLF
+KNLDQEQLSQVLDAMFERIVKADEHVIDQGDDGDNFYVIERGTYDILVTKDNQTRSVGQYDNRGS<strong>FGELA
+LMYNTPRAATIVA</strong>TSEGSLWGLDRVTFRRIIVKNNAKKRKMFESFIESVPLLKSLEVSERMKIVDVIGEK
+IYKDGERIITQGEKADSFYIIESGEVSILIRSRTKSNKDGGNQEVEIARCHKGQYFGELALVTNKPRAAS
+AYAVGDVKCLVMDVQAFERLLGPCMDIMKRNISHYEEQLVKMFGSSVDLGNLGQ</pre></td>
+  </tr>
+  <tr>
+    <td align="left">Load NCBI's <a href="PatMotifProfile.html">Protein-protein BLAST Search Page</a>.  Paste the <strong>P08100</strong> sequence in the "Search" field and paste the pattern into the "PHI pattern" box in the "Options" section of the form.  Select <span class="input">swissprot</span> from the "Choose database" drop-down menu.  Click the <span class="input">BLAST!</span> button to initiate the search.  
+      <p>On the resultung "Formattng BLAST" page, select 500 descriptions and alignments and <span class="input">Hit Table</span> from the "Alignment view" drop-down menu:<br><img src="images/phiblast1.jpg">
+      <p>This will format the results in a more compact format:<br><img src="images/phiblast2.jpg">
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Question</td>
+  </tr>
+  <tr>
+    <td>Use <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/patmatdb.html" target="emboss-apps"><strong>patmatdb</strong></a> to search swissprot with the same pattern you just used with PHI-BLAST:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">patmatdb sp -motif '[LIVMF]-G-E-x-[GAS]-[LIVM]-x(5,11)-R-[STAQ]-A-x-[LIVMA]-x-[STACV]' -outfile <span class="arg">cAMP-v-sp.patmatdb</span> [Enter]</span></span>
+      <p><span class="class2"><a href="PatMotifProfileAnswers.html#phiblast2" target="_answers">Question:</a></span> How do the patmatdb results compare with those from PHI-BLAST? 
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="ex">Web-based Tools for Protein Classification</td>
+  </tr>
+  <tr>
+    <td>In this section, we will look at web-based software and databases that can help address the following questions about a given protein sequence:
+      <ul>
+        <li>Does the protein contain any functional domains of interest?</li>
+        <li>What other proteins contain the same functional domains as this protein?</li>
+        <li>Are there any other proteins similar to this protein on a structural level?</li>
+      </ul>
+      To demonstrate how to answer these questions, the human testis-determining factor, TDF, will be used as an example.  This protein is also known as the sex-determining region Y protein, SRY.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Find the functional domains in TDF/SRY.</td>
+  </tr>
+  <tr>
+    <td>We will start by searching the NCBI <a href="http://www.ncbi.nlm.nih.gov/LocusLink/">LocusLink</a> database.  LocusLink is being replaced by the Entrez Gene database, but is currently still available for use.  LocusLink has the advantage of using standardized gene/protein names and convenient cross-referencing links, making it more likely to find the correct gene/protein on the first attempt (as compared to searching all of the Entrez databases).
+    <p>Go to the <a href="http://www.ncbi.nlm.nih.gov/LocusLink/">LocusLink</a> home page and enter <span class="input">TDF</span> into the query box and click the <span class="input">Go</span> button.  This should return six loci.  The first column contains the stable LocusID associated with each gene.  Clicking on the LocusID links to a detailed LocusLink report. A series colored blocked-letter links are shown to the right side of each entry.  These are jumping-off points to other databases, similar to the ENTREZ functionality we saw earlier in the course.  The entry of interest is second locus in the list, human <strong><em>SRY</em></strong>.  To get additional information of on the protein, click on the green 'P' link on that line.
+      <p>This takes you to the protein entries associated with this particular LocusLink entry.  From here, you can link to the primary database entries for any of the proteins listed.  On the right side of the accession number links are a series of hyperlinks.  Scroll down the list of proteins until you find <strong>NP_003131</strong> and click on <span class="input">BLink</span>, which stands for "BLAST Link".  The BLink page provides a semi-graphical representation of pre-computed BLAST hits.  Across the top of the page are a series of buttons linking to further information associated with this protein.  As we are trying to find what protein domains are present in TDF/SRY, click on the <span class="input">CDD-Search</span> button.
+    <p>This takes you to the Conserved Domain Database report for TDF/SRY.  The CDD is comprised of several source databases, so there is some redundancy in the functional domains reported for TDF/SRY.
+    <p><span class="class2"><a href="PatMotifProfileAnswers.html#web1" target="_answers">Question:</a></span> What functional domain(s) are present in TDF/SRY? </td>
+  </tr>
+  <tr>
+    <td class="step">2. Find other proteins with the same functional domain(s).</td>
+  </tr>
+  <tr>
+    <td>From the TDF/SRY CDD report page, click on the button labeled <span class="input">Show</span>, right below the graphical view.  This invokes the Conserved Domain Architecture Retrieval Tool (CDART), which shows both the functional domains within a protein and other proteins with a similar domain structure.  The query, in this case <strong>SOX-TCF_HMG Box</strong>, is shown at the top of the page in red.  All proteins in NCBI's non-redundant protein database that contain this domain are represented below the query, with the HMG Box also colored in red.  Other domains contained in the other proteins are represented by differently colored/shaped boxes.
+    <p><span class="class2"><a href="PatMotifProfileAnswers.html#web2" target="_answers">Question:</a></span> What other functional domain are contained in proteins with an HMG-box? </td>
+  </tr>
+  <tr>
+    <td class="step">3. Use InterPro to investigate the function of the HMG-box.</td>
+  </tr>
+  <tr>
+    <td>While we have now identified a functional domain contained withing the TDF/SRY protein, we have not yet seen any detailed information on the function of the domain.  It would be possible to investigate this by following the various (and circuitous) links on the NCBI pages, we will instead use a different web-based resource, <a href="http://www.ebi.ac.uk/interpro/">InterPro</a>.  InterPro is a database of protein families, domains and functional sites.  InterPro incorporates data from several protein domain resources including PROSITE, PRINTS, Pfam, and ProDom.</td>
+  </tr>
+  <tr>
+    <td>Go to the InterPro <a href="http://www.ebi.ac.uk/interpro/search.html">Text Search</a> page and type <span class="input">"HMG box"</span> in the query box and then click the <span class="input">Search InterPro</span> button.  Click on accession <span class="input">IPR000135</span> in the first row, for High mobility group proteins HMG1 and HMG2.  The InterPro summary page provides an abstract describing the domain/family and includes additional information on what is known about the function, cellular location and metabolic role of proteins containing the domain.</td>
+  </tr>
+  <tr>
+    <td class="step">4. Find other proteins with structural similarity.</td>
+  </tr>
+  <tr>
+    <td>The final question to be addressed is whether there are any other proteins similar to our protein on a structural level.  To answer this question, we will perform a new search against the <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Structure">ENTREZ Structure database.</a></td>
+  </tr>
+  <tr>
+    <td>Go to the <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Structure">ENTREZ Structure</a> search page and type <span class="input">SRY</span> in the query box and then click the <span class="input">Go</span> button.  Eleven structures are returned, one of which is <strong>1HRY</strong>, the human SRY-DNA complex solved by NMR.  Clicking on the <span class="input">1HRY</span> link takes you to the MMDB Structure Summary page. MMDB is ENTREZ's 3D-structure database.  The Structure Summary page has links to more detailed information about chain A (the SRY protein component of the structure), chain B the nucleic acid component, and the conserved domain.  Click on the  <span class="input">Chain A</span> graphic to obtain a summary of proteins whose structures have been determined to be similar to the original SRY protein.
+      <p><span class="class2"><a href="PatMotifProfileAnswers.html#web4" target="_answers">Question:</a></span> What are the non HMG-box proteins in this list? 
+      <p>The method used to determine the structural similarities in MMDB is called VAST.  VAST quite often reveals similarities between proteins that are not evident from simple sequence similarity searches such as BLAST and FASTA.  You can learn more about VAST here: <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=retrieve&db=pubmed&list_uids=8804824&dopt=Abstract">Gibrat JF, Madej T, Bryant SH,&nbsp; "<em>Surprising similarities in structure comparison</em>", <strong>Curr Opin Struct Biol. 1996 Jun; 6(3)</strong>: 377-85.</a></td>
+  </tr>
+</table>
+
+<hr>
+<div class="tinytext">Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>(smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu)</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 16:41:53 MST 2004 <!-- hhmts end -->
+<!-- $Id: PatMotifProfile.html,v 1.4 2004/11/11 23:46:25 smathias Exp $ -->
+</span>
+
+</body>
+</html>

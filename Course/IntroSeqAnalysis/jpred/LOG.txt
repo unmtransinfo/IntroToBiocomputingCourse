@@ -1,0 +1,68 @@
+--/software/jpred_bin/webrun --email smathias@poblano.health.unm.edu --log /jobs/www-jpred/jp_1699919/LOG --sequence /jobs/www-jpred/jp_1699919/jp_1699919.seq --format seq --id jp_1699919
+--Started work on jp_1699919.seq at Thu Sep  2 20:43:37 2004
+--On machine clustertest_rack-1-2
+--format = seq
+--Running PSIBLAST
+--/software/jpred_bin/psiblast --query jp_1699919.seq.fasta --profile jp_1699919.seq.profile --blast jp_1699919.seq.blast > jp_1699919.seq.alignment
+QUERY not found in SWALL index (ignore if this says QUERY).
+--Checking number of sequences
+5716 sequences were found in the alignment, this is too many for us too handle sensibly. So I'm going to reduce this to 1000 sequences by taking every 5th sequence.
+--Starting redundancy checking on sequences
+--Running nonred
+Reading Upper Diagonal
+Read: 1144 Entries
+CPU time: 1.130000 seconds
+Setting up unclust
+Setting up notparent
+Setting up clust
+CPU time: 0.000000 seconds
+Complete linkage on similarity
+Doing Cluster Analysis...
+Total CPU time: 45.800000 seconds
+Complete Linkage Cluster Analysis complete
+Finding which sequences to keep at the 75 % level
+From the original set of 1143 sequences, 936 are
+non-redundant with 794 unclusterd entities...
+And 944 of the orignal set are included for further analysis, this may
+total more than the non-redundant set due to repeats in sequence IDs.
+--Removing sequences 1.5 longer, or shorter than the query sequence length
+--There are 7 sequences left after redundancy filtering.
+--Running pre-Jnet processing
+--Running Jnet
+7 sequence homologues found
+Found PSIBLAST profile file
+Found PSIBLAST frequency file
+Found HMM profile data
+Running final predictions!
+
+
+Both PSIBLAST and HMM profiles were found
+Accuracy will average 76.4%
+
+--Running ncoils and multicoil
+       1 sequences      845 aas       42 in coil
+       1 sequences      845 aas        0 in coil
+       1 sequences      845 aas       70 in coil
+--creating output
+
+ALSCRIPT  (ALignment to PostScript)
+ALSCRIPT Version 2.07a - 21 March 2000
+
+See ALSCRIPT.DOC for details
+
+Please Reference: Barton, G. J. (1993), Protein Engineering, 6, 37-40.
+
+By: G. J. Barton
+
+Copyright: Geoffrey J. Barton (1992,1997)
+email: geoff@ebi.ac.uk
+
+Initial Defaults:
+Maximum number of sequences:	 500 	(Change using MAX_NSEQ command)
+Maximum sequence length:	 8000 	(Change using MAX_SEQ_LEN command)
+Maximum identifier length:	 50 	(Change using MAX_ID_LEN command)
+ALscript Command File: jp_1699919.seq.als
+Starting ALSCRIPT
+SILENT_MODE
+Max No. of sequences now:	50
+ALscript Finished

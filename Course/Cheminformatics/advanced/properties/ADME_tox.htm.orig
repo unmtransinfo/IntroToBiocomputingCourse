@@ -1,0 +1,1106 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="ADME_tox_files/filelist.xml">
+<link rel=Edit-Time-Data href="ADME_tox_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><o:SmartTagType
+ namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="City"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>every1</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Dan Fara</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1231</o:TotalTime>
+  <o:Created>2008-01-07T11:54:00Z</o:Created>
+  <o:LastSaved>2008-01-07T11:54:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1160</o:Words>
+  <o:Characters>6612</o:Characters>
+  <o:Lines>55</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7757</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=dataStoreItem href="ADME_tox_files/item0001.xml"
+target="ADME_tox_files/props0002.xml">
+<link rel=themeData href="ADME_tox_files/themedata.thmx">
+<link rel=colorSchemeMapping href="ADME_tox_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>5.5 pt</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073750139 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Footnote Text Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	vertical-align:super;}
+span.MsoEndnoteReference
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Endnote Text Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+span.EndnoteTextChar
+	{mso-style-name:"Endnote Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Endnote Text";}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Footnote Text";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:Calibri;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("ADME_tox_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("ADME_tox_files/header.htm") fcs;
+	mso-endnote-separator:url("ADME_tox_files/header.htm") es;
+	mso-endnote-continuation-separator:url("ADME_tox_files/header.htm") ecs;
+	mso-endnote-numbering-style:arabic;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;
+	mso-endnote-numbering-style:arabic;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1607881650;
+	mso-list-template-ids:-2014121618;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1
+	{mso-list-id:1710178801;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1679559714 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:2004970411;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-941201304 -1155752650 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:59;
+	mso-style-unhide:no;
+	border:solid black 1.0pt;
+	mso-border-alt:solid black .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid black;
+	mso-border-insidev:.5pt solid black;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='font-size:16.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>Section III</span></i></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:16.0pt;line-height:
+115%;font-family:"Times New Roman","serif"'><span style='mso-tab-count:1'> </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><b style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><b style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>Cheminformatics - Advanced:
+</span></b><i><span style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman"'>The role of pharmacokinetics/toxicity
+and the concept of drug-likeness</span></i><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><i style='mso-bidi-font-style:
+normal'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></i></p>
+
+<p class=MsoNormal style='text-align:justify'><i style='mso-bidi-font-style:
+normal'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Andrei
+Leitão, Dan C. Fara <span style='mso-spacerun:yes'> </span>and Tudor I. Oprea<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Up to now
+many pharmacodynamic properties were taken into account, basically considering
+the ligand-target interactions. Nonetheless, a good drug candidate does not
+rely only on a good fit and the best match of hydrophobic and lipophilic
+interactions with the target macromolecule. In fact, there must be a compromise
+with many different properties that compose the pharmacokinetic profile of a
+compound. While pharmacodynamics deals with the compound-target interaction,
+the pharmacokinetics takes into consideration all the steps that the compound
+should go to reach the site of interaction – see Figure 1<a style='mso-endnote-id:
+edn1' href="#_edn1" name="_ednref1" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+mso-bidi-font-style:italic'>[1]</span></span><![endif]></span></span></a>. A
+compound must be bioavailable in a good extend in order to reach the site of
+action. For oral drugs, it means that it should be soluble and permeate through
+the enterocyte, being metabolized into the liver and distributed into the
+bloodstream.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:315.75pt;
+ height:222.75pt'>
+ <v:imagedata src="ADME_tox_files/image001.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=421 height=297
+src="ADME_tox_files/image002.gif" v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-style:italic'>Figure 1</span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>.
+Representation of the pharmacokinetics process and different models in use to
+study the pharmaceutical profile (taken from reference 1).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Basically,
+the pharmacokinetics is composed by the absorption, distribution, metabolism
+and excretion. Together with the toxicity studies, they are the so called
+ADME-Tox (also found as ADMET). This plethora of events that takes place before
+the pharmacodynamics represents nowadays the main drawback in the drug
+development phase, increasing the attrition rate to the process (i.e. rate of
+failure to develop a new compound).<a style='mso-endnote-id:edn2' href="#_edn2"
+name="_ednref2" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+mso-bidi-font-style:italic'>[2]</span></span><![endif]></span></span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>The high
+rate of failure impairs the development of many new compounds that are not
+considered to be attractive drug candidates after the pharmaceutical companies
+have spent years of work and millions of dollars. Therefore, it is expected
+that the integration of the ADME-Tox knowledge and other global properties
+(drug-likeness, among others) can streamline the drug discovery &amp;
+development pipeline.<a style='mso-endnote-id:edn3' href="#_edn3"
+name="_ednref3" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+mso-bidi-font-style:italic'>[3]</span></span><![endif]></span></span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Early
+ADME studies in the end of the nineteen century showed that there was a
+correlation between the narcotic property of some compounds and the solubility
+in oil, but the first quantitative evidence came with the Hansch studies in the
+60’s, which showed the correlation between the logarithmic of the octanol/water
+partition coefficient (log P or log P<sub>o/w</sub>) and the biological
+activity. The octanol-water system is considered the first useful model to the
+partition in the membrane of a cell. The method is straightforward, where a
+compound is added to a separation funnel with two liquids (water and octanol)
+and, after shacking it, the concentration of the molecule in each liquid is
+measured. Hydrophilic compounds tend to stay in the aqueous solution, while
+more hydrophobic ones are buried in the octanol moiety. The result of this
+balance is described by <i>P</i> (the partition parameter) meaning that the lower
+it goes, the more compound accumulates into the hydrophilic part (consequently
+it can be considered as a hydrophilic molecule).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Many
+studies throughout the last and this century reinforce the importance of taking
+into account the log P of a compound as a good metric of the compound permeability
+profile. Too hydrophilic compounds should not be considered good drug
+candidates because they are not able to cross the membrane using the passive
+diffusion. On the other hand, too hydrophobic compounds tend to be insoluble,
+forming aggregates, which are font of the many false-positive results got in
+the high-throughput screening (HTS). Studies with different classes of
+compounds showed that CNS drugs (i.e. molecules that act at the Central Nervous
+System) use to have higher log P value than other classes of drugs, once they
+should cross the Blood-Brain Barrier (BBB).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Methods
+for calculating the log P are now available, based on different sets of rules
+and concepts. The most popular one is known as Clog P, which is based on the
+Hansch and Leo studies on thousands of molecules and comprise the biggest
+measured log P dataset available so far – see Figure 2.<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=101 style='width:75.7pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1026" type="#_x0000_t75" style='width:51.75pt;height:57.75pt'>
+   <v:imagedata src="ADME_tox_files/image003.png" o:title="Desipramine"/>
+  </v:shape><![endif]--><![if !vml]><img width=69 height=77
+  src="ADME_tox_files/image004.gif" v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Desipramine<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>4.5<o:p></o:p></span></p>
+  </td>
+  <td width=122 style='width:91.2pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1027" type="#_x0000_t75" style='width:80.25pt;height:54.75pt'>
+   <v:imagedata src="ADME_tox_files/image005.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=107 height=73
+  src="ADME_tox_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Chlorpromazine<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>5.3<o:p></o:p></span></p>
+  </td>
+  <td width=120 style='width:90.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1028" type="#_x0000_t75" style='width:74.25pt;height:59.25pt'>
+   <v:imagedata src="ADME_tox_files/image007.png" o:title="Diclofenac"/>
+  </v:shape><![endif]--><![if !vml]><img width=99 height=79
+  src="ADME_tox_files/image008.gif" v:shapes="_x0000_i1028"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Acetaminofen<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>4.7<o:p></o:p></span></p>
+  </td>
+  <td width=179 style='width:134.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1029" type="#_x0000_t75" style='width:122.25pt;height:42.75pt'>
+   <v:imagedata src="ADME_tox_files/image009.png" o:title="Haloperidol"/>
+  </v:shape><![endif]--><![if !vml]><img width=163 height=57
+  src="ADME_tox_files/image010.gif" v:shapes="_x0000_i1029"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Haloperidol<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>3.8<o:p></o:p></span></p>
+  </td>
+  <td width=211 style='width:157.9pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1030" type="#_x0000_t75" style='width:44.25pt;height:36.75pt'>
+   <v:imagedata src="ADME_tox_files/image011.png" o:title="Aspirin"/>
+  </v:shape><![endif]--><![if !vml]><img width=59 height=49
+  src="ADME_tox_files/image012.gif" v:shapes="_x0000_i1030"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Aspirin
+  </span><span style='font-size:10.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>(</span><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Times New Roman","serif"'>acetylsalicylic
+  acid)</span><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+  justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>1.2<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-style:italic'>Figure 2</span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>. Clog P
+values of some drugs<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>But, is
+there an optimal range for log P? This question arose as expected in the
+scientific community and, together with many others, led to the research on
+this still very young field. Studies have been evolving from the description of
+these phenomena to the collection of data and standardization of methods in
+order to select and, if possible, predict better molecules based on
+computational models. The seminal work of Lipinski published in 1997 shed light
+to this complex problem by means of a truly easy way.<a style='mso-endnote-id:
+edn4' href="#_edn4" name="_ednref4" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+mso-bidi-font-style:italic'>[4]</span></span><![endif]></span></span></a>
+Analyzing the set of oral drugs in the market at that time using the following
+calculated parameters (log P, molecular weight = MW, number of hydrogen bond
+donors = HBD, and hydrogen bond acceptors = HBA) it came to the conclusion
+that:<o:p></o:p></span></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+     justify;mso-list:l1 level1 lfo3'><span style='font-size:12.0pt;line-height:
+     115%;font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+     mso-bidi-font-style:italic'>there are some optimal ranges for oral drugs:
+     MW &#8804; 500, HBA &#8804; 10, HBD &#8804; 5, ClogP &#8804; 5;<o:p></o:p></span></li>
+ <li class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+     justify;mso-list:l1 level1 lfo3'><span style='font-size:12.0pt;line-height:
+     115%;font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+     mso-bidi-font-style:italic'>oral drugs usually do not violate more than
+     one these ranges.<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>This
+simple set of descriptors could define the profile of oral drugs and, because
+of its multiplicity of five, it was so called ‘rule of five’ (and sometimes
+Lipinski’s rule). The main objective of this work was to advise the scientific
+community about the usefulness of such a set of descriptors as a guide to the
+drug discovery of new molecules, avoiding structures with are far outside these
+limits, because the higher probability of the attrition rate in the further
+steps of the process. By doing that, the new concept of drug-likeness (i.e.
+compounds that have properties similar to drugs) was born. Further studies in
+this area not only expanded the rule of five and better defined the drug-like
+term, but also provided similar concepts for leads<a style='mso-endnote-id:
+edn5' href="#_edn5" name="_ednref5" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+mso-bidi-font-style:italic'>[5]</span></span><![endif]></span></span></a> and
+chemical fragments.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Many
+other models are available to describe the permeability of a drug. For example,
+Caco-2 and MDCK cell lines and PAMPA (Parallel Artificial Membrane Permeation
+Assay) are used to check if a compound can permeate the membrane and also the
+mechanism. Nowadays, these cellular assays can be done under a HTS platform,
+where compound libraries are tested. The main drawback of these cellular
+systems is the time to grow the cell monolayer, once that the assay times are
+short.<a style='mso-endnote-id:edn6' href="#_edn6" name="_ednref6" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+mso-bidi-font-style:italic'>[6]</span></span><![endif]></span></span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>The
+compound metabolism can be studied using microsomes (cellular assay) and/or
+CYP450 (Cytocrome P450) enzymes in enzymatic assays. Nowadays, molecular
+modeling is also another tool used to understand the mechanism of catalysis
+provided by these enzymes, considering also the wide range of scaffolds that
+are substrates of those enzymes. Of particular concern today are the enzymes
+CYP405 2D6 and 3A4, which are responsible for the metabolism of many drug
+classes. Some models were also developed based on the current knowledge in the
+field in order to predict drug metabolism, but are still limited to some
+classes and enzymes, due to the limitation of the databases. This is the case
+of MetaSite, new software that was built based on the CYP2D6 and CYP3A4
+three-dimensional structures together with the metabolic profile of some
+compound classes.<a style='mso-endnote-id:edn7' href="#_edn7" name="_ednref7"
+title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA;mso-bidi-font-style:italic'>[7]</span></span><![endif]></span></span></a>
+Certainly, these models still deserve improvement, but they are providing to be
+useful in a near future – see Figure 3.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>Some
+models for distribution and toxicity are still in the beginning. It is
+especially hard to figure out the toxic profile of a compound. The excretion of
+compounds usually depends on the metabolism and there are no good models that
+can be used in a HTS assay.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:278.25pt;height:224.25pt'>
+ <v:imagedata src="ADME_tox_files/image013.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=371 height=299
+src="ADME_tox_files/image014.gif" v:shapes="_x0000_i1031"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-style:italic'>Figure 3</span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-style:italic'>. Prediction
+of metabolic sites for some compounds based on homology model and the
+three-dimensional structure of the CYP450 2D6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify'><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<div style='mso-element:endnote-list'><![if !supportEndnotes]><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<![endif]>
+
+<div style='mso-element:endnote' id=edn1>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn1' href="#_ednref1"
+name="_edn1" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></a>
+Kerns, E. H.; Di. L.; Pharmaceutical Profiling in Drug discovery, <i
+style='mso-bidi-font-style:normal'>Drug Discovery Today </i><b
+style='mso-bidi-font-weight:normal'>2003</b>, <i style='mso-bidi-font-style:
+normal'>8</i>, 316-323</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn2>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn2' href="#_ednref2"
+name="_edn2" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></a>
+Kubinyi, H.; Drug Research: Myths, Hype and Reality, <i style='mso-bidi-font-style:
+normal'>Nature Reviews Drug Discovery </i><b style='mso-bidi-font-weight:normal'>2003</b>,
+<i style='mso-bidi-font-style:normal'>2</i>, 665-668</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn3>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn3' href="#_ednref3"
+name="_edn3" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[3]</span></span><![endif]></span></span></a>
+Oprea, T. I.; Virtual Screening in Lead Discovery: A Viewpoint, <i
+style='mso-bidi-font-style:normal'>Molecules </i><b style='mso-bidi-font-weight:
+normal'>2002</b>, <i style='mso-bidi-font-style:normal'>7</i>, 51-62</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn4>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn4' href="#_ednref4"
+name="_edn4" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[4]</span></span><![endif]></span></span></a>
+Lipinski, C. A.; Lombardo, F.; Dominy, B. W.; Feeney, P. J.; Experimental and
+Computational Approaches to Estimate Solubility and Permeability in Drug
+Discovery and Development Settings, <i style='mso-bidi-font-style:normal'>Advanced
+Drug Delivery Reviews</i><b style='mso-bidi-font-weight:normal'> 1997</b>,<i
+style='mso-bidi-font-style:normal'> 23</i>, 3-25</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn5>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn5' href="#_ednref5"
+name="_edn5" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[5]</span></span><![endif]></span></span></a>
+Oprea, T. I.; Davis, A. M.; Teague, S. J.; Leeson, P. D.; Is There a Difference
+between Leads and Drugs? A Historical Perspective,<i style='mso-bidi-font-style:
+normal'> Journal of Chemical Information and Computer Sciences </i><b
+style='mso-bidi-font-weight:normal'>2001</b>, <i style='mso-bidi-font-style:
+normal'>41</i>, 1308-1315</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn6>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn6' href="#_ednref6"
+name="_edn6" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[6]</span></span><![endif]></span></span></a>
+Balimane, P. V.; Chong, S.; Cell Culture-Based Models for Intestinal
+Permeability: A Critique, <i style='mso-bidi-font-style:normal'>Drug Discovery
+Today </i><b style='mso-bidi-font-weight:normal'>2005</b>, <i style='mso-bidi-font-style:
+normal'>10</i>, 335-343</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn7>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn7' href="#_ednref7"
+name="_edn7" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[7]</span></span><![endif]></span></span></a>
+Kjellander, B.; Masimirembwa, C. M.; <st1:City w:st="on">Zamora</st1:City>, I.;
+Exploration of Enzyme-Ligand Interactions in CYP2D6 &amp; 3A4 Homology Models
+and Crystal Structures Using a Novel Computational Approach, <i
+style='mso-bidi-font-style:normal'>Journal of Chemical Information and Modeling</i>
+<b style='mso-bidi-font-weight:normal'>2007</b>, <i style='mso-bidi-font-style:
+normal'>47</i>, 1234-1247</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

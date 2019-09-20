@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/ftp2.1.3.4.html -->
+
+<HEAD>
+<TITLE>Listing directories on the remote host</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Listing directories on the remote host</H1>
+
+<P>You can list the contents of a directory on the remote host.
+The command ls prints a short version; the command dir a
+longer version. You will need to give the path to the
+directory if it is not in your home directory on the remote
+host.  For example:</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>ls</STRONG>
+   200 PORT command successful.
+   150 Opening ASCII mode data connection for file list.
+   public
+   reports
+   226 Transfer complete.
+   17 bytes received in 0.26 seconds (0.064 Kbytes/s)
+   ftp&gt;
+   ftp&gt; <STRONG>dir reports/quarterly</STRONG>
+   200 PORT command successful.
+   150 Opening ASCII mode data connection for /bin/ls
+   total 10
+   -rw-rw-rw-  1 eucs99   ug		   9383 Jul 18 15:59 march
+   226 Transfer complete.
+   71 bytes received in 0.26 seconds (0.27 Kbytes/s)
+   ftp&gt;
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

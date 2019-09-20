@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- concepts/pathfile.html -->
+<HEAD>
+<TITLE>Pathnames</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+
+<H1>Pathnames</H1>
+
+<P>Every file and directory in the file system can be
+identified by a complete list of the names of the
+directories that are on the route from the
+ <A HREF="../glossary/gr.html#rootdir">root directory</A> to that file
+or directory.</P>
+
+<P>Each directory name on the route is separated by a <STRONG>/</STRONG>
+(forward slash).  For example:</P>
+
+<DL>
+<DD><SAMP>/usr/local/bin/ue</SAMP></DD>
+</DL>
+
+<P>This gives the 
+ <A HREF="../glossary/gf.html#fullpath">full pathname</A>
+ starting at the root directory and going down through the directories 
+ <SAMP>usr</SAMP>, <SAMP>local</SAMP> and <SAMP>bin</SAMP> to the file 
+ <SAMP>ue</SAMP> - the program for the MicroEMACS editor.</P>
+
+<P>You can picture the full pathname as looking like this:</P>
+
+<P>
+<PRE WIDTH=80>
+
+                      <STRONG>/</STRONG>(root)
+                         |
+                         | 
+                ---------------------
+                  |              |
+                 tmp            <STRONG>usr</STRONG>
+                                 |
+                          ---------------- ... ----
+                          |        |              |
+                       /games   <STRONG>/local</STRONG>         /spool
+                                   |
+                            ---------------
+                                |
+                              <STRONG>/bin</STRONG>
+                                |
+                                ---------
+                                        |
+                                        <STRONG>ue</STRONG>
+
+</PRE>
+
+<UL>
+<LI><A HREF="pathfile2.html">Relative pathnames</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

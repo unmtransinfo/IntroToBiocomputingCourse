@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/bash_hist4.1.html -->
+
+<HEAD>
+<TITLE>Examples of previewing the command history</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+
+<H1>Examples of previewing the command history</H1>
+<P>To move back up the list one command at a time:</P>
+
+<PRE WIDTH=80>      1  ls
+      2  pwd
+      3  grep Smith address.txt &gt; smiffs.tmp
+      4  sort -u post smiff.tmp
+      5  lp post
+      6  lpq
+    <STRONG>^P </STRONG>lpq
+    <STRONG>^P </STRONG>lp post
+    <STRONG>^P </STRONG>sort -u post smiff.tmp
+</PRE>
+
+<P>This takes us back up to command 4. Entering further
+CTRL-P commands takes you further up the command history.</P>
+
+<HR>
+
+<P>To to move down the command list carrying on from the
+example above:</P>
+
+<PRE WIDTH=80>   <STRONG>^N </STRONG>lp post
+   <STRONG>^N </STRONG>lpq
+</PRE>
+
+<P>This moves us back down to command 6. Entering further
+CTRL-S commands takes you down the command history.</P>
+
+<HR>
+
+<P>To search up the command history:
+
+<PRE WIDTH=80>   <STRONG>^R</STRONG>
+   (reverse-i-search)`<STRONG>sort</STRONG>': sort -u post smiff.tmp
+</PRE>
+
+<P>This searches up the command list for the first command
+containing the string <SAMP>sort</SAMP>. Repeating CTRL-R continues
+the search up the command history.</P>
+
+<P>Once found you can edit the command line.</P>
+
+<HR>
+
+<P>To search down the command list:</P>
+
+<PRE WIDTH=80>   <STRONG>^S</STRONG>
+   (i-search)`<STRONG>grep</STRONG>': grep Smith address.txt &gt; smiffs.tmp
+</PRE>
+
+<P>This searches down the command list for the first command
+containing the string <SAMP>lp</SAMP>. Repeating CTRL-S continues
+the search down the command history.</P>
+
+<P>Once found you can edit the command line.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

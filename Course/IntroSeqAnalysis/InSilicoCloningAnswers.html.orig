@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Analysis - In Silico Cloning</title>
+  <link rel=stylesheet href="/biomed505/Course/IntroSeqAnalysis/css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex"><a name="restr2"></a>Restriction mapping - Step 2</td>
+  </tr>
+  <tr>
+    <td>The candidate cloning sites are: <strong>XhoI, EcoRI, XbaI, SalI and SmaI</strong>. </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="restr3a"></a>Restriction mapping - Step 3</td>
+  </tr>
+  <tr>
+    <td>The open reading frame encoding the NPY1 receptor is in frame <strong>3</strong> from position <strong>243</strong> to <strong>1418</strong>. </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="restr3b"></a>Restriction mapping - Step 3</td>
+  </tr>
+  <tr>
+    <td>The translated region of the NPY1 receptor mRNA is: <strong>267-1418</strong>. </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+  
+  <tr>
+    <td class="ex"><a name="restr4"></a>Restriction mapping - Step 4</td>
+  </tr>
+  <tr>
+    <td>The restriction enzymes that we can use to make our expression vector are: <strong>XbaI, SalI and SmaI</strong>.</td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+  
+  <tr>
+    <td class="ex"><a name="prim2"></a>PCR primer design - Step 2</td>
+  </tr>
+  <tr>
+    <td>The primer pair that most closely flanks our ORF is pair 11:
+      <pre><font size="2"># EPRIMER3 RESULTS FOR NM_000909
+
+#                      Start  Len   Tm     GC%   Sequence
+
+   1 PRODUCT SIZE: 1263
+     FORWARD PRIMER     192   21  59.47  42.86  TGAACAGTTGACCTGCTTTGA
+
+     REVERSE PRIMER    1435   20  60.16  55.00  GATGTCATCCGGGACCATAG
+.
+.
+.
+  <strong>11 PRODUCT SIZE: 1257
+     FORWARD PRIMER     198   22  59.40  40.91  GTTGACCTGCTTTGAAGAAACA
+
+     REVERSE PRIMER    1435   20  60.16  55.00  GATGTCATCCGGGACCATAG</strong></font>
+.
+.
+.</font>
+</pre>
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="addsite2"></a>Add restriction sites to primers - Step 2</td>
+  </tr>
+  <tr>
+    <td>The sequence of our 3' PCR primer will be: <strong>5'-GG<font color="darkred">GTCGAC</font><font color="indigo">GATGTCATCCGGGACCATAG-3'</font></strong>
+      <p>As for the 5' primer, The SalI site is shown in <font color="darkred">darkred</font>, the original primer sequence as suggested by primer3 is shown in <font color="indigo">indigo</font>, and two extra G's are included extra the 5' end. 
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="veri2"></a>Verification of the final cloned product - Step 2</td>
+  </tr>
+  <tr>
+    <td>The translated region encoding the NPY1 receptor in the final cloned product is in frame <strong>2</strong> from position <strong>1178</strong> to <strong>2329</strong>. 
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+  
+</table>
+</span>
+
+<hr>
+<div class="tinytext">
+Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu</strong></a></div>
+<!-- hhmts start --> Last modified: Wed Nov 10 17:19:58 MST 2004 <!-- hhmts end -->
+<!-- $Id: InSilicoCloningAnswers.html,v 1.2 2004/11/11 23:46:25 smathias Exp $ -->
+
+</body>
+</html>

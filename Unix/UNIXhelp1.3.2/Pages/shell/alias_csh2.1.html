@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/alias_csh2.1.html -->
+
+<HEAD>
+<TITLE>Examples of passing arguments given to a command alias</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of passing arguments given to a command alias</H1>
+
+<P>To pass a single argument to a command alias:</P>
+
+<PRE WIDTH=80>   <STRONG>alias print 'lpr \!^ -Pps5'</STRONG>
+   <STRONG>print memo.txt</STRONG>
+</PRE>
+
+<P>The notation <SAMP>!^</SAMP> causes the first argument to the command
+alias <STRONG>print</STRONG> to be inserted in the command at this point.
+The command that is carried out is:</P>
+
+<PRE WIDTH=80>   lpr memo.txt -Pps5
+</PRE>
+<P>
+
+Notice that the <SAMP>!</SAMP> character is preceded by a <SAMP>\</SAMP>
+to <A HREF="../concepts/regexp2.html">prevent it being interpreted</A>
+by the shell as a history command.</P>
+
+<HR>
+
+<P>To pass each argument to a command alias:</P>
+
+<PRE WIDTH=80>   <STRONG>alias print 'lpr \!* -Pps5'</STRONG>
+   <STRONG>print part1.ps glossary.ps figure.ps</STRONG>
+</PRE>
+
+<P>The notation <SAMP>!*</SAMP> causes each argument given to the alias
+<STRONG>print</STRONG> to be inserted in the command at this point.  The
+command that is carried out is:</P>
+
+<PRE WIDTH=80>   lpr part1.ps glossary.ps figure.ps -Pps5
+</PRE>
+
+<P>Notice that the <SAMP>!</SAMP> character is preceeded by a 
+<SAMP>\</SAMP> to
+<A HREF="../concepts/regexp2.html">prevent it being interpreted</A>
+by the shell as a history command.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

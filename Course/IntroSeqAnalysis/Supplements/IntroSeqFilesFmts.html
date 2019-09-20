@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>An Introduction to Sequence Files and Formats</title>
+</head>
+<body>
+
+<h1>An Introduction to Sequence Files and Formats</h1>
+<h3>Stephen L. Mathias<br><a href="mailto:smathias@unm.edu">smathias@unm.edu</a></h3>
+
+<h2>Contents</h2>
+<ul>
+  <li><a href="IntroSeqFilesFmts.html#seq">Sequences and Sequence Formats</a></li>
+  <li><a href="IntroSeqFilesFmts.html#format">Sequence Format Examples</a></li>
+  <ul></li>
+    <li><a href="IntroSeqFilesFmts.html#fa">FASTA Format</a></li></li>
+    <li><a href="IntroSeqFilesFmts.html#gb">GenBank Format</a></li></li>
+    <li><a href="IntroSeqFilesFmts.html#sp">SWISS-PROT Fromat</a></li></li>
+  </ul>
+  <li><a href="IntroSeqFilesFmts.html#ids">Sequence IDs and Accessions</a></li>
+  <li><a href="IntroSeqFilesFmts.html#annot">Sequence Annotations</a></li>
+  <li><a href="IntroSeqFilesFmts.html#feat">Sequence Features and Feature Tables</a></li>
+  <li><a href="IntroSeqFilesFmts.html#fasta">A Detailed Description of FASTA Format</a></li>
+</ul>
+
+<h2><a name="seq"></a>Sequences and Sequence Formats</h2>
+<p> Sequences are ubiquitous in molecular biology and bioinformatics.
+Linear strings of characters (sequences) are used to represent
+biological macromolecules that are built as long linear chains of
+chemical components.  There are two main categories of macromolecules
+typically represented in this manner: nucleic acid and protein.
+Nucleic acids are further subdivided into DNA (deoxyribonucleic acid)
+and RNA (ribonucleic acid).  Nucleic acids and proteins are the
+fundamental building blocks of living systems.  While it is common for
+biological macromolecules and their corresponding sequences to be
+considered interchangeably, the abstraction involved in representing
+macromolecules in terms of character strings is not a trivial one.  It
+is important to keep this in mind when working with sequences.
+
+<p>In order to appreciate this abstraction, one must have at least a
+basic understanding of the concepts of molecular biology.  It is beyond
+the scope of this document to introduce the field of molecular biology.
+A complete introduction can be found in any modern textbook on
+biochemistry or molecular biology.  Also, see the <a
+href="http://biocomp.health.unm.edu/biomed505/IntroSeqAnalysis/Supplements/MolGenPrimer.pdf"><i>Primer
+on Molecular Genetics</i></a> (also included in this course handbook).
+
+<p>For basically historical reasons, there are a number of different
+sequence formats, and sequences commonly exist in a variety of formats.
+Some of the more widely used formats are: FASTA, Genbank, EMBL and
+SWISS-PROT.  Most formats are named after the sequence analysis software
+or the sequence database for which they were developed.  If your
+sequence is not in a recognized standard format, you will not be able to
+easily analyze your sequence.  This can be very confusing for the
+uninitiated.  Certain analysis software requires sequences to be in a
+particular format, while other software (e.g. EMBOSS) aims to make life
+easier by automatically recognizing many different formats.  It is,
+however, an unfortunate fact of life that one of the tasks with which
+you will first need to become familiar is converting sequences between
+different formats that hold more-or-less the same information.
+
+<p>Sequence formats are <b>ASCII text</b>.  When we talk about a
+'sequence format' we are NOT talking about any sort of program-specific
+format like word processor formatting or a text formatting language.  We
+are not talking about things like: NOTEPAD, WORD, WORDPAD, PostScript,
+PDF, RTF, TeX, HTML, XML, or anything else of that ilk.  Basically this
+means you should not use word processors to write sequences.  If you do,
+make sure you save the file as ASCII text.
+
+<p>Sequences are represented using "alphabets" of characters (the <a
+href="http://www.chem.qmul.ac.uk/iupac/misc/naseq.html#500">IUPAC
+standard one-letter codes</a>) that in turn represent the components of
+which the corresponding macromolecules are made up.  In the case of
+nucleic acids, the components are the so-called nucleotides.  The
+nucleotide codes are summarized in <a href="IntroSeqFilesFmts.html#ntcodes">Table 1</a>.
+Proteins are made up of 20 different amino acids, which are similarly
+denoted by 20 different single-letter codes.  The amino acid codes are
+summarized in <a href="IntroSeqFilesFmts.html#aacodes">Table 2</a>.  In both cases, redundancy
+codes also exist to represent two or more of the individual codes.
+
+<p> A typical way of storing and working with sequences on a computer is
+in text files, and another of the first tasks with which you will need
+to become familiar is the viewing and editing of sequence files.
+
+<h3><a name="ntcodes"></a>Table 1. The IUPAC Nucleotide Codes</h3>
+<table border="1" cellpadding="5">
+<tr><th>Code</th><th>Meaning</th><th>Code</th><th>Meaning</th></tr>
+<tr><td>A</td><td>Adenine</td><td>M</td><td>A or C (amino)</td></tr>
+<tr><td>C</td><td>Cytidine</td><td>S</td><td>G or C (strong)</td></tr>
+<tr><td>G</td><td>Guanine</td><td>W</td><td>A or T (weak)</td></tr>
+<tr><td>T</td><td>Thymine</td><td>B</td><td>G, T or C</td></tr>
+<tr><td>U</td><td>Uridine</td><td>D</td><td>G, A or T</td></tr>
+<tr><td>R</td><td>G or A (purine)</td><td>H</td><td>A, C or T</td></tr>
+<tr><td>Y</td><td>T or C (pyrimidine)</td><td>V</td><td>G, C or A</td></tr>
+<tr><td>K</td><td>G or T (keto)</td><td>N</td><td>A, C, G or T</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>Gap</td></tr>
+</table>
+
+<h3><a name="aacodes"></a>Table 2. The IUPAC Amino Acid Codes</h3>
+<table border="1" cellpadding="5">
+<tr><th>Code</th><th>Meaning</th><th>Code</th><th>Meaning</th></tr>
+<tr><td>A</td><td>Alanine</td><td>P</td><td>Proline</td></tr>
+<tr><td>B</td><td>Aspartate or Asparagine</td><td>Q</td><td>Glutamine</td></tr>
+<tr><td>C</td><td>Cysteine</td><td>R</td><td>Arginine</td></tr>
+<tr><td>D</td><td>Aspartate</td><td>S</td><td>Serine</td></tr>
+<tr><td>E</td><td>Glutamate</td><td>T</td><td>Threonine</td></tr>
+<tr><td>F</td><td>Phenylalanine</td><td>U</td><td>Selenocysteine</td></tr>
+<tr><td>G</td><td>Glycine</td><td>V</td><td>Valine</td></tr>
+<tr><td>H</td><td>Histidine</td><td>W</td><td>Tryptophan</td></tr>
+<tr><td>I</td><td>Isoleucine</td><td>Y</td><td>Tyrosine</td></tr>
+<tr><td>K</td><td>Lysine</td><td>Z</td><td>Glutamate or Glutamine</td></tr>
+<tr><td>L</td><td>Leucine</td><td>X</td><td>Any</td></tr>
+<tr><td>M</td><td>Methionine</td><td>*</td><td>Translation Stop</td></tr>
+<tr><td>N</td><td>Asparagine</td><td>-</td><td>Gap</td></tr>
+</table>
+
+<h2><a name="format"></a>Sequence Format Examples</h2>
+Below are examples of three common sequence formats.
+
+<h3><a name="fa"></a>FASTA Format:</h3>
+<pre>
+>gi|3017|emb|X01611.1|NCHISH4 Neurospora crassa DNA for histone H4
+CTCGGAACCGCGTCTCCCAAAATCAGCCAAGGGAGTTGACGGAGTTTGCGCAAAGTGAGCTCCAGAGCCT
+TTGTTGAACCAATCATCAACAAGATCAGTGATCTGATTTGATTCCCACCGCCCTGCATGCCGCAACCGCG
+TTCCCGTACTTAAAGTCCGCTCTCTTCCCCGCCTTCTTCCCACCTTCCACGAACGACTTCCAATCTCCCA
+AACGACCGCTTCAGCCTTACCACCTACACCACTTTCACTTTCACCCCCCAACACATATCAAAATGACTGG
+ACGTAAGTTGTCTCGAAGATCGCCGACACCGTGTGTTGTAACATCATGACTGACTCGTATCTCTTCATCA
+GGCGGCAAGGGCGGCAAGGGCCTCGGAAAGGGCGGTGCCAAGCGCCATCGCAAGATTCTTCGTGACAACA
+TCCAGGGTATCACCAAGCCCGCTATCCGCCGTCTCGCTCGTCGTGGTGGTGTCAAGCGTATCTCTGCCAG
+TACGTTATGATCTTCGAGCAATCCCTGTATCCCATGGATGGTCAACTAACATGTCAACCTTCAACAGTGA
+TCTACGAGGAGACCCGTGGTGTCCTCAAGACCTTCCTCGAGGGTGTCATCCGTGATGCCGTCACCTACAC
+CGAGCACGCCAAGCGCAAGACCGTCACCTCCCTCGACGTTGTCTACGCCCTCAAGCGCCAGGGCCGTACC
+CTCTACGGTTTCGGTGGTTAAATGTCTCGCCGTCATTAGCCAGCGTGTCTTTTTTCTTTTTTCTTCACCA
+TAACGACGACGCAAATCACAATCACG
+</pre>
+
+<h3><a name="gb"></a>GenBank Format:</h3>
+<pre>
+LOCUS       NCHISH4                  796 bp    DNA     linear   PLN 10-APR-1993
+DEFINITION  Neurospora crassa DNA for histone H4.
+ACCESSION   X01611
+VERSION     X01611.1  GI:3017
+KEYWORDS    histone; histone H4.
+SOURCE      Neurospora crassa
+  ORGANISM  Neurospora crassa
+            Eukaryota; Fungi; Ascomycota; Pezizomycotina; Sordariomycetes;
+            Sordariomycetidae; Sordariales; Sordariaceae; Neurospora.
+REFERENCE   1  (bases 1 to 796)
+  AUTHORS   Woudt,L.P., Pastink,A., Kempers-Veenstra,A.E., Jansen,A.E.,
+            Mager,W.H. and Planta,R.J.
+  TITLE     The genes coding for histone H3 and H4 in Neurospora crassa are
+            unique and contain intervening sequences
+  JOURNAL   Nucleic Acids Res. 11 (16), 5347-5360 (1983)
+  MEDLINE   83299219
+   PUBMED   6310494
+FEATURES             Location/Qualifiers
+     source          1..796
+                     /organism="Neurospora crassa"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:5141"
+     CDS             join(273..282,352..489,558..721)
+                     /codon_start=1
+                     /product="histone H4"
+                     /protein_id="CAA25760.1"
+                     /db_xref="GI:3018"
+                     /db_xref="GOA:P04914"
+                     /db_xref="UniProt/Swiss-Prot:P04914"
+                     /translation="MTGRGKGGKGLGKGGAKRHRKILRDNIQGITKPAIRRLARRGGV
+                     KRISAMIYEETRGVLKTFLEGVIRDAVTYTEHAKRKTVTSLDVVYALKRQGRTLYGFG
+                     G"
+     intron          283..351
+                     /number=1
+     intron          490..557
+                     /number=2
+ORIGIN      
+        1 ctcggaaccg cgtctcccaa aatcagccaa gggagttgac ggagtttgcg caaagtgagc
+       61 tccagagcct ttgttgaacc aatcatcaac aagatcagtg atctgatttg attcccaccg
+      121 ccctgcatgc cgcaaccgcg ttcccgtact taaagtccgc tctcttcccc gccttcttcc
+      181 caccttccac gaacgacttc caatctccca aacgaccgct tcagccttac cacctacacc
+      241 actttcactt tcacccccca acacatatca aaatgactgg acgtaagttg tctcgaagat
+      301 cgccgacacc gtgtgttgta acatcatgac tgactcgtat ctcttcatca ggcggcaagg
+      361 gcggcaaggg cctcggaaag ggcggtgcca agcgccatcg caagattctt cgtgacaaca
+      421 tccagggtat caccaagccc gctatccgcc gtctcgctcg tcgtggtggt gtcaagcgta
+      481 tctctgccag tacgttatga tcttcgagca atccctgtat cccatggatg gtcaactaac
+      541 atgtcaacct tcaacagtga tctacgagga gacccgtggt gtcctcaaga ccttcctcga
+      601 gggtgtcatc cgtgatgccg tcacctacac cgagcacgcc aagcgcaaga ccgtcacctc
+      661 cctcgacgtt gtctacgccc tcaagcgcca gggccgtacc ctctacggtt tcggtggtta
+      721 aatgtctcgc cgtcattagc cagcgtgtct tttttctttt ttcttcacca taacgacgac
+      781 gcaaatcaca atcacg
+//
+</pre>
+
+<h3><a name="sp">SWISS-PROT Fromat:</h3>
+<pre>
+ID   H4_NEUCR       STANDARD;      PRT;   102 AA.
+AC   P04914; Q7RV56;
+DT   13-AUG-1987 (Rel. 05, Created)
+DT   13-AUG-1987 (Rel. 05, Last sequence update)
+DT   05-JUL-2004 (Rel. 44, Last annotation update)
+DE   Histone H4.
+OS   Neurospora crassa.
+OC   Eukaryota; Fungi; Ascomycota; Pezizomycotina; Sordariomycetes; 
+OC   Sordariomycetidae; Sordariales; Sordariaceae; Neurospora.
+OX   NCBI_TaxID=5141;
+RN   [1]
+RP   SEQUENCE FROM N.A. (HHF-1).
+RX   MEDLINE=83299219; PubMed=6310494;
+RA   Woudt L.P., Pastink A., Kempers-Veenstra A., Jansen A.E.M., Mager W.H., 
+RA   Planta R.J.;
+RT   "The genes coding for histone H3 and H4 in Neurospora crassa are unique 
+RT   and contain intervening sequences.";
+RL   Nucleic Acids Res. 11:5347-5360(1983).
+CC   -!- FUNCTION: Histone H4, along with histone H3, plays a central role
+CC       in nucleosome formation.
+CC   -!- SUBUNIT: The nucleosome is an octamer containing two molecules
+CC       each of H2A, H2B, H3 and H4. The octamer wraps approximately 146
+CC       bp of DNA.
+CC   -!- SIMILARITY: Belongs to the histone H4 family.
+CC   --------------------------------------------------------------------------
+CC   This SWISS-PROT entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use  by  non-profit  institutions as long  as its content  is  in  no  way
+CC   modified and this statement is not removed.  Usage  by  and for commercial
+CC   entities requires a license agreement (See http://www.isb-sib.ch/announce/
+CC   or send an email to license@isb-sib.ch).
+CC   --------------------------------------------------------------------------
+DR   EMBL; X01611; CAA25760.1; -.
+DR   EMBL; AY062172; AAL38972.1; -.
+DR   EMBL; AY062173; AAL38974.1; -.
+DR   EMBL; AL670543; CAD21509.1; -.
+DR   EMBL; AABX01000742; EAA27361.1; -.
+DR   PIR; S07913; S07913.
+DR   HSSP; P02304; 1KX5.
+DR   InterPro; IPR009072; Histone-fold.
+DR   InterPro; IPR007125; Histone_core_D.
+DR   InterPro; IPR001951; Histone_H4.
+DR   InterPro; IPR007124; Hist_TAF.
+DR   Pfam; PF00125; Histone; 1.
+DR   PRINTS; PR00623; HISTONEH4.
+DR   ProDom; PD001827; Histone_H4; 1.
+DR   SMART; SM00417; H4; 1.
+DR   PROSITE; PS00047; HISTONE_H4; 1.
+KW   Chromosomal protein; Nucleosome core; Nuclear protein; DNA-binding.
+FT   INIT_MET      0      0       .
+FT   DNA_BIND     16     20       .
+SQ   SEQUENCE   102 AA;  11239 MW;  505DF14B3BA5321B CRC64;
+     TGRGKGGKGL GKGGAKRHRK ILRDNIQGIT KPAIRRLARR GGVKRISAMI YEETRGVLKT 
+     FLEGVIRDAV TYTEHAKRKT VTSLDVVYAL KRQGRTLYGF GG 
+//
+</pre>
+
+
+<h2><a name="ids">Sequence IDs and Accession Numbers</a></h2>
+At a minimum, all sequence formats contain the sequence itself.  A
+sequence does not require any sort of identification.  However, it is
+certainly useful!  Most sequence formats contain an identifier (name,
+accession number, etc.) somewhere near the beginning of the sequence
+format.
+
+<p>An entry in a database must have some way of being uniquely
+identified in that database.  Most sequence databases have two such
+identifiers for each sequence: an ID and an Accession Number.  Why two
+identifiers?  Again, the reasons are mostly historical.  IDs were
+originally intended to be a human-readable name that gave some
+indication of the origin and function of the sequence.  In EMBL and
+GenBank the first two or three letters indicated the species and the
+rest indicated the function.  So for example, 'HUMHBB' would be the
+'Human hemoglobin beta gene'.  Such a naming scheme became impractical
+once huge numbers of sequences -- many with unknown function -- began to
+be submitted to the databases every day.  Accession numbers began to be
+used as the ID as well.  Therefore you will now find IDs like
+'AF061303', the same as the Accession number for that sequence in EMBL.
+
+<p>IDs are not guaranteed to remain the same between different versions
+of a database (although in practice they usually do).  Accession numbers
+are unique alphanumeric identifiers that are guaranteed to remain with
+that sequence through the rest of the life of the database.  If two
+sequences are merged into one, then the new sequence will get a new
+accession number and the accession numbers of the merged sequences will
+be retained as 'secondary' Accession numbers.  GenBank, EMBL and
+SwissProt share an accession numbering scheme whereby an accession
+number uniquely identifies a sequence within these three databases.
+
+<h2><a name="annot">Sequence Annotations</a></h2>
+Most sequence formats allow additional information such as a description
+or comments to be associated with a sequence.  Some formats have
+additional fields for holding information such as references, keywords,
+associated database entries, cross-references in other databases and
+feature tables.  Such information is often referred to generically as
+annotations.
+
+<h2><a name="feat">Sequence Features and Feature Tables</a></h2>
+A feature is a region of interest on a particular nucleic acid or
+protein sequence.  Features have a specified start and end position and
+have a name describing what type of thing it is.  Features may also hold
+many other pieces of information such as: the strand (nucleic acid), the
+name of the analysis program or database that from which they were
+derived, etc.
+
+<p>Feature Tables are groups of features.
+
+<p>As with sequences themselves, there are different formats for
+representing features.  As a result of the fact that the majority of
+sequence analysis programs find regions of interest in an input
+sequence, the number of feature formats is vast and chaotic.  They range
+from graphical displays of where restriction enzymes cut, to
+probabilities of the three states of a protein secondary structure
+prediction along a sequence, to rigidly defined text tables of the start
+and end positions of things like predicted exons or motif matches.  A
+review of all such formats is clearly beyond the scope of this document.
+Instead, only the well-defined feature formats that have been developed
+for the major sequence databases (EMBL, Genbank, SwissProt) and for
+the input of features into the genome databases (GFF) will be mentioned.
+
+<p>Feature tables can either be stored as part of a sequence file or
+database entry, or they can be stored in a file that does not contain
+the sequence that to which the features refer.  The latter is called a
+raw feature table.  When feature tables are held together with the
+sequence to which they refer, then the feature format is the same as the
+sequence format (e.g. The GenBank feature table format is part of the 
+GenBank sequence format).
+
+<p>Most feature table definitions have a controlled vocabulary.  This
+means there is a specified list of feature key names and only names in
+this list may be used.  Thus, you cannot edit feature tables in a
+prarticular format to add in features with arbitrary names.  If you edit
+the feature tables, you must stick to the allowed set of feature Keys.
+Table 3 contains links to the common feature table definitions.
+
+<h3>Table 3. Common Feature Table Definitions</h3>
+<table border="1" cellpadding="5">
+<tr><th>Name</th><th>Comments</th><th>Documentation</th></tr>
+<tr><td>GenBank</td><td>The format used by the GenBank nucleotide sequence database</td><td><a href="http://biocomp.health.unm.edu/GenBankFTv6.html">GenBank Feature Table</a></td></tr>
+<tr><td>Swissprot</td><td>The format used by the SWISSPROT protein database.</td><td><a href="http://us.expasy.org/sprot/userman.html#FT_line">http://us.expasy.org/sprot/userman.html#FT_line</a><br><a href="http://us.expasy.org/sprot/userman.html#FT_keys">http://us.expasy.org/sprot/userman.html#FT_keys</a></td></tr>
+<tr><td>GFF</td><td>General Feature Format. Used to represent genome sequence annotations.</td><td><a href="http://www.sanger.ac.uk/Software/formats/GFF/GFF_Spec.shtml">http://www.sanger.ac.uk/Software/formats/GFF/GFF_Spec.shtml</a></td></tr>
+</table>
+
+<h2><a name="fasta"></a>A Detailed Description of FASTA Format</h2>
+FASTA format is widely used and most sequence analysis software will
+accept sequences in FASTA format.  This section describes in detail the
+structure and organization of the FASTA format.
+
+<p>A sequence in FASTA format consists of three parts:
+<ul>
+  <li>A greater than symbol `&gt;' at the beginning of a line.</li>
+  <li>A single line title.  Within the title line, a string of non-whitespace characters immediately following the greater than symbol `&gt;' is the sequence ID (name, accession number), and the rest of the description line is the sequence description.  The ID and the description are both optional.</li>
+  <li>he sequence itself, containing possible newlines and continuing until end of file or the next greater than symbol `&gt;' at the beginning of a line is reached.</li>
+</ul>
+
+<p>It is recommended that all lines of text be shorter than 80
+characters in length.  The following example contains two sequences in
+FASTA format:
+
+<pre>
+>Sequence1 chitinase
+LNQAVRFRPVITFALAFILIITWFAPRADAAAQWQAGTAYKQGDLVTYLNKDYECIQPHT
+ALTGWEPSNVPALWKYVGEGTGGGTPTPDTTPPTVPAGLTSSLVTDTSVNLTWNASTDNV
+GVTGYEVYRNGTLVANTSTTTAVVTGLTAGTTYVFTVKAKDAAGNLSAASTSLSVTTSTG
+SSNPGPSGSKWLIGYWHNFDNGSTNIKLRNVSTAYDVINVSFAEPISPGSGTLAFTPYNA
+TVEEFKSDIAYLQSQGKKVLISMGGANGRIELTDATKKRQQFEDSLKSIISTYGFNGLDI
+DLEGSSLSLNAGDTDFRSPTTPKIVNLINGVKALKSHFGANFVLTAAPETAYVQGGYLNY
+GGPWGAYLPVIHALRNDLTLLHVQHYNTGSMVGLDGRSYAQGTADFHVAMAQMLLQGFNV
+GGSSGPFFSPLRPDQIAIGVPASQQAAGGGYTAPAELQKALNYLIKGVSYGGSYTLRQLR
+AMSVSRAL
+>Seqence2 envelope protein
+ELRLRYCAPAGFALLKCNDADYDGFKTNCSNVSVVHCTNLMNTTVTTGLLLNGSYSENRT
+QIWQKHRTSNDSALILLNKHYNLTVTCKRPGNKTVLPVTIMAGLVFHSQKYNLRLRQAWC
+HFPSNWKGAWKEVKEEIVNLPKERYRGTNDPKRIFFQRQWGDPETANLWFNCHGEFFYCK
+MDWFLNYLNNLTVDADHNECKNTSGTKSGNKRAPGPCVQRTYVACHIRSVIIWLETISKK
+TYAPPREGHLECTSTVTGMTVELNYIPKNRTNVTLSPQIESIWAAELDRYKLVEITPIGF
+APTEVRRYTGGHERQKRVPFVXXXXXXXXXXXXXXXXXXXXXXVQSQHLLAGILQQQKNL
+LAAVEAQQQMLKLTIWGVK
+</pre>
+
+Sequences are expected to be represented in the standard IUPAC
+nucleotide and amino acid codes, with the following exceptions:
+<ul>
+  <li>lower-case letters are allowed</li>
+  <li>a single hyphen or dash can be used to represent a gap of indeterminate length</li>
+  <li>U and * are allowed characters in amino acid sequences</li>
+</ul>
+
+<hr>
+<!-- hhmts start --> Last modified: Thu Sep  2 11:06:41 MDT 2004 <!-- hhmts end -->
+
+</body>
+</html>

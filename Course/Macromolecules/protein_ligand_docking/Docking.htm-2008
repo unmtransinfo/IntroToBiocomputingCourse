@@ -1,0 +1,2079 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="Docking_files/filelist.xml">
+<link rel=Edit-Time-Data href="http://biocomp.health.unm.edu/biomed505/Course/Macromolecules/protein_ligand_docking/Docking_files/editdata.mso">
+<link rel=OLE-Object-Data href="http://biocomp.health.unm.edu/biomed505/Course/Macromolecules/protein_ligand_docking/Docking_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Docking</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>every1</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>every1</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>200</o:TotalTime>
+  <o:Created>2008-03-10T22:52:00Z</o:Created>
+  <o:LastSaved>2008-03-10T22:52:00Z</o:LastSaved>
+  <o:Pages>10</o:Pages>
+  <o:Words>2626</o:Words>
+  <o:Characters>14971</o:Characters>
+  <o:Company>unm</o:Company>
+  <o:Lines>124</o:Lines>
+  <o:Paragraphs>35</o:Paragraphs>
+  <o:CharactersWithSpaces>17562</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=dataStoreItem href="Docking_files/item0001.xml"
+target="Docking_files/props0002.xml">
+<link rel=themeData href="http://biocomp.health.unm.edu/biomed505/Course/Macromolecules/protein_ligand_docking/Docking_files/themedata.thmx">
+<link rel=colorSchemeMapping href="Docking_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2002TableStyleRules/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="0" Name="endnote reference"/>
+  <w:LsdException Locked="false" Priority="0" Name="endnote text"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="0" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="0" Name="Normal (Web)"/>
+  <w:LsdException Locked="false" Priority="0" Name="No List"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:auto;
+	tab-stops:.5in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;
+	mso-bidi-font-weight:normal;}
+span.MsoEndnoteReference
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:auto;
+	tab-stops:.5in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;
+	mso-bidi-font-weight:normal;}
+p
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;
+	mso-bidi-font-weight:bold;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("Docking_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("Docking_files/header.htm") fcs;
+	mso-endnote-separator:url("Docking_files/header.htm") es;
+	mso-endnote-continuation-separator:url("Docking_files/header.htm") ecs;
+	mso-endnote-numbering-style:arabic;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;
+	mso-endnote-numbering-style:arabic;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:51930861;
+	mso-list-type:hybrid;
+	mso-list-template-ids:55847504 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:243227860;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-299746038 67698691 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2
+	{mso-list-id:283930908;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1588144852 67698691 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3
+	{mso-list-id:414327939;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1177934334 67698699 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:741608877;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1577175046 67698691 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l5
+	{mso-list-id:841042454;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1800749090 67698691 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l6
+	{mso-list-id:841312706;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1162894304 67698691 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l7
+	{mso-list-id:924723955;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1694280452 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:1186477641;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2139536784 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l9
+	{mso-list-id:1243248845;
+	mso-list-type:hybrid;
+	mso-list-template-ids:473188612 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:1597790239;
+	mso-list-type:hybrid;
+	mso-list-template-ids:215639214 67698691 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l11
+	{mso-list-id:1704597963;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1951046362 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:1989819820;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1587971510 67698691 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:regrouptable v:ext="edit">
+   <o:entry new="1" old="0"/>
+   <o:entry new="2" old="0"/>
+  </o:regrouptable>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='font-size:16.0pt;line-height:115%'>Section II</span></i></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:16.0pt;line-height:
+115%'><span style='mso-tab-count:1'>  </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;line-height:
+115%'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;line-height:
+115%'>The Structure of Macromolecules: </span></b><i style='mso-bidi-font-style:
+normal'><span style='font-size:14.0pt;line-height:115%'>Protein-Ligand
+Interactions. Molecular Docking (FRED, FlexX)<span style='mso-bidi-font-weight:
+bold'> - tutorial<o:p></o:p></span></span></i></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p><i style='mso-bidi-font-style:normal'>Andrei Leitão, Dan C. Fara and Tudor
+I. Oprea<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><u>Objective<o:p></o:p></u></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>To learn how to
+use FRED and FlexX software for structure-based virtual screening (docking).<b
+style='mso-bidi-font-weight:normal'><span style='font-size:16.0pt;line-height:
+115%'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>1. Background -</b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;line-height:115%'> </span>Nuclear
+receptors, hormones, cancer and inhibitors: the biological context of diseases<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Nuclear receptor
+is a family of proteins that, upon activation, stimulates transcription of DNA
+in the nucleus. It can be done in two main ways – see Figure 1:</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>- directly
+(named genomic pathway): the hormone binds to the receptor (left part of the
+Figure 1) and this complex goes to the nucleus, binds to DNA and promotes the
+transcription;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>- indirectly
+(also known as rapid response): the compound binds to a receptor at the
+membrane (right part), then second messengers are released and also influence
+the transcription, among other effects.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='font-size:8.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:253.5pt;
+ height:372.75pt'>
+ <v:imagedata src="Docking_files/image001.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=338 height=497
+src="Docking_files/image002.gif" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>Figure 1</b>. Mechanisms of activation of
+nuclear receptor and promotion of transcription into the nucleus (taken from
+reference <a style='mso-endnote-id:edn1' href="Docking.htm#_edn1" name="_ednref1" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline'><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA;vertical-align:baseline'>[1]</span></span><![endif]></span></span></span></a>)</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>Estradiol
+is a hormone that regulates many physiological functions by binding to some
+proteins called nuclear receptors. More specifically, it interacts with
+estrogen receptors subtypes alpha (ER&#945; or ERa, K<sub>i</sub> = 0.2 nM)<a
+style='mso-endnote-id:edn2' href="Docking.htm#_edn2" name="_ednref2" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></a>
+and beta (ER&#946; or ERb, K<sub>i</sub> = 0.5 nM) and, as recently described, with
+GPR30 (a transmembrane receptor)<a style='mso-endnote-id:edn3' href="Docking.htm#_edn3"
+name="_ednref3" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[3]</span></span><![endif]></span></span></a>.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>It
+is well-known the importance of ERa to the development of breast cancer. The
+growth of the cancer is related to the stimulus of the ERa by the estradiol or
+other agonists. It is estimated that 40,460 women and 450 men died of breast
+cancer in the USA in 2007.<a style='mso-endnote-id:edn4' href="Docking.htm#_edn4"
+name="_ednref4" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[4]</span></span><![endif]></span></span></a> Among
+men, it is estimated that the prostate cancer had been the cause of death for
+27,050 individuals in 2007 in the USA. This cancer is related to the androgen
+receptor (AR)<a style='mso-endnote-id:edn5' href="Docking.htm#_edn5" name="_ednref5"
+title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[5]</span></span><![endif]></span></span></a>, in
+which testosterone and dihydrotestosterone bind and stimulate the receptor (the
+second hormone is much more effective) – see Figure 2.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='font-size:4.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:115%'><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:414pt;height:180pt'>
+ <v:imagedata src="Docking_files/image003.jpg" o:title="fig2" croptop="1731f"
+  cropbottom="19290f" cropleft="1367f" cropright="1291f"/>
+</v:shape><![endif]--><![if !vml]><img width=552 height=240
+src="Docking_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='font-size:4.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>Figure 2</b>. Part of the biochemical
+cascade of metabolism of testosterone (taken from reference <a
+style='mso-endnote-id:edn6' href="Docking.htm#_edn6" name="_ednref6" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline'><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA;vertical-align:baseline'>[6]</span></span><![endif]></span></span></span></a>)<span
+style='font-size:10.0pt;line-height:115%'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>Estrogen
+receptor is composed by two subunities (dimmer) in which the hormone estradiol
+binds and activates the co-complex, with the binding of a polypeptide sequence
+– see Figure 3. This polypeptide sequence that binds to the active form of the
+receptor is important for the next step of the DNA transcription. Estradiol
+binds to the ERa in a pocket composed by hydrophobic residues, which interact
+in the center of the scaffold (not shown in Figure 3 to help visualization),
+and also forms hydrogen bonds with glutamate 353 (Glu353), arginine 394
+(Arg394) and histidine 524 (His524), besides one water molecule (red sphere in
+Figure 3). Inhibitors, such as 4-hydroxytamoxifen and raloxifene, bind into
+this cavity, but also interact with aspartate 351 and displace the polypeptide
+sequence as shown in Figure 3 for estradiol-ERa.</p>
+
+<span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=561 colspan=2 valign=top style='width:420.7pt;border:none;
+  border-top:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'>Estradiol – ERa</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=267 valign=top style='width:200.15pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'>whole
+  structure</p>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'>close up of
+  the pocket &amp; interactions</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=267 valign=top style='width:200.15pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1027" type="#_x0000_t75" style='width:150pt;height:135.75pt'>
+   <v:imagedata src="Docking_files/image005.png" o:title="ERa_estradiol_1GWR_all"/>
+  </v:shape><![endif]--><![if !vml]><img width=200 height=181
+  src="Docking_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1028" type="#_x0000_t75" style='width:198.75pt;height:117.75pt'>
+   <v:imagedata src="Docking_files/image007.jpg" o:title="ERa_E2"/>
+  </v:shape><![endif]--><![if !vml]><img width=265 height=157
+  src="Docking_files/image008.jpg" v:shapes="_x0000_i1028"><![endif]></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=561 colspan=2 valign=top style='width:420.7pt;border:none;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'>4OHtamoxifen –
+  ERRg</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=267 valign=top style='width:200.15pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'>structure of
+  the target with ligand</p>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'>hydrophilic
+  interactions</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=267 valign=top style='width:200.15pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1029" type="#_x0000_t75" style='width:2in;height:135pt'>
+   <v:imagedata src="Docking_files/image009.png" o:title="ERRg_ohtamoxifen"/>
+  </v:shape><![endif]--><![if !vml]><img width=192 height=180
+  src="Docking_files/image010.jpg" v:shapes="_x0000_i1029"><![endif]></p>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1030" type="#_x0000_t75" style='width:155.25pt;height:141pt'>
+   <v:imagedata src="Docking_files/image011.jpg" o:title="ERRg_OHT"/>
+  </v:shape><![endif]--><![if !vml]><img width=207 height=188
+  src="Docking_files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=561 colspan=2 valign=top style='width:420.7pt;border:none;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'>Dihydrotestosterone
+  – AR</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=267 valign=top style='width:200.15pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'>structure of
+  the target with ligand</p>
+  </td>
+  <td width=294 valign=top style='width:220.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'>hydrophilic
+  interactions</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+  <td width=267 valign=top style='width:200.15pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1031" type="#_x0000_t75" style='width:145.5pt;height:107.25pt'>
+   <v:imagedata src="Docking_files/image013.png" o:title="AR_DHT_closeup"/>
+  </v:shape><![endif]--><![if !vml]><img width=194 height=143
+  src="Docking_files/image014.jpg" v:shapes="_x0000_i1031"><![endif]></p>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1032" type="#_x0000_t75" style='width:198pt;height:102.75pt'>
+   <v:imagedata src="Docking_files/image015.png" o:title="AR_DHT_ligH"/>
+  </v:shape><![endif]--><![if !vml]><img width=264 height=137
+  src="Docking_files/image016.jpg" v:shapes="_x0000_i1032"><![endif]></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='font-size:6.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>Figure 3</b>. Interaction patterns of
+nuclear receptors and ligands</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='font-size:10.0pt;line-height:115%'>Dashed lines represent proposed hydrogen
+bond interactions with the amino acids. Ligands and important amino acids in
+the pocket are shown as sticks, colored by atom type. Cartoon representations
+of the protein were colored based on the structure: helices (pink), loops
+(light green), &#946;-sheets (yellow). Polypeptide sequence is shown as lines.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Other compounds
+can also interact with these targets, and they can be agonists, partial
+agonists, inverse agonists and antagonists. These molecules modulate the
+outcome of the nuclear receptor response.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>New
+selective inhibitors are needed to interfere with this unbalanced biological
+system and, consequently, to stop the cancer growth. Finding active compounds
+is not a difficult task, but the problem arises when it is necessary to
+identify selective compounds<a style='mso-endnote-id:edn7' href="Docking.htm#_edn7"
+name="_ednref7" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[7]</span></span><![endif]></span></span></a>,
+because some of these nuclear receptors have similar structure, i.e. when the
+compound has high affinity to one receptor, it can also bind to others (the
+lack of selectivity can be related to the some of the side effects of these
+compounds). For example, the drug 4-hydroxytamoxifen (also written as
+4-OHtamoxifen, OH-tamoxifen) is used to treat breast cancer, but administered
+as a pro-drug, tamoxifen, binds to three other different nuclear receptors: ERa
+and ERb (K<sub>i</sub> around 0.5 nM) and also estrogen-related receptor gamma
+(ERRg) with high affinity (EC<sub>50</sub> = 15 nM). The physiological function
+of ERRg is not well established, but it is surprisingly that this receptor does
+not bind estradiol with high affinity, although it is very similar to ERa, with
+the same pattern of binding to 4-hydroxytamoxifen – see Figure 3.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>The
+newly potentially active and selective molecules are studied based on the way
+they interact with the biological target<a style='mso-endnote-id:edn8'
+href="Docking.htm#_edn8" name="_ednref8" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[8]</span></span><![endif]></span></span></a>.
+For example, estradiol establishes hydrogen bonds with histidine, glutamate and
+arginine, but there are also lypophilic interactions with many residues in the
+middle of the core. 4-hydroxytamoxifen also establishes hydrogen bonds to
+histidine and glutamate for both ERa and ERRg, but instead of interacting with
+histidine at the bottom of the pocket, it forms hydrogen bond with aspartate at
+the top – see Figure 3. Dihydrotestosterone is not an excellent binder to ERa
+(K<sub>i</sub> = 69.9 nM) because it lacks a hydroxy group in one end – see Figure
+2. In contrast, it is the hormone that binds with high affinity to the androgen
+receptor (K<sub>i</sub> = 0.3 nM), even better than testosterone (K<sub>i</sub>
+= 1.4 nM). Non-steroidal compounds also bind to this receptor, like metribolone
+(also known as R1881), which is a potent agonist molecule.<a style='mso-endnote-id:
+edn9' href="Docking.htm#_edn9" name="_ednref9" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[9]</span></span><![endif]></span></span></a></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>Those
+studies are primarily done by using many different kinds of computer
+simulations that comprise, for example, the representation of the target-ligand,
+the three-dimensional simulation of the receptor and its interactions with the
+ligands (Figure 3) and also the study and selection of new compounds based on
+similarities with known binders (this field of work is known as
+cheminformatics). All these topics will be further discussed.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>2. Molecular docking using FRED and FlexX -
+tutorial</b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Docking is a
+tool commonly used to discover new chemicals based on the interaction between
+the ligand and the biological target in the three-dimensional (3D) space. It
+comes from the knowledge that there are somewhat complementary interactions
+between the ligand and the biological target. Better ligands have lower
+(negative) interaction energy and it can be captured by what is known as
+scoring function. However, the scoring functions give only a rough idea about
+the ligand – target system.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>For
+instance, two molecules are similar to each other (A and B) but A interacts
+with the protein (C) way better than B – see Figure 4. A good docking program
+can capture this information accurately. To accomplish that, the program must
+change the position of the ligand to fit it into the pocket of the protein –
+see Figure 4, part 1 – and to detect the correct ligand-protein interactions, while
+it discards bad solutions – see Figure 4, part 2.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:438.75pt;height:241.5pt'
+ o:ole="">
+ <v:imagedata src="Docking_files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=585 height=322
+src="Docking_files/image018.gif" v:shapes="_x0000_i1033"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="ISISServer" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1266673125">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='font-size:6.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>Figure 4</b>. Interaction profiles for
+molecules A and B and the docking protocol</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>The
+main idea of ligand-protein interaction comes from the lock-and-key model,
+where both ligand and protein are rigid bodies, as shown in Figure 4. In
+reality, the ligand and protein are not rigid, one or even both of them being flexible
+during the process of recognition. There are many different docking programs that
+try to solve this apparent simple question (in fact, none of them can be used
+to all systems). </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>Here
+you will use two different programs, FRED and FlexX, to dock small molecules
+from a 3D database (199 compounds) into three biological targets: estrogen
+receptor alpha (ERa), estrogen-related receptor gamma (ERRg) and androgen
+receptor (AR). The outcome of each ligand-receptor interaction will be
+automatically analyzed by a scoring function which, in turn, ranks the
+compounds.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>2.1 FRED<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>This program
+uses the lock-and-key idea presented above. A bunch of conformations from each
+ligand interacts with the receptor and the best solution is stored to be ranked
+at the end of the process. Programs like this one give results much faster than
+others that deal with the flexibility of the compound.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l7 level1 lfo1'>Connect
+     to hatch.health.unm.edu, your account</li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l7 level1 lfo1'>Type
+     <b style='mso-bidi-font-weight:normal'>cp –r /home/app/tutorial-docking ~</b>
+     </li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l7 level1 lfo1'>Go
+     to the tutorial directory (type <b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'>cd ~/tutorial_docking</span></b>
+     on the shell) and see what is in there (use the list command: <b
+     style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+     line-height:115%'>ls</span></b>). The following three directories are
+     listed: (i) <i style='mso-bidi-font-style:normal'>compounds</i>, (ii) <i
+     style='mso-bidi-font-style:normal'>FlexX</i>, and (iii) <i
+     style='mso-bidi-font-style:normal'>fred</i>. The first one contains the
+     compound database, with the 3D structures generated and a set of
+     conformations for each one. Open <i style='mso-bidi-font-style:normal'>fred</i>
+     directory (<b style='mso-bidi-font-weight:normal'><span style='font-size:
+     11.0pt;line-height:115%'>cd fred</span></b>) and note that each one of the
+     three directories (ERa, ERRg and AR) contains the files needed to run the
+     program. Go to ERa (type <b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'>cd ERa</span></b>) and list the
+     files again (<b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'>ls</span></b>): 3ERT.oeb is the
+     receptor already prepared; OHtamoxifen.mol2 is the ligand; setup.txt has
+     all the information necessary to run the program; and the directory result
+     is empty (if you want, you can check it before running FRED). Now let us
+     run the program: <b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'>fred -param setup.txt</span> </b>It
+     takes time to dock the entire database (around 15 minutes) because this
+     kind of calculation is much more complex (see Figure 4 with the
+     procedure). <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l7 level1 lfo1'>Go
+     to the directory result (<b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'>cd results</span></b>) to check
+     it (<b style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+     line-height:115%'>ls</span></b>). Many files were created, but you will
+     analyze the consensus_docked.mol2 (with the conformations of the compounds
+     docked into the site) and consensus_scores.txt (the ranking of the
+     compounds).</li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l7 level1 lfo1'>Open
+     the file to check the results: <b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'>gedit consensus_scores.txt &amp;</span></b>.
+     Try to find the position of the compounds that were added to the set
+     (ohtamoxifen is the best ranked, estradiol - the 69<sup>th</sup>, while dihydrotestoterone
+     is the worst of them, as expected). The top 5 compounds will be analyzed
+     more deeply, but it can also be done to other compounds. </li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l7 level1 lfo1'>Close
+     the gedit window. </li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l7 level1 lfo1'>Open
+     a visualization program named VIDA to see how good the compounds fit the
+     pocket of the receptor: type <b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'>vida</span></b> on the shell. An
+     interface like the one shown in Figure 5a will open. The program has the
+     following layout (if the layout is different, Click on the button showed
+     by the red circle, Figure 5a):</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l10 level1 lfo2'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>the top part contains the main menu and many
+options to change the display (Figure 5a. number 1)</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l10 level1 lfo2'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>the left part harbors the ligand list and other
+information (two white windows)</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l10 level1 lfo2'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>the main windows (middle black one) is where you
+visualize the compounds</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l10 level1 lfo2'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>the right window has some visualization buttons</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l9 level1 lfo3'>Click
+     on ‘Tools’ and ‘FRED view’ on the menu (Figure 5a, number 1). The box
+     shows the options to fill in (number 2):</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l6 level1 lfo4'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Protein: 3ERT.oeb (click in ‘browse’ and go one
+directory up, number 3)</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l6 level1 lfo4'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Reference ligand: OHtamoxifen.mol2 (click in
+‘browse’)</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l6 level1 lfo4'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Docking results: consensus_docked.mol2 (click in
+‘browse’ and click on ‘result’). The result will appear on the main window,
+loading the list of compounds docked (Figure 5b). Now it is time to see how
+good the results are. </p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l9 level1 lfo3'>Hide
+     the hydrogens by clicking on the H symbol, highlighting the icon (skip
+     this step if hydrogens are not shown) – see Figure 5b, number 1. Look at
+     the main window with the structures. You are seeing two structures (green
+     is the tamoxifen from the X-ray, the template, and gray the docked one).
+     They are inside the ERa pocket, shown by the surface, and there are some
+     hydrogen bonds with amino acids, highlighted by the green dashed lines
+     (number 2).</li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l9 level1 lfo3'>Hide
+     the standard compound by clicking on the green balls in the left panel
+     (number 3). Now, only the docked compound (gray carbons) is shown. As can
+     be seen only a weaker hydrogen bond interaction is shown, because the
+     dashed yellow line is finer than the standard compound-ERa interactions. These
+     hydrogen bonds with arginine and glutamate are important for those
+     compounds, because it helps the stabilization of the co-complex. To rotate
+     the co-complex, drag the mouse with the left button pressed. There is no
+     hydrogen bond with histidine because of the lack of complementarities. Another
+     hydrogen bond, with aspartate 351, is not shown on the standard X-ray
+     structure (green) because of the distance between the amino group and the
+     side chain of the amino acid. In other X-rays this hydrogen bond is better
+     defined for antagonist compounds.</li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>You can also
+check other structures by clicking on the codes or in the green ball column –
+see Figure 5b, number 3. Remember to hide the latest compound opened before
+looking at the next one in order to facilitate the visualization (do not do
+that if you want to compare the structures).</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>(a)</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:group
+ id="_x0000_s1055" style='position:absolute;left:0;text-align:left;
+ margin-left:69pt;margin-top:7.2pt;width:219pt;height:118pt;z-index:2'
+ coordorigin="3180,1860" coordsize="4380,2360">
+ <v:line id="_x0000_s1026" style='position:absolute;flip:x y' from="3492,1860"
+  to="3744,2088" o:regroupid="3" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+  path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s1032" type="#_x0000_t202" style='position:absolute;
+  left:3636;top:2016;width:312;height:396' o:regroupid="3" filled="f"
+  stroked="f">
+  <v:textbox style='mso-next-textbox:#_x0000_s1032'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;color:white'>1<o:p></o:p></span></b></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1036" style='position:absolute;flip:x' from="7008,2520"
+  to="7368,2700" o:regroupid="3" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1037" type="#_x0000_t202" style='position:absolute;
+  left:7368;top:2340;width:192;height:396' o:regroupid="3" filled="f"
+  stroked="f">
+  <v:textbox style='mso-next-textbox:#_x0000_s1037'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;color:white'>2<o:p></o:p></span></b></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1040" style='position:absolute;flip:x' from="6590,3870"
+  to="6820,4220" o:regroupid="3" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1041" type="#_x0000_t202" style='position:absolute;
+  left:6800;top:3650;width:192;height:396' o:regroupid="3" filled="f"
+  stroked="f">
+  <v:textbox style='mso-next-textbox:#_x0000_s1041'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;color:white'>3<o:p></o:p></span></b></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:oval id="_x0000_s1053" style='position:absolute;left:3180;top:1932;
+  width:228;height:240' o:regroupid="3" filled="f" strokecolor="red"
+  strokeweight="1.5pt"/>
+</v:group><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:0px;margin-left:91px;margin-top:1px;width:295px;
+height:173px'><img width=295 height=173 src="Docking_files/image019.gif"
+v:shapes="_x0000_s1055 _x0000_s1026 _x0000_s1032 _x0000_s1036 _x0000_s1037 _x0000_s1040 _x0000_s1041 _x0000_s1053"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:431.25pt;height:251.25pt'>
+ <v:imagedata src="Docking_files/image020.jpg" o:title="vida_interface"
+  cropbottom="2385f"/>
+</v:shape><![endif]--><![if !vml]><img width=575 height=335
+src="Docking_files/image021.jpg" v:shapes="_x0000_i1034"><![endif]></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>(b)</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:group
+ id="_x0000_s1056" style='position:absolute;left:0;text-align:left;
+ margin-left:43pt;margin-top:38.3pt;width:389.6pt;height:129.6pt;z-index:1'
+ coordorigin="2660,8340" coordsize="7792,2592">
+ <v:line id="_x0000_s1044" style='position:absolute;flip:x y' from="10080,10356"
+  to="10332,10584" o:regroupid="1" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1045" type="#_x0000_t202" style='position:absolute;
+  left:10260;top:10536;width:192;height:396' o:regroupid="1" filled="f"
+  stroked="f">
+  <v:textbox style='mso-next-textbox:#_x0000_s1045'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt'>1<o:p></o:p></span></b></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1046" style='position:absolute;flip:x' from="2660,8530"
+  to="3020,8530" o:regroupid="1" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1047" type="#_x0000_t202" style='position:absolute;
+  left:2970;top:8340;width:192;height:396' o:regroupid="1" filled="f"
+  stroked="f">
+  <v:textbox style='mso-next-textbox:#_x0000_s1047'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt'>3<o:p></o:p></span></b></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1048" style='position:absolute' from="4014,10536"
+  to="4440,10775" o:regroupid="1" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1049" type="#_x0000_t202" style='position:absolute;
+  left:3760;top:10316;width:192;height:396' o:regroupid="1" filled="f"
+  stroked="f">
+  <v:textbox style='mso-next-textbox:#_x0000_s1049'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;color:white'>2<o:p></o:p></span></b></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1050" style='position:absolute;flip:y' from="4018,10470"
+  to="4618,10540" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+ </v:line></v:group><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+position:absolute;z-index:1;left:0px;margin-left:54px;margin-top:51px;
+width:525px;height:177px'><img width=525 height=177
+src="Docking_files/image022.gif" v:shapes="_x0000_s1056 _x0000_s1044 _x0000_s1045 _x0000_s1046 _x0000_s1047 _x0000_s1048 _x0000_s1049 _x0000_s1050"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:431.25pt;height:261.75pt'>
+ <v:imagedata src="Docking_files/image023.jpg" o:title="result_ohtamoxifen"
+  cropbottom="2414f"/>
+</v:shape><![endif]--><![if !vml]><img width=575 height=349
+src="Docking_files/image024.jpg" v:shapes="_x0000_i1035"><![endif]></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>Figure 5</b>. VIDA interface and docking
+results for ERa</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='font-size:10.0pt;line-height:115%'>Figure 5b: Note that when you select
+a compound the structure of the ligand appears at the bottom left corner<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l8 level1 lfo5'>Go
+     to the ERRg (<b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'>cd ../../ERRg</span></b>) and also
+     AR directories and repeat the previous given steps.</li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l8 level1 lfo5'>Open
+     the results. </li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Table 1 shows
+the top 5 compounds for those three results.</p>
+
+<span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Table 1. Ranking
+of the best 5 compounds for each target</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=523
+ style='width:392.1pt;margin-left:4.8pt;border-collapse:collapse;border:none;
+ mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:12.75pt'>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;line-height:
+  115%;font-family:"Arial","sans-serif"'>Name<o:p></o:p></span></b></p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext 2.25pt;mso-border-bottom-alt:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;line-height:
+  115%;font-family:"Arial","sans-serif"'>Consensus Score AR<o:p></o:p></span></b></p>
+  </td>
+  <td width=87 valign=bottom style='width:65.3pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;line-height:
+  115%;font-family:"Arial","sans-serif"'>Name<o:p></o:p></span></b></p>
+  </td>
+  <td width=86 valign=bottom style='width:64.75pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext 2.25pt;mso-border-bottom-alt:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;line-height:
+  115%;font-family:"Arial","sans-serif"'>Consensus Score ERa<o:p></o:p></span></b></p>
+  </td>
+  <td width=87 valign=bottom style='width:65.3pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;line-height:
+  115%;font-family:"Arial","sans-serif"'>Name<o:p></o:p></span></b></p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border-top:solid windowtext 2.25pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;line-height:
+  115%;font-family:"Arial","sans-serif"'>Consensus Score ERRg<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:12.75pt'>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;mso-border-top-alt:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10314457<o:p></o:p></span></p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>7<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-top-alt:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>ohtamoxifen<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>0<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-top-alt:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10405011<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;mso-border-top-alt:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>5<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:12.75pt'>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;padding:
+  0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10041071<o:p></o:p></span></p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>7<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>11597178<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>6<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10689508<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>14<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:12.75pt'>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;padding:
+  0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>11722940<o:p></o:p></span></p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>7<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10500501<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>7<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>11597178<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>15<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:12.75pt'>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;padding:
+  0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10470789<o:p></o:p></span></p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>16<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>11634313<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>ohtamoxifen<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>18<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes;height:12.75pt'>
+  <td width=74 nowrap valign=bottom style='width:55.3pt;border:none;border-bottom:
+  solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10402442<o:p></o:p></span></p>
+  </td>
+  <td width=86 nowrap valign=bottom style='width:64.75pt;border:none;
+  border-bottom:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt;height:
+  12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>21<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;border-bottom:solid windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>11725333<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;border-bottom:solid windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>16<o:p></o:p></span></p>
+  </td>
+  <td valign=bottom style='border:none;border-bottom:solid windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10449190<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=bottom style='width:76.7pt;border:none;border-bottom:
+  solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>22<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Try to compare
+the best five ranked compounds with the standard ones in the study (Figure 6). Note
+that they interact similarly with the target because they share some similar
+features with the scaffold.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='font-size:6.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>4-hydroxytamoxifen<o:p></o:p></span></p>
+  </td>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>11597178</span></p>
+  </td>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>10500501</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1036" type="#_x0000_t75" style='width:126.75pt;height:134.25pt'>
+   <v:imagedata src="Docking_files/image025.png" o:title="ohtamoxifen"
+    croptop="11426f" cropleft="2216f" cropright="13139f"/>
+  </v:shape><![endif]--><![if !vml]><img width=169 height=179
+  src="Docking_files/image026.jpg" v:shapes="_x0000_i1036"><![endif]></p>
+  </td>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1037" type="#_x0000_t75" style='width:129pt;height:134.25pt'>
+   <v:imagedata src="Docking_files/image027.png" o:title="11597178" croptop="10904f"
+    cropbottom="2923f" cropleft="4339f" cropright="11906f"/>
+  </v:shape><![endif]--><![if !vml]><img width=172 height=179
+  src="Docking_files/image028.jpg" v:shapes="_x0000_i1037"><![endif]></p>
+  </td>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1038" type="#_x0000_t75" style='width:138.75pt;height:135pt'>
+   <v:imagedata src="Docking_files/image029.png" o:title="10500501" croptop="11683f"
+    cropbottom="714f" cropleft="1128f" cropright="10955f"/>
+  </v:shape><![endif]--><![if !vml]><img width=185 height=180
+  src="Docking_files/image030.jpg" v:shapes="_x0000_i1038"><![endif]></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>11634313</span></p>
+  </td>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>11725333</span></p>
+  </td>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><span
+  style='font-size:10.0pt;line-height:115%;font-family:"Arial","sans-serif"'>estradiol<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1039" type="#_x0000_t75" style='width:127.5pt;height:135pt'>
+   <v:imagedata src="Docking_files/image031.png" o:title="11634313" croptop="10439f"
+    cropleft="1725f" cropright="12072f"/>
+  </v:shape><![endif]--><![if !vml]><img width=170 height=180
+  src="Docking_files/image032.jpg" v:shapes="_x0000_i1039"><![endif]></p>
+  </td>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1040" type="#_x0000_t75" style='width:140.25pt;height:134.25pt'>
+   <v:imagedata src="Docking_files/image033.png" o:title="11725333" croptop="11678f"
+    cropbottom="2798f" cropleft="517f" cropright="12450f"/>
+  </v:shape><![endif]--><![if !vml]><img width=187 height=179
+  src="Docking_files/image034.jpg" v:shapes="_x0000_i1040"><![endif]></p>
+  </td>
+  <td width=197 valign=top style='width:2.05in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1041" type="#_x0000_t75" style='width:141.75pt;height:134.25pt'>
+   <v:imagedata src="Docking_files/image035.png" o:title="estradiol" croptop="12941f"
+    cropbottom="2042f" cropright="12886f"/>
+  </v:shape><![endif]--><![if !vml]><img width=189 height=179
+  src="Docking_files/image036.jpg" v:shapes="_x0000_i1041"><![endif]></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+style='font-size:6.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>Figure 6</b>. Comparison of the top 5 docked
+compounds and estradiol in ERa</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.25in;
+line-height:115%;mso-list:l3 level1 lfo9'><![if !supportLists]><span
+style='font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings'><span style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]>Parameters to use in VIDA after running the
+docking program for ERRg target:</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l5 level1 lfo10'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Protein: 3ERT.oeb (click in ‘browse’ and go one
+directory up, Figure 5a, number 3)</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l5 level1 lfo10'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Reference ligand: ohtamoxifen.mol2 (click in
+‘browse’)</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l5 level1 lfo10'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Docking results: consensus_docked.mol2 (click in
+‘browse’ and click on ‘result’)</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Note that the OHtamoxifen
+appears on the top 10 list. Find estradiol and dihydrotestosterone in
+consensus_scores.txt and observe that these compounds had bad results (at the
+end of the list).</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-.25in;
+line-height:115%;mso-list:l3 level1 lfo9'><![if !supportLists]><span
+style='font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings'><span style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]>Parameters to use in VIDA after running the
+docking program for AR target:</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l2 level1 lfo11'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Protein: *.oeb (click in ‘browse’ and go one
+directory up, Figure 2a, number 3)</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l2 level1 lfo11'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Reference ligand: dihydrotestosterone.mol2
+(click in ‘browse’)</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-indent:
+-.25in;line-height:115%;mso-list:l2 level1 lfo11'><![if !supportLists]><span
+style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Docking results: consensus_docked.mol2 (click in
+‘browse’ and click on ‘result’)</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Check if the
+results are good or not. OHtamoxifen was at the end of the list. It is
+expected, once that it not AR binder. Now compare estradiol and
+dihydrotestosterone. Are they ranked well according to what you already now
+about these ligands? Try to figure out what is happening with estradiol and
+dihydrotestosterone in relation to AR binding.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>2.2 FlexX<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>This program is
+slower than FRED because the conformation of each compound changes on-the-fly
+(i.e. the conformation is changed while the program is running the
+calculation). In fact, FlexX uses another concept, based on cutting the
+compound in pieces, docking the anchor points and assembling these parts to re-generate
+the compound. This is known as dynamic change of the conformation in part, once
+that only the ligand can change its conformation during the interaction with
+the rigid receptor.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>The procedure is
+also straightforward. Being connected to hatch.health.unm.edu, your account, go
+to the FlexX directory: <b style='mso-bidi-font-weight:normal'>cd
+tutorial_docking/FlexX</b>. Again, three directories with the targets’ files
+are prepared for running the study. The procedure for ERa target is given below
+and is the same for the other two targets. Go to the <b style='mso-bidi-font-weight:
+normal'>ERa</b> directory. The following files are available: (i) 3ERT.rdf,
+which is the receptor definition file, (ii) 3ERT.pdb, which is the original
+receptor, (iii) 3ERT_surf.sdf, which is the surface created to the pocket, and
+(iv) 3ERT_poc65.pdb, which is the pocket generated by considering all amino
+acids at 6.5 Å distance from the ligand ohtamoxifen.mol2. The script.bat file
+has all the information to run the calculation, which is based on the
+definition file (config.dat). The compound database is located on the directory
+/tutorial_docking/compounds.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo13'>Type
+     the command <b><span style='font-size:11.0pt;line-height:115%'>flexx</span></b></li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo13'>Run
+     the program by typing: <b><span style='font-size:11.0pt;line-height:115%'>script
+     script</span></b></li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo13'>Wait
+     until the end of calculation and close the program by typing <b
+     style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+     line-height:115%'>quit</span></b>.</li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo13'>Open
+     VIDA to analyze the results (type <b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'>vida</span></b> in the shell)</li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo13'>Go
+     to: <i style='mso-bidi-font-style:normal'><span style='font-size:11.0pt;
+     line-height:115%'>Tools</span></i><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'> &gt; </span></b><i
+     style='mso-bidi-font-style:normal'><span style='font-size:11.0pt;
+     line-height:115%'>FRED View</span></i><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;line-height:115%'><o:p></o:p></span></b></li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo13'>Click
+     in <i style='mso-bidi-font-style:normal'>browse</i> to find the Protein
+     receptor file: 3ERT.pdb; Reference Ligand: ohtamoxifen.mol2; Results: *.*<b
+     style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+     line-height:115%'><o:p></o:p></span></b></li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Use the left
+button of the mouse to rotate the complex and the middle one to zoom in and out.
+Note that the docking result is much better when FlexX was used for
+hydroxytamoxifen, but in the same time the calculation took longer because the
+conformation is interactively changed to fit the target when docking into the
+ERa site (remember that FRED uses a set of conformations previously generated
+to dock).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>Follow
+the same steps for ERRg. Go to the <b style='mso-bidi-font-weight:normal'>ERRg</b>
+directory (<b style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+line-height:115%'>cd tutorial_docking/FlexX/ERRg/</span></b>) and list the
+files (<b style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+line-height:115%'>ls</span></b>). The receptor files are as follow: (i)
+2GPU.pdb, the original file with the coordinates of the receptor, (ii) 2GPU_poc65.pdb
+that defines the pocket size of the receptor, (iii) 2GPU.rdf, the receptor
+file, and (iv) 2GPU_surf.sdf, which is the surface of the receptor. The ligand
+file, ohtamoxifen.mol2, is the reference compound.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:115%'>Finally,
+do the same to AR and analyze all results, comparing with the FRED ones.</p>
+
+</div>
+
+<div style='mso-element:endnote-list'><![if !supportEndnotes]><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<![endif]>
+
+<div style='mso-element:endnote' id=edn1>
+
+<p class=MsoNormal style='text-align:justify'><a style='mso-endnote-id:edn1'
+href="Docking.htm#_ednref1" name="_edn1" title=""><span class=MsoEndnoteReference><span
+style='font-size:10.0pt'><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoEndnoteReference><span style='font-size:10.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></span></a><span
+style='font-size:10.0pt'> Norman, A. W.; Mizwicki, M. T.; Norman, D. P. G.;
+Steroid-Hormone Rapid Actions, Membrane Receptors and a Conformational Ensemble
+Model, <i style='mso-bidi-font-style:normal'>Nature Reviews Drug Discovery </i><b
+style='mso-bidi-font-weight:normal'>2004</b>, <i style='mso-bidi-font-style:
+normal'>3</i>, 27-41<o:p></o:p></span></p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn2>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn2' href="Docking.htm#_ednref2"
+name="_edn2" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></a> K<sub>i</sub>
+and EC<sub>50</sub> data extracted from WOMBAT2006.2, Sunset Molecular Discovery
+LLC.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn3>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn3' href="Docking.htm#_ednref3"
+name="_edn3" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[3]</span></span><![endif]></span></span></a> Bologa,
+C. G.; Revankar, C. M.; Young, S. M.; Edwards, B. S.; Arterburn, J. B.;
+Kiselyov, A. S.; Parker, M. A.; Tkachenko, S. E.; Savchuck, N. P.; Sklar, L.
+A.; Oprea, T. I.; Prossnitz, E. R.; Virtual and Biomolecular Screening converge
+on a Selective Agonist for GPR30, <i style='mso-bidi-font-style:normal'>Nature
+Chemical Biology</i> <b style='mso-bidi-font-weight:normal'>2006</b>, <i
+style='mso-bidi-font-style:normal'>2</i>, 207-212</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn4>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn4' href="Docking.htm#_ednref4"
+name="_edn4" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[4]</span></span><![endif]></span></span></a> http://www.cancer.org/downloads/STT/CAFF2007PWSecured.pdf</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn5>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn5' href="Docking.htm#_ednref5"
+name="_edn5" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[5]</span></span><![endif]></span></span></a> Taplin,
+M.-E.; Drug Insight: Role of the Androgen Receptor in the Development and
+Progression of Prostate Cancer, <i style='mso-bidi-font-style:normal'>Nature Clinical
+Practice Oncology </i><b style='mso-bidi-font-weight:normal'>2007</b>, <i
+style='mso-bidi-font-style:normal'>4</i>, 236-244</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn6>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn6' href="Docking.htm#_ednref6"
+name="_edn6" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[6]</span></span><![endif]></span></span></a> Gao, W.;
+Bohl, C. E.; <st1:City w:st="on"><st1:place w:st="on">Dalton</st1:place></st1:City>,
+J. T.; Chemistry and Structural Biology of Androgen Receptor, <i
+style='mso-bidi-font-style:normal'>Chemical Reviews</i> <b style='mso-bidi-font-weight:
+normal'>2005</b>,<i style='mso-bidi-font-style:normal'> 105</i>, 3352-3370</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn7>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn7' href="Docking.htm#_ednref7"
+name="_edn7" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[7]</span></span><![endif]></span></span></a> Blizzard,
+T. A.; Gude, C.; Chan, W.; Birzin, E. T.; Mojena, M.; Tudela, C.; Chen, F.;
+Knecht, K.; Su, Q.; Kraker, B.; Holmes, M. A.; Rohrera, S. P.; Hammond, M. L.;
+Bridged androstenediol analogs as ER-b selective SERMs, <i style='mso-bidi-font-style:
+normal'>Bioorganic &amp; Medicinal Chemistry Letters </i><b style='mso-bidi-font-weight:
+normal'>2007</b>, <i style='mso-bidi-font-style:normal'>17</i>, 2944–2948</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn8>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn8' href="Docking.htm#_ednref8"
+name="_edn8" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[8]</span></span><![endif]></span></span></a> Menezes,
+<st1:place w:st="on">I.</st1:place> R. A; Leitão, A.; Montanari, C. A.;
+Three-Dimensional Models of Non-Steroidal Ligands: A Comparative Molecular
+Field Analysis,<i style='mso-bidi-font-style:normal'> Steroids</i> <b
+style='mso-bidi-font-weight:normal'>2006</b>, <i style='mso-bidi-font-style:
+normal'>71</i>, 417-428</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn9>
+
+<p class=MsoEndnoteText><a style='mso-endnote-id:edn9' href="Docking.htm#_ednref9"
+name="_edn9" title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[9]</span></span><![endif]></span></span></a> Ariazi,
+E. A.; et al. <strong><span style='font-weight:normal'>Exemestane’s
+17-hydroxylated</span> </strong><strong><span style='font-weight:normal'>Metabolite
+Exerts Biological</span> E</strong><strong><span style='font-weight:normal'>ffects
+as an Androgen, <i>Mol. Cancer Ther.</i> </span>2008</strong><strong><span
+style='font-weight:normal'> <i>in press</i></span></strong></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

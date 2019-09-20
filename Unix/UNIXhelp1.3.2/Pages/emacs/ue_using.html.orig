@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- emacs/ue_using.html -->
+
+<HEAD>
+<TITLE>Creating a file using a filename</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Creating a file using a filename</H1>
+
+<P>Type</P>
+
+<PRE WIDTH=80>   <STRONG>ue <EM>filename</EM></STRONG>
+</PRE>
+
+<P>to create a new file. For instance, to create a new file called
+<SAMP>letter</SAMP>, type:</P>
+
+<PRE WIDTH=80>   <STRONG>ue letter</STRONG>
+</PRE>
+
+<P>The screen of your terminal will fill with blank
+lines and the following message will be displayed at
+the bottom:</P>
+
+<PRE WIDTH=80>== MicroEMACS 3.9e() == letter == File: letter ========
+</PRE>
+
+<P>This consists of:
+
+<OL>
+<LI>the name MicroEMACS and the version number</LI>
+<LI>the editing mode you are in (this changes as you
+change modes)</LI>
+<LI>the name of the temporary work file used to store
+the file you are editing (the computer term for this
+is 'buffer')</LI>
+<LI>the name of the file that text will be written to</LI>
+</OL>
+
+<P>The bottom line of your screen is used for messages
+from <STRONG>ue</STRONG> and for prompting you for information which
+you may need to type.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/3.6.3.1.html -->
+
+<HEAD>
+<TITLE>Examples of copying files from another host</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of copying files from another host</H1>
+
+<P>To copy a file from your home directory on
+another host to your current directory on your local
+host:</P>
+
+<PRE WIDTH=80>   <STRONG>rcp goya:notes part1.txt</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>notes</SAMP> from the the user's home
+directory on the remote host <SAMP>goya</SAMP> to the file 
+<SAMP>part1.txt</SAMP> in their current directory.</P>
+
+<HR>
+
+<P>To copy a file from a subdirectory in your account on a
+remote host to a subdirectory on your local host:</P>
+
+<PRE WIDTH=80>   <STRONG>rcp ubik:gnu/rcs/README tmp/gnu_README</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>README</SAMP> from the subdirectory 
+<SAMP>gnu</SAMP> of the user's home directory on the remote host 
+<SAMP>ubik</SAMP> to the file <SAMP>gnu_README</SAMP> in the subdirectory 
+<SAMP>tmp</SAMP> in their home directory on the local host.</P>
+
+<HR>
+
+<P>To copy a file from a remote host on which you have an
+account under another username:</P>
+
+<PRE WIDTH=80>   <STRONG>rcp joe@pollux:News/alt.hypertext tmp/hypertext</STRONG>
+</PRE>
+
+<P>This user has an account on the host "pollux" with the username
+"joe". This copies the file <SAMP>alt.hypertext</SAMP> from the subdirectory
+<SAMP>News</SAMP> in joe's home directory on pollux to the file 
+<SAMP>hypertext</SAMP> in the subdirectory <SAMP>tmp</SAMP>
+in their home directory on the local host.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Analysis - Patterns, Motifs and Profiles</title>
+  <link rel=stylesheet href="/biomed505/Course/IntroSeqAnalysis/css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex"><a name="pat2"></a>Pattern matching - Step 2</td>
+  </tr>
+  <tr>
+    <td>The new information obtained by running pscan is the identification that NY1R contains the <strong>Neuropeptide Y1 receptor signature</strong></td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="phiblast2"></a>Pattern-Hit Initiated (PHI)-BLAST - Question</td>
+  </tr>
+  <tr>
+    <td>The results from <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/patmatdb.html" target="emboss-apps"><strong>patmatdb</strong></a> and PHI-BLAST are very similar, however <strong>patmatdb returns a few sequences that are false positives.</strong>  For example, near the end of the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/patmatdb.html" target="emboss-apps"><strong>patmatdb</strong></a> results, you should see the sequences:
+<pre><font size="2">sp-id:TPI2_BRUME  Triosephosphate isomerase 2 (EC 5.3.1.1) (TIM 2).
+sp-id:TPI2_BRUSU  Triosephosphate isomerase 2 (EC 5.3.1.1) (TIM 2).
+sp-id:TPIS_BRUAB  Triosephosphate isomerase (EC 5.3.1.1) (TIM).</font></pre>
+      These sequences are not in the PHI-BLAST hit list and are very likely not related srtructurally or functionally to cAMP-dependent protein kinases.  This shows where the dual requirements of PHI-BLAST can be superior to simple pattern matching.
+      <p>You may have had difficulty searching through the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/patmatdb.html" target="emboss-apps"><strong>patmatdb</strong></a> results to find these spurious hits. Here are a couple of ideas to facilitate this process.  First, save the results as a listfile:
+      <p><div class="system"><span class="prompt">[unix]# </span><span class="command">patmatdb sp -motif '[LIVMF]-G-E-x-[GAS]-[LIVM]-x(5,11)-R-[STAQ]-A-x-[LIVMA]-x-[STACV]' -outfile <span class="arg">cAMP-v-sp.patmatdb.list</span> -rformat listfile [Enter]</span></div>
+      <p>Then use <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/infoseq.html" target="emboss-apps"><strong>infoseq</strong></a> to view descriptions of the sequences:
+      <p><div class="system"><span class="prompt">[unix]# </span><span class="command">infoseq <span class="arg">@cAMP-v-sp.patmatdb.list</span> [Enter]</span></div>
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="web1"></a>Web-based tools for protein classification - Step 1</td>
+  </tr>
+  <tr>
+    <td>TDF/SRY contains one functional domain: an <strong>HMG-box</strong>.</td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="web2"></a>Web-based tools for protein classification - Step 2</td>
+  </tr>
+  <tr>
+    <td>Other functional domains contained in proteins with an HMG-box include: <strong>SprT, YABBY, Intermediate filament protein,  SAND,  BRIGHT, PWWP,  7 transmembrane receptor, ANF_receptor and WD40</strong>.</td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="web4"></a>Web-based tools for protein classification - Step 4</td>
+  </tr>
+  <tr>
+    <td>According to the ENTREZ's 3D-structure database, the non HMG-box proteins with structural similarity to SRY are:
+      <ul>
+        <li><strong>Fasciculin2 - Mouse Acetylcholinesterase Complex</strong></li>
+        <li><strong>Smooth Muscle Myosin Motor Domain-Essential Light Chain Complex With Mgadp.Alf4 Bound At The Active Site</strong></li>
+        <li><strong>D206s Mutant Of Bovine 70 Kilodalton Heat Shock Protein</strong></li>
+        <li><strong>V-1 Nef Protein In Complex With Wild Type Fyn Sh3 Domain</strong></li>        
+      </ul>
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+</table>
+</span>
+
+<hr>
+<div class="tinytext">
+Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu</strong></a></div>
+<!-- hhmts start --> Last modified: Wed Nov 10 17:25:57 MST 2004 <!-- hhmts end -->
+<!-- $Id: PatMotifProfileAnswers.html,v 1.2 2004/11/11 23:46:25 smathias Exp $ -->
+
+</body>
+</html>

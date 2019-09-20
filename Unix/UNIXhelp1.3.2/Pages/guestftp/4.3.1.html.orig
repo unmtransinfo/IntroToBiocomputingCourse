@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- guestftp/4.3.1.html -->
+
+<HEAD>
+<TITLE>The hash command</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>The <SAMP>hash</SAMP> command</H1>
+
+<P>To monitor the progress of a transfer, it can be  useful  to
+enter  the hash command before the transfer.  This instructs
+ftp to print a `#' character for every 1024  bytes  of  data
+received.  So long as a # appears every so often, the ftp is
+still in progress, and there are no problems.</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>hash</STRONG>
+   Hash mark printing on (1024 bytes/hash mark).
+   ftp&gt; <STRONG>get paper.txt</STRONG>
+   200 PORT command okay.
+   150 Opening data connection for paper.txt (0.50.50.54,1322).
+   #################
+   226 Transfer complete.
+   16494 bytes sent in 0.98 seconds (16 Kbytes/s)
+   ftp&gt;
+</PRE>
+
+<P>The file transferred in this  example  was  15788  bytes  in
+length,  which  with communication overheads was transferred
+in 16494 bytes. This causes 17 # marks to be printed.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

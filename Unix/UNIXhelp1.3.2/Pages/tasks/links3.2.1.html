@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/links3.2.1.html -->
+
+<HEAD>
+<TITLE>Understanding the location of linked directories</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Understanding the location of linked directories</H1>
+
+<P>There is a subtle difference between a "normal" directory
+and a directory created with a symbolic link to another
+directory.</P>
+
+<P>What happens if you do a <STRONG>cd</STRONG> (change directory) to
+this type of directory? You are placed in the directory
+that the symbolic link points to.</P>
+
+<P>This can be confusing, especially if you have changed
+your <A HREF="../environment/env8.html">shell prompt</A>
+so that it displays the current working directory.</P>
+
+<P>Look at this example:</P>
+
+<PRE WIDTH=80>   <STRONG>pwd</STRONG>
+       <EM>(print the user's working directory)</EM>
+   /usr/home/john/tmp
+   <STRONG>ln -s $HOME/accounts/may fifth</STRONG>
+       <EM>(use a symbolic link named fifth that points to</EM>
+       <EM> the directory $HOME/accounts/may)</EM>
+   <STRONG>ls</STRONG>
+   fifth
+   <STRONG>cd fifth</STRONG>
+       <EM>(change directory to the new directory)</EM>
+   <STRONG>pwd</STRONG>
+       <EM>(print the working directory)</EM>
+   /usr/home/john/accounts/may
+       <EM>(the user is actually in the the directory that the</EM>
+       <EM> linked directory points to)</EM>
+</PRE>
+
+<P>When the user does a <STRONG>cd</STRONG> (change directory) to the
+symbolically linked directory <SAMP>may</SAMP> in their current
+working directory, they change to the directory that this
+link points to, the directory 
+<SAMP>/usr/home/john/accounts/may</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

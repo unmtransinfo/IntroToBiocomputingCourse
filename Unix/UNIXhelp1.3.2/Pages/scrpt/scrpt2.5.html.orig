@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- scrpt/scrpt2.5.html -->
+
+<HEAD>
+<TITLE>Testing for files and variables with the test command</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Testing for files and variables with the test command</H1>
+
+<P>The shell uses a command called <STRONG>test</STRONG> to evaluate
+conditional expressions.  Full details of this command
+can be found in the 
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?test">test</A>
+manual page. For example:</P>
+
+<PRE WIDTH=80>   if test ! -f $FILE
+   then
+     if test "$WARN" = "yes"
+     then
+       echo "$FILE does not exist"
+     fi
+   fi
+</PRE>
+
+<P>First, we test to see if the filename specified by the
+variable <SAMP>$FILE</SAMP> exists and is a regular file.  If it does
+not then we test to see if the variable <SAMP>$WARN</SAMP> is assigned
+the value <SAMP>yes</SAMP>, and if it is a message that the filename
+does not exist is displayed.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

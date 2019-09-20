@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- guestftp/4.2.html -->
+
+<HEAD>
+<TITLE>Sending a File to an InterNet Host</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Sending a File to an InterNet Host</H1>
+
+<P>Firstly, establish a connection with the remote machine,  as
+illustrated  in  the  previous  section.   Sending a file is
+identical to retrieving a file, except that the put  command
+is used in place of get, eg:</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>put rfc822.doc</STRONG>
+   200 PORT command okay.
+   150 Opening data connection for rfc822.doc (0.0.0.0,1315)
+   226 Transfer complete
+   98932 bytes sent in 4.02 seconds (24 Kbyte/s)
+   ftp&gt;
+</PRE>
+
+<P>Here, the local file <SAMP>rfc822.doc</SAMP> is sent to the remote  host,
+which stores it under the same name.</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>put</STRONG>
+   (local-file) <STRONG>paper.doc</STRONG>
+   (remote-file) <STRONG>paper.txt</STRONG>
+   200 PORT command okay.
+   150 Opening data connection for kermit_docs (0.0.0.0,1315).
+   226 Transfer complete.
+   97902 bytes sent in 4.51 seconds (21 Kbytes/s)
+   ftp&gt;
+</PRE>
+
+<P>In this case, the local file <SAMP>paper.doc</SAMP> is sent to the remote
+host, and stored as <SAMP>paper.txt</SAMP>.
+
+<P>Again, once you have finished transferring files, close down
+the session as detailed previously.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

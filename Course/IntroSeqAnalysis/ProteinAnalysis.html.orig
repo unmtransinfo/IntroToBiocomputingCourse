@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Analysis - Protein Analysis</title>
+  <link rel=stylesheet href="/biomed505/Course/IntroSeqAnalysis/css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<div class="headln">Sequence Analysis - Protein Analysis</div>
+<br>
+<div class="text">
+<strong>Abstract:</strong> As further introduction to using EMBOSS, the exercises in this section will introduce you to some of the EMBOSS programs that can be used to analyze protein sequences.  At the end, we will also look at an example of a web-based tool for predicting protein secondary structure.
+<br><br>
+The standard way of using EMBOSS is via command line interaction on a UNIX computer system.  You will be using EMBOSS on the system hatch.health.unm.edu and you should have received login information for xxx when you signed up for Biomed505.  In addition to the command line interface, there are also several graphical interfaces to EMBOSS.  One of these is <a href="http://hatch.health.unm.edu/EMBOSS/">EMBOSS-GUI</a>, a web-based front end to EMBOSS.  The exercises for the "Introduction to Sequence Analysis" section of Biomed505 are written for users of the command line interface.  You may use EMBOSS-GUI if you prefer, however there are no detailed instructions to help you.  A brief <a href="http://poblano.health.unm.edu/EMBOSS-GUI.html">introduction to EMBOSS-GUI</a> is available.  For the most part, the input to the command line programs is exactly mirrored by EMBOSS-GUI's web browser forms and the use of EMBOSS-GUI should be fairly straight forward.
+<br>
+<br>
+Questions you should answer as you work through the exercises are indicated by <span class="class2"><a href="">Question:</a></span> tags, which also serve as hyperlinks to the corresponding answers (where available).
+<br>
+<br>
+<strong>Typographical conventions:</strong> <br>
+ &nbsp; &nbsp; Regular web links look <a href="">like this</a><br>
+ &nbsp; &nbsp; Input that you should enter verbatim in web page forms, or links/buttons you should click on web pages look <span class="input">like this</span><br>
+ &nbsp; &nbsp; Sections representing command-line interaction are represented as in the following example:<br><span class="system">
+       <span class="prompt">[unix]# </span><span class="command">ls <span class="arg">foo</span> [Enter]<br></span>ls: foo: No such file or directory</span><br>
+ &nbsp; &nbsp; where...<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; the unix propmt is represented as: <span class="system"><span class="prompt">[unix]# </span></span>,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="command">this font</span></span> are commands to be typed into the computer verbatim,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="arg">this font</span></span> are names or identifiers (Eg. file/directory names or sequence accession numbers),<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; words in square brackets: <span class="system"><span class="command">[Ctrl]</span></span> indicate a key to be pressed, and <br>
+ &nbsp; &nbsp; &nbsp; &nbsp; program output is represented in <span class="system">this font</span><br>
+ &nbsp; &nbsp; The above example means "at the UNIX prompt, type ls followed by foo (a directory name, <strong>which may be different in your case</strong>), then press Enter".  The ouput of the command is supposed to be "ls: foo: No such file or directory".  Output will often be truncated and this will be indicated using three horizontal or vertical dots.
+</div>
+<br>
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex">Using EMBOSS To Translate a cDNA Sequence</td>
+  </tr>
+  <tr>
+    <td>To start this exercise you will need the nucleotide sequence of the human capsaicin receptor cDNA (NM_018727) that you retrieved in the previous section, <a href="/biomed505/Course/IntroSeqAnalysis/IntroToEMBOSS.html">"Introduction to EMBOSS"</a>.  If you do not have this sequence, retrieve it now.  Since this is a cDNA sequence, the first thing we must do is to identify the open reading frame of interest.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/plotorf.html" target="emboss-apps"><strong>plotorf</strong></a> program to get a graphical overview of the distribution of ORFs in all six frames of the sequence</td>
+  </tr>
+  <tr>
+    <td>
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">plotorf -sequence <span class="arg">NM_018727.fa</span> -graph x11 [Enter]</span></span>
+      <p>This command will open an X Window containing a graphical representation of the reading frames in your sequence.
+      
+      <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/ProteinAnalysisAnswers.html#transl1" target="_answers">Question:</a></span> Which reading frame encodes the capsaicin receptor protein and what is the approximate location of the ORF?
+      <p>The <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/showorf.html" target="emboss-apps"><strong>showorf</strong></a> command provides a text-based alternative to <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/plotorf.html" target="emboss-apps"><strong>plotorf</strong></a>.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/getorf.html" target="emboss-apps"><strong>getorf</strong></a> program to identify the exact start and end points for our translation.</td>
+  </tr>
+  <tr>
+    <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/getorf.html" target="emboss-apps"><strong>getorf</strong></a> produces a textual representation of the information rendered graphically by <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/plotorf.html" target="emboss-apps"><strong>plotorf</strong></a>.  Here we will ask <strong>getorf</strong> for all the ORFs above 500 nucleotides in length.
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">getorf -sequence <span class="arg">NM_018727.fa</span> -minsize 500 -outseq <span class="arg">NM_018727.orfs.fasta</span> [Enter]</span></span>
+      <p>Executing this command will save the output in FASTA format to a file named NM_018727.orfs.fasta in your current working directory.  Examine the contents of the output file:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">NM_018727.orfs.fasta</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">>NM_018727_1 [123 - 2675] Homo sapiens transient receptor potential cation channel ...
+LVAHWATEDPARMKKWSSTDLGAAADPLQKDTCPDPLDGDPNSRPPPAKPQLSTAKSRTR
+LFGKGDSEEAFPVDCPHEEGELDSCPTITVSPVITIQRPGDGSTGARLLSQDSVAASTEK
+TLRLYDRRSIFEAVAQNNCQDLESLLLFLQKSKKHLTDNEFKDPETGKTCLLKAMLNLHD
+GQNTTIPLLLEIARQTDSLKELVNASYTDSYYKGQTALHIAIERRNMALVTLLVENGADV
+QAAAHGDFFKKTKGRPGFYFGELPLSLAACTNQLGIVKFLLQNSWQTADISARDSVGNTV
+LHALVEVADNTADNTKFVTSMYNEILILGAKLHPTLKLEELTNKKGMTPLALAAGTGKIG
+VLAYILQREIQEPECRHLSRKFTEWAYGPVHSSLYDLSCIDTCEKNSVLEVIAYSSSETP
+NRHDMLLVEPLNRLLQDKWDRFVKRIFYFNFLVYCLYMIIFTMAAYYRPVDGLPPFKMEK
+IGDYFRVTGEILSVLGGVYFFFRGIQYFLQRRPSMKTLFVDSYSEMLFFLQSLFMLATVV
+LYFSHLKEYVASMVFSLALGWTNMLYYTRGFQQMGIYAVMIEKMILRDLCRFMFVYIVFL
+FGFSTAVVTLIEDGKNDSLPSESTSHRWRGPACRPPDSSYNSLYSTCLELFKFTIGMGDL
+EFTENYDFKAVFIILLLAYVILTYILLLNMLIALMGETVNKIAQESKNIWKLQRAITILD
+TEKSFLKCMRKAFRSGKLLQVGYTPDGKDDYRWCFRVDEVNWTTWNTNVGIINEDPGNCE
+GVKRTLSFSLRSSRVSGRHWKNFALVPLLREASARDRQSAQPEEVYLRQFSGSLKPEDAE
+VFKSPAASGEK
+>NM_018727_2 [2324 - 1719] (REVERSE SENSE) Homo sapiens transient receptor potential ...
+AEGLPHALKEALLRVQDGDGSLQLPDVLALLCDLVDSLTHEGDEHVEQEDVGENYIGQQQ
+DDEDSLEVIVLSELQVAHADGELEQLQAGGVQAVVGAIGGPAGRPPPPVRRGLRRQGVIL
+PVFNQRHHRCGKPEQEDDVDKHETAQVSQDHLLYHDGIDAHLLETAGVVEHVGPAQGQGE
+YHGSHILLEVAEVQHHGGQHEQ
+>NM_018727_3 [1604 - 87] (REVERSE SENSE) Homo sapiens transient receptor potential ...
+HRQDLSSNSEIVSNFFHLKGRQAIHGPVVGSHGEDDHVQAVDQEVEVEDALDESVPLVLQ
+ESVQRLHQEHVVAIRGLAAAVGDHLQHRVLLAGVDAGQVVQRGVHGPVGPLGELPGQVPA
+LGLLDLPLENIGQDPDLPGPSCQSQRRHSLLVGELLQLQRRVQFGPQDQNLIVHARHKLR
+VVGRVVGHLHQGVQHRVAHRVPGADVGRLPGVLQQELHDAQLVGARGQGQGQFTEVESRP
+PFGFLKEVPMGRSLDVCSVLHQEGHQGHVASLDGDVQCCLALVVAVRVAGVDKLLQAVRL
+PRDLQEQGDGGVLSVMQVEHGFQQTGLPCLRVFELVVCEVLLALLQEEQQALQILAVILS
+NGFKDTPAIIEPEGLLGAGGDRVLGQQPGTGGAVSWPLDGDNRADCDGRAGVQLTFLVRA
+IHRESLLRVTLPKEPGAALGRGELGLGWRWPGVRVSIQGVWAGVLLEWVRSCPQVCAAPF
+LHPCWILCGPVCNQLDAGTPQAHGCL</div></pre></span>
+      <p>This shows that <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/getorf.html" target="emboss-apps"><strong>getorf</strong></a> extracted three potential ORFs and saved the translations in the output file.
+    <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/ProteinAnalysisAnswers.html#transl2" target="_answers">Question:</a></span>   What are the actual start and end positions of the longest ORF in the cDNA sequence?
+      </td>
+  </tr>
+  <tr>
+    <td class="step">3. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/transeq.html" target="emboss-apps"><strong>transeq</strong></a> program to translate the cDNA sequence.</td>
+  </tr>
+  <tr>
+    <td>Based on the results of the previous step, we now know the region of the cDNA to be translated.  Here we use <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/transeq.html" target="emboss-apps"><strong>transeq</strong></a> to translate that region so we can use the translated peptide sequence for further analyses in subsequent sections.
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">transeq -sequence <span class="arg">NM_018727.fa</span> -sbegin 123 -send 2675 -outseq <span class="arg">caprecp.pep.fa</span> [Enter]</span></span>
+      <p>Executing this command will save the output in FASTA format to a file named caprecp.pep.fa in your current working directory.
+      </td>
+  </tr>
+  <tr>
+    <td class="step">4. A slightly different approach</td>
+  </tr>
+  <tr>
+    <td>This section will demonstrate a slightly different way to obtain the protein sequence, using the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/transeq.html" target="emboss-apps"><strong>transeq</strong></a> and <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/checktrans.html" target="emboss-apps"><strong>checktrans</strong></a> programs.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">transeq -sequence <span class="arg">NM_018727.fa</span> -frame F <span class="arg">NM_018727.transeq</span> [Enter]</span></span>
+      <p>This command will translate the input sequence in all three forward reading frames.  Now use, <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/checktrans.html" target="emboss-apps"><strong>checktrans</strong></a> to find the ORF of interest:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command"> checktrans -sequence <span class="arg">NM_018727.transeq</span> -orfml 500 -outfile <span class="arg">caprecp.checktrans</span> -outseq <span class="arg">caprecp.fa</span> -outfeat <span class="arg">caprecp.gff</span> [Enter]</span></span>
+      <p><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/checktrans.html" target="emboss-apps"><strong>checktrans</strong></a> reads in protein sequence(s) containing stops, and writes a report of any open reading frames (continuous protein sequence with no stops) that are greater than a minimum size.  Here, we are setting the minimum ORF size to be 500 residues.  Examine the output:
+      <p><div class="system" width="90%"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">caprecp.checktrans</span> <span class="arg">caprecp.fa</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">CHECKTRANS of NM_018727_1 from 1 to 1350
+
+        ORF#    Pos     Len     ORF Range       Sequence name
+
+
+        Total STOPS:    33
+
+ 
+
+CHECKTRANS of NM_018727_2 from 1 to 1349
+
+        ORF#    Pos     Len     ORF Range       Sequence name
+
+
+        Total STOPS:    47
+
+ 
+
+CHECKTRANS of NM_018727_3 from 1 to 1348
+
+        ORF#    Pos     Len     ORF Range       Sequence name
+
+        3       892     851     41-891  NM_018727_3_3
+
+        Total STOPS:    12
+
+ >NM_018727_3_3
+LVAHWATEDPARMKKWSSTDLGAAADPLQKDTCPDPLDGDPNSRPPPAKPQLSTAKSRTR
+LFGKGDSEEAFPVDCPHEEGELDSCPTITVSPVITIQRPGDGSTGARLLSQDSVAASTEK
+TLRLYDRRSIFEAVAQNNCQDLESLLLFLQKSKKHLTDNEFKDPETGKTCLLKAMLNLHD
+GQNTTIPLLLEIARQTDSLKELVNASYTDSYYKGQTALHIAIERRNMALVTLLVENGADV
+QAAAHGDFFKKTKGRPGFYFGELPLSLAACTNQLGIVKFLLQNSWQTADISARDSVGNTV
+LHALVEVADNTADNTKFVTSMYNEILILGAKLHPTLKLEELTNKKGMTPLALAAGTGKIG
+VLAYILQREIQEPECRHLSRKFTEWAYGPVHSSLYDLSCIDTCEKNSVLEVIAYSSSETP
+NRHDMLLVEPLNRLLQDKWDRFVKRIFYFNFLVYCLYMIIFTMAAYYRPVDGLPPFKMEK
+IGDYFRVTGEILSVLGGVYFFFRGIQYFLQRRPSMKTLFVDSYSEMLFFLQSLFMLATVV
+LYFSHLKEYVASMVFSLALGWTNMLYYTRGFQQMGIYAVMIEKMILRDLCRFMFVYIVFL
+FGFSTAVVTLIEDGKNDSLPSESTSHRWRGPACRPPDSSYNSLYSTCLELFKFTIGMGDL
+EFTENYDFKAVFIILLLAYVILTYILLLNMLIALMGETVNKIAQESKNIWKLQRAITILD
+TEKSFLKCMRKAFRSGKLLQVGYTPDGKDDYRWCFRVDEVNWTTWNTNVGIINEDPGNCE
+GVKRTLSFSLRSSRVSGRHWKNFALVPLLREASARDRQSAQPEEVYLRQFSGSLKPEDAE
+VFKSPAASGEK</div></pre></div>
+      <p><span class="class2"><a href="/biomed505/Course/IntroSeqAnalysis/ProteinAnalysisAnswers.html#transl4" target="_answers">Question:</a> </span> How many protein sequences will be in the output if you run this same command with the default minimum ORF length of 100?
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Using EMBOSS To Examine Physico-chemical Properties of a Protein Sequence</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/pepstats.html" target="emboss-apps"><strong>pepstats</strong></a> program to generate a report of simple protein sequence information</td>
+  </tr>
+  <tr>
+    <td>
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">pepstats -sequence <span class="arg">caprecp.pep.fa</span> -outfile <span class="arg">caprecp.pepstats</span> [Enter]</span><br>
+      <span class="prompt">[unix]# </span><span class="command">cat <span class="arg">ccaprecp.pepstats</span> [Enter]</span>
+      <pre><span class="system">PEPSTATS of NM_018727_1 from 1 to 851
+
+Molecular weight = 96287.51             Residues = 851   
+Average Residue Weight  = 113.146       Charge   = 5.0   
+Isoelectric Point = 7.1299
+A280 Molar Extinction Coefficient  = 110520  
+A280 Extinction Coefficient 1mg/ml = 1.15      
+Improbability of expression in inclusion bodies = 0.648
+
+Residue         Number          Mole%           DayhoffStat
+A = Ala         59              6.933           0.806  
+B = Asx         0               0.000           0.000  
+C = Cys         16              1.880           0.648  
+D = Asp         47              5.523           1.004  
+E = Glu         50              5.875           0.979  
+F = Phe         47              5.523           1.534  
+G = Gly         48              5.640           0.671  
+H = His         14              1.645           0.823  
+I = Ile         40              4.700           1.045  
+K = Lys         50              5.875           0.890  
+L = Leu         103             12.103          1.636  
+M = Met         22              2.585           1.521  
+N = Asn         33              3.878           0.902  
+P = Pro         38              4.465           0.859  
+Q = Gln         28              3.290           0.844  
+R = Arg         45              5.288           1.079  
+S = Ser         62              7.286           1.041  
+T = Thr         55              6.463           1.060  
+V = Val         49              5.758           0.872  
+W = Trp         12              1.410           1.085  
+X = Xaa         0               0.000           0.000  
+Y = Tyr         33              3.878           1.141  
+Z = Glx         0               0.000           0.000  
+
+Property        Residues                Number          Mole%
+Tiny            (A+C+G+S+T)             240             28.202
+Small           (A+B+C+D+G+N+P+S+T+V)   407             47.826
+Aliphatic       (I+L+V)                 192             22.562
+Aromatic        (F+H+W+Y)               106             12.456
+Non-polar       (A+C+F+G+I+L+M+P+V+W+Y) 467             54.877
+Polar           (D+E+H+K+N+Q+R+S+T+Z)   384             45.123
+Charged         (B+D+E+H+K+R+Z)         206             24.207
+Basic           (H+K+R)                 109             12.808
+Acidic          (B+D+E+Z)               97              11.398</span></pre></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/pepinfo.html" target="emboss-apps"><strong>pepinfo</strong></a> program to plot simple amino acid properties.</td>
+  </tr>
+  <tr>
+    <td<a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/pepinfo.html" target="emboss-apps"><strong>pepinfo</strong></a> detects and displays various useful metrics about a protein sequence.  It can plot hydrophobicity (using the method of Kyte & Doolittle, OHM, or consensus parameters) and the physico-chemical properties (tiny, small, aliphatic, aromatic, non-polar, polar, charged, positive, negative) of protein sequences. 
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">pepinfo -sequence <span class="arg">caprecp.pep.fa</span> -graph x11 -outfile <span class="arg">caprecp.pepinfo</span> [Enter]</span></span>
+      <p>This command will open an X Window containing a graphical representation of the physico-chemical properties and hydrophobicity of the protein (press [Enter] to move from the first to the second screen; [Enter] again to close the window).  The images should look like these:<br><img src="/biomed505/Course/IntroSeqAnalysis/images/caprecp.pepinfo.1.png"><br><img src="/biomed505/Course/IntroSeqAnalysis/images/caprecp.pepinfo.2.png"><br>
+      <p>This command will also write the results to a text file named caprecp.pepinfo, although this file is not very useful on its own.</td>
+  </tr>
+  <tr>
+    <td class="step">3. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/tmap.html" target="emboss-apps"><strong>tmap</strong></a> program to display potential membrane-spanning regions.</td>
+  </tr>
+  <tr>
+    <td>The <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/pepinfo.html" target="emboss-apps"><strong>pepinfo</strong></a> hydropathy plot showed a number of highly hydrophobic regions within the capsaicin receptor protein which could be transmembrane domains.  We will now use the EMBOSS program <strong>tmap</strong> to investigate this possibility further.
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">tmap -sequence <span class="arg">caprecp.pep.fa</span> -graph x11 -outfile <span class="arg">caprecp.tmap</span> [Enter]</span></span>
+      <p>This command will open an X Window containing a graphical representation of the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/tmap.html" target="emboss-apps"><strong>tmap</strong></a> results.  The image should look like this:<br><img src="/biomed505/Course/IntroSeqAnalysis/images/caprecp.tmap.png">
+      <p>The bars across the top represent areas where <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/tmap.html" target="emboss-apps"><strong>tmap</strong></a> has predicted the existence of transmembrane segments.  In subsequent exercises, we will see additional methods of predicting protein structure using patterns and profiles.
+  </tr>
+  <tr>
+    <td class="ex">Other EMBOSS Programs for Protein Sequence Analysis</td>
+  </tr>
+  <tr>
+    <td>
+      There are also many other EMBOSS programs you can use to analyze protein sequences.  To find out what is available, try running <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/wossname.html" target="emboss-apps"><strong>wossname</strong></a>:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">wossname protein [Enter]</span></span>
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">wossname structure [Enter]</span></span>
+      <p>Also see the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/protein_2d_structure_group.html">Protein 2d structure</a> group of commands.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Using EMBOSS to Predict Protein Secondary Structure</td>
+  </tr>
+  <tr>
+    <td>This section describes an EMBOSS program for predicting the secondary structure of proteins.  The coverage of secondary structure prediction within EMBOSS is currently somewhat limited and the Garnier method is certainly not the most accurate prediction method available today.  However, it was one of the first semi-successful methods, and is simple and fast to calculate.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/garnier.html" target="emboss-apps"><strong>garnier</strong></a> program to predict protein secondary structure</td>
+  </tr>
+  <tr>
+    <td align="left"><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/garnier.html" target="emboss-apps"><strong>garnier</strong></a> is an implementation of the original Garnier Osguthorpe Robson algorithm (GOR I) for predicting protein secondary structure.
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">garnier -sequence <span class="arg">caprecp.pep.fa</span> -outfile <span class="arg">caprecp.garnier</span> [Enter]</span></span>
+      <p>This command will write the results of the garnier algorithm to a text file named caprecp.garnier.  Examine the contents of the file:
+      <div class="system" ><span class="prompt">[unix]# </span><span class="command">more <span class="arg">caprecp.garnier</span> [Enter]</span>
+      <pre><span class="system">########################################
+# Program: garnier
+# Rundate: Tue Aug 24 11:15:56 2004
+# Report_format: tagseq
+# Report_file: caprecp.garnier
+########################################
+
+#=======================================
+#
+# Sequence: NM_018727_1     from: 1   to: 851
+# HitCount: 214
+#
+# DCH = 0, DCS = 0
+# 
+#  Please cite:
+#  Garnier, Osguthorpe and Robson (1978) J. Mol. Biol. 120:97-120
+# 
+#
+#=======================================
+
+          .   10    .   20    .   30    .   40    .   50
+      LVAHWATEDPARMKKWSSTDLGAAADPLQKDTCPDPLDGDPNSRPPPAKP
+helix HHHHHHHHHHHHHH        HHHHH                       
+sheet                                 EEE             EE
+turns               TT           TTTTT   TTTT TT    T   
+ coil                 CCCCCC                 C  CCCC C  
+          .   60    .   70    .   80    .   90    .  100
+      QLSTAKSRTRLFGKGDSEEAFPVDCPHEEGELDSCPTITVSPVITIQRPG
+helix                  HHHHH H   HHH                    
+sheet EEEE   EEEE                          EEEEEEEEEEE  
+turns      T     T          T       TTTT TT           TT
+ coil     C C     CCCCC       CCC       C               
+          .  110    .  120    .  130    .  140    .  150
+      DGSTGARLLSQDSVAASTEKTLRLYDRRSIFEAVAQNNCQDLESLLLFLQ
+helix              HHHHHHHHH H        HHH      HHHHHHHHH
+sheet      EEEE E           E      EEE                  
+turns T                       TTTT       TTTTTT         
+ coil  CCCC    C CC               C                                                      
+.
+.
+.
+          .  710    .  720    .  730    .  740    .  750
+      KIAQESKNIWKLQRAITILDTEKSFLKCMRKAFRSGKLLQVGYTPDGKDD
+helix HHHHHH   HHHH      HHHHHHHHHHHHHHH                
+sheet              EEEEEE                   EEEEE       
+turns       TTT                         TTT        TTTTT
+ coil                                      C     CC     
+          .  760    .  770    .  780    .  790    .  800
+      YRWCFRVDEVNWTTWNTNVGIINEDPGNCEGVKRTLSFSLRSSRVSGRHW
+helix                                                   
+sheet   EEEE              EEE        EEEEEEE            
+turns TT    TTTTTT TT        T TTTTTT         TTTTT TTTT
+ coil             C  CCCCC    C             CC     C    
+          .  810    .  820    .  830    .  840    .  850
+      KNFALVPLLREASARDRQSAQPEEVYLRQFSGSLKPEDAEVFKSPAASGE
+helix       HHHHHHHHH           HHH       HHHHHHHHHHHHHH
+sheet    EEE                 EEE                        
+turns  TT            TT     T      T T                  
+ coil C                CCCCC        C CCCC              
+      0
+      K
+helix H
+sheet  
+turns  
+ coil  
+
+#---------------------------------------
+#
+#  Residue totals: H:332   E:190   T:195   C:134
+#         percent: H: 39.8 E: 22.8 T: 23.4 C: 16.0
+#
+#---------------------------------------
+      </span></pre></div>
+      <p>The output indicates the regions of the protein <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/garnier.html" target="emboss-apps"><strong>garnier</strong></a> predicts to be helix, sheet, turns and coil.
+      <p>The accuracy of even the best modern secondary structure prediction programs is not much better than 70% to 80%.  <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/garnier.html" target="emboss-apps"><strong>garnier</strong></a> represents an early algorithm and, in general, the accuracy of its predictions will probably not be much better than 65%.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Web-based Tools for Protein Secondary Structure Prediction</td>
+  </tr>
+  <tr>
+    <td>Secondary structure prediction is notoriously difficult to do accurately.  Currently, the best way to achieve reasonable secondary structure predictions is to run a variety of prediction algorithms over your sequence and determine a consensus among the results.  There are various web servers that will run multiple analyses for you.  In this section, we will look at <a href="http://www.compbio.dundee.ac.uk/~www-jpred/">JPRED</a>.</td>
+  </tr>
+  <tr>
+    <td>Load the <a href="http://www.compbio.dundee.ac.uk/~www-jpred/">JPRED</a> home page and read some of the documentation describing the system.
+
+      <p>The <span class="input">Prediction</span> link at the top of the home page takes you to the form you would normally use to submit a job.  It is very computationally intensive to do these predictions, and it would be quite pointless for every student taking this course to repeat the same run.   In order to avoid doing this, the results of one such run have been saved locally for everyone to look at.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">1. The JPRED results</td>
+  </tr>
+  <tr>
+    <td>When a JPRED job is finished, you will see a <a href="/biomed505/Course/IntroSeqAnalysis/jpred/jpred.results.html" target="jpred">page like this</a>.  Use table below to view the various files produced by running this prediction at JPRED:
+      <table border=3 cellpadding=5>
+        <tr><th>Filename</th><th>Description</th></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/LOG.txt" target="jpred">LOG</a></td><td>The log file of the prediction</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.txt" target="jpred">jp_1699919.seq</a></td><td>The input sequence</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.align.fa.csv.txt" target="jpred">jp_1699919.seq.align.fa.csv</a></td><td>The Jnet alignment in FASTA format</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.align.fasta.txt" target="jpred">jp_1699919.seq.align.fasta</a></td><td>PSIBLAST alignment in FASTA format with redundant sequences removed</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.align.hmmprof.txt" target="jpred">jp_1699919.seq.align.hmmprof</a></td><td>The HHMer2 profile of the alignment</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.align.msf.txt" target="jpred">jp_1699919.seq.align.msf</a></td><td>PSIBLAST alignment in MSF format with redundant sequences removed</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.alignment.txt" target="jpred">jp_1699919.seq.alignment</a></td><td>PSIBLAST alignment</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.casp.txt" target="jpred">jp_1699919.seq.casp</a></td><td>The prediction in CASP format</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.coils.csv.txt" target="jpred">jp_1699919.seq.coils.csv</a></td><td>The output from coils and Multicoil in CSV format</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.concise.txt" target="jpred">jp_1699919.seq.concise</a></td><td>The prediction in CSV format, including the consensus</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.concise.blc.txt" target="jpred">jp_1699919.seq.concise.blc</a></td><td>A BLC file of the prediction and alignment</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.concise.fa.txt" target="jpred">jp_1699919.seq.concise.fa</a></td><td>A FASTA file of the prediction and alignment</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.concise.msf.txt" target="jpred">jp_1699919.seq.concise.msf</a></td><td>A MSF file of the prediction and alignment</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.concise.pdf" target="jpred">jp_1699919.seq.concise.pdf</a></td><td>A PDF file of the prediction and alignment</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.concise.ps" target="jpred">jp_1699919.seq.concise.ps</a></td><td>A PostScript file of the prediction and alignment</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.freq.txt" target="jpred">jp_1699919.seq.freq</a></td><td>The frequencies of each residue in the alignment</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.html" target="jpred">jp_1699919.seq.html</a></td><td>A HTML file of the prediction and alignment  <blink><b>Look at this one!</b></blink></td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.jnet.txt" target="jpred">jp_1699919.seq.jnet</a></td><td>The output from Jnet</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.oc.txt" target="jpred">jp_1699919.seq.oc</a></td><td>OC output</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.profile.txt" target="jpred">jp_1699919.seq.profile</a></td><td>PSIBLAST profile</td></tr>
+        <tr><td><a href="/biomed505/Course/IntroSeqAnalysis/jpred/jp_1699919.seq.pssm.txt" target="jpred">jp_1699919.seq.pssm</a></td><td>PSIBLAST PSSM in a format for Jnet</td></tr>
+      </table>
+      <p>
+    </td>
+  </tr>
+</table>
+
+<hr>
+<div class="tinytext">Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>(smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu)</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 16:13:33 MST 2004 <!-- hhmts end -->
+<!-- $Id: ProteinAnalysis.html,v 1.3 2004/11/11 23:46:25 smathias Exp $ -->
+</span>
+
+</body>
+</html>

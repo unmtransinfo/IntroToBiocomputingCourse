@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/ftp3.2.1exp.html -->
+
+<HEAD>
+<TITLE>Example of access authorisation prompt</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Example of access authorisation prompt</H1>
+
+<P>This is an example of how you are prompted for access
+authorisation by the <STRONG>hhcp</STRONG> command.</P>
+
+<PRE WIDTH=80>   <STRONG>hhcp afile castle:bfile</STRONG>
+   [castle: no stored attributes]
+   transfer authorization:<EM>username</EM>
+   transfer password: <EM>password</EM>
+   afile: transfer id is <EM>nnnn</EM>
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

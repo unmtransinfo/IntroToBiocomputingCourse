@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/ftp3.2.1.1.html -->
+
+<HEAD>
+<TITLE>Storing transfer authorisation for a host</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Storing transfer authorisation for a host</H1>
+
+<P>You can use the <STRONG>hhstore</STRONG> command to store access
+authorisation for your account on a remote host.</P>
+
+<P>Whenever you transfer a file to or from this host the
+access authorisation that you have stored is
+automatically used by hhcp to authorise the file
+transfer.</P>
+
+<P>For example:</P>
+
+<PRE WIDTH=80>   <STRONG>hhstore -a festival</STRONG>
+   transfer authorization: <STRONG>helper</STRONG>
+   transfer password: <STRONG><EM>password</EM></STRONG>
+</PRE>
+
+<P>This stores authorisation for transfers to and from the
+user's account on the host "festival", on which their
+registered username is "helper". Note that the password
+is not displayed.</P>
+
+<P>The <SAMP>-a</SAMP> option ensures that you are only prompted for your
+username and password.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tips/tar.html -->
+
+<HEAD>
+<TITLE>tar: Packing tip</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1><SAMP>tar</SAMP>: Packing tip</H1>
+
+<P>When you are creating a tarfile, you should never specify
+a <A HREF="../glossary/gf.html#fullpath">full pathname</A>
+(i.e.  one with first character /) for the input files, as 
+<STRONG>tar</STRONG> will attempt to recreate the
+files in a directory with <EM>exactly the same name</EM> when you
+extract them.</P>
+
+<P>If you are extracting them on another system, this
+directory might not exist. Use a <A
+HREF="../glossary/gr.html#relpath">relative pathname</A> instead.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

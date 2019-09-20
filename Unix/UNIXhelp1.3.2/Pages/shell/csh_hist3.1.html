@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/csh_hist3.1.html -->
+
+<HEAD>
+<TITLE>Examples of running a command from the history list</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of running a command from the history list</H1>
+
+<P>To re-run the previous command:
+
+<PRE WIDTH=80>   <STRONG>history</STRONG>
+      1  pwd
+      2  cp memo.txt /tmp
+      3  cd
+      4  history
+   <STRONG>!!</STRONG>
+      1  pwd
+      2  cp memo.txt /tmp
+      3  cd
+      4  history
+      5  history
+</PRE>
+
+<P>The <STRONG>history</STRONG>
+command is used to list the command history.
+Then the previous command is reexecuted, listing the
+command history again!</P>
+
+<HR>
+
+<P>To re-run a specific command:</P>
+
+<PRE WIDTH=80>   <STRONG>!3</STRONG>
+   cd
+</PRE>
+
+<P>This re-runs command number three (3) in the command
+history.</P>
+
+<HR>
+
+<P>To re-run the most recent command that starts with a
+particular character string:</P>
+
+<PRE WIDTH=80>   <STRONG>!pw</STRONG>
+   pwd
+   /home/grace
+</PRE>
+
+<P>This re-runs the command <STRONG>pwd</STRONG>.</P>
+
+<HR>
+
+<P>To re-run the most recent command that contains a
+particular character string:</P>
+
+<PRE WIDTH=80>   <STRONG>!?st</STRONG>
+   history
+</PRE>
+
+<P>This re-runs the <STRONG>history</STRONG> command.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

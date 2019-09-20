@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Genome Browsing</title>
+  <link rel=stylesheet href="css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<div class="headln">Sequence Analysis - Introduction to Web-based Genome Browsing</div>
+<br>
+<div class="text">
+<strong>Abstract:</strong> This section of the "Introduction to Sequence Analysis" is designed to familiarize you with some of the issues and concepts involved with browsing and retrieving genomic data from online genome databases.  There are three main public online genome browsing sites: <a href="http://www.ncbi.nlm.nih.gov/mapview/">The NCBI Map Viewer</a>, <a href="http://www.ensembl.org/">Ensembl</a> and <a href="http://genome.ucsc.edu/">The UCSC Genome Browser</a>.  Each of these sites host data for a large collection of genomes.  The background reading article: "A User's Guide to the Human Genome, Question 1." (<em>Nature Genetics,</em> vol. 32 supplement: 9-17 (2002) <a href="http://biocomp.health.unm.edu/biomed505/Course/IntroSeqAnalysis/Supplements/HumanGenomeUsersGuide.pdf"><img src="../../images/pdf.gif" height="16" width="16" border="0" alt="PDF"></a>) will provide a brief introduction to each of these.
+      <p>For this set of exercises, we are going to focus on the use of <a href="http://www.ensembl.org/">Ensembl</a>, and work through some examples showing how to access human genomic information.  You should take the <a href="http://www.ensembl.org/Docs/enstour/index.html">guided tour of Ensembl</a> before starting these exercises.
+<br>
+<br>
+Questions you should answer as you work through the exercises are indicated by <span class="class2"><a href="GenomeBrowsing.html">Question:</a></span> tags, which also serve as hyperlinks to the corresponding answers (where available).
+<br>
+<br>
+<strong>Typographical conventions:</strong> <br>
+ &nbsp; &nbsp; Regular web links look <a href="GenomeBrowsing.html">like this</a><br>
+ &nbsp; &nbsp; Input that you should enter verbatim in web page forms, or links/buttons you should click on web pages look <span class="input">like this</span><br>
+</div>
+<br>
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex">Introduction to the Ensembl Genome Browser</th>
+  </tr>
+  <tr>
+    <td class="step">1. Load the main <a href="http://www.ensembl.org/">Ensembl Home Page</a>.</td>
+  </tr>
+  <tr>
+    <td>At the very top of this page is a query form with which you can do multi-species text searching.  Below this, there is 'About Ensembl' plus links to general help and documentation.  Also on this page are links to the various species-specific browsers.  Ensembl works in virtually the same way, regardless of the organism, so don't worry if your main species of interest is not human.  After completing these exercises, you will be much better able to to navigate your genome of interest using Ensembl.
+      <p>Click on the <span class="input">Human</span> button.  Then, in the "Browse a Chromosome" section, click on chromosome <span class="input">20</span>.  This will take you to the Ensembl MapView page for chromosome 20.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Ensembl MapView</td>
+  </tr>
+  <tr>
+    <td>The Ensembl MapView page displays an ideogram of a single chromosome.  To the left of this are feature density plots for: genes, GC content, repetitive sequences and SNPs:<br>
+      <img src="images/mapview_annot.gif" border="0" alt="Ensembl MapView"></a><br>Clicking on any chromosomal band or anywhere along one of the density plots will redirect you to the Ensembl ContigView.
+      <p>Alternatively, using the "Jump to Contigview" box, you can get the ContigView between any two markers on this chromosome.  In the query boxes, type <span class="input">D20S619</span> and <span class="input">D20S1116</span> and click <span class="input">Go</span>.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">3. Ensembl ContigView</td>
+  </tr>
+  <tr>
+    <td>The Ensembl ContigView is the principal data visualization tool for genome sequence annotation information.  It provides a high level view of the contig sequences that form the human genome sequence assembly, and of the genes and other features that have been placed on it.  The page is split into four sections representing different levels of zooming into the chromosome:
+      <dl>
+        <dt>Chromosome Panel
+        <dd>The Chromosome panel displays an ideogram of an entire chromosome with its cytogenetic banding pattern (or alternative sequence block for species with no chromosome assemblies).<br><img src="images/chromosome.png" border="0" alt="Ensembl ContigViewChr"></a><br>
+        <dt>Overview Panel
+        <dd>The Overview panel displays a larger section of a chromosome together with its basic annotation.  This panel displays synteny blocks, cytogenetic chromosome band(s), DNA contigs, markers, and genes.<br><img src="images/overview.png" border="0" alt="Ensembl ContigViewOverview"></a><br>
+        <dt>Detailed View Panel
+        <dd>The Detailed View shows small regions of chromosomes and provides more detailed information on genome sequence annotation.<br><img src="images/detailed.gif" border="0" alt="Ensembl ContigViewDetail"></a><br>
+        <dt>Basepair View Panel
+        <dd>This panel is used to show features on a small segment of the assembly.  The region displayed by default is 101 bp, taken from the center of the Detailed View panel.<br><img src="images/basepair.png" border="0" alt="Ensembl ContigViewBP"></a><br>
+      </dl>
+      The red boxes on the assembly in the 'Chromosome', 'Overview' and 'Detailed View' panels represent the regions shown at higher magnification in the next panel below.  These can be moved by clicking anywhere on the assembly on which they are drawn.
+      <p>In the Overview panel, Click on the <span class="input">AVP</span> gene.  This will re-center the views on this gene.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">5. Ensembl Navigation Bar</td>
+  </tr>
+  <tr>
+    <td>Many Ensembl View have associated navigation bars.  This section describes the function of the various navigation bar elements.
+      <p align="center">
+      <img src="images/nav_left_2.gif" alt="move 2 Mb left">
+      <img src="images/nav_left_1.gif" alt="move 1 Mb left">
+      <img src="images/nav_right_1.gif" alt="move 1 Mb right">
+      <img src="images/nav_right_2.gif" alt="move 2 Mb right">
+      </p>
+      Clicking on one of these buttons will move the whole display 1 or 2 Mb to the left or right. 
+The size of region represented by the red box will not change. 
+      </p>
+      <p align="center">
+      <img src="images/win_left.gif" alt="move window left">
+      <img src="images/win_right.gif" alt="move window right">
+      </p>
+      Clicking on one of these two buttons will scroll the whole display to the left or right by 80% of the current display length.  The size of the red box will not change. 
+      </p>
+      <p align="center">
+      <img src="images/plus.gif" alt="plus">
+      <img src="images/zoom.gif" alt="zoom">
+      <img src="images/minus.gif" alt="minus">
+      </p>
+      These buttons above provide the option to zoom in and out, varying the size of the region displayed.  Use this to restrict or expand the field of view to a scale suitable to view any feature of interest.  Click on steps in the ramp to display 1, 5, 10, 50, 100, 200, 500 kb or 1 Mb.  Clicking plus or minus zooms in or out by a factor of approximately 2, and allows zooming in to as little as 11 bp.  Regions larger than 1 Mb can only be seen in the Overview panel.  Generally, the CytoView is recommended for viewing larger segments of a chromosome.
+      <p><p>In the Detailed View panel, zoom in by clicking the large <img src="images/plus.gif" alt="plus"> button.  You should notice that the red box on the assembly in the 'Overview' section is now smaller.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">5. Customizing the ContigView</td>
+  </tr>
+  <tr>
+    <td>The Ensembl ContigView can be customized to suit your needs.  More information that is not displayed by default can be added, or the displays can be simplified to make browsing faster.  Customizing is done using:
+      <ul>
+        <li>Pull-down menus on the golden menu bar at the top of 'Detailed View'. Changes will take effect when they are closed by clicking at the bottom of the menu.</li>
+        <li>A configuration page (accessed by clicking on 'Advanced...', the last item on both the 'Features' and the 'Decorations' pull-down menus).</li>
+        <li>+/- 'toggle' buttons. When an item is displayed, clicking on - will hide it. When an item is hidden, clicking on + will cause it to be displayed.</li>
+      </ul>
+      In addition, the Chromosome, Overview, Detailed View and Basepair View panels can each be turned on or off using the <img src="images/plus-box.gif"></a> or <img src="images/min-box.gif"></a> button at the top left of the panel.
+      <p>Try to customize the Detailed View by adding SNPs and hiding Genscans, Vega transcripts and EST transcripts.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">6. ContigView "Jump to..." options</td>
+  </tr>
+  <tr>
+    <td>This pull-down menu (also located on the golden bar of the Detailed View) allows you to jump to the same region displayed in the Ensembl CytoView, view direct comparisons to other species in the Ensembl MultiContigView, or to jump to the Ensembl MapView.  You can also view the same region displayed in the Human Genome Browser at UCSC, or in Map Viewer at NCBI.
+      <p>Select <span class="input">cytoview</span> from the "Jump to" menu.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">7. Ensemble CytoView</td>
+  </tr>
+  <tr>
+    <td>The Ensemble CytoView is useful for navigating and displaying large sections of a chromosome (up to an entire chromosome) and for viewing and downloading lists of clones and genes in a defined chromosomal region. Blocks where gene order is conserved between species ('synteny blocks') are also shown when available.  The top section of the page shows the whole chromosome being displayed with a red box marking the segment displayed in detail below.  The detailed display can be re-centered by clicking in the desired location on the chromosome.
+      <p.The main Detailed View panel shows:
+      <ul>
+        <li>Human-Mouse-Rat synteny blocks (chromosome segments in other species that conserve the same gene order)</li>
+        <li>the size of region being displayed</li>
+        <li>the chromosomal band or bands</li>
+        <li>the DNA contigs that make up this region of the sequence assembly (golden path)</li>
+        <li>one or more sets of clones, aligned with the sequence assembly</li>
+        <li>a scale bar showing the position of the displayed region on the golden path (in Mega base pairs)</li>
+        <li>markers</li>
+        <li>genes</li>
+        <li>information about repeat sequences</li>
+      </ul>
+      <p>Use your browser's <span class="input">Back</span> button to return to the ContigView.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">8. Ensembl reports</td>
+  </tr>
+  <tr>
+    <td>Clicking on markers, SNPs, transcripts, etc. in the Detailed View panel will take you to report pages displaying detailed information about a particular item.  
+      <p>Click on a marker to see an example of the Ensembl <strong>MarkerView</strong> which displays information about a particular map marker or sequence tagged site (STS).
+      <p>Use your browser's <span class="input">Back</span> button to return to the ContigView.
+      <p>Click on a SNP to see an example of the Ensembl <strong>SNPView</strong>, which displays information about a particular Single Nucleotide Polymorphism (SNP).
+      <p>Use your browser's <span class="input">Back</span> button to return to the ContigView.
+      <p>Click on the <span class="input">AVP</span> Ensembl transcript which will take you to the Ensembl Gene Report.  Scroll down this page and examine the myriad annotations, links and cross-references available from Ensembl's Gene Reports.  In the "Transcript Structure" section, you will see the hyperlinks <u>Transcript information</u> and <u>Protein information</u> which will take you to the Ensembl Transcript and Protein Reports, respectively.
+      <p>Go to the the Protein Report page and click the <span class="input">ENSF00000001149</span> link in the "Protein Family" section, which will take you to the Ensembl <strong>FamilyView</strong>.  The FamilyView provides a list of closely related Ensembl genes, gives a consensus family description and shows the chromosomal location of the family members.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">8. Exporting Gene data</td>
+  </tr>
+  <tr>
+    <td>Use your browser's <span class="input">Back</span> button to return to the GeneView.
+      <p>In the "Export Data" section, click the <span class="input">Export gene data in EMBL, GenBank or FASTA</span> hyperlink.  This will take you to one of Ensembl's <strong>ExportView</strong> forms.  This ExportView lets you download/dump data as a GenBank or EMBL-style flat file, a FASTA format file, a feature list or an image.
+      <p>Choose the <span class="input">FASTA</span> tab.
+      <p>Enter <span class="input">500</span> in the " Show context of:" box to include 500bp of genomic sequence on either side of the gene.
+      <p>Select the <span class="input">HTML</span> radio button in the "Select output format" section and the click the <span class="input">Export</span> button.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">9. Ensembl BLASTView</td>
+  </tr>
+  <tr>
+    <td>On the ExportView page containing the FASTA format sequence, use your mouse to copy part or all of the sequence.  Then click the <span class="input">BlastSearch</span> hyperlink located near the top of the page.  This will take you to the BLASTView.  Paste the copied sequence into the query sequence box.  You may also upload sequence files or use database accession numbers to define the query sequence.
+      <p>In the "Select the databases to search against" section of the form, make sure <span class="input">Homo_sapiens</span> is selected, and select the <span class="input">peptide database</span> radio button.
+      <p><span class="input">BLASTX</span> will be the only available "Search Tool", so click <span class="input">Run</span>.
+      <p>This will place your job in a queue.  Periodically, click the <span class="input">Retrieve</span> button until the query is completed.  Then click the <span class="input">view</span> button which will take you to the BLASTView Display.  The BLASTView Display has three sections showing Alignment Locations vs. Karyotype, Alignment Locations vs. Query, and an Alignment Summary table.  The Alignment Summary table lists the hits.  Each alignment or HSP (high scoring pair) is shown separately.  By default, the list is sorted by ascending score, but this can be changed by selecting a different option in the "Sort By" box.  Locations are shown as positions on the genomic assembly, either chromosomes or scaffolds, depending on the species, together with the strands of the query and subject that were aligned.  For each alignment, links are provided to additional displays:
+      <ul>
+        <li><strong>[C]</strong> - view the hit in context in a ContigView display of the chromosome region.</li>
+        <li><strong>[G]</strong> - view the hit in the context of the annotated genome sequence. Ensembl and EST exons predicted by the Ensembl analysis pipeline, manually curated Vega exons, as well as exons predicted by <em>ab initio</em> methods and SNPs are annotated on the genome sequence.</li>
+        <li><strong>[S]</strong> - display the query sequence with the bases of all hit alignments marked. The location of the current alignment is shown in red, other alignments in the hit are shown in blue. Hint: Watch the mark-up change in this window as you click on different alignments for the same hit.</li>
+        <li><strong>[A]</strong> - display the alignment for the selected HSP.</li>
+      </ul>
+      For searches against cDNA or protein sets, the Ensembl ID of the identified sequence is a clickable link to an Ensembl 'TransView' or 'ProteinView' display.
+      <p>Try the various results displays to view BLAST hits.
+    </td>  	 	
+  </tr>
+  <tr>
+    <td class="step">10. EnsMart View</td>
+  </tr>
+  <tr>
+    <td>Select one of the BLAST hits from the previous step to view in a ContigView display.  Zoom out several steps, and then select <span class="input">Ensembl Gene List</span> from the "Export" pull-down menu in the Detailed View panel.  This will take you the EnsMart view, a very useful tool for exporting data sets from Ensembl.  Notice the huge range of features that may be exported from this interface.  The data may be exported in several different formats, as well.
+    </td>  	 	
+  </tr>
+</table>
+
+<hr>
+<div class="tinytext">Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>(smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu)</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 16:43:23 MST 2004 <!-- hhmts end -->
+<!-- $Id: GenomeBrowsing.html,v 1.2 2004/11/11 23:46:25 smathias Exp $ -->
+</span>
+
+</body>
+</html>

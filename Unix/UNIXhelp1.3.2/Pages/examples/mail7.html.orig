@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- examples/mail7.html -->
+
+<HEAD>
+<TITLE>Examples of reading mail</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of reading mail</H1>
+
+<P>To read the current message:</P>
+
+<PRE WIDTH=80>   &lt;Return&gt;
+</PRE>
+<P>
+
+This will display the current message, as indicated by the
+
+<SAMP>&gt;</SAMP> symbol.</P>
+
+<HR>
+
+<P>To display a message by its number:</P>
+
+<PRE WIDTH=80>   <STRONG>5</STRONG>
+</PRE>
+
+<P>This will display the contents of message number 5.</P>
+
+<HR>
+
+<P>To display a range of messages by number:</P>
+
+<PRE WIDTH=80>   <STRONG>4-7</STRONG>
+</PRE>
+<P>
+
+This will display messages 4 through 7, starting at
+message 4.  Press <SAMP>&lt;Return&gt;</SAMP> to go to the next
+message.</P>
+
+<HR>
+
+<P>To display all the messages from a specific user:</P>
+
+<PRE WIDTH=80>   <STRONG>p bob</STRONG>
+</PRE>
+
+<P>This displays all the messages in your mailbox from
+the user <SAMP>bob</SAMP>, starting from the first message
+received.</P>
+
+<P>Press <SAMP>&lt;Return&gt;</SAMP> to go to the next message in the
+series.</P>
+
+<HR>
+
+<P>To redisplay the mail headers:</P>
+
+<PRE WIDTH=80>   <STRONG>h</STRONG>
+</PRE>
+
+<P>This redisplays the the mail headers, showing you what
+mail you have in your mailbox.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

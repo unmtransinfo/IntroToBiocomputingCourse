@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Comparison - Multiple Alignment</title>
+  <link rel=stylesheet href="css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<div class="headln">Sequence Comparison - Multiple Alignment</div>
+<br>
+<div class="text">
+<strong>Abstract:</strong> In this section of the course, we will continue our survey of methods of sequence comparison.  Sequence comparison is ubiquitous in modern molecular biology and bioinformatics.  Sequences - genes and proteins - are compared in order to infer structural, functional and evolutionary relationships among the sequences being compared.  The most common type of sequence comparison is sequence alignment which involves making an explicit mapping between the residues of two or more sequences.
+<p>This section will introduce you to multiple alignments and the EMBOSS programs than can be used to perform and process multiple alignments.  As the name suggests, multiple alignment involves the alignment of more than two sequences of interest.  Even if one is only, or primarily, interested in the similarities between two sequences, it is often advantageous to perform a multiple alignment including all available sequences.  The inclusion of multiple sequences will normally improve the accuracy of the alignment between individual sequence pairs.  Effective analysis of protein sequence multiple alignments can be a very powerful method to elucidate which residues in the proteins are important for function and for stabilization of the secondary and tertiary structure of the protein.  Multiple alignments are also a key starting point for the prediction of protein secondary structure, a topic we visited in the "Sequence Analysis - Protein Analysis" Section of the course.
+<br><br>
+The standard way of using EMBOSS is via command line interaction on a UNIX computer system.  You will be using EMBOSS on the system hatch.health.unm.edu and you should have received login information for xxx when you signed up for Biomed505.  In addition to the command line interface, there are also several graphical interfaces to EMBOSS.  One of these is <a href="http://hatch.health.unm.edu/EMBOSS/">EMBOSS-GUI</a>, a web-based front end to EMBOSS.  The exercises for the "Introduction to Sequence Analysis" section of Biomed505 are written for users of the command line interface.  You may use EMBOSS-GUI if you prefer, however there are no detailed instructions to help you.  A brief <a href="http://poblano.health.unm.edu/EMBOSS-GUI.html">introduction to EMBOSS-GUI</a> is available.  For the most part, the input to the command line programs is exactly mirrored by EMBOSS-GUI's web browser forms and the use of EMBOSS-GUI should be fairly straight forward.
+<br>
+<br>
+Questions you should answer as you work through the exercises are indicated by <span class="class2"><a href="MultipleAlign.html">Question:</a></span> tags, which also serve as hyperlinks to the corresponding answers (where available).
+<br>
+<br>
+<strong>Typographical conventions:</strong> <br>
+ &nbsp; &nbsp; Regular web links look <a href="MultipleAlign.html">like this</a><br>
+ &nbsp; &nbsp; Input that you should enter verbatim in web page forms, or links/buttons you should click on web pages look <span class="input">like this</span><br>
+ &nbsp; &nbsp; Sections representing command-line interaction are represented as in the following example:<br><span class="system">
+       <span class="prompt">[unix]# </span><span class="command">ls <span class="arg">foo</span> [Enter]<br></span>ls: foo: No such file or directory</span><br>
+ &nbsp; &nbsp; where...<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; the unix propmt is represented as: <span class="system"><span class="prompt">[unix]# </span></span>,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="command">this font</span></span> are commands to be typed into the computer verbatim,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="arg">this font</span></span> are names or identifiers (Eg. file/directory names or sequence accession numbers),<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; words in square brackets: <span class="system"><span class="command">[Ctrl]</span></span> indicate a key to be pressed, and <br>
+ &nbsp; &nbsp; &nbsp; &nbsp; program output is represented in <span class="system">this font</span><br>
+ &nbsp; &nbsp; The above example means "at the UNIX prompt, type ls followed by foo (a directory name, <strong>which may be different in your case</strong>), then press Enter".  The ouput of the command is supposed to be "ls: foo: No such file or directory".  Output will often be truncated and this will be indicated using three horizontal or vertical dots.
+</div>
+<br>
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex">Sequences</td>
+  </tr>
+  <tr>
+    <td>You will be doing a multiple alignment of neuropeptide Y receptor Y1 protein sequences from various species.  As there are multiple sequence inputs for this exercise, this is an ideal time to take advantage of EMBOSS' ability to use list files.
+    <a href="NPYRY1.txt">This file</a> contains the list of USAs identifying the input sequences.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">1. Retrieve the sequences to be aligned and save them to a FASTA file.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">seqret <span class="arg">@NPYRY1.list</span> -outseq <span class="arg">NPYRY1.fasta</span> [Enter]</span></span>
+      <p>This command will save the sequences to a file named <strong>NPYRY1.fasta</strong>.
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="ex">Multiple Alignment</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/emma.html" target="emboss-apps"><strong>emma</strong></a> program to generate a multiple sequence alignment.</td>
+  </tr>
+  <tr>
+    <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/emma.html" target="emboss-apps"><strong>emma</strong></a> calculates the multiple alignment of nucleic acid or protein sequences according to the method of Thompson, J.D., Higgins, D.G. and Gibson, T.J. (1994).  It is basically just an EMBOSS interface to the <a href="http://www-igbmc.u-strasbg.fr/BioInfo/ClustalW/clustalw.html" >ClustalW</a> program.  The basic multiple alignment algorithm consists of three main stages:
+      <ul>
+        <li>all pairs of sequences are aligned separately in order to calculate a distance matrix giving the divergence of each pair of sequences</li>
+        <li>a guide tree is calculated from the distance matrix</li>
+        <li>the sequences are progressively aligned according to the branching order in the guide tree</li>
+      </ul></td>
+  </tr>
+  <tr>
+    <td>
+      <span class="system"></span>
+
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">emma -sequence <span class="arg">NPYRY1.fasta</span> -outseq <span class="arg">NPYRY1.aln</span> -dendoutfile <span class="arg">NPYRY1.dnd</span> [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Multiple alignment program - interface to ClustalW program
+..clustalw -infile=00030304A -outfile=00030304B -align -type=protein -output=gcg -pwmatrix=blosum ...
+
+
+
+
+ CLUSTAL W (1.83) Multiple Sequence Alignments
+
+
+
+Sequence type explicitly set to Protein
+Sequence format is Pearson
+Sequence 1: NY1R_HUMAN      384 aa
+Sequence 2: NY1R_PIG        383 aa
+Sequence 3: NY1R_CANFA      382 aa
+Sequence 4: NY1R_CAVPO      383 aa
+Sequence 5: NY1R_MOUSE      382 aa
+Sequence 6: NY1R_RAT        382 aa
+Sequence 7: NY1R_XENLA      366 aa
+Start of Pairwise alignments
+Aligning...
+Sequences (1:2) Aligned. Score:  93
+Sequences (1:3) Aligned. Score:  95
+Sequences (1:4) Aligned. Score:  92
+Sequences (1:5) Aligned. Score:  93
+Sequences (1:6) Aligned. Score:  92
+Sequences (1:7) Aligned. Score:  77
+Sequences (2:3) Aligned. Score:  95
+Sequences (2:4) Aligned. Score:  91
+Sequences (2:5) Aligned. Score:  92
+Sequences (2:6) Aligned. Score:  93
+Sequences (2:7) Aligned. Score:  75
+Sequences (3:4) Aligned. Score:  92
+Sequences (3:5) Aligned. Score:  92
+Sequences (3:6) Aligned. Score:  92
+Sequences (3:7) Aligned. Score:  78
+Sequences (4:5) Aligned. Score:  92
+Sequences (4:6) Aligned. Score:  93
+Sequences (4:7) Aligned. Score:  76
+Sequences (5:6) Aligned. Score:  98
+Sequences (5:7) Aligned. Score:  78
+Sequences (6:7) Aligned. Score:  78
+Guide tree        file created:   [00030304C]
+Start of Multiple Alignment
+There are 6 groups
+Aligning...
+Group 1: Sequences:   2      Score:6278
+Group 2: Sequences:   2      Score:6113
+Group 3: Sequences:   3      Score:6165
+Group 4: Sequences:   4      Score:6097
+Group 5: Sequences:   6      Score:6039
+Group 6: Sequences:   7      Score:5952
+Alignment Score 45114
+GCG-Alignment file created      [00030304B]</div></pre></div>
+      This command will save the alignment to the file <i>NPYRY1.aln</i>, and the tree to the file <i>NPYRY1.dnd</i>.  Examine the contents of these files.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Getting Information on Multiple Alignments</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/infoalign.html" target="emboss-apps"><strong>infoalign</strong></a> program to list information about an alignment.</td>
+  </tr>
+  <tr>
+    <td>
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">infoalign -sequence <span class="arg">NPYRY1.aln</span> -outfile stdout [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Information on a multiple sequence alignment
+# USA             Name        SeqLen    AlignLen        Gaps    GapLen  Ident   Similar Differ  % Change    Weight   Description
+fasta::NPYRY1.aln:NY1R_MOUSE    NY1R_MOUSE    382       383     1       1       362     11      9       5.483029     1.000000
+fasta::NPYRY1.aln:NY1R_RAT      NY1R_RAT      382       383     1       1       362     11      9       5.483029     1.000000
+fasta::NPYRY1.aln:NY1R_PIG      NY1R_PIG      383       383     0       0       362     8       13      5.483029     1.000000
+fasta::NPYRY1.aln:NY1R_CANFA    NY1R_CANFA    382       383     1       1       365     7       10      4.699739     1.000000
+fasta::NPYRY1.aln:NY1R_HUMAN    NY1R_HUMAN    384       384     0       0       365     7       12      4.947917     1.000000
+fasta::NPYRY1.aln:NY1R_CAVPO    NY1R_CAVPO    383       383     0       0       358     11      14      6.527415     1.000000
+fasta::NPYRY1.aln:NY1R_XENLA    NY1R_XENLA    366       369     1       3       288     30      48      21.951220    1.000000</div></pre></div>
+      <p><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/infoalign.html" target="emboss-apps"><strong>infoalign</strong></a> has many different output options.  Try the following commands and compare the output to that above.
+      <p>Display only the name, number of gap characters, and number of differences to the consensus sequence:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">infoalign -sequence <span class="arg">NPYRY1.aln</span> -only -name -gapcount -diffcount -outfile stdout [Enter]</span></span>
+      <p>Use the human sequence as the reference sequence to compare to:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">infoalign -sequence <span class="arg">NPYRY1.aln</span> -refseq 5 -outfile stdout [Enter]</span></span>
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/plotcon.html" target="emboss-apps"><strong>plotcon</strong></a> program to plot the quality of conservation of the alignment.</td>
+  </tr>
+  <tr>
+    <td>
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">plotcon -sequence <span class="arg">NPYRY1.aln</span> -winsize 4 -graph x11 [Enter]</span></span>
+      <p>This command will open a X Window containing the similarity plot.  The graphic should look like this:<br><img src="images/plotcon.jpg">
+      <p><span class="class2"><a href="MultipleAlignAnswers.html#info2" target="_answers">Question:</a></span> What happens if you run plotcon with a window size of 20? 
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Displaying Multiple Alignments</td>
+  </tr>
+  <tr>
+    <td class="step">Multiple sequence alignments are often included in publications, and a common task is to produce publication-quality figures of multiple sequence alignments.  This is the purpose of the commands demonstrated in this section.</td>
+  </tr>
+  <tr>
+    <td>1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/showalign.html" target="emboss-apps"><strong>showalign</strong></a> program to display the multiple sequence alignment in textual format.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">showalign -sequence <span class="arg">NPYRY1.aln</span> -outfile stdout [Enter]</span>
+      <pre width="90%"><div class="system" width="90%">Displays a multiple sequence alignment
+                   10        20        30        40        50        60
+           ----:----|----:----|----:----|----:----|----:----|----:----|
+Consensus  MNSTxFSQVENHSVHxNxSExNSxxLAFENDDCHLPLAMIFTLALAYGAVIILGVSGNLA
+NY1R_MOUSE ....L..k.....i.Y.A..-..PL.............v.....................
+NY1R_RAT   ....L..r...y...Y.V..-..PF.............v.....................
+NY1R_PIG   ....LS.......iyY.F..K..QF...................................
+NY1R_CANFA ....S........iFC.F..-..QF....s.........................t....
+NY1R_HUMAN ....L..........S.F..K.aQL...................................
+NY1R_CAVPO ....S...l......Y.L..EKPSFF............v.....................
+NY1R_XENLA --MNFStYF..L..PN.I.G---NITFPIse..A...P................l.....
+Consensus  MNSTxFSQVENHSVHxNxSExNSxxLAFENDDCHLPLAMIFTLALAYGAVIILGVSGNLA
+
+                   70        80        90       100       110       120
+           ----:----|----:----|----:----|----:----|----:----|----:----|
+Consensus  LIIIILKQKEMRNVTNILIVNLSFSDLLVAIMCLPFTFVYTLMDHWVFGExMCKLNPFVQ
+NY1R_MOUSE ..............................v...................T.........
+NY1R_RAT   ..............................v...................T.........
+NY1R_PIG   ..................................................V.........
+NY1R_CANFA ..m...............................................A.........
+NY1R_HUMAN ..................................................A.........
+NY1R_CAVPO ..l...........................................i...I.........
+NY1R_XENLA ............................AT.......Li.......i...V.....Eyi.
+Consensus  LIIIILKQKEMRNVTNILIVNLSFSDLLVAIMCLPFTFVYTLMDHWVFGExMCKLNPFVQ
+.
+.
+.
+                  310       320       330       340       350       360
+           ----:----|----:----|----:----|----:----|----:----|----:----|
+Consensus  LFLLCHLTAMISTCVNPIFYGFLNKNFQRDLQFFFNFCDFRSRDDDYETIAMSTMHTDVS
+NY1R_MOUSE ............................................................
+NY1R_RAT   ............................................................
+NY1R_PIG   ..............i.................................V...........
+NY1R_CANFA ............................................................
+NY1R_HUMAN ............................................................
+NY1R_CAVPO ............................................................
+NY1R_XENLA ...i.......................................e................
+Consensus  LFLLCHLTAMISTCVNPIFYGFLNKNFQRDLQFFFNFCDFRSRDDDYETIAMSTMHTDVS
+
+                  370       380       390       400       410       420
+           ----:----|----:----|----:----|----:----|----:----|----:----|
+Consensus  KTSLKQASPVAFKKINxNDNEKIx
+NY1R_MOUSE ...............sM.....v-
+NY1R_RAT   ...............sM......-
+NY1R_PIG   ...........L...hSd.....-
+NY1R_CANFA ................Nd.....-
+NY1R_HUMAN ................N..dNeKI
+NY1R_CAVPO .........l.....sCVe....-
+NY1R_XENLA .........i.-------------
+Consensus  KTSLKQASPVAFKKINxNDNEKIx</div></pre></div>
+      <p>Again, <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/showalign.html" target="emboss-apps"><strong>showalign</strong></a> has many different output options.  Try the following commands and compare the output to that above.
+    <p>Show identities between the sequences
+    <p><span class="system"><span class="prompt">[unix]# </span><span class="command">showalign -sequence <span class="arg">NPYRY1.aln</span> -show=i -outfile stdout [Enter]</span></span>
+    <p>Use the human sequence as the reference to compare to:
+    <p><span class="system"><span class="prompt">[unix]# </span><span class="command">showalign -sequence  <span class="arg">NPYRY1.aln</span> -ref=5 -outfile stdout [Enter]</span></span>
+    <p>Show ranges of sequences in uppercase, everything else in lowercase:
+    <p><span class="system"><span class="prompt">[unix]# </span><span class="command">showalign -sequence <span class="arg">NPYRY1.aln</span> -nocon -ref=5 -sl -upper 9-15 -nosimilarcase -outfile stdout [Enter]</span></span>
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prettyplot.html" target="emboss-apps"><strong>prettyplot</strong></a> program to display the multiple sequence alignment in graphical format, with coloring and boxing.</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">prettyplot -sequence <span class="arg">NPYRY1.aln</span> -resbreak=10 -boxcol -consensus -plurality=4 -graph x11 [Enter]</span></span>
+      <p>This command will open a X Window containing the prettified alignment.  The first page of the graphic should look like this:<br><img src="images/prettyplot1.png">
+    <p>As with the previous commands, <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/prettyplot.html" target="emboss-apps"><strong>prettyplot</strong></a> has many different output options.  Try the following command and compare the output to that above.
+    <p><span class="system"><span class="prompt">[unix]# </span><span class="command">prettyplot -sequence <span class="arg">NPYRY1.aln</span> -plurality=4 -docolour -graph x11 [Enter]</span></span>
+    <p>The first page of the graphic should look like this:<br><img src="images/prettyplot2.png">
+    </td>
+  </tr>
+</table>
+
+<hr>
+<div class="tinytext">Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>(smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu)</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 16:37:45 MST 2004 <!-- hhmts end -->
+<!-- $Id: MultipleAlign.html,v 1.3 2004/11/11 23:46:25 smathias Exp $ -->
+</span>
+
+</body>
+</html>

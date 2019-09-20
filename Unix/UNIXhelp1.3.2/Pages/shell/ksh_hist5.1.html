@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/ksh_hist5.1.html -->
+
+<HEAD>
+<TITLE>Examples of editing previous command lines</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of editing previous command lines</H1>
+
+<P>To list commands from the history list:</P>
+
+<PRE WIDTH=80>   <STRONG>fc -l 27 34</STRONG>
+</PRE>
+
+<P>This lists commands 27 through 34 from the history list.
+Using the <SAMP>-n</SAMP> option instead of <SAMP>-l</SAMP>
+prevents the history numbers from being listed.</P>
+
+<HR>
+
+<P>To edit a command from the history list:</P>
+
+<PRE WIDTH=80>   <STRONG>fc -e emacs 32</STRONG>
+</PRE>
+
+<P>This will start the <A HREF="../emacs/index.html">EMACS editor</A>
+together with the contents of command number 32. You can then edit the
+command and exit the editor to run the command.</P>
+
+<HR>
+
+<P>To edit several commands from the history list:</P>
+
+<PRE WIDTH=80>   <STRONG>fc -e vi 27 35</STRONG>
+</PRE>
+
+<P>This will start the <A HREF="../vi/index.html">vi editor</A>
+and open a temporary file
+containing commands 27 through 35. You can then edit the
+commands and exit the editor to run the commands.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

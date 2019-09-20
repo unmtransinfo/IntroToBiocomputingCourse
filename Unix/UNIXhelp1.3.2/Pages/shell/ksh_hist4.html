@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/ksh_hist4.html -->
+
+<HEAD>
+<TITLE>Previewing a command from the history list</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Previewing a command from the history list</H1>
+
+<P>You can preview a command from the history list without
+having to re-run it. Before you can do this the EDITOR and
+VISUAL variables <A HREF="cmd2.2.html">must be set</A>
+as they are for command line editing.</P>
+
+<P>You can also <A HREF="ksh_hist5.1.html">list commands</A>
+from the history list using the <STRONG>fc</STRONG> (fix command) command.</P>
+
+<PRE WIDTH=80>
+
+<STRONG>To...				          Do this
+
+                                          <EM>emacs           vi</EM></STRONG>
+<HR>
+Preview previous command in the list      ^P              M-k
+
+
+Preview next command in	the list          ^N              M-j
+
+
+Preview command starting with <EM>string</EM>      ^R^<EM>string</EM>       M-/^<EM>string</EM>
+(search forward from previous command)
+
+(search backward from command 0)                          M-?^<EM>string</EM>
+
+
+Preview command containing <EM>string</EM>         ^R<EM>string</EM>        M-/<EM>string</EM>
+(search forward from previous command)
+
+(search backward from command 0)                          M-?<EM>string</EM>
+
+<HR>
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

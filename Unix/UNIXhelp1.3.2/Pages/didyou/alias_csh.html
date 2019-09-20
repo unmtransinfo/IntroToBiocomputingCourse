@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- didyou/alias_csh.html -->
+
+<HEAD>
+<TITLE>Did You Know?</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Did You Know?</H1>
+
+<P>The C shell assumes that that the arguments are always
+placed at the end of the command alias.</P>
+
+<P>For example, you define an alias that gives members of
+your <A HREF="../tasks/change_own.html">group</A> access to a 
+<A HREF="../tasks/change_perm.html">file or directory</A>:</P>
+
+<PRE WIDTH=80>   <STRONG>alias ggive 'chmod g+'</STRONG>
+</PRE>
+
+<P>Any argument that you give to the alias <STRONG>ggive</STRONG>
+is placed after the command it refers to. So the command alias</P>
+
+<PRE WIDTH=80>   <STRONG>ggive <EM>filename</EM></STRONG>
+</PRE>
+
+<P>is interpreted as:</P>
+
+<PRE WIDTH=80>   <STRONG>chmod g+ <EM>filename</EM></STRONG>
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

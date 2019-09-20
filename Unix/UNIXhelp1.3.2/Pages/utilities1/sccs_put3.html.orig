@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- utilities1/sccs_put3.html -->
+
+<HEAD>
+<TITLE>Creating an SCCS file</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Creating an SCCS file</H1>
+
+<P>To place files under the control of SCCS use the
+command:</P>
+
+<PRE WIDTH=80>   <STRONG>sccs create <EM>filename(s)</EM></STRONG>
+</PRE>
+
+<P>For each filename given as an argument sccs create
+does the following:</P>
+
+<OL>
+<LI><SAMP><EM>filename</EM></SAMP> is moved to <SAMP><EM>,filename</EM></SAMP></LI>
+<LI>a history file <SAMP>s.<EM>filename</EM></SAMP> is created in the SCCS subdirectory</LI>
+<LI>a "read only" copy of the initial version of the file is made by <A HREF="chout_1.html">sccs get</A></LI>
+</OL>
+
+<P>You can use the <STRONG>ls</STRONG> command to check that the history
+files have been created.</P>
+
+<PRE WIDTH=80>   <STRONG>ls SCCS</STRONG>
+</PRE>
+
+<P>Now you can remove the <SAMP>,filename</SAMP> files:</P>
+
+<PRE WIDTH=80>   <STRONG>rm ,*</STRONG>
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,418 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Analysis - Introduction to EMBOSS</title>
+  <link rel=stylesheet href="css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<div class="headln">Sequence Analysis - Introduction to EMBOSS</div>
+<br>
+<div class="text">
+<strong>Abstract:</strong> These exercises are designed to introduce you to the basics of working with sequences on computers in general, and to some of the general paradigms employed by the European Molecular Biology Open Software Suite (EMBOSS).  EMBOSS is a free Open Source software analysis package for molecular biologists.  It provides a comprehensive set of sequence analysis programs (more than 150).  <a href="http://poblano.health.unm.edu/Software/EMBOSS/">EMBOSS Documentation</a> is available online.
+<br><br>
+The standard way of using EMBOSS is via command line interaction on a UNIX computer system.  You will be using EMBOSS on the system hatch.health.unm.edu and you should have received login information for xxx when you signed up for Biomed505.  In addition to the command line interface, there are also several graphical interfaces to EMBOSS.  One of these is <a href="http://hatch.health.unm.edu/EMBOSS/">EMBOSS-GUI</a>, a web-based front end to EMBOSS.  The exercises for the "Introduction to Sequence Analysis" section of Biomed505 are written for users of the command line interface.  You may use EMBOSS-GUI if you prefer, however there are no detailed instructions to help you.  A brief <a href="http://poblano.health.unm.edu/EMBOSS-GUI.html">introduction to EMBOSS-GUI</a> is available.  For the most part, the input to the command line programs is exactly mirrored by EMBOSS-GUI's web browser forms and the use of EMBOSS-GUI should be fairly straight forward.
+<br>
+<br>
+Questions you should answer as you work through the exercises are indicated by <span class="class2"><a href="IntroToEMBOSS.html">Question:</a></span> tags, which also serve as hyperlinks to the corresponding answers (where available).
+<br>
+<br>
+<strong>Typographical conventions:</strong> <br>
+ &nbsp; &nbsp; Regular web links look <a href="IntroToEMBOSS.html">like this</a><br>
+ &nbsp; &nbsp; Input that you should enter verbatim in web page forms, or links/buttons you should click on web pages look <span class="input">like this</span><br>
+ &nbsp; &nbsp; Sections representing command-line interaction are represented as in the following example:<br><span class="system">
+       <span class="prompt">[unix]# </span><span class="command">ls <span class="arg">foo</span> [Enter]<br></span>ls: foo: No such file or directory</span><br>
+ &nbsp; &nbsp; where...<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; the unix propmt is represented as: <span class="system"><span class="prompt">[unix]# </span></span>,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="command">this font</span></span> are commands to be typed into the computer verbatim,<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; characters in <span class="system"><span class="arg">this font</span></span> are names or identifiers (Eg. file/directory names or sequence accession numbers),<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; words in square brackets: <span class="system"><span class="command">[Ctrl]</span></span> indicate a key to be pressed, and <br>
+ &nbsp; &nbsp; &nbsp; &nbsp; program output is represented in <span class="system">this font</span><br>
+ &nbsp; &nbsp; The above example means "at the UNIX prompt, type ls followed by foo (a directory name, <strong>which may be different in your case</strong>), then press Enter".  The ouput of the command is supposed to be "ls: foo: No such file or directory".  Output will often be truncated and this will be indicated using three horizontal or vertical dots.
+</div>
+<br>
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex">The EMBOSS command-line</td>
+  </tr>
+  <tr>
+    <td class="step"><strong><em>NB. In order to use EMBOSS, you must first login to hatch.health.unm.edu using the username/password assigned to you when you registered for Biomed505.</em></strong></td>
+  </tr>
+  <tr>
+    <td>When EMBOSS has been properly set up on a system, you can type the name of any EMBOSS program at the UNIX prompt in order to run the program.  What you type is called the command-line.  Any required information that you have not already given on the command-line will be prompted for.  The examples in these exercises give all required input on the command-line.
+      <p>The EMBOSS command syntax follows normal UNIX conventions (options start with a '-').
+      <p>To get some help on a program's options:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command"><span class="arg">programname</span> -help [Enter]</span></span>
+      <p>To get the full help on an EMBOSS program:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">tfm <span class="arg">programname</span> [Enter]</span></span>
+      <p>You can also get the full help on all of the EMBOSS applications <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/">here</a>.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">Common themes in EMBOSS</td>
+  </tr>
+  <tr>
+    <td>Most EMBOSS programs share some common behavior.  They all understand the same input sequence identifiers, sequence formats and output report formats.  Below are descriptions of some of the common themes in EMBOSS.<br><br>
+      If you are not familiar with biological sequences, sequence files and sequence formats, make sure you read the <a href="Supplements/IntroSeqFilesFmts.html">Introduction to Sequence Files and Formats</a> background reading article in the course materials.</td>
+  </tr>
+  <tr>
+    <td class="step">1. EMBOSS' Uniform Sequence Address (USA)</td>
+  </tr>
+  <tr>
+    <td>The Uniform Sequence Address, or USA, is a standard way of specifying a sequence to be read into an EMBOSS program.  Sequences can be in databases or in files.  USAs can specify a single sequence or many sequences.  In general, a USA specifies:
+      <ul>
+        <li>a sequence format</li>
+        <li>a file or database containing the sequence</li>
+        <li>an identifier/accession number for the sequence</li>
+      </ul>
+      Of these, only the 'file or database' part is required.  If the 'entry' part is omitted, then all of the entries in the file or database are read in.
+      <p>Below are some examples of the USA syntax.  The first two are the most common.
+      <ul>
+        <li><strong>database:accession</strong>: nt:X65923</li>
+        <li><strong>filename</strong>: myfile.fa</li>
+        <li><strong>format::filename</strong>: gb:myfile.gb</li>
+        <li><strong>@listfile</strong>: a file of USAs and/or file-names</li>
+      </ul></td>
+  </tr>
+  <tr>
+    <td class="step">2. Sequence formats</td>
+  </tr>
+  <tr>
+    <td>As we've just seen, you can specify a sequence format by giving the format name with two colons followed by the rest of the USA.  For example: <strong>gb::myfile.gb</strong>.  A format is not required, however.  When reading in a sequence, EMBOSS will guess the sequence format by trying all known formats until one succeeds.  EMBOSS is able to recognize sequences in at least <a href="http://poblano.health.unm.edu/Software/EMBOSS/Themes/SequenceFormats.html#in">30 different input formats</a>.  When writing out a sequence, EMBOSS will use FASTA format by default.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">3. Report formats</td>
+  </tr>
+  <tr>
+    <td>The output from many EMBOSS commands is a report containing the results of a given analysis.  All  EMBOSS commands that produce reports have a default report format, but many of these programs allow you to change the report format used by using the <strong>-rformat name</strong> command-line option, where 'name' is the name of one of the standard report formats.  Some of the more commonly used EMBOSS report formats are summarized in the following table (with links to examples):
+      <table border=3 cellpadding=5>
+        <tr>
+          <th>Name<th>Description</th>
+        </tr>
+        <tr>
+          <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Themes/ReportExamples/report.embl">embl</a></td>
+          <td> Writes a report in EMBL feature table format</td>
+        </tr>
+        <tr>
+          <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Themes/ReportExamples/report.genbank">genbank</a></td>
+          <td>Writes a report in Genbank feature table format</td>
+        </tr>
+        <tr>
+          <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Themes/ReportExamples/report.gff">gff</a></td>
+          <td>Writes a report in GFF feature table format</td>
+        </tr>
+        <tr>
+          <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Themes/ReportExamples/report.swiss">swiss</a></td>
+          <td>Writes a report in SwissProt feature table format</td>
+        </tr>
+        <tr>
+          <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Themes/ReportExamples/report.listfile">listfile</a></td>
+          <td>This writes out a list file with the start and end points of the motifs
+given by '[start:end]' after the sequence's full USA.  This is 
+useful as it is a true List File that can be read in by
+other EMBOSS programs using '@' or 'list::' before the filename. 
+          </td>
+        </tr>
+        <tr>
+          <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Themes/ReportExamples/report.dbmotif">dbmotif</a></td>
+          
+          <td>Writes a report in DbMotif format
+<pre>Format:
+  Length = [length]
+  Start = position [start] of sequence
+  End = position [end] of sequence
+  ... other tags ... 
+  [sequence]
+  [start and end numbered below sequence with '|' marks]
+  Blank line
+
+Data reported: Length, Start, End, Sequence (5 bases around feature)
+</pre>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Themes/ReportExamples/report.excel">excel</a></td>
+          <td>This is a TAB-delimited table format suitable for reading into spread-sheet programs such as Excel. 
+<p>
+Name, start, end and score are always reported.  Other tags in the
+report definition are added as extra columns.  All values are (for now)
+unquoted.  Missing values are reported as '.'
+          </td>
+        </tr>
+      </table>
+      
+      <p>Another useful command-line option related to reports is <strong>-rusashow</strong> which will identify sequences by their full USA in the report.
+    </td>
+  </tr>
+    
+  <tr>
+    <td class="ex">Retrieving Sequences Using EMBOSS</td>
+  </tr>
+  <tr>
+    <td>This section describes how to use EMBOSS to read sequences from local data sources.  You will retrieve the mRNA sequence for the human capsaicin receptor and save it to a file.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/showdb.html" target="emboss-apps"><strong>showdb</strong></a> to see what EMBOSS databases are available</td>
+  </tr>
+  <tr>
+    <td>EMBOSS programs can read sequences from local sequence databases provided the sequence is referred to in the form <strong>database:seqid</strong>.  This format is known as a USA (Uniform Sequence Address).  In order to see what local databases are set up, use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/showdb.html" target="emboss-apps"><strong>showdb</strong></a> command:
+      <p>
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">showdb [Enter]</span>
+      <pre><span class="system">Displays information on the currently available databases
+# Name        Type ID  Qry All Comment
+# ====        ==== ==  === === =======
+drosophprot   P    OK  OK  OK  NCBI Drosophila protein database
+ecoliprot     P    OK  OK  OK  NCBI E. coli protein database
+nr            P    OK  OK  OK  NCBI non-redundant protein database
+pdb           P    OK  OK  OK  Protein sequences for PDB protein structures
+prefseq       P    OK  OK  OK  RefSeq human, mouse and rat proteins
+sp            P    OK  OK  OK  SWISS-PROT release 44.0
+yeastprot     P    OK  OK  OK  NCBI yeast protein database
+drosoph       N    OK  OK  OK  NCBI Drosophila nucleotide database
+ecoli         N    OK  OK  OK  NCBI E. coli nucleotide database
+nt            N    OK  OK  OK  NCBI non-redundant nucleotide database
+rrefseq       N    OK  OK  OK  RefSeq human, mouse and rat mRNAs
+vector        N    OK  OK  OK  NCBI vector sequence database
+yeast         N    OK  OK  OK  NCBI yeast nucleotide database
+</span></pre></div>
+      <p>This output shows that the EMBOSS administrator has set up 13 databases and gives some information about each of them.  Since we are after a RefSeq mRNA sequence, we will use the <strong>rrefseq</strong> database.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/seqret.html" target="emboss-apps"><strong>seqret</strong></a> to retrieve a sequence</td>
+  </tr>
+  <tr>
+    <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/seqret.html" target="emboss-apps"><strong>seqret</strong></a> reads in a sequence, and writes it out.  It is probably the most commonly used EMBOSS program.  Execute the following command:
+      <p>
+      <span class="system"><span class="prompt">[unix]# </span><span class="command">seqret rrefseq:NM_018727 -outseq <span class="arg">NM_018727.fa</span> [Enter]</span></span>
+      <p>In this command, <strong>rrefseq:NM_018727</strong> is the USA identifying the human capsaicin receptor mRNA sequence.  Executing the command will save the sequence to a file named NM_018727.fa in your current working directory.  Examine the contents of the file:
+      <p>
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">NM_018727.fa</span> [Enter]</span>
+      <pre><span class="system">>NM_018727 NM_018727.3 Homo sapiens transient receptor potential cation channel ...
+gcccgggaccccacggaggcggggagaccactcttctcccacacgagcccagctctccct
+tcgagtagcaaccgccttcaagctcacaagcacccgtgggcctggggtgtgcctgcgtct
+agctggttgcacactgggccacagaggatccagcaaggatgaagaaatggagcagcacag
+.
+.
+.
+cttccttacgatcaatcacagtctccagaagatcagctcaattgctgtgcaggttaaaac
+tacagaaccacatcccaaaggtacctggtaagaatgtttgaaagatcttccatttctagg
+aaccccagtcctgcttctccgcaatggcacatgcttccactccatccatactggcatcct
+caaataaacagatatgtatacatat</span></pre></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="step">3. Alternate sequence formats</td>
+  </tr>
+  <tr>
+    <td>In steps 2 and 3, you should have noted that EMBOSS' default output format is FASTA.  You can tell <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/seqret.html" target="emboss-apps"><strong>seqret</strong></a> to use a different output format.  In fact, there are a couple of ways to do this.  Each of the following commands will save the sequence in GenBank format:
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">seqret rrefseq:NM_018727 -outseq <span class="arg">genbank::NM_018727.gb</span> [Enter]</span></span>
+      <p><span class="system"><span class="prompt">[unix]# </span><span class="command">seqret rrefseq:NM_018727 -osformat genbank -outseq <span class="arg">NM_018727.gb</span> [Enter]</span></span>
+      <p>Examine the contents of the GenBank format file:      
+      <p><div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">NM_018727.gb</span> [Enter]</span>
+      <pre><span class="system">LOCUS       NM_018727
+DEFINITION  Homo sapiens transient receptor potential cation channel, subfamily V ...
+ACCESSION   NM_018727
+VERSION     NM_018727.3  GI:18375664
+KEYWORDS    .
+SOURCE      Homo sapiens.
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.
+BASE COUNT      879 a   1157 c   1078 g    931 t
+ORIGIN
+       1  gcccgggacc ccacggaggc ggggagacca ctcttctccc acacgagccc agctctccct
+      61  tcgagtagca accgccttca agctcacaag cacccgtggg cctggggtgt gcctgcgtct
+
+.
+.
+.
+    3781  gaggctgtcc cactcccagc tctggcagaa tcaagctgtt gcagcagtgc cttcttcatc
+    3841  cttccttacg atcaatcaca gtctccagaa gatcagctca attgctgtgc aggttaaaac
+    3901  tacagaacca catcccaaag gtacctggta agaatgtttg aaagatcttc catttctagg
+    3961  aaccccagtc ctgcttctcc gcaatggcac atgcttccac tccatccata ctggcatcct
+    4021  caaataaaca gatatgtata catat
+//
+</span></pre></div>
+  </tr>
+  
+  <tr>
+    <td class="ex">Retrieving Sequences Using ENTREZ</td>
+  </tr>
+  <tr>
+    <td>This section describes how to use ENTREZ to retrieve sequences.  In the previous set of exercises, you were introduced to the ENTREZ data retrieval system.  ENTREZ can be used to retrieve nucleic acid and protein sequences and save them to files on your local computer.  This is the method of sequence retrieval you should use if you are planning on using EMBOSS-GUI to do the exercises.  <strong><em>NB. In order to use sequence files retrieved via ENTREZ with the EMBOSS command-line programs, you must save the files on the same computer system where you will be running EMBOSS (ie. your web browser must be running on hatch.health.unm.edu, or you must transfer the files from your web browser computer to xxx.health.unm.edu).</em></strong></td>
+  </tr>
+  <tr>
+    <td class="step">1. Use ENTREZ to retrieve a sequence</td>
+  </tr>
+  <tr>
+    <td>Go to the <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Nucleotide">ENTREZ Nucleotide</a> database search page and look for the query form at the top of the page:
+      <p><img src="images/entreznt1.jpg">
+      <p>Enter <span class="input">NM_018727[ACCN]</span> in the search box, and then click the <span class="input">GO</span> button.  This will take you to a results summary page.  Click the <span class="input">NM_018727</span> link.
+      <p>This will take you to the detailed view of entry NM_018727, the top of which will look like this:
+      <p><img src="images/entreznt2.jpg">
+      <p>Make sure the <span class="input">File</span> option is selected from the drop-down list next to the "Send to" button (this is the default) and then click on the <span class="input">Send to</span> button.  You will be presented with a "Save As" dialog box.  Use this to save the file as <strong>NM_018727.entrez.gb</strong> to an appropriate location on your computer.</td>
+  </tr>
+    <tr>
+    <td class="step">2.  Examine the contents of the file</td>
+  </tr>
+  <tr>
+    <td>
+      <p>
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">cat <span class="arg">NM_018727.entrez.gb</span> [Enter]</span>
+      <pre><span class="system">LOCUS       NM_018727               4045 bp    mRNA    linear   PRI 23-AUG-2004
+DEFINITION  Homo sapiens transient receptor potential cation channel, subfamily
+            V, member 1 (TRPV1), transcript variant 2, mRNA.
+ACCESSION   NM_018727
+VERSION     NM_018727.3  GI:18375664
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.
+.
+.
+.
+     3601 ccttctttga ttttatatta ttaggagcaa aagtaaatga agcccaggaa aacacctttg
+     3661 ggaacaaact cttcctttga tggaaaatgc agaggccctt cctctctgtg ccgtgcttgc
+     3721 tcctcttacc tgcccgggtg gtttgggggt gttggtgttt cctccctgga gaagatgggg
+     3781 gaggctgtcc cactcccagc tctggcagaa tcaagctgtt gcagcagtgc cttcttcatc
+     3841 cttccttacg atcaatcaca gtctccagaa gatcagctca attgctgtgc aggttaaaac
+     3901 tacagaacca catcccaaag gtacctggta agaatgtttg aaagatcttc catttctagg
+     3961 aaccccagtc ctgcttctcc gcaatggcac atgcttccac tccatccata ctggcatcct
+     4021 caaataaaca gatatgtata catat
+//
+</span></pre></div>
+  </tr>
+  <tr>
+    <td class="step">3. Use EMBOSS to read in the sequence from the file</td>
+  </tr>
+  <tr>
+    <td>In step 2, you should have noted that ENTREZ's default output format is GenBank.  Execute the following command to write the sequence out in FASTA format:
+      <p>
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">seqret NM_018727.entrez.gb -outseq <span class="arg">fasta::NM_018727.entrez.fa</span> [Enter]</span></div>
+  </tr>
+  
+  <tr>
+    <td class="ex">Using EMBOSS To Get Information About Sequences</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/infoseq.html" target="emboss-apps"><strong>infoseq</strong></a> program</td>
+  </tr>
+  <tr>
+    <td><a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/infoseq.html" target="emboss-apps"><strong>infoseq</strong></a> is a utility that lists a sequences' USA, name, accession number, type (nucleic or protein), length, percentage G+C (for nucleic acids), and/or description.  View this information for the capsaicin receptor cDNA sequence:
+      <p><div class="system"><span class="prompt">[unix]# </span><span class="command">infoseq rrefseq:NM_018727 [Enter]</span>
+      <pre><span class="system">Displays some simple information about sequences
+# USA             Name        Accession Type Length      %GC   Description
+rrefseq-id:NM_018727    NM_018727     NM_018727 N    4045        55.25 Homo sapiens transient <br>receptor potential cation channel, subfamily V, ...
+      </span></pre></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/entret.html" target="emboss-apps"><strong>entret</strong></a> program to retrieve sequence annotations</td>
+  </tr>
+  <tr>
+    <td>Sequence databases often do not just contain sequences, they may also contain a great deal of information (annotations and features) associated with the sequence.  By default <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/seqret.html" target="emboss-apps"><strong>seqret</strong></a> does not return all of this associated data.  Use <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/entret.html" target="emboss-apps"><strong>entret</strong></a> to retrieve the full sequence entry including annotations:
+      <p><div class="system"><span class="prompt">[unix]# </span><span class="command">entret rrefseq:NM_018727 -outfile NM_018727.entret [Enter]</span><br>
+      <span class="prompt">[unix]# </span><span class="command">more NM_018727.entret [Enter] [space] [space]</span></div>
+      <p>With the <strong>more</strong> command, continue hitting [space] to page through the output.  Note that <strong>entret</strong> returns the sequence <strong><em>in it's original database form</em></strong>.  Certain formats (e.g. FASTA) do not allow for the storage of annotation and feature data.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">3. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/showfeat.html" target="emboss-apps"><strong>showfeat</strong></a> program to view a simple graphical overview of the features associated with a sequence</td>
+  </tr>
+  <tr>
+    <td>
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">showfeat rrefseq:NM_018727 -outfile NM_018727.showfeat [Enter]</span><br>
+      <span class="prompt">[unix]# </span><span class="command">cat NM_018727.showfeat [Enter]</span>
+      <pre><span class="system">NM_018727
+Homo sapiens transient receptor potential cation channel, subfamily V, member 1
+(TRPV1), transcript variant 2, mRNA.
+|==========================================================| 4045
+|----------------------------------------------------------> gene
+>                                                            misc_feature
+|----------------------------------------------------------> source
+ |------------------------------------>                      CDS
+ |------------------------------------>                      misc_feature
+   |--------->                                               misc_feature
+          |------>                                           misc_feature
+               >                                             variation
+                      |-------->                             misc_feature
+                                                 >           variation
+                                                          >  polyA_signal
+                                                           > polyA_site
+                                          |                  variation
+                                           |                 variation
+                                            |                variation
+      </span></pre></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="ex">Working with Multiple Sequences in EMBOSS</td>
+  </tr>
+  <tr>
+    <td>EMBOSS programs can deal with multiple sequences.  This section demonstrates various ways to achieve this.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Use the <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/infoseq.html" target="emboss-apps"><strong>infoseq</strong></a> program to get information about multiple sequences</td>
+  </tr>
+  <tr>
+    <td>To retrieve information about all the OPSD sequences in SwissProt, execute the following command:
+      <div class="system"><span class="prompt">[unix]# </span><span class="command">infoseq "sp:OPSD*" [Enter]</span>
+      <pre><span class="system">Displays some simple information about sequences
+# USA             Name        Accession Type Length     Description
+sp-id:OPSD_ABYKO  OPSD_ABYKO    O42294  P    289        Rhodopsin (Fragment).
+sp-id:OPSD_ALLMI  OPSD_ALLMI    P52202  P    352        Rhodopsin.
+sp-id:OPSD_AMBTI  OPSD_AMBTI    Q90245  P    354        Rhodopsin.
+sp-id:OPSD_ANGAN  OPSD_ANGAN    Q90214  P    352        Rhodopsin, deep-sea form.
+sp-id:OPSD_ANOCA  OPSD_ANOCA    P41591  P    352        Rhodopsin.
+.
+.
+.
+sp-id:OPSD_TRIMA  OPSD_TRIMA    O62796  P    348        Rhodopsin.
+sp-id:OPSD_TURTR  OPSD_TURTR    O62798  P    348        Rhodopsin.
+sp-id:OPSD_XENLA  OPSD_XENLA    P29403  P    354        Rhodopsin.
+sp-id:OPSD_ZEUFA  OPSD_ZEUFA    O42604  P    354        Rhodopsin.
+sp-id:OPSD_ZOSOP  OPSD_ZOSOP    Q9YGY9  P    352        Rhodopsin.
+      </span></pre></div>
+      <p>Note that on the command line, you must enclose the wildcard character (*) in quotation marks.
+      <p><span class="class2"><a href="IntroToEMBOSSAnswers.html#mult1" target="_answers">Question:</a></span> How would you retrieve all of these sequences into a single FASTA format file?
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Use a list file.</td>
+  </tr>
+  <tr>
+    <td>You will need to save
+    <a href="NPYRY1.txt">this file</a> to use as input for this exercise.</td>
+  </tr>
+  <tr>
+    <td>To retrieve information about all the sequences identified in the file, execute the following command:
+      <p><div class="system"><span class="prompt">[unix]# </span><span class="command">infoseq <span class="arg">@NPYRY1.list</span> [Enter]</span>
+      <pre><span class="system">Displays some simple information about sequences
+# USA             Name        Accession Type Length     Description
+sp-id:NY1R_HUMAN  NY1R_HUMAN    P25929  P    384        Neuropeptide Y receptor type 1 (NPY1-R).
+sp-id:NY1R_PIG    NY1R_PIG      O02835  P    383        Neuropeptide Y receptor type 1 (NPY1-R).
+sp-id:NY1R_CANFA  NY1R_CANFA    O02813  P    382        Neuropeptide Y receptor type 1 (NPY1-R).
+sp-id:NY1R_CAVPO  NY1R_CAVPO    Q9WVD0  P    383        Neuropeptide Y receptor type 1 (NPY1-R).
+sp-id:NY1R_MOUSE  NY1R_MOUSE    Q04573  P    382        Neuropeptide Y receptor type 1 (NPY1-R).
+sp-id:NY1R_RAT    NY1R_RAT      P21555  P    382        Neuropeptide Y receptor type 1 (NPY1-R) (FC5).
+sp-id:NY1R_XENLA  NY1R_XENLA    P34992  P    366        Neuropeptide Y receptor type 1 (NPY1-R).
+      </span></pre></div>
+      <p>In the command above, the @ in  front of the file name is the way you tell EMBOSS that this file is a List File, not a regular sequence file.
+    </td>
+  </tr>
+</table>
+
+<hr>
+<div class="tinytext">Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>(smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu)</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 16:10:12 MST 2004 <!-- hhmts end -->
+<!-- $Id: IntroToEMBOSS.html,v 1.3 2004/11/11 23:46:25 smathias Exp $ -->
+</span>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- utilities2/trans1.1.5.html -->
+
+<HEAD>
+<TITLE>Examples of creating an archive file</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of creating an archive file</H1>
+
+<P>To create a tarfile containing several files:</P>
+
+<PRE WIDTH=80>   <STRONG>tar cvf data.tar *.dat</STRONG>
+</PRE>
+
+<P>This creates a tarfile <SAMP>data.tar</SAMP>
+containing all the files in the
+current directory which have the filename extension 
+<SAMP>.dat</SAMP>.</P>
+
+<P>Look at the 
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?tar">manual page</A>
+for details of the command options <SAMP>cvf</SAMP>.</P>
+
+<HR>
+
+<P>To create a tarfile of a directory:</P>
+
+<PRE WIDTH=80>   <STRONG>tar cvf project.tar Project</STRONG>
+   Project/README
+   Project/Makefile
+   Project/Makefile
+   Project/main.c
+   Project/screen.c
+   Project/menus.c
+   Project/calculator.c
+   Project/setup/configuration
+</PRE>
+
+<P>This creates a tarfile <SAMP>project.tar</SAMP> which contains the
+directory <SAMP>Project</SAMP> and its contents.</P>
+
+<P>To create a tarfile containing several directories:</P>
+
+<PRE WIDTH=80>   <STRONG>tar cvf book.tar text illustrations</STRONG>
+</PRE>
+
+<P>This creates a tarfile <SAMP>book.tar</SAMP> containing the
+directories <SAMP>text</SAMP> and <SAMP>illustrations</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

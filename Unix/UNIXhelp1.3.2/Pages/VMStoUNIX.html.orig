@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- VMStoUNIX.html -->
+
+<HEAD>
+<TITLE>VMS to UNIX Translation</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>VMS to UNIX Translation</H1>
+
+<PRE WIDTH=80>
+<STRONG>To ...                      VMS                     UNIX</STRONG>
+<HR>
+display list of files       DIRECTORY               <A HREF="tasks/list.html">ls</A>
+                            DIRECTORY/FULL          <A HREF="tasks/list.html">ls -l</A>
+display contents of file    TYPE                    <A HREF="tasks/display0.html">cat</A>
+display file with pauses    TYPE/PAGE               <A HREF="tasks/display1.html">more, less</A>
+display first few lines of file                     <A HREF="tasks/display2.html">head</A>
+display last  few lines of file                     <A HREF="tasks/display3.html">tail</A>
+copy file                   COPY                    <A HREF="tasks/copying.html">cp</A>
+find string in file         SEARCH                  <A HREF="utilities2/grep.html">grep</A>
+                                                    <A HREF="utilities2/grep2.1.html">fgrep</A>
+compare files               DIFF                    <A HREF="utilities2/diff.html">diff</A>
+                                                    <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?cmp">cmp</A>
+rename file                 RENAME                  <A HREF="tasks/mv.html">mv</A>
+delete file or directory    DELETE                  <A HREF="tasks/rm.html">rm</A>
+                                                    <A HREF="tasks/rm1.2.html">rmdir</A>
+change file protection      SET FILE/PROT           <A HREF="tasks/change_perm.html">chmod</A>
+change file ownership       SET FILE/OWNER          <A HREF="tasks/change_own.html">chown</A>
+                                                    <A HREF="tasks/change_own.html">chgrp</A>
+create directory            CREATE/DIR              <A HREF="tasks/mkdir.html">mkdir</A>
+change working directory    SET DEFAULT             <A HREF="tasks/cd.html">cd</A>
+display working directory   SHOW DEFAULT            <A HREF="tasks/pwd.html">pwd</A>
+get help                    HELP                    <A HREF="manual/index.html">man</A>
+                                                    <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?apropos">apropos</A>
+display date and time       SHOW TIME               <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?date">date</A>
+display free disk space     SHOW DEV                <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?df">df</A>
+stop process                STOP                    <A HREF="shell/jobz5.html">kill</A>
+link program modules        LINK                    <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?ld">ld</A>
+print file                  PRINT                   <A HREF="tasks/lpr.html">lpr</A>
+display print queue         SHOW QUEUE              <A HREF="tasks/lpr4.html">lpq</A>
+display print entries       SHOW ENTRY              <A HREF="tasks/lpr4.html">lpq</A>
+change password             SET PASSWORD            <A HREF="basics/basic3.1.html">passwd</A>
+display logged-in users     SHOW USERS              <A HREF="basics/basic1.3.4.html">who</A>
+                                                    <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?finger">finger</A>
+                                                    <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?w">w</A>
+display processes           SHOW PROCESS            <A HREF="shell/jobz4.html">ps</A>
+change terminal settings    SET TERMINAL            <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?stty">stty</A>
+talk to another user        PHONE                   <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?talk">talk</A>
+disable messages            SET NOBROADCAST         <A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?mesg">mesg</A> n
+</PRE>
+
+<P>Thanks to Dave Atkin at the <A HREF="http://www.york.ac.uk">University of York</A>
+for permission to adapt his VMS/Unix translation.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="index.html"><IMG SRC="Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="index/index.html"><IMG SRC="Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

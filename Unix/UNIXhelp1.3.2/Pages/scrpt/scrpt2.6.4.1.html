@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- scrpt/scrpt2.6.4.1.html -->
+
+<HEAD>
+<TITLE>Example of using the break and continue statements</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Example of using the break and continue statements</H1>
+
+<P>To prompt for commands to run:</P>
+
+<PRE WIDTH=80>   #!/bin/sh
+   while echo "Please enter command"
+   read response
+   do
+     case "$response" in
+     'done') break           # no more commands
+                       ;;
+     "")     continue        # null command
+                       ;;
+     *)      eval $response  # do the command
+                       ;;
+     esac
+   done
+</PRE>
+
+<P>This prompts the user to enter a command. While they
+enter a command or null string the script continues to
+run. To stop the command the user enters <STRONG>done</STRONG> at the
+prompt.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

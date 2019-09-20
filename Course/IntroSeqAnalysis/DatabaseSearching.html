@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Comparison - Database Similarity Searches</title>
+  <link rel=stylesheet href="css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<div class="headln">Sequence Comparison - Database Similarity Searches</div>
+<br>
+<div class="text">
+<strong>Abstract:</strong> In this section of the course, we will continue to explore methods of sequence comparison.  Sequence comparison is ubiquitous in modern molecular biology and bioinformatics.  Sequences - genes and proteins - are compared in order to infer structural, functional and evolutionary relationships among the sequences being compared.  The most common type of sequence comparison is sequence alignment which involves making an explicit mapping between the residues of two or more sequences.
+<p>In the previous section, you were introduced to pairwise alignments, in which two known sequences are compared.  This section will introduce you to sequence database searching, in which a sequence of interest is compared to an entire database of sequences.  Database similarity searches allow one to determine which of the millions of known sequences present in sequence databases are potentially related to a given sequence of interest.  This is an extremely powerful and important discovery technique, and is surely the most commonly used of the tools you will learn in this course.
+<p>In sequence database searching, the basic idea is that a <em>query sequence</em> is sequentially aligned to each <em>subject sequence</em> in the database.  The results are reported as a ranked list of database <em>hits</em> followed by a series of individual alignments including associated statistics and scores.  The exercises in this section will introduce you to the two most well known applications for performing database similarity searches: BLAST and FASTA.  You will access these tools on web-based servers.
+<br>
+<br>
+Questions you should answer as you work through the exercises are indicated by <span class="class2"><a href="DatabaseSearching.html">Question:</a></span> tags, which also serve as hyperlinks to the corresponding answers (where available).
+<br>
+<br>
+<strong>Typographical conventions:</strong> <br>
+ &nbsp; &nbsp; Regular web links look <a href="DatabaseSearching.html">like this</a><br>
+ &nbsp; &nbsp; Input that you should enter verbatim in web page forms, or links/buttons you should click on web pages look <span class="input">like this</span><br>
+</div>
+<br>
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex">Background Questions</td>
+  </tr>
+  <tr>
+    <td>Before proceeding with the exercises, make sure you can answer the following questions related to the background reading.</td>
+  </tr>
+  <tr>
+    <td>
+     <span class="class2"><a href="DatabaseSearchingAnswers.html#bkgd1" target="_answers">Question:</a></span> Given a choice of PAM100, PAM250 and PAM480, which would be a better matrix to use to compare very similar sequences?  Which would be better for very divergent sequences?
+      <p><span class="class2"><a href="DatabaseSearchingAnswers.html#bkgd2" target="_answers">Question:</a></span> Which BLAST program would you use to compare a nucleotide (translated) sequence to a protein database?
+      <p><span class="class2"><a href="DatabaseSearchingAnswers.html#bkgd3" target="_answers">Question:</a></span> If a hit from a database similarity search is reported to have an E-value of 0.0, should the hit be considered highly significant or highly insignificant?
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">FASTA</td>
+  </tr>
+  <tr>
+    <td >FASTA was the first widely used program for sequence database searching.  The FASTA algorithm performs optimized searches for local alignments using a substitution matrix.  However, it would take an unreasonably long time to apply this strategy to every sequence in the database.  To speed things up, FASTA first uses word matches to identify potential hits before undertaking the more time-consuming optimized search.  FASTA does not investigate every single word hit encountered, but rather looks for segments containing several nearby word hits.  By changing the size of the word used in the initial phase, one can balance the trade-off between speed and sensitivity.  In FASTA, the <strong>ktup</strong> parameter controls the word size.  Increasing the value of ktup decreases the number of word hits, thereby decreasing the number of optimized searches that need to be done.  The default value of ktup for comparing proteins is 2.  To find very distant relationships, you will want to reduce ktup to 1.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Do a FASTA search using the default parameters.</td>
+  </tr>
+  <tr>
+    <td>We will be using the FASTA server at the European Bioinformatics Institute (EBI): <a href="http://www.ebi.ac.uk/fasta/index.html">http://www.ebi.ac.uk/fasta/index.html</a>.  Our query sequence will be the human neuropeptide Y receptor Y1 protein (sp:P25929).</td>
+  </tr>
+  <tr>
+    <td>Load EBI's <a href="http://www.ebi.ac.uk/fasta33/">FASTA Protein Database Query Page.</a>  The search form looks like this:<br><img src="images/fasta1.jpg"><br>Enter <span class="input">NPYRY1</span> in the "SEARCH TITLE" box, choose <span class="input">interactive</span> from the "RESULTS" drop-down menu, choose <span class="input">fasta3</span> from the "PROGRAM" list, and choose <span class="input">Protein</span> and <span class="input">UniProt</span> from the "DATABASES" drop-down menus.  Leave all other parameters set at their default values.  Use the <span class="input">Browse...</span> button to upload a file containing the NPY receptor sequence (or cut-and-paste the sequence into the box using your mouse).  Click the <span class="input">Run Fasta3</span> button to initiate the search.
+      <p>You will then see a page indicating that your job is running.  It will take some time for it to complete.  When it does, you will be presented with a page including a summary of the search parameters and an HTML-ified table summarizing the hits.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Examine the FASTA search results.</td>
+  </tr>
+  <tr>
+    <td>The "SUBMISSION PARAMETERS" table looks like this:<br><img src="images/fasta2.jpg"><br>Notice the buttons in the bottom row of the table.  These can be used to view your results in various ways.  Spend some time looking through the hit list.  Clicking the <span class="input">Show Annotation</span> button will include annotations in the hit summary table.  The top hit is the query sequence itself (P25929 is an entry in the UniProt database).
+      <p><span class="class2"><a href="DatabaseSearchingAnswers.html#fasta2a" target="_answers">Question:</a></span> What is the first real (meaning not the query sequence itself) hit in the hit list? 
+      <p><span class="class2"><a href="DatabaseSearchingAnswers.html#fasta2b" target="_answers">Question:</a></span> What is the first non-mammalian hit in the hit list? 
+      <p>Click the <span class="input">Fasta Result</span> button.  This view most closely resembles the textual output produced by the FASTA program.  Clicking on the little <img src="images/pa.gif"> images to the left of each hit summary will take you to the alignment for that hit.
+      <p>Click the <span class="input">Visual Fasta</span> button.   This view is very similar to the "Fasta Result" view, but includes a graphical representation of the results at the top of the page.
+      <p><span class="class2"><a href="DatabaseSearchingAnswers.html#fasta2c" target="_answers">Question:</a></span> What is the hit with the shortest Smith-Waterman alignment and what is its position in the hit list? 
+      <p><span class="class2"><a href="DatabaseSearchingAnswers.html#fasta2d" target="_answers">Question:</a></span> Does this hit really represent the 33rd most closely related sequence in the database? 
+    </td>
+  </tr>
+  <tr>
+    <td class="step">3. Save your FASTA search results.</td>
+  </tr>
+  <tr>
+    <td align="left">Bookmark the web page containing your FASTA search results.  You will need the results to compare with your BLAST results in the next section.
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="ex">BLAST</td>
+  </tr>
+  <tr>
+    <td>BLAST stands for <strong>B</strong>asic <strong>L</strong>ocal <strong>A</strong>lignment <strong>S</strong>earch <strong>T</strong>ool.  The BLAST programs introduced a number of refinements in sequence database searching that both increased overall search speed and improved the soundness of the statistical significance values reported for database hits.  The BLAST programs are undoubtedly the most commonly used programs for sequence database searching today.  At a high level, BLAST works similarly to FASTA, in that an initial word search phase is used to identify potential hits, followed by a more rigorous alignment phase.
+      <p>A key innovation introduced by the BLAST programs is to allow word hits to include mismatches: a word hit is kept if the subject-query word score is above a cutoff set by the parameter <strong>T</strong>.  This approach allows the word size (BLAST parameter <strong>W</strong>) to be kept high, thus increasing speed without sacrificing sensitivity.  When using BLAST, T is the critical parameter controlling the trade-off between speed and sensitivity; the BLAST parameter W is not often varied.
+      <p>After BLAST finds a word hit, it attempts to find a locally optimal alignment.  It is important to note that  BLAST uses a couple of different heuristics to produce its alignments, and as a result the alignments are approximations of true optimized local alignments (as produced by FASTA, for instance).  In the alignment phase of a BLAST search, a hit is kept if the alignment score is above a cutoff set by the BLAST parameter <strong>S</strong>.  In practice, it is more convenient to set the BLAST parameter <strong>E</strong>, the expectation cutoff.  This is because S depends on the search context.  Internally, BLAST converts E to an appropriate value of S for each alignment.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Do a BLASTP search using the default parameters.</td>
+  </tr>
+  <tr>
+    <td>We will be using the BLAST server at the NCBI: <a href="http://www.ncbi.nlm.nih.gov/blast/">http://www.ncbi.nlm.nih.gov/blast/</a>.  Our query sequence will again be the human neuropeptide Y receptor Y1 protein (sp:P25929).</td>
+  </tr>
+  <tr>
+    <td>Load NCBI's <a href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?CMD=Web&LAYOUT=TwoWindows&AUTO_FORMAT=Semiauto&ALIGNMENTS=50&ALIGNMENT_VIEW=Pairwise&CDD_SEARCH=on&CLIENT=web&COMPOSITION_BASED_STATISTICS=on&DATABASE=nr&DESCRIPTIONS=100&ENTREZ_QUERY=%28none%29&EXPECT=10&FILTER=L&FORMAT_OBJECT=Alignment&FORMAT_TYPE=HTML&I_THRESH=0.005&MATRIX_NAME=BLOSUM62&NCBI_GI=on&PAGE=Proteins&PROGRAM=blastp&SERVICE=plain&SET_DEFAULTS.x=41&SET_DEFAULTS.y=5&SHOW_OVERVIEW=on&END_OF_HTTPGET=Yes&SHOW_LINKOUT=yes&GET_SEQUENCE=yes">Protein-Protein BLAST Search Page</a>.  The top section of the search form looks like this:<br><img src="images/blast1.jpg"><br>Cut-and-paste the NPYRY1 sequence into the "Search" box, choose <span class="input">nr</span> from the "Choose database" drop-down menu.  The page contains two additional sections -- Options and Format -- for setting the BLAST parameters and formatting options for the output, respectively.  Leave all these values set to their defaults, and click the <span class="input">BLAST!</span> button to initiate the search.
+      <p>You will then see a "Formatting BLAST" page similar to this:<br><img src="images/blast2.jpg"><br>indicating that your job is has been submitted to the queue and giving an estimate of how long it will take to complete.  Click the <span class="input">Format!</span> button.  This will open a new window for the results.  If your job is not done, you will see a page similar to this:<br><img src="images/blast3.jpg"><br>which will automatically update until the job is done.  At that point you will see the results proper, including a graphical summary of the hits, a hit summary section and below that, the alignments.  Except for the graphical overview, the results closely resemble the text report produced by the BLAST programs run from a command-line.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Examine the BLAST search results.</td>
+  </tr>
+  <tr>
+    <td>The graphical overview provides a nice way to browse the results:<br><img src="images/blast4.jpg">
+      <p>Spend some time looking through the hit list and the alignments.  The hit list of your BLAST search will differ somewhat from what you obtained from the FASTA search in the previous section.  This is mostly due to the differences in the database searched.  Find BLAST hits near the top and bottom of the hit list that are also in your FASTA hit list, and compare the alignments.
+      <p><span class="class2"><a href="DatabaseSearchingAnswers.html#blast2a" target="_answers">Question:</a></span> What differences do you detect? 
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ex">The Different BLAST Programs</td>
+  </tr>
+  <tr>
+    <td>There are five different BLAST programs, designed with slightly different applications in mind, and they are summarized in the following table.
+      <table border=3 cellpadding=5>
+        <tr><th>Program</th><th>Query</th><th>Database</th><th>Comments</th></tr>
+        <tr><td>BLASTP</td><td>Protein</td><td>Protein</td><td>Useful for finding distant relationships.  Uses substitution matrices.</td></tr>
+        <tr><td>BLASTN</td><td>Nucleotide</td><td>Nucleotide</td><td>Useful for finding closely related sequences.</td></tr>
+        <tr><td>BLASTX</td><td>Nucleotide (translated)</td><td>Protein</td><td>Useful for analysis of new or low quality DNA sequences.</td></tr>
+        <tr><td>TBLASTN</td><td>Protein</td><td>Nucleotide (translated)</td><td>Useful for identifying coding regions in database sequences. Computationally intensive.</td></tr>
+        <tr><td>TBLASTX</td><td>Nucleotide (translated)</td><td>Nucleotide (translated)</td><td>Useful for EST analysis.  Very computationally intensive.</td></tr>
+      </table>
+      In this section we will compare the results of BLASTN and BLASTX searches to give you a feel for the difference between performing searches in "nucleotide space" versus in "protein space".  You will use an Expressed Sequence Tag (EST) sequence as the query.  ESTs are single read sequences of cDNA.  EST sequences are generally not of the highest quality, and almost always represent only a portion of the full-length transcripts from which they are derived.  The accession number for the query sequence is <strong>CF548194</strong> and you will need to retrieve the sequence from the <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Nucleotide">ENTREZ Nucleotide</a> database, as the EMBOSS databases do not contain EST sequences.</td>
+  </tr>
+  <tr>
+    <td class="step">1. Do the BLASTN search.</td>
+  </tr>
+  <tr>
+    <td>Go to NCBI's <a href="http://www.ncbi.nlm.nih.gov/BLAST/Blast.cgi?CMD=Web&LAYOUT=TwoWindows&AUTO_FORMAT=Semiauto&ALIGNMENTS=50&ALIGNMENT_VIEW=Pairwise&CLIENT=web&DATABASE=nr&DESCRIPTIONS=100&ENTREZ_QUERY=%28none%29&EXPECT=10&FILTER=L&FORMAT_OBJECT=Alignment&FORMAT_TYPE=HTML&NCBI_GI=on&PAGE=Nucleotides&PROGRAM=blastn&SERVICE=plain&SET_DEFAULTS.x=34&SET_DEFAULTS.y=8&SHOW_OVERVIEW=on&END_OF_HTTPGET=Yes&SHOW_LINKOUT=yes&GET_SEQUENCE=yes">Nucleotide-Nucleotide BLAST Search Page</a> and perform a BLASTN search of the <span class="input">nr</span> database using CF548194 as the query sequence.
+    </td>
+  </tr>
+  <tr>
+    <td class="step">2. Do the BLASTX search.</td>
+  </tr>
+  <tr>
+    <td>Go to NCBI's <a href="http://www.ncbi.nlm.nih.gov/BLAST/Blast.cgi?CMD=Web&LAYOUT=TwoWindows&AUTO_FORMAT=Semiauto&ALIGNMENTS=50&ALIGNMENT_VIEW=Pairwise&CLIENT=web&DATABASE=nr&DESCRIPTIONS=100&ENTREZ_QUERY=%28none%29&EXPECT=10&FILTER=L&FORMAT_OBJECT=Alignment&FORMAT_TYPE=HTML&GENETIC_CODE=1&NCBI_GI=on&PAGE=Translations&PROGRAM=blastx&SERVICE=plain&SET_DEFAULTS.x=37&SET_DEFAULTS.y=5&SHOW_OVERVIEW=on&UNGAPPED_ALIGNMENT=no&END_OF_HTTPGET=Yes&SHOW_LINKOUT=yes&GET_SEQUENCE=yes">Translating BLAST Query Page</a> and perform a BLASTX search of the <span class="input">nr</span> database using CF548194 as the query sequence.
+    </td>
+  </tr>
+    <tr>
+    <td class="step">3. Questions</td>
+  </tr>
+  <tr>
+    <td align="left">
+      <span class="class2"><a href="DatabaseSearchingAnswers.html#flavq1" target="_answers">Question:</a></span> Which search is gives more informative results regarding the function of the gene from which the EST sequence was derived? 
+      <p><span class="class2"><a href="DatabaseSearchingAnswers.html#flavq2" target="_answers">Question:</a></span> Assume you have identified a new human protein that confers susceptibility to Alzheimer's disease.  Which BLAST program and database combination would you use to identify cDNA clones for potential homologs in model organisms? 
+    </td>
+  </tr>
+</table>
+
+<hr>
+<div class="tinytext">Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>(smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu)</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 16:35:48 MST 2004 <!-- hhmts end -->
+<!-- $Id: DatabaseSearching.html,v 1.2 2004/11/11 23:46:25 smathias Exp $ -->
+</span>
+
+</body>
+</html>

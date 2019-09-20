@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/ksh_hist5.html -->
+
+<HEAD>
+<TITLE>Editing a previous command line</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Editing a previous command line</H1>
+
+<P>To edit a previous command line use the shell command <STRONG>fc</STRONG>
+(fix command) command.</P>
+
+<PRE WIDTH=80>   <STRONG>fc -e <EM>editor </EM>-lnr <EM>first last</EM></STRONG>
+</PRE>
+
+<P>This will open the commands from the history list as
+specified in the range first to last.  When you exit from
+the editor the command(s) will be run.</P>
+
+<P><A HREF="../environment/env3c.html">Setting the environment variable</A>
+<SAMP>FCEDIT</SAMP> to the editor that you prefer will save you specifying
+it on the command line. For example:</P>
+
+<PRE WIDTH=80>   <STRONG>FCEDIT=emacs; export FCEDIT</STRONG>
+</PRE>
+
+<UL>
+<LI><A HREF="ksh_hist5.1.html">Examples</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

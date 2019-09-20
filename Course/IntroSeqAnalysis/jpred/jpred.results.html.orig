@@ -1,0 +1,54 @@
+<html><head><link href='http://www.compbio.dundee.ac.uk/~www-jpred/jpred.css' rel='stylesheet' type='text/css'><title>Jpred job jp_1699919 completed</title></head>
+<body><div class='header'>
+<table class='header'>
+	<tr>
+		<td class='header' align='center'><a href='http://www.dundee.ac.uk'><img alt='[Dundee Uni]' src='http://www.compbio.dundee.ac.uk/~www-jpred/images/logo_white_small.gif' border='0'></a></td>
+		<td class='header' align='right'><a href='http://www.compbio.dundee.ac.uk/~www-jpred'><img alt='[Jpred]' src='http://www.compbio.dundee.ac.uk/~www-jpred/images/jpred.png' border='0'></a></td>
+	</tr>
+	<tr>
+		<td class='header' align='center'><h4><a href='/'>The Barton Group</a></h4></td>
+		<td class='header' align='right'><h3>A consensus method for protein secondary structure prediction</h3></td>
+	</tr>
+</table>
+<hr>
+</div>
+
+<p><img src='http://www.compbio.dundee.ac.uk/~www-jpred/images/bob_the_penguin.png', alt='[Bob]'>After much trouble and strife, Bob the scheduling pengiun has retrieved your results! Rejoice. For your pleasure the following viewing options are available.</p>
+<ol>
+
+<li><b>Jalview</b> A Java based alignment viewer/editor (requires a Java plugin in your browser), if you can't see the button then you can't use it. Or, if you're using IE then the network zone permissions thingy may not allow Java.
+	<applet codebase='http://www.compbio.dundee.ac.uk/~www-jpred/' code='jalview.ButtonAlignApplet.class' width='145' height='32'>
+		<param name='input' value='http://www.compbio.dundee.ac.uk/~www-jpred/results/jp_1699919/jp_1699919.seq.concise.fa'>
+		<param name='format' value='FASTA'>
+		<param name='type' value='URL'>
+		<param name='Consensus' value='1'>
+		<param name='groups' value='2'>
+		<param name='group1' value='1:PID:true:true:false'>
+		<param name='group2' value='2-0:SECONDARY:true:true:false'>
+		<param name='fontsize' value='15'>
+		<param name='srsServer' value='srs.ebi.ac.uk/srs6bin/cgi-bin'>
+	</applet>
+</li>
+
+<li>
+	If you have Jalview installed locally, you can also use this link <a href='http://www.compbio.dundee.ac.uk/~www-jpred/cgi-bin/launch_jalview?jp_1699919'>MIME-TYPE Jalview</a>.
+</li>
+<li>
+	Your results in HTML can be found <a href='jp_1699919.seq.html'>here</a>.
+</li>
+<li>
+	A simple display of your query sequence and the prediction can be found <a href='jp_1699919.seq.simple.html'>here</a>.
+</li>
+<li>
+	Postscript output can be found <a href='jp_1699919.seq.concise.ps'>here</a><!-- or PDF <a href='jp_1699919.seq.concise.pdf'>here</a>-->.
+</li>
+<li>
+	If you want to look at the raw data for your predictions they can be found <a href='./'>here</a>.
+</li>
+<li>
+	The profiles used can be found <a href='jp_1699919.seq.profile'>here</a>.
+</li>
+<li>
+	A gzipped TAR file of all Jpred's output can be downloaded <a href='jp_1699919.seq.tar.gz'>here</a>.
+</li>
+</ol><div class='footer'><hr><p><a href='http://www.compbio.dundee.ac.uk'>Barton group home page</a><br><i><a href='mailto:www-jpred@compbio.dundee.ac.uk'>www-jpred@compbio.dundee.ac.uk</a></i></p></div></body></html>

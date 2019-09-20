@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/ksh_hist3.1.html -->
+
+<HEAD>
+<TITLE>Examples of running a command from the history list</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of running a command from the history list</H1>
+
+<P>To run the previous command:</P>
+
+<PRE WIDTH=80>   <STRONG>pwd</STRONG>
+   /u/user/eucs/joe
+   <STRONG>r</STRONG>
+   pwd
+   /u/user/eucs/joe
+</PRE>
+
+<HR>
+
+<P>To re-run a command from the history list:</P>
+
+<PRE WIDTH=80>   <STRONG>r 15</STRONG>
+</PRE>
+
+<P>This re-runs command number fifteen from the history
+list.</P>
+
+<HR>
+
+<P>To re-run the most recent command that starts with
+a particular string:</P>
+
+<PRE WIDTH=80>   <STRONG>r grep</STRONG>
+   grep -n '[dD]on't' tasks \ less
+</PRE>
+
+<P>This re-runs the most recent command that starts with the
+string <SAMP>grep</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

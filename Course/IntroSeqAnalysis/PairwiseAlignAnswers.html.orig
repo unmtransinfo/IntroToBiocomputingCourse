@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Comparison - Pairwise Alignment</title>
+  <link rel=stylesheet href="/biomed505/Course/IntroSeqAnalysis/css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex"><a name="bkgd1"></a>Background Questions - Question 1</td>
+  </tr>
+  <tr>
+    <td>The fundamental difference between local and global alignment strategies is that <strong>glocal alignments consider the entire length of each sequence and do not penalize for unaligned terminal sequence, whereas local alignment algorithms need not include the entire length of the sequences.</strong>
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="bkgd2"></a>Background Questions - Question 2</td>
+  </tr>
+  <tr>
+    <td>The score is <strong>19.5</strong>, calculated as follows:
+      <pre>
+      26  *   1  =  27   points for matches
+       1  *  -2  =  -2   points for mismatches
+       1  *  -5  =  -5   points for opening a gap
+       1  * -0.5 =  -0.5  points for extending a gap
+                  ------
+                    19.5</pre>
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+   <tr>
+    <td class="ex"><a name="dot1"></a>Dot-Matrix Representations of Pairwise Alignments - Step 1</td>
+  </tr>
+  <tr>
+    <td>Decreasing the wordsize from 20 to 10 will result in <strong>much more random noise on the dotplot:</strong>.<br><img src="/biomed505/Course/IntroSeqAnalysis/images/dotpath2.jpg">
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="dot2"></a>Dot-Matrix Representations of Pairwise Alignments - Step 2</td>
+  </tr>
+  <tr>
+    <td>The two proteins have <strong>4 domains in common.</strong>  As a guide, the locations of the domains present in each protein are roughly indicated on the graphic below.  The domains shared between the two proteins are: <strong>E, F1, K and Catalytic</strong>.  Note that the TPA protein has two repeats of the K domain and the FA12 protein has two repeats of the E domain.  Such repeats appear as parallel diagonals in the dotplots.<br><img src="/biomed505/Course/IntroSeqAnalysis/images/dotmatcherdom.jpg">
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+   <tr>
+    <td class="ex"><a name="dna1"></a>Optimal Alignments of DNA Sequences - Step 1</td>
+  </tr>
+  <tr>
+    <td>Increasing the gap penalty parameters used by <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/needle.html" target="emboss-apps"><strong>needle</strong></a> from "-gapopen 20 -gapextend 2" to "-gapopen 20 -gapextend 2" will <strong>tighten up the terminal regions of the alignment.</strong>.  For example, compare this region from the original alignment:<pre><font size="2">NM_003140        251 ctttgcactgaaagctgtaactctaagtatcagtgtgaaacgggagaaaa    300
+                                                 ||            ||||    
+NM_011564          1                             at------------ggag----      6
+
+NM_003140        301 cagtaaaggcaacgtccaggatagagtgaagcgacccatgaacgcattca    350
+                            |||.|.|||            |||||.||||||||.|||||.|
+NM_011564          7 -------ggccatgtc------------aagcgccccatgaatgcattta     37</font></pre> to what you should have got using "-gapopen 20 -gapextend 2":<pre><font size="2">NM_003140        301 cagtaaaggcaacgtccaggatagagtgaagcgacccatgaacgcattca    350
+                                  .|..|||.....||.|||||.||||||||.|||||.|
+NM_011564          1              atggagggccatgtcaagcgccccatgaatgcattta     37</font></pre>
+      
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="dna2"></a>Optimal Alignments of DNA Sequences - Step 2</td>
+  </tr>
+  <tr>
+    <td>Increasing the gap extention penalty used by <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/water.html" target="emboss-apps"><strong>water</strong></a> from 0.5 to 1.0 will <strong>decrease the legnth of the alignment and increase the %Identity and %Similarity.</strong>.  Compare the statistics from the original alignment:<pre><font size="2"># Length: 659
+# Identity:     383/659 (58.1%)
+# Similarity:   383/659 (58.1%)
+# Gaps:         160/659 (24.3%)
+# Score: 1095.5</font></pre> to what you should have got using "-gapextend 1.0":<pre><font size="2"># Length: 623
+# Identity:     384/623 (61.6%)
+# Similarity:   384/623 (61.6%)
+# Gaps:         115/623 (18.5%)
+# Score: 1039.0</font></pre>  Note that the score goes down.  Why is this?
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+    <tr>
+    <td class="ex"><a name="prot1"></a>Optimal Alignments of Protein Sequences - Step 1</td>
+  </tr>
+  <tr>
+    <td>The default substitution matrix used by <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/needle.html" target="emboss-apps"><strong>needle</strong></a> when aligning protein sequences is <strong>EBLOSUM62</strong>.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="prot2a"></a>Optimal Alignments of Protein Sequences - Step 2</td>
+  </tr>
+  <tr>
+    <td>Changing the substitution matrix used by <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/water.html" target="emboss-apps"><strong>water</strong></a> from EBLOSUM62 to EBLOSUM85 <strong>decreases the legnth of the alignment, but improves its overall quality</strong>.  Compare the original alignment:<pre><font size="2">########################################
+# Program:  water
+# Rundate:  Fri Sep 03 10:06:45 2004
+# Align_format: srspair
+# Report_file: SRYprot.water
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NP_003131.1
+# 2: SRY_MOUSE
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 160
+# Identity:      74/160 (46.2%)
+# Similarity:   102/160 (63.8%)
+# Gaps:          17/160 (10.6%)
+# Score: 357.0
+# 
+#
+#=======================================
+
+NP_003131.1       56 VQDRVKRPMNAFIVWSRDQRRKMALENPRMRNSEISKQLGYQWKMLTEAE    105
+                     ::..||||||||:||||.:|.|:|.:||.|:|:|||||||.:||.|||||
+SRY_MOUSE          1 MEGHVKRPMNAFMVWSRGERHKLAQQNPSMQNTEISKQLGCRWKSLTEAE     50
+
+NP_003131.1      106 KWPFFQEAQKLQAMHREKYPNYKYRPRRKAKMLPKNCSLLPADPASVLCS    155
+                     |.|||||||:|:.:||||||||||:|.|:||:..::..|.||..::.|.:
+SRY_MOUSE         51 KRPFFQEAQRLKILHREKYPNYKYQPHRRAKVSQRSGILQPAVASTKLYN    100
+
+NP_003131.1      156 EVQLDNR----LYRDDCTKATHSRMEHQ-----------LGHLPPINAAS    190
+                     .:|.|..    .||.|.::|.|...::|           .|||.  ....
+SRY_MOUSE        101 LLQWDRNPHAITYRQDWSRAAHLYSKNQQSFYWQPVDIPTGHLQ--QQQQ    148
+
+NP_003131.1      191 SPQQRDRYSH    200
+                     ..||:..::|
+SRY_MOUSE        149 QQQQQQFHNH    158
+
+
+#---------------------------------------
+#---------------------------------------</font></pre> to what you should have got using EBLOSUM85:<pre><font size="2">########################################
+# Program:  water
+# Rundate:  Tue Sep 07 11:34:40 2004
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NP_003131.1
+# 2: SRY_MOUSE
+# Matrix: EBLOSUM85
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 118
+# Identity:      67/118 (56.8%)
+# Similarity:    84/118 (71.2%)
+# Gaps:           4/118 ( 3.4%)
+# Score: 374.5
+# 
+#
+#=======================================
+
+NP_003131.1       60 VKRPMNAFIVWSRDQRRKMALENPRMRNSEISKQLGYQWKMLTEAEKWPF    109
+                     ||||||||:||||.:|.|:|.:||.|:|:|||||||.:||.||||||.||
+SRY_MOUSE          5 VKRPMNAFMVWSRGERHKLAQQNPSMQNTEISKQLGCRWKSLTEAEKRPF     54
+
+NP_003131.1      110 FQEAQKLQAMHREKYPNYKYRPRRKAKMLPKNCSLLPADPASVLCSEVQL    159
+                     |||||:|:.:||||||||||:|.|:||...:...|.||..::.|....|.
+SRY_MOUSE         55 FQEAQRLKILHREKYPNYKYQPHRRAKVSQRSGILQPAVASTKLYNLLQW    104
+
+NP_003131.1      160 DNR----LYRDDCTKATH    173
+                     |..    .||.|.::|.|
+SRY_MOUSE        105 DRNPHAITYRQDWSRAAH    122
+
+
+#---------------------------------------
+#---------------------------------------</font></pre>  Note that the score goes down.  Why is this?
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="prot2b"></a>Optimal Alignments of Protein Sequences - Step 2</td>
+  </tr>
+  <tr>
+    <td>Changing the substitution matrix used by <a href="http://poblano.health.unm.edu/Software/EMBOSS/Apps/water.html" target="emboss-apps"><strong>water</strong></a> from EBLOSUM62 to EBLOSUM40 <strong> has very little effect on the actual alignment, although the score does go up considerably</strong>.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+  
+</table>
+</span>
+
+<hr>
+<div class="tinytext">
+Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 10:31:16 MST 2004 <!-- hhmts end -->
+<!-- $Id: PairwiseAlignAnswers.html,v 1.2 2004/11/11 23:46:25 smathias Exp $ -->
+
+</body>
+</html>

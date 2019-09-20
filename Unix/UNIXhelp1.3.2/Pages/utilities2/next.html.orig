@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- utilities2/next.html -->
+
+<HEAD>
+<TITLE>Unpacking a compressed tar file</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Unpacking a compressed tar file</H1>
+
+<P>To unpack a compressed tarfile use the 
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?compress">zcat</A>
+command. This leaves the compressed .Z tarfile intact.  For
+example:</P>
+
+<PRE WIDTH=80>   <STRONG>zcat project.tar.Z | tar xvf -</STRONG>
+</PRE>
+
+<P>The <STRONG>zcat</STRONG> command recreates the uncompressed tarfile,
+which is then <A HREF="../commanz/cmd4.html">piped</A> into the 
+<STRONG>tar</STRONG> command to extract the
+files.  Because the name of the tarfile is given as <STRONG>-</STRONG>, tar
+reads from <A HREF="../glossary/gs.html#stdin">standard input</A>,
+the uncompressed tarfile!</P>
+
+<P>You can also unpack one or more files without
+uncompressing the tarfile.  This is useful if you want to
+extract one or more files from the tar archive
+but do not have enough diskspace to uncompress the
+complete tarfile. For example:</P>
+
+<PRE WIDTH=80>   <STRONG>zcat project.tar.Z | tar xvf - project/main.c</STRONG>
+</PRE>
+
+<P>This extracts the file <SAMP>main.c</SAMP> from the tar archive
+<SAMP>project.tar.Z</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

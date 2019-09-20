@@ -1,0 +1,757 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="pubchem%20search_files/filelist.xml">
+<link rel=Edit-Time-Data href="pubchem%20search_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Nobody</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Dan Fara</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>261</o:TotalTime>
+  <o:Created>2008-01-07T07:08:00Z</o:Created>
+  <o:LastSaved>2008-01-07T07:08:00Z</o:LastSaved>
+  <o:Pages>7</o:Pages>
+  <o:Words>924</o:Words>
+  <o:Characters>5268</o:Characters>
+  <o:Company>UNM</o:Company>
+  <o:Lines>43</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6180</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="pubchem%20search_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="pubchem%20search_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="Normal (Web)"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("pubchem%20search_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("pubchem%20search_files/header.htm") fcs;
+	mso-endnote-separator:url("pubchem%20search_files/header.htm") es;
+	mso-endnote-continuation-separator:url("pubchem%20search_files/header.htm") ecs;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-even-footer:url("pubchem%20search_files/header.htm") ef1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:39328804;
+	mso-list-type:hybrid;
+	mso-list-template-ids:683186076 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:93138502;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1071337330 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:696389661;
+	mso-list-template-ids:-1753184890;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:1185706067;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1978420598 67698689 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1972785094;
+	mso-list-template-ids:-1452758164;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal style='line-height:115%'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='font-size:16.0pt;
+line-height:115%'>Section III</span></i></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:16.0pt;line-height:115%'><span style='mso-tab-count:
+1'> </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:115%'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:115%'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;line-height:115%'>Cheminformatics -
+Basics: </span></b><i style='mso-bidi-font-style:normal'><span
+style='font-size:14.0pt;line-height:115%'>Searching for Chemicals on the
+Internet (PubChem, eMolecules)<span style='mso-bidi-font-weight:bold'><o:p></o:p></span></span></i></p>
+
+<p class=MsoNormal style='line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:115%'><i style='mso-bidi-font-style:normal'>Oleg
+Ursu, Dan C. Fara and Tudor I. Oprea<o:p></o:p></i></p>
+
+<p class=MsoNormal style='line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><u>Objective<o:p></o:p></u></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Introduction to
+mining PubChem database for chemicals structures and biological activities
+associated with the chemical structures.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>1. PubChem</b></p>
+
+<p class=MsoNormal style='text-align:justify'><a
+href="http://pubchem.ncbi.nlm.nih.gov/">PubChem</a> provides information on the
+biological activities of small molecules. It is a component of NIH's <a
+href="http://www.mli.nih.gov/">Molecular Libraries</a> <a
+href="http://nihroadmap.nih.gov/">Roadmap Initiative</a>. PubChem includes
+substance information,&nbsp;compound structures, and bioactivity data in three
+primary databases, <a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pcsubstance">PCSubstance</a>,
+<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pccompound">PCCompound</a>,
+and <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pcassay">PCBioAssay</a>,
+respectively. <o:p></o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=600
+ style='width:6.25in;background:#EEF7F7;border-collapse:collapse;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0in 0in 0in 0in' bordercolorlight="#D9E3EE"
+ bordercolordark="#666666">
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="100%" style='width:100.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-left:.5in;text-align:justify'><o:p>&nbsp;</o:p></p>
+  <ul type=disc>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt;
+       text-align:justify;mso-list:l4 level1 lfo2;tab-stops:list .5in'>PCSubstance
+       contains more than 38 million records. You can <a
+       href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=pcsubstance&amp;term=all%5Bfilt%5D">check
+       the count</a> of substance records as of today.</li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt;
+       text-align:justify;mso-list:l4 level1 lfo2;tab-stops:list .5in'>PCCompound
+       contains more than 18 million unique structures. You can <a
+       href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=pccompound&amp;term=all%5Bfilt%5D">check
+       the count</a> of compound records as of today.</li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;text-align:justify;mso-list:l4 level1 lfo2;tab-stops:list .5in'>PCBioAssay
+       contains more than 680 bioassays. Each bioassay contains a various
+       number of data points. You can <a
+       href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=pcassay&amp;term=all%5Bfilt%5D">check
+       the count</a> of bioassay records as of today.</li>
+  </ul>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'>The
+Substance/Compound database, where possible, provides links to bioassay description,
+literature, references, and assay data points. The BioAssay database also
+includes links back to the Substance/Compound database. PubChem is integrated
+with <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi">Entrez</a>, NCBI's
+primary search engine, and also provides compound neighboring,
+sub/superstructure, similarity structure, bioactivity data, and other searching
+features. <span style='mso-tab-count:1'>          </span>PubChem contains <a
+href="http://pubchem.ncbi.nlm.nih.gov/sources/sources.cgi?mode=substanceinfo">substance</a>
+and <a href="http://pubchem.ncbi.nlm.nih.gov/sources/sources.cgi?mode=assayinfo">bioassay</a>
+information from a multitude of depositors. You can check the PubChem <a
+href="http://pubchem.ncbi.nlm.nih.gov/sources/">data source status</a> as of
+today.&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><u>How to</u></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l1 level1 lfo3'>Go
+     to <a href="http://pubchem.ncbi.nlm.nih.gov/">http://pubchem.ncbi.nlm.nih.gov/</a>
+     </li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l1 level1 lfo3'>Under
+     PubChem Text Search section select PubChem Compound</li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l1 level1 lfo3'>Type
+     beta-estradiol and click Go</li>
+</ul>
+
+<p class=MsoNormal align=center style='margin-right:-45.0pt;text-align:center;
+line-height:115%'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:522pt;
+ height:327pt'>
+ <v:imagedata src="pubchem%20search_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=696 height=436
+src="pubchem%20search_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal align=center style='margin-right:-45.0pt;text-align:center;
+line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo4'>Click
+     on the first CID (compound ID link <a
+     href="http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=5757">5757</a>)</li>
+</ul>
+
+<p class=MsoNormal align=center style='margin-left:.5in;text-align:center;
+line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='margin-right:-45.0pt;text-align:center;
+line-height:115%'><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:502.5pt;height:314.25pt'>
+ <v:imagedata src="pubchem%20search_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=670 height=419
+src="pubchem%20search_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo4'>The
+     top of page opened contains the chemical structure of the Estradiol,
+     Bioactivity Summary (assays in which the Estradiol was tested, found
+     active, inactive and inconclusive), Protein Structures complexes with
+     Estradiol, Substances associated with the chemical structure of Estradiol,
+     Related Compounds and Similar compounds links to all tautomers, isomers,
+     and similar chemical structures deposited in PubChem. For example,
+     clicking on <a
+     href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?dopt=pccompound_pccompound&amp;db=pccompound&amp;cmd=Display&amp;from_uid=5757">Similar
+     Compounds</a> will return a list of steroid like structures deposited in
+     PubChem.</li>
+</ul>
+
+<p class=MsoNormal align=center style='margin-left:.5in;text-align:center;
+line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='margin-right:-.5in;text-align:center;
+line-height:115%'><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:530.25pt;height:331.5pt'>
+ <v:imagedata src="pubchem%20search_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=707 height=442
+src="pubchem%20search_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=MsoNormal align=center style='margin-left:.5in;text-align:center;
+line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>This list can be
+downloaded (select PubChem Download from display combo box) as SDF file which
+contains all the identification data as well as some chemical properties of the
+structures. It is also possible to take a quick look at all assays in which all
+of these structures were tested by selecting PubChemBioActivity Summary (see
+below).</p>
+
+<p class=MsoNormal align=center style='margin-left:.5in;text-align:center;
+line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='margin-right:-63.0pt;text-align:center;
+line-height:115%'><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:502.5pt;height:314.25pt'>
+ <v:imagedata src="pubchem%20search_files/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=670 height=419
+src="pubchem%20search_files/image008.jpg" v:shapes="_x0000_i1028"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;line-height:115%'><span
+style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>The page
+displays all assay in which chemical compounds similar to Estradiol were tested;
+assays in which any of the compounds were found to be active are listed first.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo4'>Select
+     only the assay in which at least one compound is active and then click
+     Structure Activity Analysis. The page displayed contains summary
+     information only for compounds and assays but one can easily notice that
+     there are 4 compounds CIDs (66413, 5468270, 5468334, 388008) found active
+     in multiple assays. The Compound Cluster tree displayed in the left area
+     of the page is a useful tool for analyzing structure activity
+     relationships. Click on the tree node of interest to display the compounds
+     in a new web page. </li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='margin-right:-49.5pt;text-align:center;
+line-height:115%'><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75"
+ style='width:431.25pt;height:20.25pt'>
+ <v:imagedata src="pubchem%20search_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=575 height=27
+src="pubchem%20search_files/image010.jpg" v:shapes="_x0000_i1029"><![endif]></p>
+
+<p class=MsoNormal align=center style='margin-right:-49.5pt;text-align:center;
+line-height:115%'><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:408.75pt;height:333pt'>
+ <v:imagedata src="pubchem%20search_files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=545 height=444
+src="pubchem%20search_files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>All compounds in
+the cluster have a hydrophobic substituent at aromatic ring, 3 compounds are
+active in 2 assays, and 2 compounds are active in 4 assays.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo4'>Return
+     to the page were Estradiol is displayed (CID 5757) scroll to the bottom of
+     the page and click Journal Publisher links.</li>
+</ul>
+
+<p class=MsoNormal align=center style='margin-left:.5in;text-align:center;
+line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='margin-left:9.0pt;text-align:center;
+line-height:115%'><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:431.25pt;height:156pt'>
+ <v:imagedata src="pubchem%20search_files/image013.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=575 height=208
+src="pubchem%20search_files/image014.jpg" v:shapes="_x0000_i1031"><![endif]></p>
+
+<p class=MsoNormal align=center style='margin-left:.5in;text-align:center;
+line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='margin-left:.5in;text-align:center;
+line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='margin-right:-45.0pt;text-align:center;
+line-height:115%'><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+ style='width:462.75pt;height:288.75pt'>
+ <v:imagedata src="pubchem%20search_files/image015.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=617 height=385
+src="pubchem%20search_files/image016.jpg" v:shapes="_x0000_i1032"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo4'>Click
+     on the last <a href="http://dx.doi.org/10.1038/nchembio775">link</a> to
+     open the paper published in Nature Chemical Biology.</li>
+</ul>
+
+<p class=MsoNormal align=center style='margin-left:.5in;text-align:center;
+line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:-27.0pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center;
+text-indent:-1.0in;line-height:115%'><!--[if gte vml 1]><v:shape id="_x0000_i1033"
+ type="#_x0000_t75" style='width:462.75pt;height:288.75pt'>
+ <v:imagedata src="pubchem%20search_files/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=617 height=385
+src="pubchem%20search_files/image018.jpg" v:shapes="_x0000_i1033"><![endif]></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>The paper
+describes how virtual screening can be applied to discover new compounds that
+bind selectively to GPR30.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><b
+style='mso-bidi-font-weight:normal'>2. eMolecules</b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><a
+href="http://www.emolecules.com/">eMolecules</a> is one of the world’s most
+comprehensive openly accessible search engine for chemical structures.</p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo5;tab-stops:list .5in'>The database contains around
+     8 million unique chemical structures from 19 million sources </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo5;tab-stops:list .5in'>It allows unparalleled search
+     speed—typically just seconds. </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo5;tab-stops:list .5in'>The search can be done by
+     drawing chemical structures or substructures using common industry tools —
+     ISIS/Draw, ChemDraw, ChemSketch and JME. </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo5;tab-stops:list .5in'>It has more than 4 million
+     commercially available screening compounds and hundreds of thousands of
+     building blocks and intermediates. </li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo5;tab-stops:list .5in'>It includes reference links
+     to many prominent sources of public data for spectra, physical properties
+     and biological data, including NIST WebBook, National Cancer Institute,
+     DrugBank and PubChem. </li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>The basic search
+can be done by (i) drawing chemical structures, and (ii) text, as can be seen
+below.</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:539.25pt;height:339pt'>
+ <v:imagedata src="pubchem%20search_files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=719 height=452
+src="pubchem%20search_files/image020.jpg" v:shapes="_x0000_i1034"><![endif]></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo4'>Search
+     the eMolecules database for beta estradiol </li>
+ <li class=MsoNormal style='text-align:justify;line-height:115%;mso-list:l0 level1 lfo4'>Click
+     on the PubChem Supplier’s ID (10468968)</li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'>Are you re-directed
+to the same compound as before (CID 5757)? What is the difference between these
+two compounds?</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- alphabetical/ml.html -->
+
+<HEAD>
+<TITLE>Index of manual pages: L</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<P>[
+<A HREF="ma.html">A</A>
+|
+<A HREF="mb.html">B</A>
+|
+<A HREF="mc.html">C</A>
+|
+<A HREF="md.html">D</A>
+|
+<A HREF="me.html">E</A>
+|
+<A HREF="mf.html">F</A>
+|
+<A HREF="mg.html">G</A>
+|
+<A HREF="mh.html">H</A>
+|
+<A HREF="mi.html">I</A>
+|
+<A HREF="mj.html">J</A>
+|
+<A HREF="mk.html">K</A>
+|
+<A HREF="ml.html">L</A>
+|
+<A HREF="mm.html">M</A>
+|
+<A HREF="mn.html">N</A>
+|
+<A HREF="mo.html">O</A>
+|
+<A HREF="mp.html">P</A>
+|
+<A HREF="mq.html">Q</A>
+|
+<A HREF="mr.html">R</A>
+|
+<A HREF="ms.html">S</A>
+|
+<A HREF="mt.html">T</A>
+|
+<A HREF="mu.html">U</A>
+|
+<A HREF="mv.html">V</A>
+|
+<A HREF="mw.html">W</A>
+|
+<A HREF="mx.html">X</A>
+|
+<A HREF="my.html">Y</A>
+|
+<A HREF="mz.html">Z</A>
+]</P>
+
+<P>Manual pages are often copyrighted material. You may not have  
+permission to view those held on this machine. If these links return an 
+error message,
+<A HREF="../manual/man_org4.html">view the page locally</A> instead.</P>
+
+<H1>L</H1>
+
+<UL>
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?last">last</A>
+- indicate last logins by user or terminal</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?ld">ld</A>, 
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?ld">ld.so</A>
+- link editor, dynamic link editor</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?leave">leave</A>
+- remind you when you have to leave</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?less">less</A>
+- opposite of <A HREF="mm.html">more</A></LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?lex">lex</A>
+- lexical analysis program generator</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?lint">lint</A>
+- a C program verifier
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?ln">ln</A>
+- make hard or symbolic links to files</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?login">login</A>
+- log in to the system</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?look">look</A>
+- find words in the system dictionary or lines in a sorted list</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?lookbib">lookbib</A>
+- find references in a bibliographic database</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?lorder">lorder</A>
+- find an ordering relation for an object library</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?lp">lp</A>, 
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?lp">cancel</A>
+- send/cancel requests to a printer</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?lpq">lpq</A>
+- display the queue of printer jobs</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?lpr">lpr</A>
+- send a job to the printer</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?lprm">lprm</A>
+- remove jobs from the printer queue</LI>
+
+<LI><A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/man-cgi?ls">ls</A>
+- list the contents of a directory
+
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

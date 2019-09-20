@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Sequence Comparison - Database Similarity Searching</title>
+  <link rel=stylesheet href="/biomed505/Course/IntroSeqAnalysis/css/exercise.css" type="text/css">
+</head>
+
+<body>
+
+<span class="class1">
+<table border=0 cellpadding=5 cellspacing=1>
+  <tr>
+    <td class="ex"><a name="bkgd0"></a>Background Questions - Question 0</td>
+  </tr>
+  <tr>
+    <td>BLOSUM62 is used as the default matrix for BLAST because <strong>...</strong>
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+  
+  <tr>
+    <td class="ex"><a name="bkgd1"></a>Background Questions - Question 1</td>
+  </tr>
+  <tr>
+    <td><strong>PAM100</strong> would be best for very similar sequences, and <strong>PAM480</strong> would be best for divergent sequences.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="bkgd2"></a>Background Questions - Question 2</td>
+  </tr>
+  <tr>
+    <td>To compare a nucleotide (translated) sequence to a protein database, you would use the <strong>BLASTX</strong> program.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="bkgd3"></a>Background Questions - Question 3</td>
+  </tr>
+  <tr>
+    <td>A database similarity search hit with a reported E-value of 0.0 should be considered <strong>highly significant</strong>.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="fasta2a"></a>FASTA - Step 2</td>
+  </tr>
+  <tr>
+    <td>The first real hit is: <strong>Q9GK75; Rhesus macaque Neuropeptide Y receptor Y1</strong>.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="fasta2b"></a>FASTA - Step 2</td>
+  </tr>
+  <tr>
+    <td>The first non-mammailian hit is:<strong>Q8QFM1; Chicken Neuropeptide Y receptor Y1</strong>.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="fasta2c"></a>FASTA - Step 2</td>
+  </tr>
+  <tr>
+    <td>The hit with the shortest Smith-Waterman alignment is: <strong>Q28602; Sheep Neuropeptide Y receptor type 1 (NPY1-R) (Fragment).</strong>.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="fasta2c"></a>FASTA - Step 2</td>
+  </tr>
+  <tr>
+    <td>The hit with the shortest Smith-Waterman alignment is: <strong>Q28602; Sheep Neuropeptide Y receptor type 1 (NPY1-R) (Fragment).</strong>  Its position in the hit list is <strong>#33</strong>.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="fasta2d"></a>FASTA - Step 2</td>
+  </tr>
+  <tr>
+    <td><strong>No.</strong>  If you look carefully at the Q28602 alignment, you will see that the sequence is much more similar (96.552% identity in 116 aa overlap) to the query sequence than those around it in the hit list.  What is going on here is that Q28602 is a partial (incomplete) sequence.  If the full-length sheep Neuropeptide Y receptor type 1 (NPY1-R sequence were in the database, the hit would be much further up the list.
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="blast2a"></a>BLAST - Step 2</td>
+  </tr>
+  <tr>
+    <td>One thing you should notice right away is that the query sequence in the BLAST alignments has two streches of Xs that are not present in the input sequence.  This is because a pre-filter was applied to the query sequence prior to doing the databse search.  In the case, the default filter for low complexity sequence was applied.  Regions of low complexity, for example stretches rich in a single amino acid residue, will result in many spurious database hits and it is usually advantageous to mask these regions.
+      <p>Another key point to note is that the alignments produced by FASTA will generally be longer and have higher %Identity and %Similarities than those produced by BLAST.  Consider the alignments produced by the two programs to the Chicken Neuropeptide Y receptor Y1:<br>
+      <strong>FASTA:</strong><pre><font size="2">>>UNIPROT:Q8QFM1 Q8QFM1 Neuropeptide Y receptor Y1.       (385 aa)
+ initn: 2229 init1: 1697 opt: 2231  Z-score: 2668.2  bits: 502.5 E(): 1.3e-140
+Smith-Waterman score: 2231;  83.594% identity (84.031% ungapped) in 384 aa overlap (1-382:1-384)
+
+               10        20        30        40        50        60
+NPYRY1 MNSTLFSQVENHSVHSNFSEKNAQLLAFENDDCHLPLAMIFTLALAYGAVIILGVSGNLA
+       ::..... . :.: : ::::::.:.: ::..:::.::::.::::::::.:::::::::::
+UNIPRO MNASVLDPLGNNSSHLNFSEKNSQILQFEDEDCHVPLAMVFTLALAYGTVIILGVSGNLA
+               10        20        30        40        50        60
+
+               70        80        90       100       110       120
+NPYRY1 LIIIILKQKEMRNVTNILIVNLSFSDLLVAIMCLPFTFVYTLMDHWVFGEAMCKLNPFVQ
+       ::.::::::::::::::::::::::::::.::::::::::::::::.:::::::::::::
+UNIPRO LIVIILKQKEMRNVTNILIVNLSFSDLLVTIMCLPFTFVYTLMDHWIFGEAMCKLNPFVQ
+               70        80        90       100       110       120
+
+              130       140       150       160       170       180
+NPYRY1 CVSITVSIFSLVLIAVERHQLIINPRGWRPNNRHAYVGIAVIWVLAVASSLPFLIYQVMT
+       :.:::::.:::::::.::::::::::::::::::::.:::.:::::.:::::::::.:.:
+UNIPRO CASITVSVFSLVLIAIERHQLIINPRGWRPNNRHAYMGIAAIWVLATASSLPFLIYHVLT
+              130       140       150       160       170       180
+
+              190       200       210       220       230       240
+NPYRY1 DEPFQNVTLDAYKDKYVCFDQFPSDSHRLSYTTLLLVLQYFGPLCFIFICYFKIYIRLKR
+       ::::.:.:.: :::::::.: :: :. :::::: :::.:::::::::::::.:::.:::.
+UNIPRO DEPFRNITFDEYKDKYVCLDLFPLDTARLSYTTTLLVIQYFGPLCFIFICYLKIYFRLKK
+              190       200       210       220       230       240
+
+              250       260       270       280       290          
+NPYRY1 RNNMMDKMRDNKYRSSETKRINIMLLSIVVAFAVCWLPLTIFNTVFDWNHQI--IATCNH
+       :.::::::::.::::::::::::::.::::::::::::::::: ::::::.:  .:::.:
+UNIPRO RSNMMDKMRDSKYRSSETKRINIMLISIVVAFAVCWLPLTIFNIVFDWNHEILPVATCSH
+              250       260       270       280       290       300
+
+      300       310       320       330       340       350        
+NPYRY1 NLLFLLCHLTAMISTCVNPIFYGFLNKNFQRDLQFFFNFCDFRSRDDDYETIAMSTMHTD
+       :::::.:::::::::::::::::::::::::::::.:.:: ::::..:::::::::::::
+UNIPRO NLLFLICHLTAMISTCVNPIFYGFLNKNFQRDLQFLFHFCHFRSREEDYETIAMSTMHTD
+              310       320       330       340       350       360
+
+      360       370       380    
+NPYRY1 VSKTSLKQASPVAFKKINNNDDNEKI
+       ::::::::::::::::::..::..  
+UNIPRO VSKTSLKQASPVAFKKINSDDDDKI 
+              370       380      </font></pre>
+      <strong>BLAST:</strong><pre><font size="2">>gi|19548986|gb|AAK83557.1|   neuropeptide Y receptor Y1 [Gallus gallus]
+          Length = 385
+
+ Score =  591 bits (1524), Expect = e-168
+ Identities = 296/377 (78%), Positives = 326/377 (86%), Gaps = 2/377 (0%)
+
+Query: 1   MNSTLFSQVENHSVHSNFSEKNAQLLAFENDDCHLPLAMIFTLALAYGAVIILGVSGNLA 60
+           MN+++   + N+S H NFSEKN+Q+L FE++DCH+PLAM+FTLALAYG VIILGVSGNLA
+Sbjct: 1   MNASVLDPLGNNSSHLNFSEKNSQILQFEDEDCHVPLAMVFTLALAYGTVIILGVSGNLA 60
+
+Query: 61  LIIIILKQKEMRNVTNILIVNLSFSDLLVAIMCLPFTFVYTLMDHWVFGEAMCKLNPFVQ 120
+           LI+IILKQKEMRNVTNILIVNLSFSDLLV IMCLPFTFVYTLMDHW+FGEAMCKLNPFVQ
+Sbjct: 61  LIVIILKQKEMRNVTNILIVNLSFSDLLVTIMCLPFTFVYTLMDHWIFGEAMCKLNPFVQ 120
+
+Query: 121 CVSITVSIFSLVLIAVERHQLIINPRGWRPNNRHAYVGIAVIWVLAVASSLPFLIYQVMT 180
+           C SITVS+FSLVLIA+ERHQLIINPRGWRPNNRHAY+GIA IWVLA ASSLPFLIY V+T
+Sbjct: 121 CASITVSVFSLVLIAIERHQLIINPRGWRPNNRHAYMGIAAIWVLATASSLPFLIYHVLT 180
+
+Query: 181 DEPFQNVTLDAYKDKYVCFDQFPSDSHRLSYTTLLLVLQYFGPLXXXXXXXXXXXXRLKR 240
+           DEPF+N+T D YKDKYVC D FP D+ RLSYTT LLV+QYFGPL            RLK+
+Sbjct: 181 DEPFRNITFDEYKDKYVCLDLFPLDTARLSYTTTLLVIQYFGPLCFIFICYLKIYFRLKK 240
+
+Query: 241 RNNMMDKMRDNKYRSSETKRINIMLLSIVVAFAVCWLPLTIFNTVFDWNHQI--IAXXXX 298
+           R+NMMDKMRD+KYRSSETKRINIML+SIVVAFAVCWLPLTIFN VFDWNH+I  +A    
+Sbjct: 241 RSNMMDKMRDSKYRSSETKRINIMLISIVVAFAVCWLPLTIFNIVFDWNHEILPVATCSH 300
+
+Query: 299 XXXXXXXXXXAMISTCVNPIFYGFLNKNFQRDLQFFFNFCDFRSRDDDYETIAMSTMHTD 358
+                     AMISTCVNPIFYGFLNKNFQRDLQF F+FC FRSR++DYETIAMSTMHTD
+Sbjct: 301 NLLFLICHLTAMISTCVNPIFYGFLNKNFQRDLQFLFHFCHFRSREEDYETIAMSTMHTD 360
+
+Query: 359 VSKTSLKQASPVAFKKI 375
+           VSKTSLKQASPVAFKKI
+Sbjct: 361 VSKTSLKQASPVAFKKI 377</font></pre>
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="flavq1"></a>The Different BLAST Programs - Questions</td>
+  </tr>
+  <tr>
+    <td>The <strong>BLASTX</strong> results are vastly more informative in terms of identifying the function of the gene from which ESTs are derived.  Consider the top hits from each search:<br>
+      <strong>BLASTN:</strong><pre><font size="2">>gi|50960474|gb|BC075053.2|   Homo sapiens neuropeptide Y receptor Y2, mRNA (cDNA clone
+           MGC:104126 IMAGE:30915580), complete cds
+          Length = 1209
+
+ Score = 48.1 bits (24), Expect = 0.036
+ Identities = 39/44 (88%)
+ Strand = Plus / Plus
+
+                                                       
+Query: 491 agtgccctgctggccagtcctttggcaatcttccaggagtattc 534
+           |||||||||||||| |||||  |||| ||||||| |||||||||
+Sbjct: 568 agtgccctgctggcaagtcccctggccatcttccgggagtattc 611
+
+
+
+
+ Score = 40.1 bits (20), Expect = 8.9
+ Identities = 23/24 (95%)
+ Strand = Plus / Plus
+
+                                   
+Query: 113 caagttgttctcatcttggcctac 136
+           |||||||||||||| |||||||||
+Sbjct: 190 caagttgttctcatattggcctac 213</font></pre>
+      <strong>BLASTX:</strong><pre><font size="2">>gi|13027422|ref|NP_076458.1|   neuropeptide Y/peptide YY-Y2 receptor [Rattus norvegicus]
+ gi|10281748|gb|AAF89094.1|   neuropeptide Y/peptide YY-Y2 receptor [Rattus norvegicus]
+          Length = 381
+
+ Score =  260 bits (665), Expect = 3e-68
+ Identities = 141/210 (67%), Positives = 162/210 (77%), Gaps = 3/210 (1%)
+ Frame = +2
+
+Query: 5   DIKTELNTWYYAAGLTTPYNELTI---PELIDITKLLSVQVVLILAYSSIILLGVIGNSL 175
+           ++K EL    Y +G TTP  EL     PELID TKL+ VQVVLILAY SIILLGV+GNSL
+Sbjct: 15  EVKVEL----YGSGPTTPRGELPPDPEPELIDSTKLVEVQVVLILAYCSIILLGVVGNSL 70
+
+Query: 176 VIYVVIKFKTMRTVTNFFIVNLAVSDLMVNTLCLPFTLVYTLLDDWKFGTVLCHLVTYSQ 355
+           VI+VVIKFK+MRTVTNFFI NLAV+DL+VNTLCLPFTL YTL+ +WK G VLCHLV Y+Q
+Sbjct: 71  VIHVVIKFKSMRTVTNFFIANLAVADLLVNTLCLPFTLTYTLMGEWKMGPVLCHLVPYAQ 130
+
+Query: 356 GLAVQVSTVTLMVIALDRHRCIVYHLESKISTNICFMIIGITWVCSALLASPLAIFQEYS 535
+           GLAVQVST+TL VIALDRHRCIVYHLESKIS  I F+IIG+ W  SALLASPLAIF+EYS
+Sbjct: 131 GLAVQVSTITLTVIALDRHRCIVYHLESKISKQISFLIIGLAWGVSALLASPLAIFREYS 190
+
+Query: 536 VIVISK*FPNSSMPRKIWASRGILIYGDLF 625
+           +I I   F   +   K W      +YG ++
+Sbjct: 191 LIEIIPDFEIVACTEK-WPGEEKSVYGTVY 219</font></pre>
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+
+  <tr>
+    <td class="ex"><a name="flavq2"></a>The Different BLAST Programs - Questions</td>
+  </tr>
+  <tr>
+    <td>The best approach to this problem would be to perform a <strong>TBLASTX search of the EST databse.</strong>
+    </td>
+  </tr>
+
+  <tr><td>&nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</td></tr>
+  
+</table>
+</span>
+
+<hr>
+<div class="tinytext">
+Steve Mathias <a href="mailto:smathias@poblano.health.unm.edu"><strong>smathias</strong> at <strong>poblano</strong> dot <strong>health</strong> dot <strong>unm</strong> dot <strong>edu</strong></a></div>
+<!-- hhmts start --> Last modified: Thu Nov 11 11:00:15 MST 2004 <!-- hhmts end -->
+<!-- $Id: DatabaseSearchingAnswers.html,v 1.2 2004/11/11 23:46:25 smathias Exp $ -->
+
+</body>
+</html>

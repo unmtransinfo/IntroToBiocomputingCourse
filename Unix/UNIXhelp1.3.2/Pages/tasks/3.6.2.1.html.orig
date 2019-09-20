@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/3.6.2.1.html -->
+
+<HEAD>
+<TITLE>Copying files between two remote hosts</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Copying files between two remote hosts</H1>
+
+<P>You can use the <STRONG>rcp</STRONG> command to copy files between two
+remote hosts from your local host. The command is:</P>
+
+<PRE WIDTH=80>   <STRONG>rcp <EM>host_name:filename host_name:filename</EM></STRONG>
+</PRE>
+
+<P>If you have different usernames on any host you can still
+copy files between them using the format:</P>
+
+<PRE WIDTH=80>   <STRONG><EM>username</EM>@<EM>host_name</EM>:<EM>filename</EM></STRONG>
+</PRE>
+
+<UL>
+<LI><A HREF="3.6.2.1a.html">Examples</A></LI>
+<LI><A HREF="3.6.3.2.html">Problems?</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

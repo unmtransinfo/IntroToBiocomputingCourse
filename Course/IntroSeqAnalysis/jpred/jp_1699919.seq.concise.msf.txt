@@ -1,0 +1,365 @@
+
+ /tmp/filexJSasR  MSF: 845  Type: N  January 01, 1776  12:00  Check: 2282 ..
+
+ Name: QUERY            Len:   845  Check:  7134  Weight:  1.00
+ Name: Q9ES76           Len:   845  Check:  4191  Weight:  1.00
+ Name: Q9Y5S1           Len:   845  Check:  5069  Weight:  1.00
+ Name: Q7T2Z4           Len:   845  Check:  2041  Weight:  1.00
+ Name: Q8NET8           Len:   845  Check:  1981  Weight:  1.00
+ Name: Q8NDW5           Len:   845  Check:  3816  Weight:  1.00
+ Name: Q9N3Y9           Len:   845  Check:  2977  Weight:  1.00
+ Name: Lupas_21         Len:   845  Check:  5712  Weight:  1.00
+ Name: Lupas_14         Len:   845  Check:  2150  Weight:  1.00
+ Name: Lupas_28         Len:   845  Check:  8714  Weight:  1.00
+ Name: jnetpred         Len:   845  Check:  1809  Weight:  1.00
+ Name: JNETSOL25        Len:   845  Check:  6957  Weight:  1.00
+ Name: JNETSOL5         Len:   845  Check:  4198  Weight:  1.00
+ Name: JNETSOL0         Len:   845  Check:  6174  Weight:  1.00
+ Name: JNETPSSM         Len:   845  Check:  3011  Weight:  1.00
+ Name: JNETFREQ         Len:   845  Check:   409  Weight:  1.00
+ Name: JNETHMM          Len:   845  Check:  5714  Weight:  1.00
+ Name: JNETALIGN        Len:   845  Check:  4719  Weight:  1.00
+ Name: jpred            Len:   845  Check:  5506  Weight:  1.00
+
+//
+
+          QUERY  TEDPARMKKW SSTDLGAAAD PLQKDTCPDP LDGDPNSRPP PAKPQLSTAK
+         Q9ES76  ---------- ---------- ---------- ---------- --------ES
+         Q9Y5S1  ---------- ---------- ---------- ---TSPSSSP VFRLETLDGG
+         Q7T2Z4  ---------- ---------- ---------- ---------- ----------
+         Q8NET8  ---------- ---------- ---------- ---------- ----------
+         Q8NDW5  ---------- ---------- ---------- ---------- ----------
+         Q9N3Y9  ---------- ---------- ---------- ---------- ----------
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  ---------- --HHHHH--- ---------- ---------- ----------
+      JNETSOL25  BBBBBB---B --B--BB--- ---------- --B---B-BB -----BB---
+       JNETSOL5  ---------- ---------- ---------- ---------- ----------
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  ---------- HHHHHHH--- ---------- ---------- ----------
+       JNETFREQ  ---------- ---HHHH--- ---------- ---------- ----------
+        JNETHMM  ---------- ---------- ---------- ---------- ----------
+      JNETALIGN  ---------- ---------- ---------- ---------- ----------
+          jpred  ---------- ---HHHH--- ---------- ---------- ----------
+
+          QUERY  SRTRLFGKGD SEEAFPVDCP HEEGELDSCP TITVSPVITI QRPGDGSTGA
+         Q9ES76  TRYESSVVPG PKK-APMDSL FDYGTYRHHP SDN------- KRWRRKVVEK
+         Q9Y5S1  QEDGSEADRG KLDLPPMESQ FQGEDRKFAP QIRVN----- ----------
+         Q7T2Z4  ---------- ---------- ---------- ---------- ----------
+         Q8NET8  ---------- ---------- ---------- ---------- ----------
+         Q8NDW5  ---------- ---------- ---------- ---------- KAEGPGSQLQ
+         Q9N3Y9  ---------- ---------- ---------- ---------- ----------
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  ---------- ---------- ---------- ------EEEE E---------
+      JNETSOL25  ---------- ---------- B---BB---- -B-B-BBB-B ---B-B----
+       JNETSOL5  ---------- ---------- ---------- ---------- ----------
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  ---------- -EE------- ---------- ---------- ---EEEE---
+       JNETFREQ  ----E----- ---------- ---------- ------EEEE E---------
+        JNETHMM  --EEE----- ---------- ---------- ------EEEE E---------
+      JNETALIGN  ---------- ---------- ---------- ---------- ----------
+          jpred  ---------- ---------- ---------- ------EEEE E---------
+
+          QUERY  RLLSQDSVAA STEKTLRLYD RRSIFEAVAQ NNCQDLESLL LFLQKSKKHL
+         Q9ES76  QPQSPKAPAP QPPPILKVFN RPILFDIVSR GSTADLDGLL SFLLTHKKRL
+         Q9Y5S1  -LNYRKGTGA SQPDPNR-FD RDRLFNAVSR GVPEDLAGLP EYLSKTSKYL
+         Q7T2Z4  RLQNKKGWNE MLDETFLLYT KHPLFYAAQK NNAGCIMKLL -------GCS
+         Q8NET8  ---------- ---------- ---------- ---------- ----------
+         Q8NDW5  KLLPEQDWDQ HLDKLHMLQQ KRPLLRASKE NDLSVLRQLL L-------DC
+         Q9N3Y9  ---------- ---------- ---------- ---------- ----------
+       Lupas_21  ---------- ---------- ---------- --cccccccc cccccccccc
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- -----ccccc cccccccccc cccccccccc
+       jnetpred  ---------- ---------- ---HHHHHHH HHHHHHHHHH HHHHH-----
+      JNETSOL25  ------B--- ----BB-B-- ---BB-BB-B B-BB-B--B- BBB-BB--B-
+       JNETSOL5  ---------- ---------- ---B------ --B------- ----------
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  ---------- ---------- --------HH HHHHHH--HH HHHHHHHHHH
+       JNETFREQ  ---------- -----HHH-- ---HHHHHH- ---HHHHHHH HHHH------
+        JNETHMM  ---------- ---------- ---HHHHHH- ---HHHHHHH HHHHH-----
+      JNETALIGN  ---------- ---------- ---------- --------HH HHHH------
+          jpred  ---------- ---------- ---HHHHHH- ---HHHHHHH HHHHH-----
+
+          QUERY  TDNEFKDPET GKTCLLKAML NLHDGQNTTI PLLLEIARQT DSLKELVNAS
+         Q9ES76  TDEEFREPST GKTCLPKALL NLSNGRNDTI PVLLDIAERT GNMREFINSP
+         Q9Y5S1  TDSEYTEGST GKTCLMKAVL NLKDGVNACI LPLLQIDRDS GNPQPLVNAQ
+         Q7T2Z4  STNIFERGAL GETALHVAVM --SDNLDAAV VLM------- EGAPELINEP
+         Q8NET8  --------DT GKTCLMKALL NINPNTKEIV RILLAFAEEN DILGRFINAE
+         Q8NDW5  TCDVRQRGAL GETALHIAAL --YDNLEAAL VLM------- EAAPELVFEP
+         Q9N3Y9  ------RGAV GETLLHTCFL AGLPNH---M KLLAE--RLI AIFPKIINDF
+       Lupas_21  ccc------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ccc------- ---------- ---------- ---------- ----------
+       jnetpred  ---------- HHHHHHHHHH HH--HHHHHH HHHHHHHHHH ----------
+      JNETSOL25  -B-------- B--BB-BBBB BBBBBB-BBB -BBBBBBBBB -BB--BBBB-
+       JNETSOL5  ---------- -------BBB BB-------- --B--B--B- ----------
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  HH-------- --------HH HHHHHHHH-- --HHHHHHHH HHH---HHHH
+       JNETFREQ  ---------- -HHHHHHHHH H-----HHHH HHHHHHHHH- -----E----
+        JNETHMM  ---------H HHHHHHHHHH H----HHHHH HHHHHHHHH- ----------
+      JNETALIGN  ----E----- --EEHHHHHH H--------E EEEE------ ----EEE--E
+          jpred  ---------- -HHHHHHHHH H----HHHHH HHHHHHHHH- ----------
+
+          QUERY  YTDSYYKGQT ALHIAIERRN MALVTLLVEN GADVQAAAHG DFFKKTKGRP
+         Q9ES76  FRDIYYRGQT SLHIAIERRC KHYVELLVAQ GADVHAQARG RFFQPKDEGG
+         Q9Y5S1  CTDDYYRGHS ALHIAIEKRS LQCVKLLVEN GANVHARACG RFFQK-GQGT
+         Q7T2Z4  MTSELFQGVT PLHIAVVNQN INLVQHLISR GGDAATPRVT GLYFRKRIGG
+         Q8NET8  YTEEAYEGQT ALNIAIERRQ GDIAALLIAA GADVNAHAKG AFFNPKYQHE
+         Q8NDW5  TTCEAFAGQT ALHIAVVNQN VNLVRALLTR RASVSARATG TAFRHSPRNL
+         Q9N3Y9  YLSDEYYGET VLHMGIVSEN AEFVRYLLKS GADVHARCSG NFFTCDDQKG
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  HHHHHH---- HHHHHHHHHH HHHHHHHHHH HHHHHHH--- ----------
+      JNETSOL25  BBB-BB---- -B-BBBBBBB BBBB-BBBBB BBBB-B-B-B BBB------B
+       JNETSOL5  ---------- ---B-BB--- BB-B--B--- --BB------ ----------
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  HH-------- -----HHHHH HHH---HHHH HHHHH----- ----------
+       JNETFREQ  ---HHHH--- HHHHHHHHHH HHHHHHHHH- ---HHHHH-- -H--------
+        JNETHMM  ---H------ ---EEEHHHH HHHHHHHHHH ---------- ---E------
+      JNETALIGN  EEE------E EEEEEE---- HHHHHHHHH- ---------- ----------
+          jpred  ---------- HHHHHHHHHH HHHHHHHHHH ---------- ----------
+
+          QUERY  GFYFGELPLS LAACTNQLGI VKFLLQNSWQ TADISARDSV GNTVLHALVE
+         Q9ES76  YFYFGELPLS LAACTNQPHI VNYLTENPHK KADMRRQDSR GNTVLHALVA
+         Q9Y5S1  CFYFGELPLS LAACTKQWDV VSYLLENPHQ PASLQATDSQ GNTVLHALVM
+         Q7T2Z4  LIYYGEHILS FAACAGNEDI ISLIIDAG-- -ASTRVQDYR GNTVLHVLV-
+         Q8NET8  GFYFGETPLA LAACTNQPEI VQLLM--GHE QTDITSRDSR GNNILHALVT
+         Q8NDW5  -IYFGEHPLS FAACVNSEEI VRLLIEHG-- -ADIRAQDSL GNTVLHILI-
+         Q9N3Y9  SIYWGEYPLS FAACLSQPEC IRMLVAHG-- -ADVNAADTN GNTILHICTI
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  -EEE---HHH HHHHH--HHH HHHHHHH--- ---------- ---EEEEEEH
+      JNETSOL25  BBBBBBBBBB BBBBBBBBBB B-BBBBB-BB B-BB---BBB BBBBBBBBBB
+       JNETSOL5  -B------BB B-BBB----- B-----B--B ---------- -B-B-BBBBB
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  ---------- -HHHHHHHHH ---HHHHHHH HH-------- --------HH
+       JNETFREQ  -EE-----HH HHHH-----E EEEEE----- ----EE---- ---EEEEEEE
+        JNETHMM  EEEE---HHH HHHH----HH HHEEE----- ----EEE--- ---EEEEEEE
+      JNETALIGN  ------HHHH HHHHH----- EEEE------ --EEEE---- --EEEEEEEE
+          jpred  -EE----HHH HHHHH----- EEEEE----- ----EE---- ---EEEEEEE
+
+          QUERY  VADNTADNTK FVTSMYNEIL ILGAKLHPTL KLEELTNKKG MTPLALAAGT
+         Q9ES76  IADNTRENTK FVTKMYDLLL LKCSRLFPDS NLETVLNNDG LSPLMMAAKT
+         Q9Y5S1  ISDNSAENIA LVTSMYDGLL QAGARLCPTV QLEDIRNLQD LTPLKLAAKE
+         Q7T2Z4  ----LQPNKT IACQAMDLIM ARDAELDQSV PLDMVPNSRG LTPFKLAAKE
+         Q8NET8  VAEDFKTQND FVKRMYDMIL LRSGN----W ELETTRNNDG LTPLQLAAKM
+         Q8NDW5  ----LQPNKT FACQMYNLLL SYDGHGDHLQ PLDLVPNHQG LTPFKLAGVE
+         Q9N3Y9  HEN------- --YEMFKMAL SLGADLH--- ----IQNRQN LTPLTLAAFL
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  HHHH----HH HHHHHHHHHH HHH------- ---------- --HHHHHHHH
+      JNETSOL25  BBBBB--B-- BB--BBBBBB BBBBBBBB-B -B-----B-- B-BB-BBBBB
+       JNETSOL5  B--B------ -B--B---B- ---------- ---------- B------B--
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  HHHHHHH--- --HHHHHHHH HHHHHHHHH- ---------- --------HH
+       JNETFREQ  EH------HH HHHHHHHHHH HH-------- ---------- --HHHHHHHH
+        JNETHMM  E-------HH HHHHHHHHHH HH-------- ---------- --HHHHHHHH
+      JNETALIGN  ---------- --HHHHHHHH HH-------- EE-------- ----HHHHHH
+          jpred  --------HH HHHHHHHHHH HH-------- ---------- --HHHHHHHH
+
+          QUERY  GKIGVLAYIL QREIQEPECR HLSRKFTEWA YGPVHSSLYD LSCIDTCEKN
+         Q9ES76  GKIGVFQHII RREVTDEDTR HLSRKFKDWA YGPVYSSLYD LSSLDTCEEV
+         Q9Y5S1  GKIEIFRHIL QREFS--GLS HLSRKFTEWC YGPVRVSLYD LASVDSCEEN
+         Q7T2Z4  GNRVAFQHLV NK-------- ---RRVVQWS LGPLTSYLYD LTEIDSWDGM
+         Q8NET8  GKAEILKYIL SREIKEKRLR SLSRKFTDWA YGPVSSSLYD LTNVDTTTDN
+         Q8NDW5  GNTVMFQHLM QK-------- ---RRHIQWT YGPLTSILYD LTEIDSWEEL
+         Q9N3Y9  AKKEMMQRIV EEE------- ----RTVNWT YGRTQSAAYP LEHVDSIEPK
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  HHHHHHHHHH HHHHHH---- ---HHHEE-- ----EEEE-- --E-------
+      JNETSOL25  BBBBBBBBBB BBBBBB--B- ---BB---BB BBBBBBBBBB BBBBB-B--B
+       JNETSOL5  B-B------- ---------- ---------- -----B-B-B ---B------
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  HHHHHH--HH HHHHHHH--- -HHHHH---- --H------- EEE-------
+       JNETFREQ  ---HHHHHHH HHH------- ----EEEEEE ----EEEEE- ----------
+        JNETHMM  HHHHHHHHHH HHH------- ---EEEEEE- ----EEE--- ----------
+      JNETALIGN  --HHHHHHHH HHHH------ ---EEEEE-E -----EEEEE EEE-------
+          jpred  HHHHHHHHHH HHHH------ ---EEEEE-- ----EEEE-- --E-------
+
+          QUERY  SVLEVIAYSS SETPNRHDML LVEPLNRLLQ DKWDRFVKRI FYFNFLVYCL
+         Q9ES76  SVLEILVYN- SKIENRHEML AVEPINELLR DKWRKFGAVS FYINVVSYLC
+         Q9Y5S1  SVLEIIAF-H CKSPHRHRMV VLEPLNKLLQ AKWDLLI-PK FFLNFLCNLI
+         Q7T2Z4  SVLELIVGSQ QK--EARGIL ELTPVMRLVS LKWNLYGKHY FRLLLLLYLL
+         Q8NET8  SVLEITVYNT N-IDNRHEML TLEPLHTLLH MKWKKFAKHM FFLSFCFYFF
+         Q8NDW5  SFLELVV--S SDKREARQIL EQTPVKELVS FKWNKYGRPY FCILAALYLL
+         Q9N3Y9  SVLTIAVYGE KV---EHLSL LPHLLEQLVH HKWIAYGRKT LFAQLSMFCI
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  -EEEEEEEEE ---------- HHHHHHHHHH HHHHHHHHHH HHHHHHHHHH
+      JNETSOL25  BBBBBBBBBB B-B---B--- -BB-BB-BB- B-BBBBBBB- BBBBBBBBBB
+       JNETSOL5  --B---B--- ---------- ---------- ---------- --B-BBBBBB
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  -------HHH HHHHH----- ---------H HHHHHHHHHH HH---HHHHH
+       JNETFREQ  -EEEEEEE-- -------HHH H--HHHHHHH HHHHHH--HH HHHHHHHHHH
+        JNETHMM  EEEEEEEE-- --------EE EHHHHHHHHH HHHHHH---H HHHHHHHHHH
+      JNETALIGN  EEEEEE---- ---------- HHHHHHHHHH HHHHHH---H HHHHHHHHHH
+          jpred  -EEEEEEE-- ---------- HHHHHHHHHH HHHHHH--HH HHHHHHHHHH
+
+          QUERY  YMIIFTMAAY YRPVDGLPPF KMEKIGDYFR VTGEILSVLG GVYFFFRGIQ
+         Q9ES76  AMVIFTLTAY YQPLEGTPPY PYRTTVDYLR LAGEVITLFT GVLFFFTSIK
+         Q9Y5S1  YMFIFTAVAY HQPTQAAPHL KAE-VGNSML LTGHILILLG GIYLLVGQLW
+         Q7T2Z4  YIGTFTLCCT YRPLKDISEN YYVTREDSLR LVGEVISVLG ALVILLLEIP
+         Q8NET8  YNITLTLVSY YRPEEAIPPL ALTHKMGWLQ LLGRMFVLIW AMCISVKEIA
+         Q8NDW5  YMICFTTCCV YRPLKRTHSR DYETREDIIR LVGELVSIVG AVIILLLEIP
+         Q9N3Y9  YFICVTSCFL LRP----SPF ERQQVSTIIY HLLHLICVTG ATLYLVQALL
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  HHHHEEEEEE E--------- ------HHHH H---EEEEEE EEEEEHHHHH
+      JNETSOL25  BBBBBBBBBB BBBBBBBB-B ----BB-BB- BBBBBBBBBB BBBBBBBBBB
+       JNETSOL5  BBBBBBBBBB B-BB------ ---------- ----BBBBBB BBBBBBBBB-
+       JNETSOL0  BBB-----B- ---------- ---------- -------BB- -BBB------
+       JNETPSSM  H--EEEEEEE EEEEEEE--- ---------- ----EEEE-E EEEEEEEEEE
+       JNETFREQ  HHHHEHHHHH ---------- -H-----HHH H--EEEEEHH HHHHHHHHHH
+        JNETHMM  HHHHHHHHHH H--------- -----HHHHH HHHHHHHHHH HHHHHHHHHH
+      JNETALIGN  HH-H--EE-- ---------- --------HH ----HHHHHH HHHHHHHHHH
+          jpred  HHEEEEEEEE E--------- -------HHH H---EEEEHH HHHHHHHHHH
+
+          QUERY  YFLQRRPSMK TLFVDSYSEM LFFLQSLFML ATVVLYFSHL KEYVASMVFS
+         Q9ES76  DLFKKCPGVN SLFVDGSFQL LYFIYSVLVV VSAALYLAGI EAYLAVMVFA
+         Q9Y5S1  YFWRRHVFIW ISFIDSYFEI LFLFQALLTV VSQVLCFLAI EWYLPLLVSA
+         Q7T2Z4  DIIRVKRYFG QTALGGPFHV ILISYASLVV LLCVFRACEV QGEAVVMALS
+         Q8NET8  IFLLRPSDLQ SILSDAWFHF VFFIQAVLVI LSVFLYLFAY KEYLACLVLA
+         Q8NDW5  DIFRVGRYFG KTILGGPFHV IIITYASLVL VTMVMRLTNT NGEVVPMSFA
+         Q9N3Y9  HIKNVGYHLY VLLSGFPAKA IFLFSCILMV ITFFLRIFCL DEAEDIVWIV
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  HHHH------ EEEE--HHHH HHHHHHHHHH HHHHHHHHHH HHHHHHHHHH
+      JNETSOL25  BBB-BB-BB- -BBBBB-BBB BBBBBBBBBB BBBBBBBBBB B-BBBBBBBB
+       JNETSOL5  -B------B- -B-BB--B-- BBBB-BBBBB BBBBBBBB-B --BB--B-BB
+       JNETSOL0  -B-------- ---------- -----B-B-- BB-B--B--- ----------
+       JNETPSSM  EEHHHHHHH- H-----H--H HHHHHHHHHH HH------EE E--------E
+       JNETFREQ  HHHH-----E EEE---HHHH HHHHHHHHHH HHHHHHHHHH HHHHHHHHHH
+        JNETHMM  HHHH-----E EEEE---HHH HHHHHHHHHH HHHHHHHHHH ---HHHHHHH
+      JNETALIGN  HHHH------ ---------H HHHHHHHHHH HHHHHHHHHH HHHHHHHHHH
+          jpred  HHHH------ EEE---HHHH HHHHHHHHHH HHHHHHHHHH HHHHHHHHHH
+
+          QUERY  LALGWTNMLY YTRGFQQMGI YAVMIEKMIL RDLCRFMFVY IVFLFGFSTA
+         Q9ES76  LVLGWMNALY FTRGLKLTGT YSIMIQKILF KDLFRFLLVY LLFMIGYATN
+         Q9Y5S1  LVLGWLNLLY YTRGFQHTGI YSVMIQKVIL RDLLRFLLIY LVFLFGFAVA
+         Q7T2Z4  LVLGWSNVMF FARGFEMLGP YVIMIQKIIF GDLTKFMWFS FIVLIGYSTA
+         Q8NET8  MALGWANMLY YTRGFQSMGM YSVMIQKVIL HDVLKFLFVY IVFLLGFGVA
+         Q8NDW5  LVLGWCSVMY FTRGFQMLGP FTIMIQKMIF GDLMRFCWLM AVVILGFASA
+         Q9N3Y9  IVLLTSKFLF FCRGFKSVGP FVLMLYKIII RDLMRFFLIY LVIVVGFSQA
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  HHHHHHHHHH HHHHHHHHHH HHHHHHHHHH HHHHHHHHHH HHHEEEEEEE
+      JNETSOL25  BBBBBBBBBB BBBBBBBBBB BBBBBBBBBB BBBBBBBBBB BBBBBBBBBB
+       JNETSOL5  BBBBBBBBBB BBBBB--B-B B-BBB-BBBB B-BB-BBBBB BBBBBBBBBB
+       JNETSOL0  --B--B--B- ---------- ---------- --------BB --BBB-B---
+       JNETPSSM  EEEEEEEE-- H-HHHHHHHH ------EEEE HHHHHHHHHH HHHHHEEEEE
+       JNETFREQ  HHHHHHHHHH HHH------H HHHHHHHHHH HHHHHHHHHE EEEEEHHHHE
+        JNETHMM  HHHHHHHHHH HHHHHH---H HHHHHHHHHH HHHHHHHHHH EEEEEE--EE
+      JNETALIGN  HHHHHHHHHH E--------- HHHHHHHHH- ---HHHHHHH HHH----HHH
+          jpred  HHHHHHHHHH HHHHHH---H HHHHHHHHHH HHHHHHHHHH HEEEEEEEEE
+
+          QUERY  VVTLIEDGKN DSLPSESTSH RWRGPACRPP DSSYNSLYST CLELFKFTIG
+         Q9ES76  MKVCDEDQSN CTVPTY---- ----PACRD- SETFSAF--- LLDLFKLTIG
+         Q9Y5S1  LVSLSQEAWR PEAPTGPNAT ESVQPMEGQE DEQYRGILEA SLELFKFTIG
+         Q7T2Z4  LWVVYMTQDP DSMP------ ---------- --SFRSFPIT LFSEFELSVG
+         Q8NET8  LASLIEKCPK DN-------- --------KD CSSYGSFSDA VLELFKLTIG
+         Q8NDW5  FYIIFQTEDP TSLG------ ---------- --QFYDYPMA LFTTFELFLT
+         Q9N3Y9  FYVIFLGYKR ---------- -------SDS GNREPSIMSN VAESYVRMFI
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  EEEEE----- ---------- ---------- -------HHH HHHHHHHHHH
+      JNETSOL25  BBBBBBBB-B B--B----B- ---------- --BB--B--B BBBBBBBBBB
+       JNETSOL5  BBBBB----- ---------- ---------- ---------- -B--B-BBBB
+       JNETSOL0  B--------- ---------- ---------- ---------- ---------B
+       JNETPSSM  E------HH- ---------- ---------- --EE------ -----HHHHH
+       JNETFREQ  EEEEE----- ---------- ---------- ------HHHH HHHHHHHHHE
+        JNETHMM  EEEEEE---- ---------- ---------- ------HHHH HHHH--EEEE
+      JNETALIGN  HHHH------ ---------- ---------- ---------H HHHHHHHHHH
+          jpred  EEEEE----- ---------- ---------- -------HHH HHHHHHHHHH
+
+          QUERY  MGDLEFTENY DFKAVFIILL LAYVILTYIL LLNMLIALMG ETVNKIAQES
+         Q9ES76  MGDLEMLSSA KYPVVFILLL VTYIILTFVL LLNMLIALMG ETVGQVSKES
+         Q9Y5S1  MGELAFQEQL HFRGMVLLLL LAYVLLTYIL LLNMLIALMS ETVNSVATDS
+         Q7T2Z4  LIDLPVDHRI MTPPIVHVLH CTFSLVSYIL LLNLLIAMMS DTHWRVAQER
+         Q8NET8  LGDLNIQQNS KYPILFLFLL ITYVILTFVL LLNMLIALMG ETVENVSKES
+         Q8NDW5  VIDAPANYDV DLPFMFSIVN FAFAIIATLL MLNLFIAMMG DTHWRVAQER
+         Q9N3Y9  MSLTEFTVFF EQLVIGKITF VVYMLLVTLL LINMLIAMMT NTYTEVSGNS
+       Lupas_21  ---------- ---------- ---------- ---------- -----ccccc
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- -ccccccccc cccccccccc
+       jnetpred  HHHHHH---- ---EEEEEEH HHHHHHHHHH HHHHHHHH-- -HHHHHHHHH
+      JNETSOL25  BBBBBBBB-B -BBBBBBBBB BBBBBBBBBB BBBBBBBBBB BBBBBB---B
+       JNETSOL5  BBBB-B---- -B-BBB-BBB BBBBBBBBBB BBBBBBBBBB BBB--B----
+       JNETSOL0  B--------- ---------- -B-BB-B--- BB--BBB--- ----------
+       JNETPSSM  HHHHH----- --EEEE---- -EEEEEEEEE EEEEEE---- HHHH---HHH
+       JNETFREQ  ----HHH--- ---HHHHHHH HHHHHHHHHH HHHHHHHH-- ----EEHHHH
+        JNETHMM  E----H---- ---EEEEEEE HHHHHHHHHH HHHHHHHH-- -HHHHHHHHH
+      JNETALIGN  ---------- ----HHHHHH HHHHHHHHHH HHHHHHHHH- ----H-----
+          jpred  H--------- ---EEEEEEH HHHHHHHHHH HHHHHHHH-- -HHHHHHHHH
+
+          QUERY  KNIWKLQRAI TILDTEKSFL KCMRKAFRSG KLLQVGYTPD GKDDYRWCFR
+         Q9ES76  KHIWKLQWAT TILDIERSFP VFLRKAFRSG EMVTVGKSSD GTPDRRWCFR
+         Q9Y5S1  WSIWKLQKAI SVLEMENGYW WC-RKKQRAG VMLTVGTKPD GSPDERWCFR
+         Q7T2Z4  DELWRLQVVA TTLMLERRLP RCLWPRLGCG LEYGL----- ---KERWYLR
+         Q8NET8  ERIWRLQRAR TILEFEKMLP EWLRSRFRMG ELCKV----- AEDDFRLCLR
+         Q8NDW5  DELWRAQVVA TTVMLERKLP RCLWPRSGCG CEFGLG---- ----DRWFLR
+         Q9N3Y9  L-EWLRQWSA IILMMEQSFD PATRLRY--- ---------- ----------
+       Lupas_21  cccccccccc cccccc---- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  cccccccccc cccccccccc ccc------- ---------- ----------
+       jnetpred  HHHHHHHHHH HHHHHH---- ---------- -EEEE----- ------EEEE
+      JNETSOL25  -BB--BB-BB BBBBBBBBB- BBBBBB-BBB -BB-BB--B- B----BBBBB
+       JNETSOL5  ---------- B-B-B---B- ---------- ----B----- ----------
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  HHHHHHHHHH HHH--EEEEE ------HHHH H----EEEEE ----------
+       JNETFREQ  HHHHHHHHHH HHHHHH---H HH--H----- EEEEE----- -----EEEEE
+        JNETHMM  HHHHHH-HHH HHHHHH---H HHHHHH---- EEEEE----- -----EEEEE
+      JNETALIGN  -H-HHHHHHH HHHHHH---- HH-------- ---------- ----------
+          jpred  HHHHHHHHHH HHHHHH---- ---------- -EEEE----- ------EEEE
+
+          QUERY  VDEVNWTTWN TNVGIINEDP GNCEGVKRTL SFSLRSSRVS GRHWKNFALV
+         Q9ES76  VDEVNWSHWN QNLGIINEDP GKSE-IYQYY GFSHTVGRLR RDRWS--SVV
+         Q9Y5S1  VEEVNWASWE QTLPTLCEDP SGA-GVPRTL ---------- ----------
+         Q7T2Z4  VEDRN----- ---------- ---------- ---------- ----------
+         Q8NET8  INEVKWTEWK THVSFLNEDP GP---VRRTA DFN------- ----------
+         Q8NDW5  VENHN----- ---------- ---------- ---------- ----------
+         Q9N3Y9  ---------- ---------- ---------- ---------- ----------
+       Lupas_21  ---------- ---------- ---------- ---------- ----------
+       Lupas_14  ---------- ---------- ---------- ---------- ----------
+       Lupas_28  ---------- ---------- ---------- ---------- ----------
+       jnetpred  EEEEEEEE-- ---EEE---- ---------- ---EE--EEE --------EE
+      JNETSOL25  BBBBBBB--- -BB-BB-BB- -BB-BB--B- -B--BB-BBB ---BB-B-BB
+       JNETSOL5  ---------- ---------- --B------- ---------- ---------B
+       JNETSOL0  ---------- ---------- ---------- ---------- ----------
+       JNETPSSM  -EEEEEE--- ---------- EE-------- ---------- ----E-----
+       JNETFREQ  EE--EEEEEE ---EEE---- -----EEEEE -EE----EEE -------EE-
+        JNETHMM  E--------- --EEEEEE-- --------E- ---EE--EE- ------EEEE
+      JNETALIGN  ---------- ---------- ---------- ---------- ----------
+          jpred  EE--EEE--- ---EEE---- ---------- -------EE- --------E-
+
+          QUERY  PLLREASARD RQSAQPEEVY LRQFSGSLKP EDAEVFKSPA ASGEK
+         Q9ES76  PRVVELN--- -KNSSADEV- ---------- ---------- -----
+         Q9Y5S1  ---------- ---------- ---------- ---------- -----
+         Q7T2Z4  ---------- ---------- ---------- ---------- -----
+         Q8NET8  ---------- ---------- ---------- ---------- -----
+         Q8NDW5  ---------- ---------- ---------- ---------- -----
+         Q9N3Y9  ---------- ---------- ---------- ---------- -----
+       Lupas_21  ---------- ---------- ---------- ---------- -----
+       Lupas_14  ---------- ---------- ---------- ---------- -----
+       Lupas_28  ---------- ---------- ---------- ---------- -----
+       jnetpred  EEEEEE---- ---------E EEE------- ---------- -----
+      JNETSOL25  BBBBBBBBB- ---------- B--BBBB--B ---B-B--B- BB---
+       JNETSOL5  --B-BB---- ---------- ---------- ---------- -----
+       JNETSOL0  ---------- ---------- ---------- ---------- -----
+       JNETPSSM  -EEEEEEEEE ---------- ---EEEE--- ---------- -----
+       JNETFREQ  -HHHHHH--- -------EHE EHH------- ----E----- -----
+        JNETHMM  EEHHH----- --------EE EEE------- ---------- -----
+      JNETALIGN  ---------- ---------- ---------- ---------- -----
+          jpred  -EEEEE---- ---------E EEE------- ---------- -----
+

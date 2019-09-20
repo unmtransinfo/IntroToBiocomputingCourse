@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/links2.3.1.html -->
+
+<HEAD>
+<TITLE>Example of using the ln command</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Example of using the <SAMP>ln</SAMP> command</H1>
+
+<P>To make a link to a file in another user's home
+directory:</P>
+
+<PRE WIDTH=80>   <STRONG>ln ~sandra/prog.c .</STRONG>
+</PRE>
+
+<P>This makes a link between the file <SAMP>prog.c</SAMP> in the home
+directory of user "sandra" and the filename <SAMP>prog.c</SAMP> in the
+current working directory.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

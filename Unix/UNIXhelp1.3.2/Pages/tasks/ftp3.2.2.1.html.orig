@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/ftp3.2.2.1.html -->
+
+<HEAD>
+<TITLE>Examples of sending files with the hhcp command</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of sending files with the <SAMP>hhcp</SAMP> command</H1>
+
+<P>To send a single file to your home directory on
+the remote host:</P>
+
+<PRE WIDTH=80>   <STRONG>hhcp myfile festival.ed:newfile</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>myfile</SAMP> from your current directory
+on the local host to the file <SAMP>newfile</SAMP> in your home
+directory on the host with the name "festival.ed".</P>
+
+<HR>
+
+<P>To copy a file from one subdirectory to another:</P>
+
+<PRE WIDTH=80>   <STRONG>hhcp tmp/guide.txt castle.ed:book/chapt1/part2</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>guide.txt</SAMP> from the subdirectory
+<SAMP>tmp</SAMP> in your current directory, to the file 
+<SAMP>part2</SAMP> in the subdirectory <SAMP>book/chapt1</SAMP>
+which is in your home
+directory on the remote host with the name "castle.ed".</P>
+
+<HR>
+
+<P>To copy a binary file:</P>
+
+<PRE WIDTH=80>   <STRONG>hhcp -b afile walden.co:incoming/afile</STRONG>
+</PRE>
+
+<P>This copies the binary file <SAMP>afile</SAMP> from your
+current directory to a file with the same name in the
+subdirectory <SAMP>incoming</SAMP>, in your home directory on the
+host with the name "walden.co".</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

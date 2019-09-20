@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- commanz/cmd1.2.1.1.html -->
+
+<HEAD>
+<TITLE>Examples of using multiple options</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+
+<H1>Examples of using multiple options</H1>
+
+<P>Options can be grouped together:</P>
+
+<PRE>   <STRONG>ls -FI</STRONG>
+</PRE>
+
+<P>This lists the contents of the current directory.
+Directories are shown with a trailing '/'; files which
+have execute permission are shown with a trailing '*'.</P>
+
+<P>The <A HREF="../glossary/gi.html#inodenumber">inode number</A>
+ of each file is also displayed.</P>
+
+<HR>
+
+<P>Some options need to be given separately:</P>
+
+<PRE>   <STRONG>lpr -Plp2 -#4rm report.ps</STRONG>
+</PRE>
+
+<P>This prints four copies of the file <SAMP>report.ps</SAMP>, removes
+the file and sends mail to the user on completion.</P>
+
+<P>The option <SAMP>-Plp2</SAMP> which specifies the printer to be used is
+given separately from the other options. If the command
+were given as</P>
+
+<PRE>   <STRONG>lpr -Plp2#4rm report.ps</STRONG>
+</PRE>
+
+<P>the command would try to find a printer with the name
+ <SAMP>lpr2#4rm</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

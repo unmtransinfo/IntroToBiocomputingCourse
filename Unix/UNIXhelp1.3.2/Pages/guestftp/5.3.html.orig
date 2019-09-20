@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- guestftp/5.3.html -->
+
+<HEAD>
+<TITLE>Transferring Files from a Local Host to uk.ac.nsf.sun</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Transferring Files from a Local Host to uk.ac.nsf.sun</H1>
+
+<P>Due to the nature of a  public  account  such  as  guestftp,
+preparing a file for transfer to the InterNet is a two stage
+process.  Firstly, you need to transfer the file  from  your
+machine  to uk.ac.nsf.sun, where it will be placed in a general area.
+You should then login to the guestftp service as
+usual and retrieve the file from this area.</P>
+
+<P>For example, if you have a file <SAMP>foo.c</SAMP> on your local machine,
+transfer  this  using  the remote filename <SAMP>foo.c</SAMP>, and remote
+username and password of <SAMP>guestftp</SAMP>.</P>
+
+<P>Once this transfer has completed, login to the guestftp service,
+and  the ret command to place the file in your directory on uk.ac.nsf.sun:</P>
+
+<PRE WIDTH=80>   guest_ftp&gt; <STRONG>ret</STRONG>
+   Give name of file to be retrieved: <STRONG>foo.c</STRONG>
+   Trying to retrieve now, result is..OK.
+   guest_ftp&gt; dir
+   26 Jun 19 17:07 <STRONG>foo.c</STRONG>
+   total blocks: 400
+   guest_ftp&gt;
+</PRE>
+
+<P>The file is now ready to send to the US using the 
+<STRONG>ftp</STRONG> command.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

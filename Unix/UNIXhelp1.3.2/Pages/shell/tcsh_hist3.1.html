@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/tcsh_hist3.1.html -->
+
+<HEAD>
+<TITLE>Examples of runnning a command from the history list</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of runnning a command from the history list</H1>
+
+<P>To move up and down the command list one command at a
+time:</P>
+
+<PRE WIDTH=80>   <STRONG>history</STRONG>
+      1  cd tmp
+      2  14:00  ls
+      3  14:01  cd SUMI
+      4  14:05  less README
+      5  14:12  cd
+      6  14:15  history
+   <STRONG>^P</STRONG>
+   history<STRONG>^P</STRONG>
+   cd<STRONG>^P</STRONG>
+   less<STRONG>^N</STRONG>
+   cd<STRONG>^N</STRONG>
+   history
+</PRE>
+
+<P>Any previous command <A HREF="cmd2.1.html">can be edited</A>
+once it is displayed. To re-run the command press the 
+<SAMP>&lt;RETURN&gt;</SAMP> key.</P>
+
+<HR>
+
+<P>To re-run a specific command:</P>
+
+<PRE WIDTH=80>   <STRONG>!3</STRONG>
+   cd
+</PRE>
+
+<P>This re-runs command number three (3) in the command
+history.</P>
+
+<HR>
+
+<P>To re-run the most recent command that starts with a
+particular character string:</P>
+
+<PRE WIDTH=80>   <STRONG>!pw</STRONG>
+   pwd
+   /home/grace
+</PRE>
+
+<P>This re-runs the command <STRONG>pwd</STRONG>.</P>
+
+<HR>
+
+<P>To re-run the most recent command that contains a
+particular character string:</P>
+
+<PRE WIDTH=80>   <STRONG>!?st</STRONG>
+   history
+</PRE>
+
+<P>This re-runs the <STRONG>history</STRONG> command.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

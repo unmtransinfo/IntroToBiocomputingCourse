@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- environment/env3da.html -->
+
+<HEAD>
+<TITLE>Making a temporary change</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Making a temporary change</H1>
+
+<P>To make a temporary change the value of an environment
+variable enter the command:</P>
+
+<PRE WIDTH=80>   <STRONG>VARNAME=<EM>value_of_variable</EM></STRONG>
+</PRE>
+
+<P>This value will remain until you logout from the system
+or exit from the shell you are working in.</P>
+
+<P>To make other programs that use the variable aware of
+the new value enter the command:</P>
+
+<PRE WIDTH=80>   <STRONG>export VARNAME</STRONG>
+</PRE>
+
+<UL>
+<LI><A HREF="exmp_bash.html">Examples</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,13 @@
+.headln, .subln1, .subln2, .subln3, .text, tinytxt, reverse, li, dt, dd, td {font-family: Arial, Helvetica, sans-serif; color: #000066}
+.headln {font-size:24px; font-weight:bold;}
+.subln1 {font-size:20px;}
+.subln2 {font-size:18px;}
+.subln3, li, dt {font-size:16px;}
+.text, dd {font-size: 13px;}
+.tinytxt {font-size: 11px;}
+.reverse {font-size: 13px; color: #000066; background:#9999CC;}
+A:link {color: #440066; text-decoration: underline;}
+A:visited {color: #440066; text-decoration: underline}
+A:active {color: #FF6600; text-decoration: underline;}
+A:hover {color: #FF6600; text-decoration: underline;}
+BODY {background:#FFFFFF}

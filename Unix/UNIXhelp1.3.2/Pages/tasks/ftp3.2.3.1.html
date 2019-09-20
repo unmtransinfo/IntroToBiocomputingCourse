@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- tasks/ftp3.2.3.1.html -->
+
+<HEAD>
+<TITLE>Examples of getting files with the hhcp command</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Examples of getting files with the <SAMP>hhcp</SAMP> command</H1>
+
+<P>To get a single file:</P>
+
+<PRE WIDTH=80>   <STRONG>hhcp lancs.pdsoft:x/faq/faq-motif FAQ_Motif</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>x/faq/faq-motif</SAMP> from the host
+"lancs.pdsoft" and copies it to the file <SAMP>FAQ_Motif</SAMP>
+in your current directory.</P>
+
+<HR>
+
+<P>To get a binary file:</P>
+
+<PRE WIDTH=80>   <STRONG>hhcp -b nfs.sun:joe/metacard incoming/metacrd</STRONG>
+</PRE>
+
+<P>This copies the binary file <SAMP>joe/metacard</SAMP> from the remote
+host "nsf.sun" to the file <SAMP>tmp/metacard</SAMP> in your home directory.</P>
+
+<P>The host "nsf.sun" is the gateway to the 
+<A HREF="../guestftp/index.html">Guestftp Service</A> at
+the University of London Computing Centre.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>

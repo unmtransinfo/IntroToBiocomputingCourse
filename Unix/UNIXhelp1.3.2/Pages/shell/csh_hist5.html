@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3.2 -->
+<!-- shell/csh_hist5.html -->
+
+<HEAD>
+<TITLE>Editing a previous command line</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<H1>Editing a previous command line</H1>
+
+<P>You can edit any previous command from the history list
+to create a new command. Suppose that command number 23
+in the history list is:</P>
+
+<PRE WIDTH=80>   23 lpr part[1-4].ps
+</PRE>
+
+<P>To change <SAMP>[1-4]</SAMP> to <SAMP>[5-8]</SAMP> use the command:</P>
+
+<PRE WIDTH=80>   <STRONG>!23:s/[1-4]/[5-8]/</STRONG>
+</PRE>
+
+<P>This will now run the command:</P>
+
+<PRE WIDTH=80>   lpr part[5-8].ps
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="http://biocomp.health.unm.edu/biomed505/Unix/UNIXhelp1.3.2/Scripts/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+<!--MAINTNAME-->
+</ADDRESS>
+
+</BODY>
+</HTML>
